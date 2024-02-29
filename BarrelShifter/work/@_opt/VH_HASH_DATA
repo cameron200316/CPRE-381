@@ -1,0 +1,43 @@
+[N
+8
+8
+1 N
+3
+8 dataflow
+6
+13 barrelshifter
+7
+10 structural
+2
+9 mux4to1df
+5
+4 i_D0
+4
+4 i_D2
+1
+51 /home/cam2022/CPRE-381/ProjectP1/BarrelShifter/work
+]
+[G
+1
+6
+7
+1
+8
+1
+0
+32
+0
+0 0
+0
+0
+]
+[P
+1
+2
+3
+4
+5
+1
+0
+0
+]
