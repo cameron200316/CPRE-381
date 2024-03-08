@@ -1,0 +1,117 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+!s11e vcom 2023.2_2 2023.06, Jun  9 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/home/mkotlarz/cpre381/proj1
+T_opt
+!s110 1709877052
+VgRX>^5iZc5MmZD665@Y;d2
+04 15 5 work tb_controllogic mixed 1
+=1-0050569b3feb-65eaa73c-1636d-8b34
+R1
+!s12b OEM100
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2023.2_2;77
+Econtrollogic
+Z3 w1709876879
+Z4 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z5 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z6 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 4
+R2
+Z7 8/home/mkotlarz/cpre381/proj1/ControlLogic/ControlLogic.vhd
+Z8 F/home/mkotlarz/cpre381/proj1/ControlLogic/ControlLogic.vhd
+l0
+L13 1
+V_gT6]JL>n>:]`XoXjkA6[0
+!s100 jcC54@SEikGonk@O[HE021
+Z9 OL;C;2023.2_2;77
+32
+Z10 !s110 1709877038
+!i10b 1
+Z11 !s108 1709877038.000000
+Z12 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj1/ControlLogic/ControlLogic.vhd|
+Z13 !s107 /home/mkotlarz/cpre381/proj1/ControlLogic/ControlLogic.vhd|
+!i113 0
+Z14 o-work work
+Z15 tExplicit 1 CvgOpt 0
+Astructural
+R4
+R5
+R6
+DEx4 work 12 controllogic 0 22 _gT6]JL>n>:]`XoXjkA6[0
+!i122 4
+l51
+L46 687
+V?X?n<lcog?]B`S@Hd7PPT3
+!s100 <0ZlgUOSR2MW6M6C8Mk]g2
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Etb_controllogic
+Z16 w1709876267
+Z17 DPx3 std 3 env 0 22 QPZJVBPkV?55nUWhDzFik0
+Z18 DPx4 ieee 16 std_logic_textio 0 22 C8j>g0lzF^EAA]5<S6PY32
+R5
+R6
+!i122 5
+R2
+Z19 8/home/mkotlarz/cpre381/proj1/ControlLogic/tb_ControlLogic.vhd
+Z20 F/home/mkotlarz/cpre381/proj1/ControlLogic/tb_ControlLogic.vhd
+l0
+L16 1
+VAabHaJei<HbC<JfP4DH=S0
+!s100 7LGd34VgYgCTlS=Th`N7V0
+R9
+32
+Z21 !s110 1709877039
+!i10b 1
+Z22 !s108 1709877039.000000
+Z23 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj1/ControlLogic/tb_ControlLogic.vhd|
+Z24 !s107 /home/mkotlarz/cpre381/proj1/ControlLogic/tb_ControlLogic.vhd|
+!i113 0
+R14
+R15
+Amixed
+R17
+R18
+R5
+R6
+DEx4 work 15 tb_controllogic 0 22 AabHaJei<HbC<JfP4DH=S0
+!i122 5
+l54
+L19 206
+V;boUKPWQJ@e2Gg<S=Yji[3
+!s100 ^gYc0^<SbZj6Helm;Z_>k3
+R9
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 0
+R14
+R15
