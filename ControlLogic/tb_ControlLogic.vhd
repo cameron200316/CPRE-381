@@ -29,7 +29,9 @@ architecture mixed of tb_ControlLogic is
             o_MemRead           : out  std_logic;
             o_MemToReg          : out  std_logic;
             o_ALUsrc            : out  std_logic;
-            o_LS                : out  std_logic;
+            o_lw                : out  std_logic;
+            o_HoB               : out  std_logic;
+            o_sign              : out  std_logic;
             o_Branch            : out  std_logic;
             o_Return            : out  std_logic;
             o_Link              : out  std_logic;
@@ -47,7 +49,7 @@ architecture mixed of tb_ControlLogic is
     -- Signals for testbench
     signal opcode: std_logic_vector(5 downto 0);
     signal funct: std_logic_vector(5 downto 0);
-    signal regDst, regWrite, memWrite, memRead, memToReg, aluSrc, ls, branch, rturn, link, jump, aluNAddSub, shiftLorR, shiftArithemtic, usigned, lui: std_logic;
+    signal regDst, regWrite, memWrite, memRead, memToReg, aluSrc, lw, HoB, sign, branch, rturn, link, jump, aluNAddSub, shiftLorR, shiftArithemtic, usigned, lui: std_logic;
     signal aluOut: std_logic_vector(2 downto 0);
 
 
@@ -63,7 +65,9 @@ begin
         o_MemRead => memRead,
         o_MemToReg => memToReg,
         o_ALUsrc => aluSrc,
-        o_LS => ls,
+        o_lw => lw,
+        o_HoB => HoB,
+        o_sign => sign,
         o_Branch => branch,
         o_Return => rturn,
         o_Link => link,

@@ -23,10 +23,13 @@ entity ControlLogic is
         o_MemRead           : out  std_logic; 
         o_MemToReg          : out  std_logic; 
 
-        -- Other 
-        --missing lb lh lbu lhu implementation
+        -- Immediate into ALU 
         o_ALUsrc            : out  std_logic; 
-        o_LS                : out  std_logic; 
+
+	--lw, lh, lhu, lb, lbu selection
+        o_lw                : out  std_logic;
+        o_HoB               : out  std_logic; 
+        o_sign              : out  std_logic;  
         
         -- PC Logic
         o_Branch            : out  std_logic; 
@@ -65,7 +68,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '0';
-                o_LS <= '0';
+		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
@@ -85,7 +90,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '0';
-                o_LS <= '0';
+		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
@@ -105,7 +112,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '0';
-                o_LS <= '0';
+		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
@@ -125,7 +134,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '0';
-                o_LS <= '0';
+		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
@@ -145,7 +156,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '0';
-                o_LS <= '0';
+ 		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
@@ -165,7 +178,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '0';
-                o_LS <= '0';
+		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
@@ -185,7 +200,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '0';
-                o_LS <= '0';
+		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
@@ -205,7 +222,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '1';
-                o_LS <= '1';
+		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
@@ -225,7 +244,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '1';
-                o_LS <= '1';
+		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
@@ -245,7 +266,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '1';
-                o_LS <= '1';
+		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
@@ -265,7 +288,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '0';
-                o_LS <= '0';
+		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
@@ -285,7 +310,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '0';
-                o_LS <= '0';
+		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
@@ -305,7 +332,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '0';
-                o_LS <= '0';
+		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '1';
                 o_Link <= '0';
@@ -325,7 +354,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '0';
-                o_LS <= '1';
+		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
@@ -345,7 +376,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '0';
-                o_LS <= '1';
+		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
@@ -365,7 +398,9 @@ begin
                 o_MemRead <= '0';
                 o_MemToReg <= '0';
                 o_ALUsrc <= '0';
-                o_LS <= '1';
+		o_lw <= '0';
+		o_HoB <= '0';
+		o_sign <= '0';
                 o_Branch <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
@@ -388,7 +423,9 @@ begin
             o_MemRead <= '0';
             o_MemToReg <= '0';
             o_ALUsrc <= '1';
-            o_LS <= '0';
+	    o_lw <= '0';
+	    o_HoB <= '0';
+      	    o_sign <= '0';
             o_Branch <= '0';
             o_Return <= '0';
             o_Link <= '0';
@@ -408,7 +445,9 @@ begin
             o_MemRead <= '0';
             o_MemToReg <= '0';
             o_ALUsrc <= '1';
-            o_LS <= '0';
+	    o_lw <= '0';
+	    o_HoB <= '0';
+      	    o_sign <= '0';
             o_Branch <= '0';
             o_Return <= '0';
             o_Link <= '0';
@@ -428,7 +467,9 @@ begin
             o_MemRead <= '0';
             o_MemToReg <= '0';
             o_ALUsrc <= '1';
-            o_LS <= '0';
+	    o_lw <= '0';
+	    o_HoB <= '0';
+      	    o_sign <= '0';
             o_Branch <= '0';
             o_Return <= '0';
             o_Link <= '0';
@@ -448,7 +489,9 @@ begin
             o_MemRead <= '0';
             o_MemToReg <= '0';
             o_ALUsrc <= '1';
-            o_LS <= '1';
+	    o_lw <= '0';
+	    o_HoB <= '0';
+      	    o_sign <= '0';
             o_Branch <= '0';
             o_Return <= '0';
             o_Link <= '0';
@@ -468,7 +511,9 @@ begin
             o_MemRead <= '1'; -- read from memory
             o_MemToReg <= '1'; -- write to register
             o_ALUsrc <= '1';
-            o_LS <= '0';
+	    o_lw <= '0';
+	    o_HoB <= '0';
+      	    o_sign <= '0';
             o_Branch <= '0';
             o_Return <= '0';
             o_Link <= '0';
@@ -488,7 +533,9 @@ begin
             o_MemRead <= '0';
             o_MemToReg <= '0';
             o_ALUsrc <= '1';
-            o_LS <= '0';
+	    o_lw <= '0';
+	    o_HoB <= '0';
+      	    o_sign <= '0';
             o_Branch <= '0';
             o_Return <= '0';
             o_Link <= '0';
@@ -508,7 +555,9 @@ begin
             o_MemRead <= '0';
             o_MemToReg <= '0';
             o_ALUsrc <= '1';
-            o_LS <= '0';
+	    o_lw <= '0';
+	    o_HoB <= '0';
+      	    o_sign <= '0';
             o_Branch <= '0';
             o_Return <= '0';
             o_Link <= '0';
@@ -528,7 +577,9 @@ begin
             o_MemRead <= '0';
             o_MemToReg <= '0';
             o_ALUsrc <= '1';
-            o_LS <= '0';
+	    o_lw <= '0';
+	    o_HoB <= '0';
+      	    o_sign <= '0';
             o_Branch <= '0';
             o_Return <= '0';
             o_Link <= '0';
@@ -548,7 +599,9 @@ begin
             o_MemRead <= '0';
             o_MemToReg <= '0';
             o_ALUsrc <= '1';
-            o_LS <= '0';
+	    o_lw <= '0';
+	    o_HoB <= '0';
+      	    o_sign <= '0';
             o_Branch <= '0';
             o_Return <= '0';
             o_Link <= '0';
@@ -568,7 +621,9 @@ begin
             o_MemRead <= '0';
             o_MemToReg <= '0';
             o_ALUsrc <= '0';
-            o_LS <= '0';
+	    o_lw <= '0';
+	    o_HoB <= '0';
+      	    o_sign <= '0';
             o_Branch <= '1'; -- branch
             o_Return <= '0';
             o_Link <= '0';
@@ -588,7 +643,9 @@ begin
             o_MemRead <= '0';
             o_MemToReg <= '0';
             o_ALUsrc <= '0';
-            o_LS <= '0';
+	    o_lw <= '0';
+	    o_HoB <= '0';
+      	    o_sign <= '0';
             o_Branch <= '1'; -- branch
             o_Return <= '0';
             o_Link <= '0';
@@ -608,7 +665,9 @@ begin
             o_MemRead <= '0';
             o_MemToReg <= '0';
             o_ALUsrc <= '0';
-            o_LS <= '0';
+	    o_lw <= '0';
+	    o_HoB <= '0';
+      	    o_sign <= '0';
             o_Branch <= '0';
             o_Return <= '0';
             o_Link <= '0';
@@ -628,7 +687,9 @@ begin
             o_MemRead <= '0';
             o_MemToReg <= '0';
             o_ALUsrc <= '0';
-            o_LS <= '0';
+	    o_lw <= '0';
+	    o_HoB <= '0';
+      	    o_sign <= '0';
             o_Branch <= '0';
             o_Return <= '0';
             o_Link <= '1'; -- link (store the return address in the link register)
@@ -648,7 +709,9 @@ begin
             o_MemRead <= '1'; -- read from memory
             o_MemToReg <= '1'; -- write to register
             o_ALUsrc <= '1';
-            o_LS <= '0';
+	    o_lw <= '1';
+	    o_HoB <= '0';
+      	    o_sign <= '1';
             o_Branch <= '0';
             o_Return <= '0';
             o_Link <= '0';
@@ -668,7 +731,9 @@ begin
             o_MemRead <= '1'; -- read from memory
             o_MemToReg <= '1'; -- write to register
             o_ALUsrc <= '1';
-            o_LS <= '0';
+	    o_lw <= '1';
+	    o_HoB <= '1';
+      	    o_sign <= '1';
             o_Branch <= '0';
             o_Return <= '0';
             o_Link <= '0';
@@ -688,7 +753,9 @@ begin
             o_MemRead <= '1'; -- read from memory
             o_MemToReg <= '1'; -- write to register
             o_ALUsrc <= '1';
-            o_LS <= '0';
+	    o_lw <= '1';
+	    o_HoB <= '0';
+      	    o_sign <= '0';
             o_Branch <= '0';
             o_Return <= '0';
             o_Link <= '0';
@@ -708,7 +775,9 @@ begin
             o_MemRead <= '1'; -- read from memory
             o_MemToReg <= '1'; -- write to register
             o_ALUsrc <= '1';
-            o_LS <= '0';
+	    o_lw <= '1';
+	    o_HoB <= '1';
+      	    o_sign <= '0';
             o_Branch <= '0';
             o_Return <= '0';
             o_Link <= '0';
