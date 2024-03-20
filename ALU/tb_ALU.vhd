@@ -102,7 +102,7 @@ begin
 
         -- Test case 4: Bitwise OR
         s_i_A <= std_logic_vector(to_unsigned(8, N));
-        s_i_B <= std_logic_vector(to_unsigned(12, N));
+        s_i_B <= std_logic_vector(to_unsigned(3, N));
         s_i_ALUout <= "001";  -- OR operation
         s_i_nAdd_Sub <= '0';
         s_i_ShiftArithemtic <= '0';
@@ -133,12 +133,12 @@ begin
         s_i_Lui <= '0';
         wait for 10 ns;
 
-        -- Test case 7: Shift Left Arithmetic
+        -- Test case 7: Shift Left Logical
         s_i_A <= std_logic_vector(to_unsigned(4, N));
         s_i_B <= std_logic_vector(to_unsigned(2, N));  -- Shift amount
-        s_i_ALUout <= "110";  -- Shift left operation
+        s_i_ALUout <= "110";  -- Shift  operation
         s_i_nAdd_Sub <= '0';
-        s_i_ShiftArithemtic <= '1';  -- Shift arithmetic
+        s_i_ShiftArithemtic <= '0';  -- Shift logical
         s_i_ShiftLorR <= '1';  -- Shift left
         s_i_Unsigned <= '1';
         s_i_Lui <= '0';
@@ -147,7 +147,7 @@ begin
         -- Test case 8: Shift Right Logical
         s_i_A <= std_logic_vector(to_unsigned(16, N));
         s_i_B <= std_logic_vector(to_unsigned(2, N));  -- Shift amount
-        s_i_ALUout <= "110";  -- Shift right operation
+        s_i_ALUout <= "110";  -- Shift  operation
         s_i_nAdd_Sub <= '0';
         s_i_ShiftArithemtic <= '0';  -- Shift logical
         s_i_ShiftLorR <= '0';  -- Shift right
@@ -155,14 +155,14 @@ begin
         s_i_Lui <= '0';
         wait for 10 ns;
 
-        -- Test case 9: Shift Left Logical Unsigned
+        -- Test case 9: Shift right Arithemtic 
         s_i_A <= std_logic_vector(to_unsigned(4, N));
         s_i_B <= std_logic_vector(to_unsigned(3, N));  -- Shift amount
-        s_i_ALUout <= "110";  -- Shift left operation
+        s_i_ALUout <= "110";  -- Shift  operation
         s_i_nAdd_Sub <= '0';
-        s_i_ShiftArithemtic <= '0';  -- Shift logical
-        s_i_ShiftLorR <= '1';  -- Shift left
-        s_i_Unsigned <= '0';  -- Unsigned
+        s_i_ShiftArithemtic <= '1';  -- Shift arithmetic
+        s_i_ShiftLorR <= '0';  -- Shift right
+        s_i_Unsigned <= '1'; 
         s_i_Lui <= '0';
         wait for 10 ns;
 
@@ -183,6 +183,7 @@ begin
         s_i_ALUout <= "010";  
         s_i_nAdd_Sub <= '0';  -- Addition operation
         s_i_Unsigned <= '1';  -- Signed input
+        s_i_Lui <= '0';
         wait for 10 ns;  -- Adjust delay as needed
         -- Expected Final: 2^31 - 2 + 1 = 2^31 - 1 (No overflow)
 
@@ -216,7 +217,7 @@ begin
         -- Test case 15: SLT - A less than B (signed input)
         s_i_A <= "11111111111111111111111111111110";  -- -2
         s_i_B <= "11111111111111111111111111111111";  -- -1
-        s_i_ALUout <= "011"; 
+        s_i_ALUout <= "111"; 
         s_i_nAdd_Sub <= '1';  -- Subtraction operation (to test SLT)
         wait for 10 ns;  -- Adjust delay as needed
         -- Expected Negative: -2 is less than -1, so o_Negative should be '1'
@@ -224,7 +225,7 @@ begin
         -- Test case 16: SLT - A greater than B (signed input)
         s_i_A <= "11111111111111111111111111111111";  -- -1
         s_i_B <= "11111111111111111111111111111110";  -- -2
-        s_i_ALUout <= "011"; 
+        s_i_ALUout <= "111"; 
         s_i_nAdd_Sub <= '1';  -- Subtraction operation (to test SLT)
         wait for 10 ns;  -- Adjust delay as needed
         -- Expected Negative: -1 is greater than -2, so o_Negative should be '0'
@@ -232,7 +233,7 @@ begin
         -- Test case 17: SLT - A less than B (unsigned input)
         s_i_A <= "01111111111111111111111111111110";  -- 2^31 - 2
         s_i_B <= "01111111111111111111111111111111";  -- 2^31 - 1
-        s_i_ALUout <= "011"; 
+        s_i_ALUout <= "111"; 
         s_i_nAdd_Sub <= '1';  -- Subtraction operation (to test SLT)
         wait for 10 ns;  -- Adjust delay as needed
         -- Expected Negative: 2^31 - 2 is less than 2^31 - 1, so o_Negative should be '1'
@@ -240,7 +241,7 @@ begin
         -- Test case 18: SLT - A greater than B (unsigned input)
         s_i_A <= "01111111111111111111111111111111";  -- 2^31 - 1
         s_i_B <= "01111111111111111111111111111110";  -- 2^31 - 2
-        s_i_ALUout <= "011"; 
+        s_i_ALUout <= "111"; 
         s_i_nAdd_Sub <= '1';  -- Subtraction operation (to test SLT)
         wait for 10 ns;  -- Adjust delay as needed
         -- Expected Negative: 2^31 - 1 is greater than 2^31 - 2, so o_Negative should be '0'

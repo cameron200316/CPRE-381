@@ -1,0 +1,534 @@
+# //  Questa Sim-64
+# //  Version 2023.2_2 linux_x86_64 Jun  9 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vlib work
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj1/ALU/ALU.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:10 on Mar 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj1/ALU/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU
+# -- Compiling architecture structural of ALU
+# End time: 14:21:10 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/andg2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:10 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 14:21:10 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/BarrelDecoder5_32.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:10 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/BarrelDecoder5_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BarrelDecoder5_32
+# -- Compiling architecture structural of BarrelDecoder5_32
+# End time: 14:21:10 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/BarrelShifter.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:10 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/BarrelShifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity BarrelShifter
+# -- Compiling architecture structural of BarrelShifter
+# End time: 14:21:10 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Complementor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:10 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Complementor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Complementor
+# -- Compiling architecture structural of Complementor
+# End time: 14:21:10 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Dataflow_Mux2_1.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:10 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Dataflow_Mux2_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Dataflow_Mux2_1
+# -- Compiling architecture dataflow of Dataflow_Mux2_1
+# End time: 14:21:10 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/invg.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:10 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 14:21:10 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/mux2t1_N.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:10 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# End time: 14:21:10 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/mux4to1DF.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:10 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/mux4to1DF.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux4to1DF
+# -- Compiling architecture dataflow of mux4to1DF
+# End time: 14:21:10 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Nbit_8t1Mux.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:10 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Nbit_8t1Mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Nbit_8t1Mux
+# -- Compiling architecture Structural of Nbit_8t1Mux
+# End time: 14:21:11 on Mar 20,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Nbit_AddSub.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:11 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Nbit_AddSub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Nbit_AddSub
+# -- Compiling architecture structural of Nbit_AddSub
+# End time: 14:21:11 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Nbit_andg2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:11 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Nbit_andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Nbit_andg2
+# -- Compiling architecture structural of Nbit_andg2
+# End time: 14:21:11 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Nbit_full_adder.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:11 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Nbit_full_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Nbit_full_adder
+# -- Compiling architecture structural of Nbit_full_adder
+# End time: 14:21:11 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Nbit_org2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:11 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Nbit_org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Nbit_org2
+# -- Compiling architecture structural of Nbit_org2
+# End time: 14:21:11 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/NegativeChecker.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:11 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/NegativeChecker.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity NegativeChecker
+# -- Compiling architecture Behavioral of NegativeChecker
+# End time: 14:21:11 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/org2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:11 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# End time: 14:21:11 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Structual_full_adder.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:11 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Structual_full_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Structual_full_adder
+# -- Compiling architecture structure of Structual_full_adder
+# End time: 14:21:11 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:11 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_ALU
+# -- Compiling architecture testbench of tb_ALU
+# ** Warning: /home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd(49): (vcom-1624) Component instance tb_ALU(testbench).DUT has a generic map clause and the component ALU has no generics.
+# Generic map will be ignored.
+# End time: 14:21:11 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_LeftShifter16.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:11 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_LeftShifter16.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_LeftShifter16
+# -- Compiling architecture testbench of tb_LeftShifter16
+# End time: 14:21:12 on Mar 20,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_8t1Mux.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:12 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_8t1Mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_Nbit_8t1Mux
+# -- Compiling architecture testbench of tb_Nbit_8t1Mux
+# End time: 14:21:12 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_AddSub.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:12 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_AddSub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_AddSub.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_Nbit_AddSub
+# -- Compiling architecture mixed of tb_Nbit_AddSub
+# End time: 14:21:12 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_full_adder.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:12 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_full_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_full_adder.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_Nbit_full_adder
+# -- Compiling architecture mixed of tb_Nbit_full_adder
+# End time: 14:21:12 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_org2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:12 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_org2.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_Nbit_org2
+# -- Compiling architecture mixed of tb_Nbit_org2
+# End time: 14:21:12 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_xorg2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:12 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_xorg2.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_Nbit_xorg2
+# -- Compiling architecture mixed of tb_Nbit_xorg2
+# End time: 14:21:12 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_NegativeChecker.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:12 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_NegativeChecker.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_NegativeChecker
+# -- Compiling architecture testbench of tb_NegativeChecker
+# End time: 14:21:12 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_ZeroChecker.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:12 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_ZeroChecker.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_ZeroChecker
+# -- Compiling architecture testbench of tb_ZeroChecker
+# End time: 14:21:12 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/xorg2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:12 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 14:21:12 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/ZeroChecker.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:12 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/ZeroChecker.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ZeroChecker
+# -- Compiling architecture structural of ZeroChecker
+# End time: 14:21:12 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_andg2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:12 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_andg2.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_Nbit_andg2
+# -- Compiling architecture mixed of tb_Nbit_andg2
+# End time: 14:21:13 on Mar 20,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Nbit_xorg2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:13 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/Nbit_xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Nbit_xorg2
+# -- Compiling architecture structural of Nbit_xorg2
+# End time: 14:21:13 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/LeftShifter16.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:13 on Mar 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj1/ALU/LeftShifter16.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity LeftShifter16
+# -- Compiling architecture Behavioral of LeftShifter16
+# End time: 14:21:13 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj1/ALU/ALU.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:14 on Mar 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj1/ALU/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU
+# -- Compiling architecture structural of ALU
+# End time: 14:21:14 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:16 on Mar 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_ALU
+# -- Compiling architecture testbench of tb_ALU
+# ** Warning: /home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd(49): (vcom-1624) Component instance tb_ALU(testbench).DUT has a generic map clause and the component ALU has no generics.
+# Generic map will be ignored.
+# End time: 14:21:16 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.tb_alu -voptargs=+acc
+# vsim work.tb_alu -voptargs="+acc" 
+# Start time: 14:21:39 on Mar 20,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_alu(testbench)#1
+# Loading work.alu(structural)#1
+# Loading work.nbit_8t1mux(structural)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.dataflow_mux2_1(dataflow)#1
+# Loading work.mux2t1_n(structural)#2
+# Loading work.nbit_andg2(structural)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.nbit_org2(structural)#1
+# Loading work.org2(dataflow)#1
+# Loading work.nbit_addsub(structural)#1
+# Loading work.complementor(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.nbit_full_adder(structural)#1
+# Loading work.structual_full_adder(structure)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.nbit_xorg2(structural)#1
+# Loading work.barrelshifter(structural)#1
+# Loading work.barreldecoder5_32(structural)#1
+# Loading work.mux4to1df(dataflow)#1
+# Loading work.negativechecker(behavioral)#1
+# Loading work.zerochecker(structural)#1
+# Loading work.leftshifter16(behavioral)#1
+add wave -position insertpoint  \
+sim:/tb_alu/s_o_Zero \
+sim:/tb_alu/s_o_Overflow \
+sim:/tb_alu/s_o_Negative \
+sim:/tb_alu/s_o_Final \
+sim:/tb_alu/s_o_Carry_Out \
+sim:/tb_alu/s_i_Unsigned \
+sim:/tb_alu/s_i_ShiftLorR \
+sim:/tb_alu/s_i_ShiftArithemtic \
+sim:/tb_alu/s_i_nAdd_Sub \
+sim:/tb_alu/s_i_Lui \
+sim:/tb_alu/s_i_B \
+sim:/tb_alu/s_i_ALUout \
+sim:/tb_alu/s_i_A
+run 250
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_alu/DUT/Shifter
+quit -sim
+# End time: 14:47:02 on Mar 20,2024, Elapsed time: 0:25:23
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj1/ALU/ALU.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:47:05 on Mar 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj1/ALU/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU
+# -- Compiling architecture structural of ALU
+# End time: 14:47:05 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:47:07 on Mar 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_ALU
+# -- Compiling architecture testbench of tb_ALU
+# ** Warning: /home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd(49): (vcom-1624) Component instance tb_ALU(testbench).DUT has a generic map clause and the component ALU has no generics.
+# Generic map will be ignored.
+# End time: 14:47:07 on Mar 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_alu
+# vsim -voptargs="+acc" work.tb_alu 
+# Start time: 14:47:14 on Mar 20,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_alu(testbench)#1
+# Loading work.alu(structural)#1
+# Loading work.nbit_8t1mux(structural)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.dataflow_mux2_1(dataflow)#1
+# Loading work.mux2t1_n(structural)#2
+# Loading work.nbit_andg2(structural)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.nbit_org2(structural)#1
+# Loading work.org2(dataflow)#1
+# Loading work.nbit_addsub(structural)#1
+# Loading work.complementor(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.nbit_full_adder(structural)#1
+# Loading work.structual_full_adder(structure)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.nbit_xorg2(structural)#1
+# Loading work.barrelshifter(structural)#1
+# Loading work.barreldecoder5_32(structural)#1
+# Loading work.mux4to1df(dataflow)#1
+# Loading work.negativechecker(behavioral)#1
+# Loading work.zerochecker(structural)#1
+# Loading work.leftshifter16(behavioral)#1
+add wave -position insertpoint  \
+sim:/tb_alu/s_o_Zero \
+sim:/tb_alu/s_o_Overflow \
+sim:/tb_alu/s_o_Negative \
+sim:/tb_alu/s_o_Final \
+sim:/tb_alu/s_o_Carry_Out \
+sim:/tb_alu/s_i_Unsigned \
+sim:/tb_alu/s_i_ShiftLorR \
+sim:/tb_alu/s_i_ShiftArithemtic \
+sim:/tb_alu/s_i_nAdd_Sub \
+sim:/tb_alu/s_i_Lui \
+sim:/tb_alu/s_i_B \
+sim:/tb_alu/s_i_ALUout \
+sim:/tb_alu/s_i_A
+run 250
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_alu/DUT/Shifter
+# Causality operation skipped due to absence of debug database file
+quit
+# End time: 15:05:10 on Mar 20,2024, Elapsed time: 0:17:56
+# Errors: 0, Warnings: 2
