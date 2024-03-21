@@ -12,65 +12,6 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# ** Error: (vish-7) Failed to open info file "/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/containers/sim_container_0/work/_info" in read mode.
-# No such file or directory. (errno = ENOENT)
-add wave -position insertpoint  \
-vsim:/tb/MyMips/iCLK \
-vsim:/tb/MyMips/iRST \
-vsim:/tb/MyMips/iInstLd \
-vsim:/tb/MyMips/iInstAddr \
-vsim:/tb/MyMips/iInstExt \
-vsim:/tb/MyMips/oALUOut \
-vsim:/tb/MyMips/s_DMemWr \
-vsim:/tb/MyMips/s_DMemAddr \
-vsim:/tb/MyMips/s_DMemOut \
-vsim:/tb/MyMips/s_DMemData \
-vsim:/tb/MyMips/s_RegWr \
-vsim:/tb/MyMips/s_RegWrAddr \
-vsim:/tb/MyMips/s_RegWrData \
-vsim:/tb/MyMips/s_IMemAddr \
-vsim:/tb/MyMips/s_NextInstAddr \
-vsim:/tb/MyMips/s_Inst \
-vsim:/tb/MyMips/s_Halt \
-vsim:/tb/MyMips/s_Ovfl \
-vsim:/tb/MyMips/s_Jump \
-vsim:/tb/MyMips/s_Branch \
-vsim:/tb/MyMips/s_Branchne \
-vsim:/tb/MyMips/s_Return \
-vsim:/tb/MyMips/s_Link \
-vsim:/tb/MyMips/s_RegDst \
-vsim:/tb/MyMips/s_RegWrite \
-vsim:/tb/MyMips/s_MemWrite \
-vsim:/tb/MyMips/s_MemRead \
-vsim:/tb/MyMips/s_MemtoReg \
-vsim:/tb/MyMips/s_ALUSrc \
-vsim:/tb/MyMips/s_ALUnAddSub \
-vsim:/tb/MyMips/s_ALUout \
-vsim:/tb/MyMips/s_ShiftLorR \
-vsim:/tb/MyMips/s_ShiftArithemtic \
-vsim:/tb/MyMips/s_Unsigned \
-vsim:/tb/MyMips/s_Lui \
-vsim:/tb/MyMips/s_lw \
-vsim:/tb/MyMips/s_HoB \
-vsim:/tb/MyMips/s_sign \
-vsim:/tb/MyMips/s_PCNEW \
-vsim:/tb/MyMips/s_RS \
-vsim:/tb/MyMips/s_RT \
-vsim:/tb/MyMips/s_WA \
-vsim:/tb/MyMips/s_WD \
-vsim:/tb/MyMips/s_R1 \
-vsim:/tb/MyMips/s_R2 \
-vsim:/tb/MyMips/s_B \
-vsim:/tb/MyMips/s_final \
-vsim:/tb/MyMips/s_zero \
-vsim:/tb/MyMips/s_carryOut \
-vsim:/tb/MyMips/s_negative \
-vsim:/tb/MyMips/s_immediate \
-vsim:/tb/MyMips/s_MUX2OUT \
-vsim:/tb/MyMips/s_MUX3OUT \
-vsim:/tb/MyMips/s_MUX4OUT \
-vsim:/tb/MyMips/s_MUX6OUT \
-vsim:/tb/MyMips/s_unsignedByte \
-vsim:/tb/MyMips/s_unsignedHalfword \
-vsim:/tb/MyMips/s_signedByte \
-vsim:/tb/MyMips/s_signedHalfword
+cd /home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/output/addiseq.s
+# Load canceled
+add wave -r vsim:/tb/MyMips/*

@@ -869,7 +869,7 @@ begin
             o_ALUsrc <= '1';
 	    o_lw <= '1';
 	    o_HoB <= '1';
-        o_sign <= '0';
+            o_sign <= '0';
             o_Branch <= '0';
             o_Branchne <= '0';
             o_Return <= '0';

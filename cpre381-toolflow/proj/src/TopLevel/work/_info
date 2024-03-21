@@ -755,25 +755,66 @@ R10
 !i113 0
 R11
 R12
+Epc
+Z55 w1711053751
+R2
+R3
+!i122 8
+R0
+Z56 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/PC.vhd
+Z57 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/PC.vhd
+l0
+R15
+VJI=Ub4G;NI^k6cgWg@VVX1
+!s100 beXfE6cG[RTYneFmUgj@n0
+R6
+33
+Z58 !s110 1711053754
+!i10b 1
+Z59 !s108 1711053754.000000
+Z60 !s90 -reportprogress|300|-work|work|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/PC.vhd|
+Z61 !s107 /home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/PC.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+Z62 DEx4 work 2 pc 0 22 JI=Ub4G;NI^k6cgWg@VVX1
+!i122 8
+l50
+L32 47
+VZch4LjSGFAUz1bT41c38X0
+!s100 :mX]i7j<RC=ORGd@dE]e20
+R6
+33
+R58
+!i10b 1
+R59
+R60
+R61
+!i113 0
+R11
+R12
 Ereg32file
-Z55 w1711037192
+Z63 w1711037192
 R2
 R3
 !i122 1
 R0
-Z56 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd
-Z57 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd
+Z64 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd
+Z65 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd
 l0
 R15
 VB>c93j[cJSZ5YUI3UgaLc0
 !s100 XUjVMcXVGYX082URQ5>Gg2
 R6
 33
-Z58 !s110 1711037205
+Z66 !s110 1711037205
 !i10b 1
-Z59 !s108 1711037205.000000
-Z60 !s90 -reportprogress|300|-work|work|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd|
-!s107 /home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd|
+Z67 !s108 1711037205.000000
+Z68 !s90 -reportprogress|300|-work|work|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd|
+Z69 !s107 /home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd|
 !i113 0
 R11
 R12
@@ -788,11 +829,11 @@ VBMeXbPhTA=0X>Eg2TdUFj3
 !s100 f0?Z>QLal=iC:0IRTT6IW3
 R6
 33
-R58
+R66
 !i10b 1
-R59
-R60
-Z61 !s107 /home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd|
+R67
+R68
+R69
 !i113 0
 R11
 R12

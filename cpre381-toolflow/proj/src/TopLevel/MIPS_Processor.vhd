@@ -155,7 +155,7 @@ architecture structure of MIPS_Processor is
         i_branchne      : in std_logic;
         i_return        : in std_logic;
         i_zero          : in std_logic;
-        i_init          : in std_logic;
+        i_RST           : in std_logic;
         i_CLK           : in std_logic;
         i_ra            : in std_logic_vector(N-1 downto 0);
         i_instruction25 : in std_logic_vector(25 downto 0);
@@ -255,10 +255,13 @@ begin
              we   => iInstLd,
              q    => s_Inst);
   
+  s_DMemAddr <= s_final;
+  s_DMemData <= s_R2; 
+
   DMem: mem
     port map(clk  => iCLK,
-             addr => s_final(11 downto 2),
-             data => s_R2,
+             addr => s_DMemAddr(11 downto 2),
+             data => s_DMemData,
              we   => s_DMemWr,
              q    => s_DMemOut);
 
@@ -300,7 +303,7 @@ begin
         i_branchne      => s_Branchne, 
         i_return        => s_Return, 
         i_zero          => s_zero,
-        i_init          => iRST, 
+        i_RST           => iRST, 
         i_CLK           => iCLK, 
         i_ra            => s_R1, 
         i_instruction25 => s_Inst(25 downto 0), 
@@ -310,14 +313,18 @@ begin
   REG: Reg32File 
   	port MAP(
 	i_CLKs        => iCLK,
-	i_WE          => s_RegWrite,
+	i_WE          => s_RegWr,
 	i_R           => iRST,
-        i_WD          => s_WD,
-        i_WA          => s_WA, 
+        i_WD          => s_RegWrData,
+        i_WA          => s_RegWrAddr, 
         i_RS          => s_RS,
         i_RT          => s_RT,
         o_OUT1        => s_R1,
         o_OUT0        => s_R2);
+
+  s_RegWr <= s_RegWrite;
+  s_RegWrAddr <= s_WA;
+  s_RegWrData <= s_WD; 
 
   A: ALU
 	port MAP(
@@ -446,6 +453,10 @@ begin
                  i_S 	   => iInstLd,     
                  o_O       => s_IMemAddr(i));
   end generate MUX9_32;
+
+  s_NextInstAddr  <= s_PCNEW;
+
+  s_NextInstAddr  <= s_PCNEW;
 
   OUTPUT: for i in 0 to 31 generate
 	oALUOut(i) 	<= s_final(i);
