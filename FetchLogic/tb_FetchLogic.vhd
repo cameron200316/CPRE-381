@@ -38,7 +38,7 @@ component FetchLogic is
         i_branchne      : in std_logic;
         i_return        : in std_logic;
         i_zero          : in std_logic;
-        i_init          : in std_logic;
+        i_RST           : in std_logic;
         i_CLK           : in std_logic;
         i_ra            : in std_logic_vector(N-1 downto 0);
         i_instruction25 : in std_logic_vector(25 downto 0);
@@ -61,7 +61,7 @@ signal s_branch     	    : std_logic := '0';
 signal s_branchne     	    : std_logic := '0';
 signal s_return     	    : std_logic := '0';
 signal s_zero       	    : std_logic := '0';
-signal s_init      	    : std_logic := '0';
+signal s_RST      	    : std_logic := '0';
 
 begin
 
@@ -75,7 +75,7 @@ begin
         	i_branchne      => s_branchne,
         	i_return        => s_return,
         	i_zero          => s_zero,
-        	i_init          => s_init,
+        	i_RST           => s_RST,
         	i_CLK           => CLK,
         	i_ra            => s_ra,
         	i_instruction25 => s_instruction25,
@@ -105,7 +105,7 @@ begin
         s_branchne      <= '0';
         s_return        <= '0';
         s_zero          <= '0';
-        s_init          <= '1';
+        s_RST           <= '1';
         s_ra            <= "00000000000000000000000000000000";
         s_instruction25 <= "00000000000000000000000000";
         s_instruction16 <= "00000000000000000000000000000000";
@@ -118,7 +118,7 @@ begin
         s_branchne      <= '0';
         s_return        <= '0';
         s_zero          <= '0';
-        s_init          <= '0';
+        s_RST           <= '0';
         s_ra            <= "00000000000000000000000000000000";
         s_instruction25 <= "00000000000000000000000000";
         s_instruction16 <= "00000000000000000000000000000000";
@@ -131,7 +131,7 @@ begin
         s_branchne      <= '0';
         s_return        <= '0';
         s_zero          <= '0';
-        s_init          <= '0';
+        s_RST           <= '0';
         s_ra            <= "00000000000000000000000000000000";
         s_instruction25 <= "01000000100001000000000000";
         s_instruction16 <= "00000000000000000000000000000000";
@@ -144,7 +144,7 @@ begin
         s_branchne      <= '0';
         s_return        <= '1';
         s_zero          <= '0';
-        s_init          <= '0';
+        s_RST           <= '0';
         s_ra            <= "00000000010000000000000000000100";
         s_instruction25 <= "01000000100001000000000000";
         s_instruction16 <= "00000000000000000000000000000000";
@@ -158,7 +158,7 @@ begin
         s_branchne      <= '0';
         s_return        <= '0';
         s_zero          <= '0';
-        s_init          <= '0';
+        s_RST           <= '0';
         s_ra            <= "00000000010000000000000000000100";
         s_instruction25 <= "01000000100001000000000000";
         s_instruction16 <= "00000000000000000000000000000000";
@@ -171,7 +171,7 @@ begin
         s_branchne      <= '0';
         s_return        <= '0';
         s_zero          <= '1';
-        s_init          <= '0';
+        s_RST           <= '0';
         s_ra            <= "00000000010000000000000000000100";
         s_instruction25 <= "01000000100001000000000000";
         s_instruction16 <= "00000000000000000000000010001000";
@@ -184,7 +184,7 @@ begin
         s_branchne      <= '1';
         s_return        <= '0';
         s_zero          <= '0';
-        s_init          <= '0';
+        s_RST           <= '0';
         s_ra            <= "00000000010000000000000000000100";
         s_instruction25 <= "01000000100001000000000000";
         s_instruction16 <= "00000000000000000000000010001000";

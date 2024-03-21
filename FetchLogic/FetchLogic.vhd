@@ -26,7 +26,7 @@ entity FetchLogic is
         i_branchne      : in std_logic;
         i_return        : in std_logic;
         i_zero          : in std_logic;
-        i_init          : in std_logic;
+        i_RST           : in std_logic;
         i_CLK           : in std_logic;
         i_ra            : in std_logic_vector(N-1 downto 0);
         i_instruction25 : in std_logic_vector(25 downto 0);
@@ -73,7 +73,7 @@ architecture structural of FetchLogic is
              o_F          : out std_logic);
     end component;
 
-    component RegFile is
+    component PC is
    	generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
    	port(i_WD         : in std_logic_vector(N-1 downto 0);
        	     i_WEN        : in std_logic; 
@@ -97,8 +97,6 @@ signal s_Jump2		: std_logic_vector(31 downto 0) := "0000000000000000000000000000
 signal s_MUX1OUT	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 signal s_MUX2OUT	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 signal s_MUX3OUT	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
-signal s_MUX4OUT	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
-signal s_init   	: std_logic_vector(31 downto 0) := "00000000010000000000000000000000";
 
 signal s_null		: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
@@ -178,20 +176,12 @@ begin
                  i_S       => i_return,     
                  o_O       => s_MUX3OUT(i));
   end generate MUX3_32;
-  
-  MUX4_32: for i in 0 to N-1 generate
-  	MUX4: mux2to1DF
-	port MAP(i_D0      => s_MUX3OUT(i),         
-       	         i_D1      => s_init(i),    
-                 i_S       => i_init,     
-                 o_O       => s_MUX4OUT(i));
-  end generate MUX4_32;
 
-  PC: RegFile  
-	port MAP(i_WD         => s_MUX4OUT,
+  PC4: PC  
+	port MAP(i_WD         => s_MUX3OUT,
        		 i_WEN        => '1',
        		 i_CLKs       => i_CLK,
-       		 i_R          => '0',
+       		 i_R          => i_RST,
        		 o_OUT        => o_PCNEW);
 
 end structural;
