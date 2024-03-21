@@ -35,6 +35,7 @@ component FetchLogic is
    generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
    port(i_jump          : in std_logic;
         i_branch        : in std_logic;
+        i_branchne      : in std_logic;
         i_return        : in std_logic;
         i_zero          : in std_logic;
         i_init          : in std_logic;
@@ -57,6 +58,7 @@ signal s_instruction25      : std_logic_vector(25 downto 0)  := "000000000000000
 signal s_instruction16      : std_logic_vector(31 downto 0)  := "00000000000000000000000000000000";
 signal s_jump       	    : std_logic := '0';
 signal s_branch     	    : std_logic := '0';
+signal s_branchne     	    : std_logic := '0';
 signal s_return     	    : std_logic := '0';
 signal s_zero       	    : std_logic := '0';
 signal s_init      	    : std_logic := '0';
@@ -70,6 +72,7 @@ begin
   DUT0: FetchLogic
        port MAP(i_jump          => s_jump,
         	i_branch        => s_branch,
+        	i_branchne      => s_branchne,
         	i_return        => s_return,
         	i_zero          => s_zero,
         	i_init          => s_init,
@@ -99,6 +102,7 @@ begin
     -- Test case 1: PC INIT
 	s_jump          <= '0';
         s_branch        <= '0';
+        s_branchne      <= '0';
         s_return        <= '0';
         s_zero          <= '0';
         s_init          <= '1';
@@ -111,6 +115,7 @@ begin
     -- Test case 2: PC+4
 	s_jump          <= '0';
         s_branch        <= '0';
+        s_branchne      <= '0';
         s_return        <= '0';
         s_zero          <= '0';
         s_init          <= '0';
@@ -123,6 +128,7 @@ begin
     -- Test case 3: Jump
 	s_jump          <= '1';
         s_branch        <= '0';
+        s_branchne      <= '0';
         s_return        <= '0';
         s_zero          <= '0';
         s_init          <= '0';
@@ -135,6 +141,7 @@ begin
     -- Test case 4: Jump Return
 	s_jump          <= '1';
         s_branch        <= '0';
+        s_branchne      <= '0';
         s_return        <= '1';
         s_zero          <= '0';
         s_init          <= '0';
@@ -148,6 +155,7 @@ begin
     -- Test case 5: Branch NOT ZERO
 	s_jump          <= '0';
         s_branch        <= '1';
+        s_branchne      <= '0';
         s_return        <= '0';
         s_zero          <= '0';
         s_init          <= '0';
@@ -160,6 +168,7 @@ begin
     -- Test case 6: Branch ZERO
 	s_jump          <= '0';
         s_branch        <= '1';
+        s_branchne      <= '0';
         s_return        <= '0';
         s_zero          <= '1';
         s_init          <= '0';
@@ -167,7 +176,20 @@ begin
         s_instruction25 <= "01000000100001000000000000";
         s_instruction16 <= "00000000000000000000000010001000";
     wait for gCLK_HPER*2;
-    -- Expect: s_PCNEW = 0x00400228
+    -- Expect: s_PCNEW = 0x0040022C
+
+    -- Test case 6: Branch NOT ZERO
+	s_jump          <= '0';
+        s_branch        <= '0';
+        s_branchne      <= '1';
+        s_return        <= '0';
+        s_zero          <= '0';
+        s_init          <= '0';
+        s_ra            <= "00000000010000000000000000000100";
+        s_instruction25 <= "01000000100001000000000000";
+        s_instruction16 <= "00000000000000000000000010001000";
+    wait for gCLK_HPER*2;
+    -- Expect: s_PCNEW = 0x00400450
 
     wait;
   end process;
