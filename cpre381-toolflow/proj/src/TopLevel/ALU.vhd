@@ -285,8 +285,8 @@ begin
     luiselection : mux2t1_N 
         port map (
             i_S             => i_Lui,
-            i_D0            => s_LeftShift16_Output,
-            i_D1            => s_Mux_Output,
+            i_D0            => s_Mux_Output,
+            i_D1            => s_LeftShift16_Output,
             o_O             => o_Final
         );
   

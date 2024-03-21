@@ -23,6 +23,7 @@ entity FetchLogic is
    generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
    port(i_jump          : in std_logic;
         i_branch        : in std_logic;
+        i_branchne      : in std_logic;
         i_return        : in std_logic;
         i_zero          : in std_logic;
         i_init          : in std_logic;
@@ -61,6 +62,17 @@ architecture structural of FetchLogic is
              o_C          : out std_logic);
     end component;
 
+    component org2 is
+	port(i_A          : in std_logic;
+             i_B          : in std_logic;
+             o_C          : out std_logic);
+    end component;
+
+    component invg is
+	port(i_A          : in std_logic;
+             o_F          : out std_logic);
+    end component;
+
     component RegFile is
    	generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
    	port(i_WD         : in std_logic_vector(N-1 downto 0);
@@ -70,6 +82,9 @@ architecture structural of FetchLogic is
              o_OUT        : out std_logic_vector(N-1 downto 0));
     end component;
 
+signal s_branchE 	: std_logic := '0';
+signal s_branchNE  	: std_logic := '0';
+signal s_notZero  	: std_logic := '0';
 signal s_branchChoice   : std_logic := '0';
 
 signal s_PC4	 	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
@@ -121,10 +136,25 @@ begin
                  o_C          => s_null,
                  o_S          => s_Jump2);
 
-  and2: andg2
+  notG: invg
+	port MAP(i_A                  => i_zero,
+		 o_F                  => s_notZero);
+
+  and2a: andg2
 	port MAP(i_A                  => i_branch,
 		 i_B                  => i_zero,
+		 o_C                  => s_branchE);
+
+  and2b: andg2
+	port MAP(i_A                  => i_branchne,
+		 i_B                  => s_notZero,
+		 o_C                  => s_branchNE);
+
+  or2: org2
+	port MAP(i_A                  => s_branchE,
+		 i_B                  => s_branchNE,
 		 o_C                  => s_branchChoice);
+
   MUX1_32: for i in 0 to N-1 generate
         MUX1: mux2to1DF
 	port MAP(i_D0      => s_PC4(i),         

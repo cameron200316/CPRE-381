@@ -26,13 +26,14 @@ entity ControlLogic is
         -- Immediate into ALU 
         o_ALUsrc            : out  std_logic; 
 
-	--lw, lh, lhu, lb, lbu selection
+        --lw, lh, lhu, lb, lbu selection
         o_lw                : out  std_logic;
         o_HoB               : out  std_logic; 
         o_sign              : out  std_logic;  
         
         -- PC Logic
-        o_Branch            : out  std_logic; 
+        o_Branch            : out  std_logic;
+        o_Branchne          : out  std_logic; 
         o_Return            : out  std_logic; 
         o_Link              : out  std_logic; 
         o_Jump              : out  std_logic; 
@@ -72,6 +73,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
                 o_Jump <= '0';
@@ -94,6 +96,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
                 o_Jump <= '0';
@@ -116,6 +119,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
                 o_Jump <= '0';
@@ -138,6 +142,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
                 o_Jump <= '0';
@@ -149,7 +154,7 @@ begin
                 o_Lui <= '0';
 
             elsif i_Funct = "100110" then
-                -- '0'or instruction, set control signals accordingly
+                -- nor instruction, set control signals accordingly
                 o_RegDst <= '1';
                 o_RegWrite <= '1';
                 o_MemWrite <= '0';
@@ -160,6 +165,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
                 o_Jump <= '0';
@@ -182,6 +188,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
                 o_Jump <= '0';
@@ -204,6 +211,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
                 o_Jump <= '0';
@@ -226,6 +234,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
                 o_Jump <= '0';
@@ -248,6 +257,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
                 o_Jump <= '0';
@@ -270,6 +280,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
                 o_Jump <= '0';
@@ -292,6 +303,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
                 o_Jump <= '0';
@@ -314,6 +326,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
                 o_Jump <= '0';
@@ -336,6 +349,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '1';
                 o_Link <= '0';
                 o_Jump <= '1'; -- jump
@@ -358,6 +372,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
                 o_Jump <= '0';
@@ -380,6 +395,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
                 o_Jump <= '0';
@@ -402,6 +418,7 @@ begin
 		o_HoB <= '0';
 		o_sign <= '0';
                 o_Branch <= '0';
+                o_Branchne <= '0';
                 o_Return <= '0';
                 o_Link <= '0';
                 o_Jump <= '0';
@@ -427,6 +444,7 @@ begin
 	    o_HoB <= '0';
       	    o_sign <= '0';
             o_Branch <= '0';
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '0';
@@ -449,6 +467,7 @@ begin
 	    o_HoB <= '0';
       	    o_sign <= '0';
             o_Branch <= '0';
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '0';
@@ -471,6 +490,7 @@ begin
 	    o_HoB <= '0';
       	    o_sign <= '0';
             o_Branch <= '0';
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '0';
@@ -493,6 +513,7 @@ begin
 	    o_HoB <= '0';
       	    o_sign <= '0';
             o_Branch <= '0';
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '0';
@@ -515,6 +536,7 @@ begin
 	    o_HoB <= '0';
       	    o_sign <= '0';
             o_Branch <= '0';
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '0';
@@ -537,6 +559,7 @@ begin
 	    o_HoB <= '0';
       	    o_sign <= '0';
             o_Branch <= '0';
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '0';
@@ -557,8 +580,9 @@ begin
             o_ALUsrc <= '1';
 	    o_lw <= '0';
 	    o_HoB <= '0';
-      	    o_sign <= '0';
+        o_sign <= '0';
             o_Branch <= '0';
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '0';
@@ -579,8 +603,9 @@ begin
             o_ALUsrc <= '1';
 	    o_lw <= '0';
 	    o_HoB <= '0';
-      	    o_sign <= '0';
+        o_sign <= '0';
             o_Branch <= '0';
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '0';
@@ -601,8 +626,9 @@ begin
             o_ALUsrc <= '1';
 	    o_lw <= '0';
 	    o_HoB <= '0';
-      	    o_sign <= '0';
+        o_sign <= '0';
             o_Branch <= '0';
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '0';
@@ -625,6 +651,7 @@ begin
 	    o_HoB <= '0';
       	    o_sign <= '0';
             o_Branch <= '1'; -- branch
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '0';
@@ -645,8 +672,9 @@ begin
             o_ALUsrc <= '0';
 	    o_lw <= '0';
 	    o_HoB <= '0';
-      	    o_sign <= '0';
+        o_sign <= '0';
             o_Branch <= '1'; -- branch
+            o_Branchne <= '1';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '0';
@@ -667,8 +695,9 @@ begin
             o_ALUsrc <= '0';
 	    o_lw <= '0';
 	    o_HoB <= '0';
-      	    o_sign <= '0';
+        o_sign <= '0';
             o_Branch <= '0';
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '1'; -- jump
@@ -689,8 +718,9 @@ begin
             o_ALUsrc <= '0';
 	    o_lw <= '0';
 	    o_HoB <= '0';
-      	    o_sign <= '0';
+        o_sign <= '0';
             o_Branch <= '0';
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '1'; -- link (store the return address in the link register)
             o_Jump <= '1'; -- jump
@@ -711,8 +741,9 @@ begin
             o_ALUsrc <= '1';
 	    o_lw <= '1';
 	    o_HoB <= '0';
-      	    o_sign <= '1';
+        o_sign <= '1';
             o_Branch <= '0';
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '0';
@@ -733,8 +764,9 @@ begin
             o_ALUsrc <= '1';
 	    o_lw <= '1';
 	    o_HoB <= '1';
-      	    o_sign <= '1';
+        o_sign <= '1';
             o_Branch <= '0';
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '0';
@@ -755,8 +787,9 @@ begin
             o_ALUsrc <= '1';
 	    o_lw <= '1';
 	    o_HoB <= '0';
-      	    o_sign <= '0';
+        o_sign <= '0';
             o_Branch <= '0';
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '0';
@@ -777,8 +810,9 @@ begin
             o_ALUsrc <= '1';
 	    o_lw <= '1';
 	    o_HoB <= '1';
-      	    o_sign <= '0';
+        o_sign <= '0';
             o_Branch <= '0';
+            o_Branchne <= '0';
             o_Return <= '0';
             o_Link <= '0';
             o_Jump <= '0';
