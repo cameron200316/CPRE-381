@@ -36,7 +36,9 @@ architecture structure of MIPS_Processor is
 
   -- Required data memory signals
   signal s_DMemWr       : std_logic; -- TODO: use this signal as the final active high data memory write enable signal
+  signal s_DMemAddr     : std_logic_vector(N-1 downto 0);
   signal s_DMemOut      : std_logic_vector(N-1 downto 0); -- TODO: use this signal as the data memory output
+  signal s_DMemData     : std_logic_vector(N-1 downto 0);
  
   -- Required register file signals 
   signal s_RegWr        : std_logic; -- TODO: use this signal as the final active high write enable input to the register file
@@ -57,6 +59,7 @@ architecture structure of MIPS_Processor is
   --Control Logic signals
   signal s_Jump            : std_logic := '0'; 
   signal s_Branch          : std_logic := '0';  
+  signal s_Branchne        : std_logic := '0'; 
   signal s_Return          : std_logic := '0';  
   signal s_Link            : std_logic := '0';  
   signal s_RegDst          : std_logic := '0';  
@@ -73,7 +76,7 @@ architecture structure of MIPS_Processor is
   signal s_Lui         	   : std_logic := '0';  
   signal s_lw              : std_logic := '0';  
   signal s_HoB             : std_logic := '0';  
-  signal s_sign            : std_logic := '0'; 
+  signal s_sign            : std_logic := '0';
 
   --PC
   signal s_PCNEW     : std_logic_vector(31 downto 0) := "00000000000000000000000000000000"; 
@@ -89,8 +92,7 @@ architecture structure of MIPS_Processor is
   --ALU signals
   signal s_B    	   : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
   signal s_final    	   : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
-  signal s_zero            : std_logic := '0'; 
-  signal s_overflow        : std_logic := '0'; 
+  signal s_zero            : std_logic := '0';
   signal s_carryOut        : std_logic := '0'; 
   signal s_negative        : std_logic := '0'; 
 
@@ -150,6 +152,7 @@ architecture structure of MIPS_Processor is
    generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
    port(i_jump          : in std_logic;
         i_branch        : in std_logic;
+        i_branchne      : in std_logic;
         i_return        : in std_logic;
         i_zero          : in std_logic;
         i_init          : in std_logic;
@@ -160,18 +163,17 @@ architecture structure of MIPS_Processor is
         o_PCNEW         : out std_logic_vector(N-1 downto 0));
     end component;
 
-   component RegFile is
+   component Reg32File is
    generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
-   port(
-         i_ReadAddress1     : in std_logic_vector(5-1 downto 0);
-         i_ReadAddress2     : in std_logic_vector(5-1 downto 0);
-         i_WriteAddress     : in std_logic_vector(5-1 downto 0);
-         i_WriteData        : in std_logic_vector(N-1 downto 0);
-         i_Clock            : in std_logic;
-         i_Reset            : in std_logic;
-         i_WriteEnable      : in std_logic;
-         o_ReadData1        : out std_logic_vector(N-1 downto 0);
-         o_ReadData2        : out std_logic_vector(N-1 downto 0));
+   port(i_CLKs        : in std_logic;
+	i_WE          : in std_logic;
+	i_R           : in std_logic;
+        i_WD          : in std_logic_vector(N-1 downto 0);
+        i_WA          : in std_logic_vector(4 downto 0); 
+        i_RS          : in std_logic_vector(4 downto 0);
+        i_RT          : in std_logic_vector(4 downto 0);
+        o_OUT1        : out std_logic_vector(N-1 downto 0);
+        o_OUT0        : out std_logic_vector(N-1 downto 0));
     end component;
 
    component ControlLogic is
@@ -197,9 +199,13 @@ architecture structure of MIPS_Processor is
         
         -- PC Logic
         o_Branch            : out  std_logic; 
+        o_Branchne          : out  std_logic; 
         o_Return            : out  std_logic; 
         o_Link              : out  std_logic; 
         o_Jump              : out  std_logic; 
+
+	-- Halt	
+        o_Halt              : out  std_logic; 
 
         -- ALU Operations
         o_ALUnAddSub        : out  std_logic; 
@@ -274,7 +280,9 @@ begin
         o_lw                => s_lw, 
         o_HoB               => s_HoB, 
         o_sign              => s_sign,
+        o_Halt              => s_Halt,
         o_Branch            => s_Branch, 
+        o_Branchne          => s_Branchne,
         o_Return            => s_Return,
         o_Link              => s_Link,
         o_Jump              => s_Jump,
@@ -288,27 +296,28 @@ begin
   FETCH: FetchLogic
 	port MAP(
 	i_jump          => s_Jump, 
-        i_branch        => s_Branch, 
+        i_branch        => s_Branch,
+        i_branchne      => s_Branchne, 
         i_return        => s_Return, 
         i_zero          => s_zero,
-        i_init          => iInstLd, 
+        i_init          => iRST, 
         i_CLK           => iCLK, 
         i_ra            => s_R1, 
         i_instruction25 => s_Inst(25 downto 0), 
         i_instruction16 => s_Inst, 
         o_PCNEW         => s_PCNEW);
 
-  REG: RegFile 
+  REG: Reg32File 
   	port MAP(
-        i_ReadAddress1     => s_RS,
-        i_ReadAddress2     => s_RT,
-        i_WriteAddress     => s_WA, 
-        i_WriteData        => s_WD,
-        i_Clock            => iCLK, 
-        i_Reset            => iRST, 
-        i_WriteEnable      => s_RegWrite,
-        o_ReadData1        => s_R1,
-        o_ReadData2        => s_R2);
+	i_CLKs        => iCLK,
+	i_WE          => s_RegWrite,
+	i_R           => iRST,
+        i_WD          => s_WD,
+        i_WA          => s_WA, 
+        i_RS          => s_RS,
+        i_RT          => s_RT,
+        o_OUT1        => s_R1,
+        o_OUT0        => s_R2);
 
   A: ALU
 	port MAP(
@@ -324,7 +333,7 @@ begin
         o_Carry_Out         => s_carryOut,
         o_Zero              => s_zero,
         o_Negative          => s_negative, 
-        o_Overflow          => s_overflow); 
+        o_Overflow          => s_Ovfl); 
 
   --16 bit extender for the immediate value
   EXTEND: extender16_32

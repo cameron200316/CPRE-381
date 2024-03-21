@@ -49,7 +49,7 @@ architecture structural of BarrelShifter is
     component andg2 is
 	port(i_A          : in std_logic;
              i_B          : in std_logic;
-             o_F          : out std_logic);
+             o_C          : out std_logic);
     end component;
 
 --Array Declaration 
@@ -86,7 +86,7 @@ begin
   and2: andg2
 	port MAP(i_A                  => i_signed,
 		 i_B                  => i_WD(31),
-		 o_F                  => s_sign);
+		 o_C                  => s_sign);
   
   -- Creates the 1st MUX of the first layer
   -- These have to be done seperately inorder to bring in the new 0

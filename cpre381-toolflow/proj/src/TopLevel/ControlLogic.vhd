@@ -38,6 +38,9 @@ entity ControlLogic is
         o_Link              : out  std_logic; 
         o_Jump              : out  std_logic; 
 
+	-- Halt	
+        o_Halt              : out  std_logic; 
+
         -- ALU Operations
         o_ALUnAddSub        : out  std_logic; 
         o_ALUout            : out  std_logic_vector(2 downto 0); --3 bits to determine the type of operation
@@ -83,6 +86,7 @@ begin
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '1';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
 
             elsif i_Funct = "100001" then
                 -- addu instruction, set control signals accordingly
@@ -106,6 +110,7 @@ begin
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
 
             elsif i_Funct = "100100" then
                 -- and instruction, set control signals accordingly
@@ -129,6 +134,7 @@ begin
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '1';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
 
             elsif i_Funct = "100111" then
                 -- nor instruction, set control signals accordingly
@@ -152,6 +158,7 @@ begin
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '1';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
 
             elsif i_Funct = "100110" then
                 -- nor instruction, set control signals accordingly
@@ -175,6 +182,7 @@ begin
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '1';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
 
             elsif i_Funct = "100101" then
                 -- or instruction, set control signals accordingly
@@ -198,6 +206,7 @@ begin
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '1';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
 
             elsif i_Funct = "101010" then
                 -- slt instruction, set control signals accordingly
@@ -221,6 +230,7 @@ begin
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '1';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
 
             elsif i_Funct = "000000" then
                 -- sll instruction, set control signals accordingly
@@ -244,6 +254,7 @@ begin
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '1';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
 
             elsif i_Funct = "000010" then
                 -- srl instruction, set control signals accordingly
@@ -267,6 +278,7 @@ begin
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '1';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
             
             elsif i_Funct = "000011" then
                 -- sra instruction, set control signals accordingly
@@ -290,6 +302,7 @@ begin
                 o_ShiftArithemtic <= '1';
                 o_Unsigned <= '1';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
 
             elsif i_Funct = "100010" then
                 -- sub instruction, set control signals accordingly
@@ -313,6 +326,7 @@ begin
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '1';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
 
             elsif i_Funct = "100011" then
                 -- subu instruction, set control signals accordingly
@@ -336,6 +350,7 @@ begin
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
 
             elsif i_Funct = "001000" then
                 -- jr instruction, set control signals accordingly
@@ -359,6 +374,7 @@ begin
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
 
             elsif i_Funct = "000100" then
                 -- sllv instruction, set control signals accordingly
@@ -382,6 +398,7 @@ begin
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '1';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
 
             elsif i_Funct = "000110" then
                 -- srlv instruction, set control signals accordingly
@@ -405,6 +422,7 @@ begin
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '1';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
 
             elsif i_Funct = "000111" then
                 -- srav instruction, set control signals accordingly
@@ -428,6 +446,7 @@ begin
                 o_ShiftArithemtic <= '1'; -- arithmetic shift
                 o_Unsigned <= '1';
                 o_Lui <= '0';
+	    	o_Halt <= '0';
 
             else 
                 -- add other instructions if wanted 
@@ -454,6 +473,31 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '1';
             o_Lui <= '0';
+	    o_Halt <= '0';
+
+        elsif i_Opcode = "010100" then
+            -- halt instruction, set control signals accordingly
+            o_RegDst <= '0';
+            o_RegWrite <= '0';
+            o_MemWrite <= '0';
+            o_MemRead <= '0';
+            o_MemToReg <= '0';
+            o_ALUsrc <= '0';
+	    o_lw <= '0';
+	    o_HoB <= '0';
+      	    o_sign <= '0';
+            o_Branch <= '0';
+            o_Branchne <= '0';
+            o_Return <= '0';
+            o_Link <= '0';
+            o_Jump <= '0';
+            o_ALUnAddSub <= '0';
+            o_ALUout <= "000"; -- for add operation
+            o_ShiftLorR <= '0';
+            o_ShiftArithemtic <= '0';
+            o_Unsigned <= '0';
+            o_Lui <= '0';
+	    o_Halt <= '1';	
 
         elsif i_Opcode = "001001" then
             -- addiu instruction, set control signals accordingly
@@ -477,6 +521,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
             o_Lui <= '0';
+	    o_Halt <= '0';
          
         elsif i_Opcode = "001100" then
             -- andi instruction, set control signals accordingly
@@ -500,6 +545,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '1';
             o_Lui <= '0';
+	    o_Halt <= '0';
 
         elsif i_Opcode = "001111" then
             -- lui instruction, set control signals accordingly
@@ -523,6 +569,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '1';
             o_Lui <= '1';
+	    o_Halt <= '0';
 
         elsif i_Opcode = "100011" then
             -- lw instruction, set control signals accordingly
@@ -546,6 +593,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '1';
             o_Lui <= '0';
+	    o_Halt <= '0';
 
         elsif i_Opcode = "001110" then
             -- xori instruction, set control signals accordingly
@@ -569,6 +617,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '1';
             o_Lui <= '0';
+	    o_Halt <= '0';
 
         elsif i_Opcode = "001101" then
             -- ori instruction, set control signals accordingly
@@ -592,6 +641,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '1';
             o_Lui <= '0';
+	    o_Halt <= '0';
 
         elsif i_Opcode = "001010" then
             -- slti instruction, set control signals accordingly
@@ -615,6 +665,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '1';
             o_Lui <= '0';
+	    o_Halt <= '0';
 
         elsif i_Opcode = "101011" then
             -- sw instruction, set control signals accordingly
@@ -638,6 +689,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '1';
             o_Lui <= '0';
+	    o_Halt <= '0';
 
         elsif i_Opcode = "000100" then
             -- beq instruction, set control signals accordingly
@@ -661,6 +713,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
             o_Lui <= '0';
+	    o_Halt <= '0';
 
         elsif i_Opcode = "000101" then
             -- bne instruction, set control signals accordingly
@@ -684,6 +737,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
             o_Lui <= '0';
+	    o_Halt <= '0';
 
         elsif i_Opcode = "000010" then
             -- j instruction, set control signals accordingly
@@ -707,6 +761,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
             o_Lui <= '0';
+	    o_Halt <= '0';
 
         elsif i_Opcode = "000011" then
             -- jal instruction, set control signals accordingly
@@ -730,6 +785,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
             o_Lui <= '0';
+	    o_Halt <= '0';
 
         elsif i_Opcode = "100000" then
             -- lb instruction, set control signals accordingly
@@ -753,6 +809,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '1';
             o_Lui <= '0';
+	    o_Halt <= '0';
 
         elsif i_Opcode = "100001" then
             -- lh instruction, set control signals accordingly
@@ -776,6 +833,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '1';
             o_Lui <= '0';
+	    o_Halt <= '0';
 
         elsif i_Opcode = "100100" then
             -- lbu instruction, set control signals accordingly
@@ -799,6 +857,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '1';
             o_Lui <= '0';
+	    o_Halt <= '0';
 
         elsif i_Opcode = "100101" then
             -- lhu instruction, set control signals accordingly
@@ -822,6 +881,7 @@ begin
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '1';
             o_Lui <= '0';
+	    o_Halt <= '0';
 
         else
             -- add other instructions if wanted 

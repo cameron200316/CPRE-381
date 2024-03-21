@@ -131,7 +131,7 @@ architecture structural of ALU is
         port(
             i_A             : in std_logic;
             i_B             : in std_logic;
-            o_F             : out std_logic
+            o_C             : out std_logic
         );
     end component;
 
@@ -271,7 +271,7 @@ begin
         port map (
             i_A             => i_Unsigned,
             i_B             => s_overflow, 
-            o_F             => o_Overflow
+            o_C             => o_Overflow
         );
 
     -- Left Shift 16

@@ -35,19 +35,19 @@ architecture structure of Structual_full_adder is
   component andg2
     port(i_A             : in std_logic;
          i_B             : in std_logic;
-         o_F             : out std_logic);
+         o_C             : out std_logic);
   end component;
 
   component org2
     port(i_A             : in std_logic;
          i_B             : in std_logic;
-         o_F             : out std_logic);
+         o_C             : out std_logic);
   end component;
 
   component xorg2
     port(i_A             : in std_logic;
          i_B             : in std_logic;
-         o_F             : out std_logic);
+         o_C             : out std_logic);
   end component;
 
 
@@ -66,27 +66,27 @@ begin
   g_A_B_to_XOR: xorg2
   port MAP(i_A                => i_A,
            i_B                => i_B,
-           o_F                => s_XOR);
+           o_C                => s_XOR);
 
   g_XOR_Cin_to_XOR: xorg2 
   port MAP(i_A                => s_XOR,
            i_B                => i_Cin,
-           o_F                => o_Sum);
+           o_C                => o_Sum);
 
   g_A_B_to_And1: andg2
     port MAP(i_A              => i_A,
              i_B              => i_B,
-             o_F              => s_And1);
+             o_C              => s_And1);
 
   g_XOR_Cin_to_And2: andg2
     port MAP(i_A              => s_XOR,
              i_B              => i_Cin,
-             o_F              => s_And2);
+             o_C              => s_And2);
 
   g_And1_And2_to_Or: org2
     port MAP(i_A              => s_And1,
              i_B              => s_And2,
-             o_F              => o_Cout);
+             o_C              => o_Cout);
     
 
   end structure;

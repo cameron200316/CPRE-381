@@ -33,7 +33,7 @@ architecture structural of Nbit_org2 is
        component org2 is
          port(i_A                  : in std_logic;
               i_B                  : in std_logic;
-              o_F                  : out std_logic);
+              o_C                  : out std_logic);
        end component;
      
      begin
@@ -43,7 +43,7 @@ architecture structural of Nbit_org2 is
          Name: org2 port map(
                    i_A      => i_A(i),      -- All instances share the same select input.
                    i_B      => i_B(i),
-                   o_F      => o_O(i));  -- ith instance's data output hooked up to ith data output.
+                   o_C      => o_O(i));  -- ith instance's data output hooked up to ith data output.
        end generate G_NBit_org2;
        
 end structural;
