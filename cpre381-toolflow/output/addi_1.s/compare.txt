@@ -9,7 +9,7 @@ Incorrect write
 Cycle: 10
 MARS instruction number: 11	Instruction: add $4,$0,$1
 Expected:	Register Write to Reg: 0x04 Val: 0xB230CE38
-Got     :	Register Write to Reg: 0x04 Val: 0x00000000
+Got     :	Register Write to Reg: 0x04 Val: 0xB2300000
 Incorrect write
 
 Almost! your processor completed the program with  2/3 allowed mismatches

@@ -132,7 +132,7 @@ begin
                 o_ALUout <= "000"; -- for and operation
                 o_ShiftLorR <= '0';
                 o_ShiftArithemtic <= '0';
-                o_Unsigned <= '1';
+                o_Unsigned <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -156,12 +156,12 @@ begin
                 o_ALUout <= "101"; -- for nor operation
                 o_ShiftLorR <= '0';
                 o_ShiftArithemtic <= '0';
-                o_Unsigned <= '1';
+                o_Unsigned <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
             elsif i_Funct = "100110" then
-                -- nor instruction, set control signals accordingly
+                -- xor instruction, set control signals accordingly
                 o_RegDst <= '1';
                 o_RegWrite <= '1';
                 o_MemWrite <= '0';
@@ -180,7 +180,7 @@ begin
                 o_ALUout <= "100"; -- for '0'or operation
                 o_ShiftLorR <= '0';
                 o_ShiftArithemtic <= '0';
-                o_Unsigned <= '1';
+                o_Unsigned <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -201,10 +201,10 @@ begin
                 o_Link <= '0';
                 o_Jump <= '0';
                 o_ALUnAddSub <= '0';
-                o_ALUout <= "000"; -- for or operation
+                o_ALUout <= "001"; -- for or operation
                 o_ShiftLorR <= '0';
                 o_ShiftArithemtic <= '0';
-                o_Unsigned <= '1';
+                o_Unsigned <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -228,7 +228,7 @@ begin
                 o_ALUout <= "111"; -- for slt operation
                 o_ShiftLorR <= '0';
                 o_ShiftArithemtic <= '0';
-                o_Unsigned <= '1';
+                o_Unsigned <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -252,7 +252,7 @@ begin
                 o_ALUout <= "110"; -- for sll operation
                 o_ShiftLorR <= '1'; -- shift left
                 o_ShiftArithemtic <= '0';
-                o_Unsigned <= '1';
+                o_Unsigned <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -276,7 +276,7 @@ begin
                 o_ALUout <= "110"; -- for srl operation
                 o_ShiftLorR <= '0'; -- shift right
                 o_ShiftArithemtic <= '0';
-                o_Unsigned <= '1';
+                o_Unsigned <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
             
@@ -300,7 +300,7 @@ begin
                 o_ALUout <= "110"; -- for sra operation
                 o_ShiftLorR <= '0'; -- shift right
                 o_ShiftArithemtic <= '1';
-                o_Unsigned <= '1';
+                o_Unsigned <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -396,7 +396,7 @@ begin
                 o_ALUout <= "110"; -- for sllv operation
                 o_ShiftLorR <= '1'; -- shift left
                 o_ShiftArithemtic <= '0';
-                o_Unsigned <= '1';
+                o_Unsigned <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -420,7 +420,7 @@ begin
                 o_ALUout <= "110"; -- for srlv operation
                 o_ShiftLorR <= '0'; -- shift right
                 o_ShiftArithemtic <= '0';
-                o_Unsigned <= '1';
+                o_Unsigned <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -444,7 +444,7 @@ begin
                 o_ALUout <= "110"; -- for srav operation
                 o_ShiftLorR <= '0'; -- shift right
                 o_ShiftArithemtic <= '1'; -- arithmetic shift
-                o_Unsigned <= '1';
+                o_Unsigned <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -461,7 +461,7 @@ begin
             o_ALUsrc <= '1';
 	    o_lw <= '0';
 	    o_HoB <= '0';
-      	    o_sign <= '0';
+      	    o_sign <= '1';
             o_Branch <= '0';
             o_Branchne <= '0';
             o_Return <= '0';
@@ -471,7 +471,7 @@ begin
             o_ALUout <= "010"; -- for add operation
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
-            o_Unsigned <= '1';
+            o_Unsigned <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -543,7 +543,7 @@ begin
             o_ALUout <= "000"; -- for and operation
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
-            o_Unsigned <= '1';
+            o_Unsigned <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -567,7 +567,7 @@ begin
             o_ALUout <= "010"; -- for add operation (LUI is essentially an ADDI with immediate in the upper 16 bits)
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
-            o_Unsigned <= '1';
+            o_Unsigned <= '0';
             o_Lui <= '1';
 	    o_Halt <= '0';
 
@@ -591,7 +591,7 @@ begin
             o_ALUout <= "010"; -- for add operation
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
-            o_Unsigned <= '1';
+            o_Unsigned <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -615,7 +615,7 @@ begin
             o_ALUout <= "100"; -- for xor operation
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
-            o_Unsigned <= '1';
+            o_Unsigned <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -636,10 +636,10 @@ begin
             o_Link <= '0';
             o_Jump <= '0';
             o_ALUnAddSub <= '0';
-            o_ALUout <= "000"; -- for or operation
+            o_ALUout <= "001"; -- for or operation
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
-            o_Unsigned <= '1';
+            o_Unsigned <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -653,7 +653,7 @@ begin
             o_ALUsrc <= '1';
 	    o_lw <= '0';
 	    o_HoB <= '0';
-        o_sign <= '0';
+        o_sign <= '1';
             o_Branch <= '0';
             o_Branchne <= '0';
             o_Return <= '0';
@@ -663,7 +663,7 @@ begin
             o_ALUout <= "111"; -- for slt operation
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
-            o_Unsigned <= '1';
+            o_Unsigned <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -807,7 +807,7 @@ begin
             o_ALUout <= "010"; -- for add operation
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
-            o_Unsigned <= '1';
+            o_Unsigned <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -831,7 +831,7 @@ begin
             o_ALUout <= "010"; -- for add operation
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
-            o_Unsigned <= '1';
+            o_Unsigned <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -855,7 +855,7 @@ begin
             o_ALUout <= "010"; -- for add operation
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
-            o_Unsigned <= '1';
+            o_Unsigned <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -879,7 +879,7 @@ begin
             o_ALUout <= "010"; -- for add operation
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
-            o_Unsigned <= '1';
+            o_Unsigned <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 

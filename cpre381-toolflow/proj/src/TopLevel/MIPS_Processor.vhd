@@ -257,6 +257,7 @@ begin
   
   s_DMemAddr <= s_final;
   s_DMemData <= s_R2; 
+  s_DMemWr   <= s_MemWrite;
 
   DMem: mem
     port map(clk  => iCLK,
@@ -324,7 +325,9 @@ begin
 
   s_RegWr <= s_RegWrite;
   s_RegWrAddr <= s_WA;
-  s_RegWrData <= s_WD; 
+  s_RegWrData <= s_WD;  
+  s_RT <= s_Inst(20 downto 16); 
+
 
   A: ALU
 	port MAP(
@@ -346,7 +349,7 @@ begin
   EXTEND: extender16_32
 	port MAP(
 	i_data       => s_Inst(15 downto 0), 
-        i_sign       => '1',
+        i_sign       => s_sign,
         o_OUT        => s_immediate);
 
   --MUX for the input from i_B of the ALU

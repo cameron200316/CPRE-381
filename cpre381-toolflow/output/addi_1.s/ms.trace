@@ -19,5 +19,5 @@ Register Write to Reg: 0x01 Val: 0xB2300000
 In clock cycle: 9
 Register Write to Reg: 0x01 Val: 0xB2300000
 In clock cycle: 10
-Register Write to Reg: 0x04 Val: 0x00000000
+Register Write to Reg: 0x04 Val: 0xB2300000
 Execution is stopping! Clock Cycle: 11
