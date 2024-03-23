@@ -79,6 +79,7 @@ architecture structure of MIPS_Processor is
   signal s_sign            : std_logic := '0';
 
   --PC
+  signal s_PC4       : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
   signal s_PCNEW     : std_logic_vector(31 downto 0) := "00000000000000000000000000000000"; 
 
   --Register signals
@@ -110,6 +111,9 @@ architecture structure of MIPS_Processor is
   signal s_unsignedHalfword     : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
   signal s_signedByte         	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
   signal s_signedHalfword     	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+
+  --16 bits instructiosn
+  signal s_instruction16        : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
   component mem is
     generic(ADDR_WIDTH : integer := 10;
@@ -160,6 +164,7 @@ architecture structure of MIPS_Processor is
         i_ra            : in std_logic_vector(N-1 downto 0);
         i_instruction25 : in std_logic_vector(25 downto 0);
         i_instruction16 : in std_logic_vector(N-1 downto 0);
+        o_PC4           : out std_logic_vector(N-1 downto 0);
         o_PCNEW         : out std_logic_vector(N-1 downto 0));
     end component;
 
@@ -308,7 +313,8 @@ begin
         i_CLK           => iCLK, 
         i_ra            => s_R1, 
         i_instruction25 => s_Inst(25 downto 0), 
-        i_instruction16 => s_Inst, 
+        i_instruction16 => s_instruction16, 
+        o_PC4           => s_PC4,
         o_PCNEW         => s_PCNEW);
 
   REG: Reg32File 
@@ -352,6 +358,12 @@ begin
         i_sign       => s_sign,
         o_OUT        => s_immediate);
 
+  --16 bit instruction for Fetch Logic
+  INSTRUCTION16: for i in 0 to 15 generate
+	s_instruction16(i) 	<= s_Inst(i);	
+  end generate INSTRUCTION16;
+
+
   --MUX for the input from i_B of the ALU
   MUX1_32: for i in 0 to 31 generate
         MUX1: mux2to1DF
@@ -382,12 +394,14 @@ begin
 
   --Signed extender for the byte
   SB: for i in 16 to 31 generate
-	s_signedByte(i) 	<= s_unsignedByte(15);	
+	s_signedByte(i) 	<= s_unsignedByte(15);
+	s_signedByte(i-16) 	<= s_MUX2OUT(i-16);		
   end generate SB;
 
   --Signed extender for the halfword
   SH: for i in 16 to 31 generate
-	s_signedHalfword(i) 	<= s_unsignedHalfword(15);	
+	s_signedHalfword(i) 	<= s_unsignedHalfword(15);
+	s_signedHalfword(i-16) 	<= s_MUX2OUT(i-16);	
   end generate SH;
 
   --MUX for the lh, lhu, lb, lbu
@@ -416,7 +430,7 @@ begin
   MUX5_32: for i in 0 to 31 generate
         MUX5: mux2to1DF
 	port MAP(i_D0      => s_MUX4OUT(i),         
-       	         i_D1      => s_PCNEW(i),    
+       	         i_D1      => s_PC4(i),    
                  i_S 	   => s_Link,     
                  o_O       => s_WD(i));
   end generate MUX5_32;

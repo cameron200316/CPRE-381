@@ -245,7 +245,7 @@ begin
     Shifter : BarrelShifter 
         port map (
             i_signed        => i_ShiftArithemtic,
-            i_left	        => i_ShiftLorR,
+            i_left	    => i_ShiftLorR,
             i_WD            => i_A,
             i_SHAMT         => i_B(5-1 downto 0),
             o_numShifted    => s_Shift_OperationOutput
