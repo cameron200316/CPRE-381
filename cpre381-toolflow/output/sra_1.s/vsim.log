@@ -3,7 +3,7 @@ Reading pref.tcl
 # 2023.2_2
 
 # vsim -postsimdataflow -debugdb -c -voptargs=""+acc"" tb -do "modelsim_framework.do" -gOUTPUT_TRACE=ms.trace 
-# Start time: 18:16:18 on Mar 24,2024
+# Start time: 15:13:24 on Mar 25,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vsim-8611) Generating debug db.
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
@@ -77,16 +77,20 @@ Reading pref.tcl
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/IMem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 6  Instance: /tb/MyMips/A/Shifter
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 7  Instance: /tb/MyMips/DMem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 14  Instance: /tb/MyMips/DMem
-# ** Note: Data structure takes 81764536 bytes of memory
-#          Process time 0.47 seconds
+#    Time: 0 ns  Iteration: 8  Instance: /tb/MyMips/A/Shifter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 17  Instance: /tb/MyMips/DMem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 19  Instance: /tb/MyMips/DMem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 21  Instance: /tb/MyMips/DMem
+# ** Note: Data structure takes 81952200 bytes of memory
+#          Process time 0.48 seconds
 #          stop
 #    Time: 300 ns  Iteration: 1  Instance: /tb
 # Break in Process P_DUMP_STATE at /home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/internal/testpy/tb.vhd line 150
 # Stopped at /home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/internal/testpy/tb.vhd line 150
-# End time: 18:16:24 on Mar 24,2024, Elapsed time: 0:00:06
-# Errors: 0, Warnings: 7
+# End time: 15:13:29 on Mar 25,2024, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 9

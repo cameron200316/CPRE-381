@@ -49,7 +49,9 @@ past:
 	and $v0, $v0, $zero #clearing v0
 	xori $v0, $zero, 10	#set system call to end program
 	syscall		#end the program
-	
+	halt	
+
+
 # MIPS assembly code for fibnum function
 
 # Define function

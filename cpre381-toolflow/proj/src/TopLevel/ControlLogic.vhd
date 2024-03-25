@@ -261,7 +261,7 @@ begin
                 o_ShiftLorR <= '1'; -- shift left
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
-                o_SHAMT <= '0';
+                o_SHAMT <= '1';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -286,7 +286,7 @@ begin
                 o_ShiftLorR <= '0'; -- shift right
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
-                o_SHAMT <= '0';
+                o_SHAMT <= '1';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
             
@@ -311,7 +311,7 @@ begin
                 o_ShiftLorR <= '0'; -- shift right
                 o_ShiftArithemtic <= '1';
                 o_Unsigned <= '0';
-                o_SHAMT <= '0';
+                o_SHAMT <= '1';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -754,7 +754,7 @@ begin
 	    o_lw <= '0';
 	    o_HoB <= '0';
         o_sign <= '0';
-            o_Branch <= '1'; -- branch
+            o_Branch <= '0'; -- branch
             o_Branchne <= '1';
             o_Return <= '0';
             o_Link <= '0';

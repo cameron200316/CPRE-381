@@ -40,6 +40,7 @@ main:
     # End Program
     li $v0, 10      # Set system call to end program
     syscall         # End the program
+    halt
 
 printArray:
     lw $t1, 0($a1)       # Load array size into $t1

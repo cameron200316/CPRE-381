@@ -25,13 +25,13 @@ Register Write to Reg: 0x01 Val: 0x0000FFFF
 In clock cycle: 12
 Register Write to Reg: 0x09 Val: 0x0000FFFF
 In clock cycle: 13
-Register Write to Reg: 0x09 Val: 0x00000000
+Register Write to Reg: 0x09 Val: 0x0000FFFF
 In clock cycle: 14
 Register Write to Reg: 0x09 Val: 0x000003F3
 In clock cycle: 15
-Register Write to Reg: 0x09 Val: 0x00000000
+Register Write to Reg: 0x09 Val: 0x0000003F
 In clock cycle: 16
 Register Write to Reg: 0x09 Val: 0x00000100
 In clock cycle: 17
-Register Write to Reg: 0x09 Val: 0x00000000
+Register Write to Reg: 0x09 Val: 0x00000004
 Execution is stopping! Clock Cycle: 18

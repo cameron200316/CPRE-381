@@ -92,6 +92,7 @@ architecture structure of MIPS_Processor is
   signal s_R2     : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
   --ALU signals
+  signal s_A    	   : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
   signal s_B    	   : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
   signal s_final    	   : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
   signal s_zero            : std_logic := '0';
@@ -115,6 +116,9 @@ architecture structure of MIPS_Processor is
 
   --16 bits instructiosn
   signal s_instruction16        : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+
+  --32 bit verison of the SHAMT
+  signal s_SHAMT32    	   : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
   component mem is
     generic(ADDR_WIDTH : integer := 10;
@@ -339,7 +343,7 @@ begin
 
   A: ALU
 	port MAP(
-        i_A                 => s_R1, 
+        i_A                 => s_A, 
         i_B                 => s_B, 
         i_ALUout            => s_ALUout, 
         i_nAdd_Sub          => s_ALUnAddSub,
@@ -365,14 +369,17 @@ begin
 	s_instruction16(i) 	<= s_Inst(i);	
   end generate INSTRUCTION16;
 
-
-  --MUX for the input from i_B of the ALU
+  --MUX for choosing the s_B value for the mux
   MUX1_32: for i in 0 to 31 generate
-        MUX1: mux2to1DF
-	port MAP(i_D0      => s_R2(i),         
-       	         i_D1      => s_immediate(i),    
-                 i_S 	   => s_ALUSrc,     
-                 o_O       => s_B(i));
+  	MUX1: mux4to1DF 
+	port MAP(
+	      i_D3      => s_SHAMT32(i),    
+              i_D2      => s_R1(i),	
+              i_D1      => s_immediate(i),    
+              i_D0      => s_R2(i),         
+              i_S0      => s_ALUSrc,
+              i_S1      => s_SHAMT, 
+	      o_O       => s_B(i)); 
   end generate MUX1_32;
 
   --MUX for the output of DMEM
@@ -463,6 +470,17 @@ begin
                  i_S 	   => iInstLd,     
                  o_O       => s_IMemAddr(i));
   end generate MUX9_32;
+
+  --MUX for choosing between the R1 and R2 as the source for the i_A into the ALU for Shift operations
+  MUX10_32: for i in 0 to 31 generate
+        MUX10: mux2to1DF
+	port MAP(i_D0      => s_R1(i),         
+       	         i_D1      => s_R2(i),    
+                 i_S 	   => s_SHAMT,     
+                 o_O       => s_A(i));
+  end generate MUX10_32;
+
+  s_SHAMT32(4 downto 0) <= s_Inst(10 downto 6); 
 
   s_RS <= s_Inst(25 downto 21); 
 
