@@ -96,3 +96,4 @@ exit:
     # Jal instruction
     jal  funct
     nop
+    halt

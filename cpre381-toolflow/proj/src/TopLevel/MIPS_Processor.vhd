@@ -73,6 +73,7 @@ architecture structure of MIPS_Processor is
   signal s_ShiftLorR       : std_logic := '0';  
   signal s_ShiftArithemtic : std_logic := '0';  
   signal s_Unsigned        : std_logic := '0';  
+  signal s_SHAMT           : std_logic := '0'; 
   signal s_Lui         	   : std_logic := '0';  
   signal s_lw              : std_logic := '0';  
   signal s_HoB             : std_logic := '0';  
@@ -104,7 +105,7 @@ architecture structure of MIPS_Processor is
   signal s_MUX2OUT         : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
   signal s_MUX3OUT         : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
   signal s_MUX4OUT         : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
-  signal s_MUX6OUT         : std_logic_vector(4 downto 0) := "00000";
+  signal s_MUX6OUT         : std_logic_vector(4 downto 0)  := "00000";
 
   --Sign Extender Outputs for LH, LB
   signal s_unsignedByte         : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
@@ -218,6 +219,7 @@ architecture structure of MIPS_Processor is
         o_ShiftLorR         : out  std_logic;
         o_ShiftArithemtic   : out  std_logic;
         o_Unsigned          : out  std_logic;
+	o_SHAMT             : out  std_logic;
         o_Lui               : out  std_logic);
     end component;
 
@@ -300,6 +302,7 @@ begin
         o_ShiftLorR         => s_ShiftLorR, 
         o_ShiftArithemtic   => s_ShiftArithemtic,
         o_Unsigned          => s_Unsigned,
+	o_SHAMT             => s_SHAMT,
         o_Lui               => s_Lui);
 
   FETCH: FetchLogic
@@ -331,8 +334,7 @@ begin
 
   s_RegWr <= s_RegWrite;
   s_RegWrAddr <= s_WA;
-  s_RegWrData <= s_WD;  
-  s_RT <= s_Inst(20 downto 16); 
+  s_RegWrData <= s_WD;
 
 
   A: ALU
@@ -454,15 +456,6 @@ begin
   end generate MUX7_32;
 
   --MUX for choosing between a given address or the return register address ($ra) for the SOURCE REGISTER
-  MUX8_32: for i in 0 to 4 generate
-        MUX8: mux2to1DF
-	port MAP(i_D0      => s_Inst(i+21),         
-       	         i_D1      => '1',    
-                 i_S 	   => s_Return,     
-                 o_O       => s_RS(i));
-  end generate MUX8_32;
-
-  --MUX for choosing between a given address or the return register address ($ra) for the SOURCE REGISTER
   MUX9_32: for i in 0 to 31 generate
         MUX9: mux2to1DF
 	port MAP(i_D0      => s_PCNEW(i),         
@@ -470,6 +463,10 @@ begin
                  i_S 	   => iInstLd,     
                  o_O       => s_IMemAddr(i));
   end generate MUX9_32;
+
+  s_RS <= s_Inst(25 downto 21); 
+
+  s_RT <= s_Inst(20 downto 16); 
 
   s_NextInstAddr  <= s_PCNEW;
 

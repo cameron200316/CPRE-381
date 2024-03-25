@@ -1,1 +1,1 @@
-proj/mips/Tests/srl_1.s
+proj/mips/Tests/bne_1.s

@@ -46,6 +46,7 @@ entity ControlLogic is
         o_ALUout            : out  std_logic_vector(2 downto 0); --3 bits to determine the type of operation
         o_ShiftLorR         : out  std_logic;
         o_ShiftArithemtic   : out  std_logic;
+	o_SHAMT             : out  std_logic;
         o_Unsigned          : out  std_logic;
         o_Lui               : out  std_logic);
 end entity ControlLogic;
@@ -85,6 +86,7 @@ begin
                 o_ShiftLorR <= '0';
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '1';
+                o_SHAMT <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -109,6 +111,7 @@ begin
                 o_ShiftLorR <= '0';
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
+                o_SHAMT <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -133,6 +136,7 @@ begin
                 o_ShiftLorR <= '0';
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
+                o_SHAMT <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -157,6 +161,7 @@ begin
                 o_ShiftLorR <= '0';
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
+                o_SHAMT <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -181,6 +186,7 @@ begin
                 o_ShiftLorR <= '0';
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
+                o_SHAMT <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -205,6 +211,7 @@ begin
                 o_ShiftLorR <= '0';
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
+                o_SHAMT <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -229,6 +236,7 @@ begin
                 o_ShiftLorR <= '0';
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
+                o_SHAMT <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -253,6 +261,7 @@ begin
                 o_ShiftLorR <= '1'; -- shift left
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
+                o_SHAMT <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -277,6 +286,7 @@ begin
                 o_ShiftLorR <= '0'; -- shift right
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
+                o_SHAMT <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
             
@@ -301,6 +311,7 @@ begin
                 o_ShiftLorR <= '0'; -- shift right
                 o_ShiftArithemtic <= '1';
                 o_Unsigned <= '0';
+                o_SHAMT <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -325,6 +336,7 @@ begin
                 o_ShiftLorR <= '0';
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '1';
+                o_SHAMT <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -349,6 +361,7 @@ begin
                 o_ShiftLorR <= '0';
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
+                o_SHAMT <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -373,6 +386,7 @@ begin
                 o_ShiftLorR <= '0';
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
+                o_SHAMT <= '0';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -397,6 +411,7 @@ begin
                 o_ShiftLorR <= '1'; -- shift left
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
+                o_SHAMT <= '1';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -421,6 +436,7 @@ begin
                 o_ShiftLorR <= '0'; -- shift right
                 o_ShiftArithemtic <= '0';
                 o_Unsigned <= '0';
+                o_SHAMT <= '1';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -445,6 +461,7 @@ begin
                 o_ShiftLorR <= '0'; -- shift right
                 o_ShiftArithemtic <= '1'; -- arithmetic shift
                 o_Unsigned <= '0';
+                o_SHAMT <= '1';
                 o_Lui <= '0';
 	    	o_Halt <= '0';
 
@@ -471,7 +488,8 @@ begin
             o_ALUout <= "010"; -- for add operation
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
-            o_Unsigned <= '0';
+            o_Unsigned <= '1';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -496,6 +514,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '1';	
 
@@ -509,7 +528,7 @@ begin
             o_ALUsrc <= '1';
 	    o_lw <= '0';
 	    o_HoB <= '0';
-      	    o_sign <= '0';
+      	    o_sign <= '1';
             o_Branch <= '0';
             o_Branchne <= '0';
             o_Return <= '0';
@@ -520,6 +539,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
          
@@ -544,6 +564,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -568,6 +589,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '1';
 	    o_Halt <= '0';
 
@@ -592,6 +614,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -616,6 +639,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -640,6 +664,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -664,6 +689,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -688,6 +714,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '1';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -712,6 +739,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -736,6 +764,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -760,6 +789,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -784,6 +814,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -808,6 +839,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -832,6 +864,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -856,6 +889,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
@@ -880,6 +914,7 @@ begin
             o_ShiftLorR <= '0';
             o_ShiftArithemtic <= '0';
             o_Unsigned <= '0';
+            o_SHAMT <= '0';
             o_Lui <= '0';
 	    o_Halt <= '0';
 
