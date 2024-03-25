@@ -31,6 +31,7 @@ entity FetchLogic is
         i_ra            : in std_logic_vector(N-1 downto 0);
         i_instruction25 : in std_logic_vector(25 downto 0);
         i_instruction16 : in std_logic_vector(N-1 downto 0);
+        o_PC4           : out std_logic_vector(N-1 downto 0);
         o_PCNEW         : out std_logic_vector(N-1 downto 0));
 
 end FetchLogic;
@@ -183,5 +184,7 @@ begin
        		 i_CLKs       => i_CLK,
        		 i_R          => i_RST,
        		 o_OUT        => o_PCNEW);
+
+  o_PC4  	<= s_PC4;  
 
 end structural;
