@@ -30,9 +30,7 @@ past:
    	la $a0, prompt1	#set $a0 with the string to print
 	syscall		#print the string in $a0
 
-	# Getting user input
-	addiu $v0, $zero, 5	#set system call to input mode
-	syscall		#ask for user input and store in #a0
+	addiu $a0, $zero, 16
     
 	# call fibnum function
 	add $a0, $v0, $zero

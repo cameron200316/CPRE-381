@@ -23,24 +23,32 @@ architecture mixed of tb_ControlLogic is
         port(
             i_Opcode            : in  std_logic_vector(5 downto 0);
             i_Funct             : in  std_logic_vector(5 downto 0);
+
             o_RegDst            : out  std_logic;
             o_RegWrite          : out  std_logic;
             o_MemWrite          : out  std_logic;
             o_MemRead           : out  std_logic;
             o_MemToReg          : out  std_logic;
+
             o_ALUsrc            : out  std_logic;
+
             o_lw                : out  std_logic;
             o_HoB               : out  std_logic;
             o_sign              : out  std_logic;
+
             o_Branch            : out  std_logic;
-            o_Branch            : out  std_logic;
+            o_Branchne          : out  std_logic;
             o_Return            : out  std_logic;
             o_Link              : out  std_logic;
             o_Jump              : out  std_logic;
+
+            o_Halt              : out  std_logic;
+
             o_ALUnAddSub        : out  std_logic;
             o_ALUout            : out  std_logic_vector(2 downto 0);
             o_ShiftLorR         : out  std_logic;
             o_ShiftArithemtic   : out  std_logic;
+            o_SHAMT             : out  std_logic;
             o_Unsigned          : out  std_logic;
             o_Lui               : out  std_logic
         );
@@ -50,7 +58,7 @@ architecture mixed of tb_ControlLogic is
     -- Signals for testbench
     signal opcode: std_logic_vector(5 downto 0);
     signal funct: std_logic_vector(5 downto 0);
-    signal regDst, regWrite, memWrite, memRead, memToReg, aluSrc, lw, HoB, sign, branch, branchne, rturn, link, jump, aluNAddSub, shiftLorR, shiftArithemtic, usigned, lui: std_logic;
+    signal regDst, regWrite, memWrite, memRead, memToReg, aluSrc, lw, HoB, sign, branch, branchne, rturn, link, jump, aluNAddSub, shiftLorR, shiftArithemtic, SHAMT, usigned, lui: std_logic;
     signal aluOut: std_logic_vector(2 downto 0);
 
 
@@ -60,24 +68,30 @@ begin
     port map(
         i_Opcode => opcode,
         i_Funct => funct,
+
         o_RegDst => regDst,
         o_RegWrite => regWrite,
         o_MemWrite => memWrite,
         o_MemRead => memRead,
         o_MemToReg => memToReg,
+
         o_ALUsrc => aluSrc,
+
         o_lw => lw,
         o_HoB => HoB,
         o_sign => sign,
+
         o_Branch => branch,
         o_Branch => branchne,
         o_Return => rturn,
         o_Link => link,
         o_Jump => jump,
+
         o_ALUnAddSub => aluNAddSub,
         o_ALUout => aluOut,
         o_ShiftLorR => shiftLorR,
         o_ShiftArithemtic => shiftArithemtic,
+        o_SHAMT => SHAMT,
         o_Unsigned => usigned,
         o_Lui => lui
     );
