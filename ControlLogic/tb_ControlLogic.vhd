@@ -82,7 +82,7 @@ begin
         o_sign => sign,
 
         o_Branch => branch,
-        o_Branch => branchne,
+        o_Branchne => branchne,
         o_Return => rturn,
         o_Link => link,
         o_Jump => jump,

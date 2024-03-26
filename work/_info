@@ -234,25 +234,25 @@ R41
 R13
 R14
 Econtrollogic
-Z42 w1711423469
+Z42 w1711426594
 R31
 R4
 R5
-!i122 36
+!i122 38
 R2
 Z43 8/home/mkotlarz/cpre381/proj1/ControlLogic/ControlLogic.vhd
 Z44 F/home/mkotlarz/cpre381/proj1/ControlLogic/ControlLogic.vhd
 l0
 Z45 L13 1
-V5[gN<41Z8c5Pab7A@SA_;2
-!s100 k80QK;gTZFeU6QIljhEB<3
+VNGCE[c`3g8mMEWN:7eGzb2
+!s100 =zRNl:G;Rdge8T<]XC@Ba3
 R8
 32
-Z46 !s110 1711424818
+Z46 !s110 1711426744
 !i10b 1
-Z47 !s108 1711424818.000000
+Z47 !s108 1711426744.000000
 Z48 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj1/ControlLogic/ControlLogic.vhd|
-!s107 /home/mkotlarz/cpre381/proj1/ControlLogic/ControlLogic.vhd|
+Z49 !s107 /home/mkotlarz/cpre381/proj1/ControlLogic/ControlLogic.vhd|
 !i113 0
 R13
 R14
@@ -260,30 +260,30 @@ Astructural
 R31
 R4
 R5
-DEx4 work 12 controllogic 0 22 5[gN<41Z8c5Pab7A@SA_;2
-!i122 36
+DEx4 work 12 controllogic 0 22 NGCE[c`3g8mMEWN:7eGzb2
+!i122 38
 l59
-L54 877
-VVhX77aSFnc7goG2hP[f_S3
-!s100 bn<l06C>OLFI1zo?Y2Z]03
+Z50 L54 877
+V<Qg2iG^IPS0T=;GG89NQb0
+!s100 lVHRS7nOEONTWb]onSIjW1
 R8
 32
 R46
 !i10b 1
 R47
 R48
-Z49 !s107 /home/mkotlarz/cpre381/proj1/ControlLogic/ControlLogic.vhd|
+R49
 !i113 0
 R13
 R14
 Edataflow_mux2_1
-Z50 w1710129614
+Z51 w1710129614
 R4
 R5
 !i122 5
 R2
-Z51 8/home/mkotlarz/cpre381/proj1/ALU/Dataflow_Mux2_1.vhd
-Z52 F/home/mkotlarz/cpre381/proj1/ALU/Dataflow_Mux2_1.vhd
+Z52 8/home/mkotlarz/cpre381/proj1/ALU/Dataflow_Mux2_1.vhd
+Z53 F/home/mkotlarz/cpre381/proj1/ALU/Dataflow_Mux2_1.vhd
 l0
 R18
 V^HZ<N[2=1WLPE]zHfLlJP2
@@ -293,8 +293,8 @@ R8
 R19
 !i10b 1
 R20
-Z53 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Dataflow_Mux2_1.vhd|
-Z54 !s107 /home/mkotlarz/cpre381/proj1/ALU/Dataflow_Mux2_1.vhd|
+Z54 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Dataflow_Mux2_1.vhd|
+Z55 !s107 /home/mkotlarz/cpre381/proj1/ALU/Dataflow_Mux2_1.vhd|
 !i113 0
 R13
 R14
@@ -312,8 +312,8 @@ R8
 R19
 !i10b 1
 R20
-R53
 R54
+R55
 !i113 0
 R13
 R14
@@ -323,8 +323,8 @@ R4
 R5
 !i122 6
 R2
-Z55 8/home/mkotlarz/cpre381/proj1/ALU/invg.vhd
-Z56 F/home/mkotlarz/cpre381/proj1/ALU/invg.vhd
+Z56 8/home/mkotlarz/cpre381/proj1/ALU/invg.vhd
+Z57 F/home/mkotlarz/cpre381/proj1/ALU/invg.vhd
 l0
 R18
 V]eXOe]3lZ=l7S8@9?:L9T1
@@ -334,8 +334,8 @@ R8
 R19
 !i10b 1
 R20
-Z57 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/invg.vhd|
-Z58 !s107 /home/mkotlarz/cpre381/proj1/ALU/invg.vhd|
+Z58 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/invg.vhd|
+Z59 !s107 /home/mkotlarz/cpre381/proj1/ALU/invg.vhd|
 !i113 0
 R13
 R14
@@ -353,31 +353,31 @@ R8
 R19
 !i10b 1
 R20
-R57
 R58
+R59
 !i113 0
 R13
 R14
 Eleftshifter16
-Z59 w1710129399
+Z60 w1710129399
 R5
 R4
 R31
 !i122 30
 R2
-Z60 8/home/mkotlarz/cpre381/proj1/ALU/LeftShifter16.vhd
-Z61 F/home/mkotlarz/cpre381/proj1/ALU/LeftShifter16.vhd
+Z61 8/home/mkotlarz/cpre381/proj1/ALU/LeftShifter16.vhd
+Z62 F/home/mkotlarz/cpre381/proj1/ALU/LeftShifter16.vhd
 l0
 L7 1
 V8_JP55`ZKjj<XO`_?2XU:0
 !s100 KXN1<[>3<GBC=V_h2HiWO2
 R8
 32
-Z62 !s110 1710962473
+Z63 !s110 1710962473
 !i10b 1
-Z63 !s108 1710962473.000000
-Z64 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/LeftShifter16.vhd|
-Z65 !s107 /home/mkotlarz/cpre381/proj1/ALU/LeftShifter16.vhd|
+Z64 !s108 1710962473.000000
+Z65 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/LeftShifter16.vhd|
+Z66 !s107 /home/mkotlarz/cpre381/proj1/ALU/LeftShifter16.vhd|
 !i113 0
 R13
 R14
@@ -393,22 +393,22 @@ VH9o?_CVf9Mo`oP26>RN3Q3
 !s100 ;jR<Hg8^OV`Vz6]Yz3;952
 R8
 32
-R62
-!i10b 1
 R63
+!i10b 1
 R64
 R65
+R66
 !i113 0
 R13
 R14
 Emux2t1_n
-Z66 w1710129962
+Z67 w1710129962
 R4
 R5
 !i122 7
 R2
-Z67 8/home/mkotlarz/cpre381/proj1/ALU/mux2t1_N.vhd
-Z68 F/home/mkotlarz/cpre381/proj1/ALU/mux2t1_N.vhd
+Z68 8/home/mkotlarz/cpre381/proj1/ALU/mux2t1_N.vhd
+Z69 F/home/mkotlarz/cpre381/proj1/ALU/mux2t1_N.vhd
 l0
 R27
 VmY^3Z`LOeH:?DS5zXOWi]0
@@ -418,8 +418,8 @@ R8
 R19
 !i10b 1
 R20
-Z69 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/mux2t1_N.vhd|
-Z70 !s107 /home/mkotlarz/cpre381/proj1/ALU/mux2t1_N.vhd|
+Z70 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/mux2t1_N.vhd|
+Z71 !s107 /home/mkotlarz/cpre381/proj1/ALU/mux2t1_N.vhd|
 !i113 0
 R13
 R14
@@ -437,8 +437,8 @@ R8
 R19
 !i10b 1
 R20
-R69
 R70
+R71
 !i113 0
 R13
 R14
@@ -448,8 +448,8 @@ R4
 R5
 !i122 8
 R2
-Z71 8/home/mkotlarz/cpre381/proj1/ALU/mux4to1DF.vhd
-Z72 F/home/mkotlarz/cpre381/proj1/ALU/mux4to1DF.vhd
+Z72 8/home/mkotlarz/cpre381/proj1/ALU/mux4to1DF.vhd
+Z73 F/home/mkotlarz/cpre381/proj1/ALU/mux4to1DF.vhd
 l0
 R18
 VR5m8M?7G42FfLjGIChAg_2
@@ -459,8 +459,8 @@ R8
 R19
 !i10b 1
 R20
-Z73 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/mux4to1DF.vhd|
-Z74 !s107 /home/mkotlarz/cpre381/proj1/ALU/mux4to1DF.vhd|
+Z74 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/mux4to1DF.vhd|
+Z75 !s107 /home/mkotlarz/cpre381/proj1/ALU/mux4to1DF.vhd|
 !i113 0
 R13
 R14
@@ -478,30 +478,30 @@ R8
 R19
 !i10b 1
 R20
-R73
 R74
+R75
 !i113 0
 R13
 R14
 Enbit_8t1mux
-Z75 w1710217914
+Z76 w1710217914
 R4
 R5
 !i122 9
 R2
-Z76 8/home/mkotlarz/cpre381/proj1/ALU/Nbit_8t1Mux.vhd
-Z77 F/home/mkotlarz/cpre381/proj1/ALU/Nbit_8t1Mux.vhd
+Z77 8/home/mkotlarz/cpre381/proj1/ALU/Nbit_8t1Mux.vhd
+Z78 F/home/mkotlarz/cpre381/proj1/ALU/Nbit_8t1Mux.vhd
 l0
 L6 1
 VhU9S`5:[>nM5LPVZMJH:11
 !s100 l4N8jEd^oe8IU`O[M@E:g3
 R8
 32
-Z78 !s110 1710962471
+Z79 !s110 1710962471
 !i10b 1
 R20
-Z79 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Nbit_8t1Mux.vhd|
-Z80 !s107 /home/mkotlarz/cpre381/proj1/ALU/Nbit_8t1Mux.vhd|
+Z80 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Nbit_8t1Mux.vhd|
+Z81 !s107 /home/mkotlarz/cpre381/proj1/ALU/Nbit_8t1Mux.vhd|
 !i113 0
 R13
 R14
@@ -516,33 +516,33 @@ VL0Wk2J6a8VjkA=cfOb6@:0
 !s100 m_N2920_3OARFCF2?ZViK2
 R8
 32
-R78
+R79
 !i10b 1
 R20
-R79
 R80
+R81
 !i113 0
 R13
 R14
 Enbit_addsub
-Z81 w1710080821
+Z82 w1710080821
 R4
 R5
 !i122 10
 R2
-Z82 8/home/mkotlarz/cpre381/proj1/ALU/Nbit_AddSub.vhd
-Z83 F/home/mkotlarz/cpre381/proj1/ALU/Nbit_AddSub.vhd
+Z83 8/home/mkotlarz/cpre381/proj1/ALU/Nbit_AddSub.vhd
+Z84 F/home/mkotlarz/cpre381/proj1/ALU/Nbit_AddSub.vhd
 l0
 R27
 V<LNBY]7oE@37?[Thk]_R>3
 !s100 H6L6gFljnc5S=GF5>NGQb0
 R8
 32
-R78
+R79
 !i10b 1
-Z84 !s108 1710962471.000000
-Z85 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Nbit_AddSub.vhd|
-Z86 !s107 /home/mkotlarz/cpre381/proj1/ALU/Nbit_AddSub.vhd|
+Z85 !s108 1710962471.000000
+Z86 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Nbit_AddSub.vhd|
+Z87 !s107 /home/mkotlarz/cpre381/proj1/ALU/Nbit_AddSub.vhd|
 !i113 0
 R13
 R14
@@ -557,33 +557,33 @@ VIoBjK;hXQ[lLZbCHAAAdK2
 !s100 hh[EQ14[i[zn^fC>C_Ukh2
 R8
 32
-R78
+R79
 !i10b 1
-R84
 R85
 R86
+R87
 !i113 0
 R13
 R14
 Enbit_andg2
-Z87 w1710092037
+Z88 w1710092037
 R4
 R5
 !i122 11
 R2
-Z88 8/home/mkotlarz/cpre381/proj1/ALU/Nbit_andg2.vhd
-Z89 F/home/mkotlarz/cpre381/proj1/ALU/Nbit_andg2.vhd
+Z89 8/home/mkotlarz/cpre381/proj1/ALU/Nbit_andg2.vhd
+Z90 F/home/mkotlarz/cpre381/proj1/ALU/Nbit_andg2.vhd
 l0
 R18
 V?:LRz4ffjzgTzW1LaZbh:0
 !s100 9JWQ;`N5f6hM3Yk?@41Si0
 R8
 32
-R78
+R79
 !i10b 1
-R84
-Z90 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Nbit_andg2.vhd|
-Z91 !s107 /home/mkotlarz/cpre381/proj1/ALU/Nbit_andg2.vhd|
+R85
+Z91 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Nbit_andg2.vhd|
+Z92 !s107 /home/mkotlarz/cpre381/proj1/ALU/Nbit_andg2.vhd|
 !i113 0
 R13
 R14
@@ -593,38 +593,38 @@ R5
 DEx4 work 10 nbit_andg2 0 22 ?:LRz4ffjzgTzW1LaZbh:0
 !i122 11
 l39
-Z92 L31 19
+Z93 L31 19
 Vk;09CW]9i6EbT6cb<e@8c1
 !s100 TCVb72l9YG4_klQCCkg852
 R8
 32
-R78
+R79
 !i10b 1
-R84
-R90
+R85
 R91
+R92
 !i113 0
 R13
 R14
 Enbit_full_adder
-Z93 w1710078167
+Z94 w1710078167
 R4
 R5
 !i122 12
 R2
-Z94 8/home/mkotlarz/cpre381/proj1/ALU/Nbit_full_adder.vhd
-Z95 F/home/mkotlarz/cpre381/proj1/ALU/Nbit_full_adder.vhd
+Z95 8/home/mkotlarz/cpre381/proj1/ALU/Nbit_full_adder.vhd
+Z96 F/home/mkotlarz/cpre381/proj1/ALU/Nbit_full_adder.vhd
 l0
 R27
 VRDQnVn]Q_1;z>1b8D?ho;0
 !s100 ljH_oM5cR:boeKamEQMB31
 R8
 32
-R78
+R79
 !i10b 1
-R84
-Z96 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Nbit_full_adder.vhd|
-Z97 !s107 /home/mkotlarz/cpre381/proj1/ALU/Nbit_full_adder.vhd|
+R85
+Z97 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Nbit_full_adder.vhd|
+Z98 !s107 /home/mkotlarz/cpre381/proj1/ALU/Nbit_full_adder.vhd|
 !i113 0
 R13
 R14
@@ -639,33 +639,33 @@ VMSVf;MGCK0?O7f`Y:IFPB2
 !s100 hi5WK4O>YB356=<P^72AM0
 R8
 32
-R78
+R79
 !i10b 1
-R84
-R96
+R85
 R97
+R98
 !i113 0
 R13
 R14
 Enbit_org2
-Z98 w1710092252
+Z99 w1710092252
 R4
 R5
 !i122 13
 R2
-Z99 8/home/mkotlarz/cpre381/proj1/ALU/Nbit_org2.vhd
-Z100 F/home/mkotlarz/cpre381/proj1/ALU/Nbit_org2.vhd
+Z100 8/home/mkotlarz/cpre381/proj1/ALU/Nbit_org2.vhd
+Z101 F/home/mkotlarz/cpre381/proj1/ALU/Nbit_org2.vhd
 l0
 R18
 V3K8]kFEWFaYfSQX0zREM<0
 !s100 8TV]M7?Ih::87n^K;Aj]U1
 R8
 32
-R78
+R79
 !i10b 1
-R84
-Z101 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Nbit_org2.vhd|
-Z102 !s107 /home/mkotlarz/cpre381/proj1/ALU/Nbit_org2.vhd|
+R85
+Z102 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Nbit_org2.vhd|
+Z103 !s107 /home/mkotlarz/cpre381/proj1/ALU/Nbit_org2.vhd|
 !i113 0
 R13
 R14
@@ -675,38 +675,38 @@ R5
 DEx4 work 9 nbit_org2 0 22 3K8]kFEWFaYfSQX0zREM<0
 !i122 13
 l39
-R92
+R93
 VUc0YB2`L_KzTVb@_HILH91
 !s100 hgS^`44g<XzPC6EOCd7@f1
 R8
 32
-R78
+R79
 !i10b 1
-R84
-R101
+R85
 R102
+R103
 !i113 0
 R13
 R14
 Enbit_xorg2
-Z103 w1710092624
+Z104 w1710092624
 R4
 R5
 !i122 29
 R2
-Z104 8/home/mkotlarz/cpre381/proj1/ALU/Nbit_xorg2.vhd
-Z105 F/home/mkotlarz/cpre381/proj1/ALU/Nbit_xorg2.vhd
+Z105 8/home/mkotlarz/cpre381/proj1/ALU/Nbit_xorg2.vhd
+Z106 F/home/mkotlarz/cpre381/proj1/ALU/Nbit_xorg2.vhd
 l0
 R18
 VNRgGF6D>O>O[Q4[XE`VHX1
 !s100 ;Ml?IVWfZHU_V9Rz?PX@H3
 R8
 32
-R62
-!i10b 1
 R63
-Z106 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Nbit_xorg2.vhd|
-Z107 !s107 /home/mkotlarz/cpre381/proj1/ALU/Nbit_xorg2.vhd|
+!i10b 1
+R64
+Z107 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Nbit_xorg2.vhd|
+Z108 !s107 /home/mkotlarz/cpre381/proj1/ALU/Nbit_xorg2.vhd|
 !i113 0
 R13
 R14
@@ -716,38 +716,38 @@ R5
 DEx4 work 10 nbit_xorg2 0 22 NRgGF6D>O>O[Q4[XE`VHX1
 !i122 29
 l39
-R92
+R93
 VA>LlO`jnGdoz`<Z[aePA01
 !s100 UW_ZC^Al6lM4S]KoUFS>93
 R8
 32
-R62
-!i10b 1
 R63
-R106
+!i10b 1
+R64
 R107
+R108
 !i113 0
 R13
 R14
 Enegativechecker
-Z108 w1710127887
+Z109 w1710127887
 R4
 R5
 !i122 14
 R2
-Z109 8/home/mkotlarz/cpre381/proj1/ALU/NegativeChecker.vhd
-Z110 F/home/mkotlarz/cpre381/proj1/ALU/NegativeChecker.vhd
+Z110 8/home/mkotlarz/cpre381/proj1/ALU/NegativeChecker.vhd
+Z111 F/home/mkotlarz/cpre381/proj1/ALU/NegativeChecker.vhd
 l0
 L6 1
 V9]a8:DmT5`lT4KiF9JMdm1
 !s100 iECBSNH4nQi2SCN60=WeO3
 R8
 32
-R78
+R79
 !i10b 1
-R84
-Z111 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/NegativeChecker.vhd|
-Z112 !s107 /home/mkotlarz/cpre381/proj1/ALU/NegativeChecker.vhd|
+R85
+Z112 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/NegativeChecker.vhd|
+Z113 !s107 /home/mkotlarz/cpre381/proj1/ALU/NegativeChecker.vhd|
 !i113 0
 R13
 R14
@@ -762,11 +762,11 @@ V?nJ77m[?C7E?Y6Bz[D7ok3
 !s100 NOAnI_>JnPChBW:P8QMNZ2
 R8
 32
-R78
+R79
 !i10b 1
-R84
-R111
+R85
 R112
+R113
 !i113 0
 R13
 R14
@@ -776,19 +776,19 @@ R4
 R5
 !i122 15
 R2
-Z113 8/home/mkotlarz/cpre381/proj1/ALU/org2.vhd
-Z114 F/home/mkotlarz/cpre381/proj1/ALU/org2.vhd
+Z114 8/home/mkotlarz/cpre381/proj1/ALU/org2.vhd
+Z115 F/home/mkotlarz/cpre381/proj1/ALU/org2.vhd
 l0
 R18
 VhOiEZ0HVFKUfoceE;g4CN1
 !s100 hJAZ>EB8bm_e<^5IFaP9e1
 R8
 32
-R78
+R79
 !i10b 1
-R84
-Z115 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/org2.vhd|
-Z116 !s107 /home/mkotlarz/cpre381/proj1/ALU/org2.vhd|
+R85
+Z116 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/org2.vhd|
+Z117 !s107 /home/mkotlarz/cpre381/proj1/ALU/org2.vhd|
 !i113 0
 R13
 R14
@@ -803,33 +803,33 @@ VeLGLG944lJMT]Df59N0F92
 !s100 nma>Pa=mMW`KzzjeW=1[d1
 R8
 32
-R78
+R79
 !i10b 1
-R84
-R115
+R85
 R116
+R117
 !i113 0
 R13
 R14
 Estructual_full_adder
-Z117 w1706639868
+Z118 w1706639868
 R4
 R5
 !i122 16
 R2
-Z118 8/home/mkotlarz/cpre381/proj1/ALU/Structual_full_adder.vhd
-Z119 F/home/mkotlarz/cpre381/proj1/ALU/Structual_full_adder.vhd
+Z119 8/home/mkotlarz/cpre381/proj1/ALU/Structual_full_adder.vhd
+Z120 F/home/mkotlarz/cpre381/proj1/ALU/Structual_full_adder.vhd
 l0
 R18
 V[ijz<HcWz<j^@<Fl0M9`G1
 !s100 4eOD1O6eQGl`0iKfQzmgN3
 R8
 32
-R78
+R79
 !i10b 1
-R84
-Z120 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Structual_full_adder.vhd|
-Z121 !s107 /home/mkotlarz/cpre381/proj1/ALU/Structual_full_adder.vhd|
+R85
+Z121 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/Structual_full_adder.vhd|
+Z122 !s107 /home/mkotlarz/cpre381/proj1/ALU/Structual_full_adder.vhd|
 !i113 0
 R13
 R14
@@ -844,34 +844,34 @@ V?R7^aIK?W1HNJLVoE<Gn>1
 !s100 ViGD7zZ9SIo?oM<91E79R0
 R8
 32
-R78
+R79
 !i10b 1
-R84
-R120
+R85
 R121
+R122
 !i113 0
 R13
 R14
 Etb_alu
-Z122 w1710964010
+Z123 w1710964010
 R31
 R4
 R5
 !i122 34
 R2
-Z123 8/home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd
-Z124 F/home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd
+Z124 8/home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd
+Z125 F/home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd
 l0
 L5 1
 VCHZebPlK]in972MQ7FJl?3
 !s100 2KzU@cJGKXk2Tkfa=DT?[0
 R8
 32
-Z125 !s110 1710964027
+Z126 !s110 1710964027
 !i10b 1
-Z126 !s108 1710964027.000000
-Z127 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd|
-Z128 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd|
+Z127 !s108 1710964027.000000
+Z128 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd|
+Z129 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_ALU.vhd|
 !i113 0
 R13
 R14
@@ -887,21 +887,21 @@ VR=RPP43>3zdh[T47Mf<9V1
 !s100 QSE8b0URN>nB;jBjCk6VY0
 R8
 32
-R125
-!i10b 1
 R126
+!i10b 1
 R127
 R128
+R129
 !i113 0
 R13
 R14
 Etb_controllogic
-w1710964967
-Z129 DPx3 std 3 env 0 22 QPZJVBPkV?55nUWhDzFik0
-Z130 DPx4 ieee 16 std_logic_textio 0 22 C8j>g0lzF^EAA]5<S6PY32
+w1711426283
+Z130 DPx3 std 3 env 0 22 QPZJVBPkV?55nUWhDzFik0
+Z131 DPx4 ieee 16 std_logic_textio 0 22 C8j>g0lzF^EAA]5<S6PY32
 R4
 R5
-!i122 35
+!i122 37
 R2
 8/home/mkotlarz/cpre381/proj1/ControlLogic/tb_ControlLogic.vhd
 F/home/mkotlarz/cpre381/proj1/ControlLogic/tb_ControlLogic.vhd
@@ -920,24 +920,24 @@ R47
 R13
 R14
 Etb_leftshifter16
-Z131 w1710129344
+Z132 w1710129344
 R4
 R5
 !i122 18
 R2
-Z132 8/home/mkotlarz/cpre381/proj1/ALU/tb_LeftShifter16.vhd
-Z133 F/home/mkotlarz/cpre381/proj1/ALU/tb_LeftShifter16.vhd
+Z133 8/home/mkotlarz/cpre381/proj1/ALU/tb_LeftShifter16.vhd
+Z134 F/home/mkotlarz/cpre381/proj1/ALU/tb_LeftShifter16.vhd
 l0
 L4 1
 VYF_oQ@L5?MEo_iGzj9[a91
 !s100 2OKVzjJo=@K8f_66M<66h1
 R8
 32
-Z134 !s110 1710962472
+Z135 !s110 1710962472
 !i10b 1
-R84
-Z135 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_LeftShifter16.vhd|
-Z136 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_LeftShifter16.vhd|
+R85
+Z136 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_LeftShifter16.vhd|
+Z137 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_LeftShifter16.vhd|
 !i113 0
 R13
 R14
@@ -952,34 +952,34 @@ VX`0jIKAFIjz4]OSVbBY_W3
 !s100 ^DI[NA;g]MM<UTDFdVH?U2
 R8
 32
-R134
-!i10b 1
-R84
 R135
+!i10b 1
+R85
 R136
+R137
 !i113 0
 R13
 R14
 Etb_nbit_8t1mux
-R75
+R76
 R31
 R4
 R5
 !i122 19
 R2
-Z137 8/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_8t1Mux.vhd
-Z138 F/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_8t1Mux.vhd
+Z138 8/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_8t1Mux.vhd
+Z139 F/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_8t1Mux.vhd
 l0
 L5 1
 V^26mMLGLMP0=SD85cZOVV3
 !s100 ^@a:RdkF]DNnIR6=oaT0U3
 R8
 32
-R134
+R135
 !i10b 1
-Z139 !s108 1710962472.000000
-Z140 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_8t1Mux.vhd|
-Z141 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_8t1Mux.vhd|
+Z140 !s108 1710962472.000000
+Z141 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_8t1Mux.vhd|
+Z142 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_8t1Mux.vhd|
 !i113 0
 R13
 R14
@@ -995,41 +995,41 @@ Vj;?]VcVlc5Z=>C]gVXT0Y0
 !s100 na4C3DYhoZ3MOVCdlaAFz2
 R8
 32
-R134
+R135
 !i10b 1
-R139
 R140
 R141
+R142
 !i113 0
 R13
 R14
 Etb_nbit_addsub
-Z142 w1710080566
-R129
+Z143 w1710080566
 R130
+R131
 R4
 R5
 !i122 20
 R2
-Z143 8/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_AddSub.vhd
-Z144 F/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_AddSub.vhd
+Z144 8/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_AddSub.vhd
+Z145 F/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_AddSub.vhd
 l0
 R27
 VnE4kfG]A1;@b=KdA@Hao`2
 !s100 @lbcJfV0E_IH8B2ejn4762
 R8
 32
-R134
+R135
 !i10b 1
-R139
-Z145 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_AddSub.vhd|
-Z146 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_AddSub.vhd|
+R140
+Z146 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_AddSub.vhd|
+Z147 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_AddSub.vhd|
 !i113 0
 R13
 R14
 Amixed
-R129
 R130
+R131
 R4
 R5
 DEx4 work 14 tb_nbit_addsub 0 22 nE4kfG]A1;@b=KdA@Hao`2
@@ -1040,86 +1040,86 @@ V=CQEj`3z>mG7ohYS4jL423
 !s100 zXV>X1<JiU`kamJanZU9X2
 R8
 32
-R134
+R135
 !i10b 1
-R139
-R145
+R140
 R146
+R147
 !i113 0
 R13
 R14
 Etb_nbit_andg2
-Z147 w1710092113
-R129
+Z148 w1710092113
 R130
+R131
 R4
 R5
 !i122 28
 R2
-Z148 8/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_andg2.vhd
-Z149 F/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_andg2.vhd
+Z149 8/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_andg2.vhd
+Z150 F/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_andg2.vhd
 l0
 R34
 VT6@bHGT=cGPk_GHfobYl51
 !s100 ?IK=<T]?SF_>IiH]05;4T3
 R8
 32
-R62
+R63
 !i10b 1
-R139
-Z150 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_andg2.vhd|
-Z151 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_andg2.vhd|
+R140
+Z151 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_andg2.vhd|
+Z152 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_andg2.vhd|
 !i113 0
 R13
 R14
 Amixed
-R129
 R130
+R131
 R4
 R5
 DEx4 work 13 tb_nbit_andg2 0 22 T6@bHGT=cGPk_GHfobYl51
 !i122 28
 l44
-Z152 L25 62
+Z153 L25 62
 VoBEVR:22`>VBEj3OjhJGT1
 !s100 <_F52EnR1KemjMB:Bm8=e2
 R8
 32
-R62
+R63
 !i10b 1
-R139
-R150
+R140
 R151
+R152
 !i113 0
 R13
 R14
 Etb_nbit_full_adder
-Z153 w1710218154
-R129
+Z154 w1710218154
 R130
+R131
 R4
 R5
 !i122 21
 R2
-Z154 8/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_full_adder.vhd
-Z155 F/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_full_adder.vhd
+Z155 8/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_full_adder.vhd
+Z156 F/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_full_adder.vhd
 l0
 R34
 V^j_VJ_b43V00WWacY_aPW3
 !s100 b=f?K5LV5>hkdz5h9SWaX2
 R8
 32
-R134
+R135
 !i10b 1
-R139
-Z156 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_full_adder.vhd|
-Z157 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_full_adder.vhd|
+R140
+Z157 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_full_adder.vhd|
+Z158 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_full_adder.vhd|
 !i113 0
 R13
 R14
 Amixed
-R129
 R130
+R131
 R4
 R5
 DEx4 work 18 tb_nbit_full_adder 0 22 ^j_VJ_b43V00WWacY_aPW3
@@ -1130,123 +1130,123 @@ VY[ldfH6@iCVGkC52UAP3g1
 !s100 00_=ONJF:fKZWWL4l_^Fz2
 R8
 32
-R134
+R135
 !i10b 1
-R139
-R156
+R140
 R157
+R158
 !i113 0
 R13
 R14
 Etb_nbit_org2
-Z158 w1710092361
-R129
+Z159 w1710092361
 R130
+R131
 R4
 R5
 !i122 22
 R2
-Z159 8/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_org2.vhd
-Z160 F/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_org2.vhd
+Z160 8/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_org2.vhd
+Z161 F/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_org2.vhd
 l0
 R34
 Vg5L6djmY<5RW^fURTYEEI0
 !s100 I]YH8hA=n2FUAQ5TTV`JR1
 R8
 32
-R134
+R135
 !i10b 1
-R139
-Z161 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_org2.vhd|
-Z162 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_org2.vhd|
+R140
+Z162 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_org2.vhd|
+Z163 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_org2.vhd|
 !i113 0
 R13
 R14
 Amixed
-R129
 R130
+R131
 R4
 R5
 DEx4 work 12 tb_nbit_org2 0 22 g5L6djmY<5RW^fURTYEEI0
 !i122 22
 l44
-R152
+R153
 VJ1dHGVn_^Do45TgaLWkF60
 !s100 n[M]52eQP<zz1KamHOLU=2
 R8
 32
-R134
+R135
 !i10b 1
-R139
-R161
+R140
 R162
+R163
 !i113 0
 R13
 R14
 Etb_nbit_xorg2
-Z163 w1710092640
-R129
+Z164 w1710092640
 R130
+R131
 R4
 R5
 !i122 23
 R2
-Z164 8/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_xorg2.vhd
-Z165 F/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_xorg2.vhd
+Z165 8/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_xorg2.vhd
+Z166 F/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_xorg2.vhd
 l0
 R34
 VX84ZbCH0`RLJFjc@?0:b]3
 !s100 blMLTDe4@KR@E<g6I0XM71
 R8
 32
-R134
+R135
 !i10b 1
-R139
-Z166 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_xorg2.vhd|
-Z167 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_xorg2.vhd|
+R140
+Z167 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_xorg2.vhd|
+Z168 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_Nbit_xorg2.vhd|
 !i113 0
 R13
 R14
 Amixed
-R129
 R130
+R131
 R4
 R5
 DEx4 work 13 tb_nbit_xorg2 0 22 X84ZbCH0`RLJFjc@?0:b]3
 !i122 23
 l44
-R152
+R153
 ViO]@on4V3LYNK_RI?B12>0
 !s100 f_Q9YmB6CTX9RiC:R;VTe0
 R8
 32
-R134
+R135
 !i10b 1
-R139
-R166
+R140
 R167
+R168
 !i113 0
 R13
 R14
 Etb_negativechecker
-Z168 w1710127502
+Z169 w1710127502
 R4
 R5
 !i122 24
 R2
-Z169 8/home/mkotlarz/cpre381/proj1/ALU/tb_NegativeChecker.vhd
-Z170 F/home/mkotlarz/cpre381/proj1/ALU/tb_NegativeChecker.vhd
+Z170 8/home/mkotlarz/cpre381/proj1/ALU/tb_NegativeChecker.vhd
+Z171 F/home/mkotlarz/cpre381/proj1/ALU/tb_NegativeChecker.vhd
 l0
 L4 1
 VKFFS=zl:m=]W0eejH0F]a2
 !s100 W]G=lW?cJCCG<]]:hP1;12
 R8
 32
-R134
+R135
 !i10b 1
-R139
-Z171 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_NegativeChecker.vhd|
-Z172 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_NegativeChecker.vhd|
+R140
+Z172 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_NegativeChecker.vhd|
+Z173 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_NegativeChecker.vhd|
 !i113 0
 R13
 R14
@@ -1261,33 +1261,33 @@ VChRhn8GolTbKJOWa;RT<j1
 !s100 =N:f2l6JUGZWnL65?K;fR1
 R8
 32
-R134
+R135
 !i10b 1
-R139
-R171
+R140
 R172
+R173
 !i113 0
 R13
 R14
 Etb_zerochecker
-Z173 w1710126296
+Z174 w1710126296
 R4
 R5
 !i122 25
 R2
-Z174 8/home/mkotlarz/cpre381/proj1/ALU/tb_ZeroChecker.vhd
-Z175 F/home/mkotlarz/cpre381/proj1/ALU/tb_ZeroChecker.vhd
+Z175 8/home/mkotlarz/cpre381/proj1/ALU/tb_ZeroChecker.vhd
+Z176 F/home/mkotlarz/cpre381/proj1/ALU/tb_ZeroChecker.vhd
 l0
 L4 1
 V59298@R=YUbbQXfBJl_eK3
 !s100 _E_9ZoCKlm8oFHcDfUZ_H1
 R8
 32
-R134
+R135
 !i10b 1
-R139
-Z176 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_ZeroChecker.vhd|
-Z177 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_ZeroChecker.vhd|
+R140
+Z177 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/tb_ZeroChecker.vhd|
+Z178 !s107 /home/mkotlarz/cpre381/proj1/ALU/tb_ZeroChecker.vhd|
 !i113 0
 R13
 R14
@@ -1302,11 +1302,11 @@ V<L6<4c^dRzKak6hQCbja>3
 !s100 P1n02ikmNaG1fVKNeO`H`3
 R8
 32
-R134
+R135
 !i10b 1
-R139
-R176
+R140
 R177
+R178
 !i113 0
 R13
 R14
@@ -1316,19 +1316,19 @@ R4
 R5
 !i122 26
 R2
-Z178 8/home/mkotlarz/cpre381/proj1/ALU/xorg2.vhd
-Z179 F/home/mkotlarz/cpre381/proj1/ALU/xorg2.vhd
+Z179 8/home/mkotlarz/cpre381/proj1/ALU/xorg2.vhd
+Z180 F/home/mkotlarz/cpre381/proj1/ALU/xorg2.vhd
 l0
 R18
 VA]ncWhoC:fhLS`F>c9^ag2
 !s100 zGkHVGJ]HQ5RboN2N>KzN1
 R8
 32
-R134
+R135
 !i10b 1
-R139
-Z180 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/xorg2.vhd|
-Z181 !s107 /home/mkotlarz/cpre381/proj1/ALU/xorg2.vhd|
+R140
+Z181 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/xorg2.vhd|
+Z182 !s107 /home/mkotlarz/cpre381/proj1/ALU/xorg2.vhd|
 !i113 0
 R13
 R14
@@ -1343,33 +1343,33 @@ VV`;B_39=:h3bCoQNhV;bn0
 !s100 2<f]d3XziROLh_[:_6mNg2
 R8
 32
-R134
+R135
 !i10b 1
-R139
-R180
+R140
 R181
+R182
 !i113 0
 R13
 R14
 Ezerochecker
-Z182 w1710126502
+Z183 w1710126502
 R4
 R5
 !i122 27
 R2
-Z183 8/home/mkotlarz/cpre381/proj1/ALU/ZeroChecker.vhd
-Z184 F/home/mkotlarz/cpre381/proj1/ALU/ZeroChecker.vhd
+Z184 8/home/mkotlarz/cpre381/proj1/ALU/ZeroChecker.vhd
+Z185 F/home/mkotlarz/cpre381/proj1/ALU/ZeroChecker.vhd
 l0
 R45
 V:hlWYK1Yb^K=1UT4YX3CZ3
 !s100 bjWR@ck;hm`d7SHR]d2k73
 R8
 32
-R134
+R135
 !i10b 1
-R139
-Z185 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/ZeroChecker.vhd|
-Z186 !s107 /home/mkotlarz/cpre381/proj1/ALU/ZeroChecker.vhd|
+R140
+Z186 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj1/ALU/ZeroChecker.vhd|
+Z187 !s107 /home/mkotlarz/cpre381/proj1/ALU/ZeroChecker.vhd|
 !i113 0
 R13
 R14
@@ -1384,11 +1384,11 @@ V^Tl3PnPl3a3ITDN=`lLW51
 !s100 :gA<bPF0oOo^XR:Z:<P=:3
 R8
 32
-R134
+R135
 !i10b 1
-R139
-R185
+R140
 R186
+R187
 !i113 0
 R13
 R14
