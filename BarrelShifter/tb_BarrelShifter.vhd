@@ -154,6 +154,15 @@ begin
     wait for gCLK_HPER*2;
     -- Expect: s_numShifted = 0x80001FE0
 
+    -- Test case 9: SLL
+    s_WD        <= "01011000000000000000000011111111";
+    s_signed    <= '0';
+    s_left      <= '1';
+    s_SHAMT     <= "11111";
+    wait for gCLK_HPER*2;
+    -- Expect: s_numShifted = 0x80000000
+
+
     wait;
   end process;
 

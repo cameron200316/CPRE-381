@@ -21,6 +21,7 @@ use IEEE.std_logic_1164.all;
 entity Reg32File is
    generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
    port(i_CLKs        : in std_logic;
+	i_WE          : in std_logic;
 	i_R           : in std_logic;
         i_WD          : in std_logic_vector(N-1 downto 0);
         i_WA          : in std_logic_vector(4 downto 0); 
@@ -85,6 +86,7 @@ architecture structural of Reg32File is
 
 type out32bit is array (0 to 31) of std_logic_vector(31 downto 0);
 
+signal s_WA32 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 signal s_WEN32 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 signal s_ZERO  : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 signal s_ONE   : std_logic := '1';
@@ -94,7 +96,7 @@ begin
 
   decode5_32: Decoder5_32
 	port MAP(i_WA		      => i_WA,
-		 o_OUT		      => s_WEN32);
+		 o_OUT		      => s_WA32);
 
   REG0: RegFile 
 	port map(i_CLKs    => i_CLKs,    
@@ -105,6 +107,11 @@ begin
 
   -- Instantiate N mux instances.
   G_NBit_REG: for i in 0 to N-2 generate
+    and2: andg2 port MAP(
+	      i_A       => i_WE, 
+	      i_B       => s_WA32(i+1),
+	      o_C       => s_WEN32(i+1));
+	  
     REG: RegFile port map(
               i_CLKs    => i_CLKs,    
               i_R       => i_R,         
