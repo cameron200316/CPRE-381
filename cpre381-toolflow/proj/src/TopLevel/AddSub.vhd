@@ -55,6 +55,7 @@ architecture structural of AddSub is
 
 signal s_notD0   : std_logic_vector(31 downto 0);
 signal s_O       : std_logic_vector(31 downto 0);
+signal s_C       : std_logic_vector(31 downto 0);
 signal s_O0      : std_logic_vector(31 downto 0);
 
 begin
@@ -80,7 +81,7 @@ begin
                  i_D1         => i_D1(0),  
                  i_D0         => s_O0(0), 
                  o_Sum        => o_S(0),
-	         o_Cout       => o_C(0));  
+	         o_Cout       => s_C(0));  
 
 
   -- Instantiate N mux instances.
@@ -104,11 +105,12 @@ begin
   
 
     ADD: Adder port map(
-              i_D2     => o_C(i),     -- All instances share the same select input.
+              i_D2     => s_C(i),     -- All instances share the same select input.
               i_D1     => i_D1(i+1),  -- ith instance's data 0 input hooked up to ith data 0 input.
               i_D0     => s_O0(i+1),  -- ith instance's data 1 input hooked up to ith data 1 input.
               o_Sum    => o_S(i+1),   -- ith instance's data output hooked up to ith data output.
-	      o_Cout   => o_C(i+1));  -- ith instance's data output hooked up to ith data output.
+	      o_Cout   => s_C(i+1));  -- ith instance's data output hooked up to ith data output.
   end generate G_NBit_ADD;
   
+  o_C <= s_C; 
 end structural;

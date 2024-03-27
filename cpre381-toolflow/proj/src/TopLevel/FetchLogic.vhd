@@ -89,6 +89,7 @@ signal s_notZero  	: std_logic := '0';
 signal s_branchChoice   : std_logic := '0';
 
 signal s_PC4	 	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal s_PCNEW	 	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 signal s_Jump1	 	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 signal s_Instruction	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
@@ -107,7 +108,7 @@ begin
 	port MAP(i_Cin        => '0',
        	         i_AddSub     => '0',
                  i_ALUSrc     => '0', 
-                 i_D1         => o_PCNEW,
+                 i_D1         => s_PCNEW,
                  i_D0         => "00000000000000000000000000000100",
                  i_regWrite   => "00000000000000000000000000000000",
                  o_C          => s_null,
@@ -183,8 +184,9 @@ begin
        		 i_WEN        => '1',
        		 i_CLKs       => i_CLK,
        		 i_R          => i_RST,
-       		 o_OUT        => o_PCNEW);
+       		 o_OUT        => s_PCNEW);
 
   o_PC4  	<= s_PC4;  
+  o_PCNEW       <= s_PCNEW; 
 
 end structural;

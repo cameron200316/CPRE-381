@@ -468,7 +468,7 @@ begin
 	port MAP(i_D0      => s_PCNEW(i),         
        	         i_D1      => iInstAddr(i),    
                  i_S 	   => iInstLd,     
-                 o_O       => s_IMemAddr(i));
+                 o_O       => s_NextInstAddr(i));
   end generate MUX9_32;
 
   --MUX for choosing between the R1 and R2 as the source for the i_A into the ALU for Shift operations
@@ -485,10 +485,6 @@ begin
   s_RS <= s_Inst(25 downto 21); 
 
   s_RT <= s_Inst(20 downto 16); 
-
-  s_NextInstAddr  <= s_PCNEW;
-
-  s_NextInstAddr  <= s_PCNEW;
 
   OUTPUT: for i in 0 to 31 generate
 	oALUOut(i) 	<= s_final(i);
