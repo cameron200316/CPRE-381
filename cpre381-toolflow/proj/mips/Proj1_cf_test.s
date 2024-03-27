@@ -30,10 +30,9 @@ past:
    	la $a0, prompt1	#set $a0 with the string to print
 	syscall		#print the string in $a0
 
-	addiu $a0, $zero, 16
+	addiu $a0, $zero, 5
     
 	# call fibnum function
-	add $a0, $v0, $zero
 	jal fibnum
 	add $t0, $v0, $zero
 
@@ -66,24 +65,25 @@ fibnum:
 	jr $ra # Return to caller
 
 recursive:
-	addi $sp, $sp, -12 #we need 3 registers to be stored in the stack... so this moves the stack pointer down 3 registers the stack
-	sw $ra, 0($sp) #store the return address in the stack
-	sw $a0, 4($sp) #store the current value of N in the stack
+	addi $t9, $t9, -12 #we need 3 registers to be stored in the stack... so this moves the stack pointer down 3 registers the stack
+	sw $ra, 0($t9) #store the return address in the stack
+	sw $a0, 4($t9) #store the current value of N in the stack
 	
 	#call the function
-    slti $t0, $zero, 1
+	addi $t8, $zero, 1
+    slt $t0, $zero, $t8
     sub $a0, $a0, $t0
 	jal fibnum
-	sw $v0, 8($sp) #store the returned value of the recursive call
+	sw $v0, 8($t9) #store the returned value of the recursive call
 	
 	#call the function again
-	lw $a0, 4($sp) #because a0 has been changed we need to get the orginal N value from the stack 
+	lw $a0, 4($t9) #because a0 has been changed we need to get the orginal N value from the stack 
     addi $t0, $zero, 2
 	subu $a0, $a0, $t0 #this is the N-w parameter
 	jal fibnum
 	
-	lw $t0, 8($sp) # retrieve first function result
+	lw $t0, 8($t9) # retrieve first function result
 	add $v0, $v0, $t0
-	lw $ra, 0($sp) # retrieve return address
-	addi $sp, $sp, 12
+	lw $ra, 0($t9) # retrieve return address
+	addi $t9, $t9, 12
 	jr $ra
