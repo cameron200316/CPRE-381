@@ -52,120 +52,311 @@ architecture structural of BarrelShifter is
              o_C          : out std_logic);
     end component;
 
---Array Declaration 
-type out32bit is array (31 downto 0,31 downto 0) of std_logic;
+    component mux2to1DF is
+  	port(i_D0 		            : in std_logic;
+             i_D1		            : in std_logic;
+             i_S 		            : in std_logic;
+             o_O                          : out std_logic);
+    end component;
 
---Will be used later and explained there
-signal shifts  		: integer := 0;
+--SRL MUX OUTPUTS
+signal s_MUX1OUT  	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal s_MUX2OUT  	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal s_MUX3OUT  	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal s_MUX4OUT  	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal s_MUX5OUT  	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
---Used for the signed ANDED with the most significant bit of WD
-signal s_sign   	: std_logic := '0';
+--SLL MUX OUTPUTS
+signal s_MUX6OUT  	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal s_MUX7OUT  	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal s_MUX8OUT  	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal s_MUX9OUT  	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal s_MUX10OUT  	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
---Will be used for the selection lines for all the muxs
-signal s_shiftEN 	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+--SRA MUX OUTPUTS
+signal s_MUX11OUT  	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal s_MUX12OUT  	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal s_MUX13OUT  	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal s_MUX14OUT  	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal s_MUX15OUT  	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
---Array with 32 32 bit wide elements 
---Used to keep track of the outputs of all the MUXS
-signal s_OUT   		: out32bit := ("00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000",
-			      	       "00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000",
-			               "00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000",
-			               "00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000",
-			               "00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000",
-			               "00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000",
-			               "00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000",
-			               "00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000", "00000000000000000000000000000000");
+--Signal for the sign
+signal s_sign  	: std_logic := '0';
+
 
 begin  
 
-  -- Special Decoder that makes each bit 1 for each position (ex. i_SHAMT = 00101, s_shiftEN "00...0011111")
-  decode5_32: BarrelDecoder5_32
-	port MAP(i_WA		      => i_SHAMT,
-		 o_OUT		      => s_shiftEN); 
+--MUXES FOR SRL
+  
+  --MUXES FOR SRL (1)
+  MUX1_32: for i in 0 to 30 generate
+        MUX1: mux2to1DF
+	port MAP(i_D0      => i_WD(i),         
+       	         i_D1      => i_WD(i+1),    
+                 i_S 	   => i_SHAMT(0),     
+                 o_O       => s_MUX1OUT(i));
+  end generate MUX1_32;
+
+  MUX1A: mux2to1DF
+       port MAP(i_D0      => i_WD(31),         
+       	        i_D1      => '0',    
+                i_S 	  => i_SHAMT(0),     
+                o_O       => s_MUX1OUT(31));
+
+  --MUXES FOR SRL (2)
+  MUX2_32: for i in 0 to 29 generate
+        MUX2: mux2to1DF
+	port MAP(i_D0      => s_MUX1OUT(i),         
+       	         i_D1      => s_MUX1OUT(i+2),    
+                 i_S 	   => i_SHAMT(1),     
+                 o_O       => s_MUX2OUT(i));
+  end generate MUX2_32;
+
+  MUX2A_32: for i in 0 to 1 generate
+        MUX2A: mux2to1DF
+	port MAP(i_D0      => s_MUX1OUT(i+30),         
+       	         i_D1      => '0',    
+                 i_S 	   => i_SHAMT(1),     
+                 o_O       => s_MUX2OUT(i+30));
+  end generate MUX2A_32;
+
+  --MUXES FOR SRL (4)
+  MUX3_32: for i in 0 to 27 generate
+        MUX3: mux2to1DF
+	port MAP(i_D0      => s_MUX2OUT(i),         
+       	         i_D1      => s_MUX2OUT(i+4),    
+                 i_S 	   => i_SHAMT(2),     
+                 o_O       => s_MUX3OUT(i));
+  end generate MUX3_32;
+
+  MUX3A_32: for i in 0 to 3 generate
+        MUX3A: mux2to1DF
+	port MAP(i_D0      => s_MUX2OUT(i+28),         
+       	         i_D1      => '0',    
+                 i_S 	   => i_SHAMT(2),     
+                 o_O       => s_MUX3OUT(i+28));
+  end generate MUX3A_32;
+
+  --MUXES FOR SRL (8)
+  MUX4_32: for i in 0 to 23 generate
+        MUX4: mux2to1DF
+	port MAP(i_D0      => s_MUX3OUT(i),         
+       	         i_D1      => s_MUX3OUT(i+8),    
+                 i_S 	   => i_SHAMT(3),     
+                 o_O       => s_MUX4OUT(i));
+  end generate MUX4_32;
+
+  MUX4A_32: for i in 0 to 7 generate
+        MUX4A: mux2to1DF
+	port MAP(i_D0      => s_MUX3OUT(i+24),         
+       	         i_D1      => '0',    
+                 i_S 	   => i_SHAMT(3),     
+                 o_O       => s_MUX4OUT(i+24));
+  end generate MUX4A_32;
+
+  --MUXES FOR SRL (16)
+  MUX5_32: for i in 0 to 15 generate
+        MUX5: mux2to1DF
+	port MAP(i_D0      => s_MUX4OUT(i),         
+       	         i_D1      => s_MUX4OUT(i+16),    
+                 i_S 	   => i_SHAMT(4),     
+                 o_O       => s_MUX5OUT(i));
+  end generate MUX5_32;
+
+  MUX5A_32: for i in 0 to 15 generate
+        MUX5A: mux2to1DF
+	port MAP(i_D0      => s_MUX4OUT(i+16),         
+       	         i_D1      => '0',    
+                 i_S 	   => i_SHAMT(4),     
+                 o_O       => s_MUX5OUT(i+16));
+  end generate MUX5A_32;
+
+--MUXES FOR SLL
+
+  --MUXES FOR SLL (1)
+  MUX6A: mux2to1DF
+       port MAP(i_D0      => i_WD(0),         
+       	        i_D1      => '0',    
+                i_S 	  => i_SHAMT(0),     
+                o_O       => s_MUX6OUT(0));
+
+  MUX6_32: for i in 1 to 30 generate
+        MUX6: mux2to1DF
+	port MAP(i_D0      => i_WD(i),         
+       	         i_D1      => i_WD(i-1),    
+                 i_S 	   => i_SHAMT(0),     
+                 o_O       => s_MUX6OUT(i));
+  end generate MUX6_32;
+
+  --MUXES FOR SLL (2)
+  MUX7A_32: for i in 0 to 1 generate
+        MUX7A: mux2to1DF
+	port MAP(i_D0      => s_MUX6OUT(i),         
+       	         i_D1      => '0',    
+                 i_S 	   => i_SHAMT(1),     
+                 o_O       => s_MUX7OUT(i));
+  end generate MUX7A_32;
+
+  MUX7_32: for i in 2 to 31 generate
+        MUX7: mux2to1DF
+	port MAP(i_D0      => s_MUX6OUT(i),         
+       	         i_D1      => s_MUX6OUT(i-2),    
+                 i_S 	   => i_SHAMT(1),     
+                 o_O       => s_MUX7OUT(i));
+  end generate MUX7_32;
+
+  --MUXES FOR SLL (4)
+  MUX8A_32: for i in 0 to 3 generate
+        MUX8A: mux2to1DF
+	port MAP(i_D0      => s_MUX7OUT(i),         
+       	         i_D1      => '0',    
+                 i_S 	   => i_SHAMT(2),     
+                 o_O       => s_MUX8OUT(i));
+  end generate MUX8A_32;
+
+  MUX8_32: for i in 4 to 31 generate
+        MUX8: mux2to1DF
+	port MAP(i_D0      => s_MUX7OUT(i),         
+       	         i_D1      => s_MUX7OUT(i-4),    
+                 i_S 	   => i_SHAMT(2),     
+                 o_O       => s_MUX8OUT(i));
+  end generate MUX8_32;
+
+  --MUXES FOR SLL (8)
+  MUX9A_32: for i in 0 to 7 generate
+        MUX9A: mux2to1DF
+	port MAP(i_D0      => s_MUX8OUT(i),         
+       	         i_D1      => '0',    
+                 i_S 	   => i_SHAMT(3),     
+                 o_O       => s_MUX9OUT(i));
+  end generate MUX9A_32;
+
+  MUX9_32: for i in 8 to 31 generate
+        MUX9: mux2to1DF
+	port MAP(i_D0      => s_MUX8OUT(i),         
+       	         i_D1      => s_MUX8OUT(i-8),    
+                 i_S 	   => i_SHAMT(3),     
+                 o_O       => s_MUX9OUT(i));
+  end generate MUX9_32;
+
+  --MUXES FOR SLL (16)
+  MUX10A_32: for i in 0 to 15 generate
+        MUX10A: mux2to1DF
+	port MAP(i_D0      => s_MUX9OUT(i),         
+       	         i_D1      => '0',    
+                 i_S 	   => i_SHAMT(4),     
+                 o_O       => s_MUX10OUT(i));
+  end generate MUX10A_32;
+
+  MUX10_32: for i in 16 to 31 generate
+        MUX10: mux2to1DF
+	port MAP(i_D0      => s_MUX9OUT(i),         
+       	         i_D1      => s_MUX9OUT(i-16),    
+                 i_S 	   => i_SHAMT(4),     
+                 o_O       => s_MUX10OUT(i));
+  end generate MUX10_32;
+
+--MUXES FOR SRA
 
   -- AND gate used to make sure the signed bit should be one or zero depending on if the the most significant bit is 1 or 0
   and2: andg2
 	port MAP(i_A                  => i_signed,
 		 i_B                  => i_WD(31),
 		 o_C                  => s_sign);
-  
-  -- Creates the 1st MUX of the first layer
-  -- These have to be done seperately inorder to bring in the new 0
-  MUX6: mux4to1DF port map(
-	      i_D3      => '0',    
-              i_D2      => i_WD(0),	
-              i_D1      => i_WD(1),    
-              i_D0      => i_WD(0),         
-              i_S0      => s_shiftEN(0),
-              i_S1      => i_left, 
-	      o_O       => s_OUT(0,0)); 	     
-  
-  -- Creates the first layer of MUXs 
-  -- The first layer has to be created seperately because it has WD as its inputs
-  G_NBit_MUX3: for i in 1 to N-2 generate
-    	MUX1: mux4to1DF port map(
-	      i_D3      => i_WD(i-1),    
-              i_D2      => i_WD(i),	
-              i_D1      => i_WD(i+1),    
-              i_D0      => i_WD(i),         
-              i_S0      => s_shiftEN(0),
-              i_S1      => i_left, 
-	      o_O       => s_OUT(0,i));  
-  end generate G_NBit_MUX3;  
-  
-  -- Creates the 31st MUX of the first layer
-  -- These have to be done seperately inorder to use the sign bit for D1
-  MUX: mux4to1DF port map(
-	      i_D3      => i_WD(30),    
-              i_D2      => i_WD(31),	
-              i_D1      => s_sign,    
-              i_D0      => i_WD(31),         
-              i_S0      => s_shiftEN(0),
-              i_S1      => i_left, 
-	      o_O       => s_OUT(0,31)); 
 
-  -- Creates the rest of the MUXs
-  G_NBit_MUX1: for i in 1 to N-1 generate
-    
-  -- Creates the 1st MUX of the layer
-  MUX7: mux4to1DF port map(
-	      i_D3      => '0',    
-              i_D2      => s_OUT(i-1, 0),	
-              i_D1      => s_OUT(i-1, 1),    
-              i_D0      => s_OUT(i-1, 0),         
-              i_S0      => s_shiftEN(i),
-              i_S1      => i_left, 
-	      o_O       => s_OUT(i,0));
+  --MUXES FOR SRA (1)
+  MUX11_32: for i in 0 to 30 generate
+        MUX11: mux2to1DF
+	port MAP(i_D0      => i_WD(i),         
+       	         i_D1      => i_WD(i+1),    
+                 i_S 	   => i_SHAMT(0),     
+                 o_O       => s_MUX11OUT(i));
+  end generate MUX11_32;
 
+  MUX11A: mux2to1DF
+       port MAP(i_D0      => i_WD(31),         
+       	        i_D1      => s_sign,    
+                i_S 	  => i_SHAMT(0),     
+                o_O       => s_MUX11OUT(31));
 
-     G_NBit_MUX2: for j in 1 to N-2 generate
-    	MUX5: mux4to1DF port map(
-	      i_D3      => s_OUT(i-1, j-1),    
-              i_D2      => s_OUT(i-1, j),	
-              i_D1      => s_OUT(i-1, j+1),    
-              i_D0      => s_OUT(i-1, j),         
-              i_S0      => s_shiftEN(i),
-              i_S1      => i_left, 
-	      o_O       => s_OUT(i,j)); 
-     end generate G_NBit_MUX2;  
-  
-  -- Creates the 31st MUX of the layer 
-  MUX4: mux4to1DF port map(
-	      i_D3      => s_OUT(i-1, 30),    
-              i_D2      => s_OUT(i-1, 31),	
-              i_D1      => s_sign,    
-              i_D0      => s_OUT(i-1, 31),         
-              i_S0      => s_shiftEN(i),
-              i_S1      => i_left, 
-	      o_O       => s_OUT(i,31)); 
-  end generate G_NBit_MUX1;
+  --MUXES FOR SRA (2)
+  MUX12_32: for i in 0 to 29 generate
+        MUX12: mux2to1DF
+	port MAP(i_D0      => s_MUX11OUT(i),         
+       	         i_D1      => s_MUX11OUT(i+2),    
+                 i_S 	   => i_SHAMT(1),     
+                 o_O       => s_MUX12OUT(i));
+  end generate MUX12_32;
 
-  -- Converts the SHAMT to a integer
-  -- This will be used to grab the final shifted value
-  shifts <= to_integer(unsigned(i_SHAMT));
+  MUX12A_32: for i in 0 to 1 generate
+        MUX12A: mux2to1DF
+	port MAP(i_D0      => s_MUX11OUT(i+30),         
+       	         i_D1      => s_sign,    
+                 i_S 	   => i_SHAMT(1),     
+                 o_O       => s_MUX12OUT(i+30));
+  end generate MUX12A_32;
 
-  -- Copies the final shifted value.
-  G_NBit_OUTPUT: for i in 0 to N-1 generate
-        o_numShifted(i)     <= s_OUT(shifts, i);  
-  end generate G_NBit_OUTPUT;
+  --MUXES FOR SRA (4)
+  MUX13_32: for i in 0 to 27 generate
+        MUX13: mux2to1DF
+	port MAP(i_D0      => s_MUX12OUT(i),         
+       	         i_D1      => s_MUX12OUT(i+4),    
+                 i_S 	   => i_SHAMT(2),     
+                 o_O       => s_MUX13OUT(i));
+  end generate MUX13_32;
+
+  MUX13A_32: for i in 0 to 3 generate
+        MUX13A: mux2to1DF
+	port MAP(i_D0      => s_MUX12OUT(i+28),         
+       	         i_D1      => s_sign,    
+                 i_S 	   => i_SHAMT(2),     
+                 o_O       => s_MUX13OUT(i+28));
+  end generate MUX13A_32;
+
+  --MUXES FOR SRA (8)
+  MUX14_32: for i in 0 to 23 generate
+        MUX14: mux2to1DF
+	port MAP(i_D0      => s_MUX13OUT(i),         
+       	         i_D1      => s_MUX13OUT(i+8),    
+                 i_S 	   => i_SHAMT(3),     
+                 o_O       => s_MUX14OUT(i));
+  end generate MUX14_32;
+
+  MUX14A_32: for i in 0 to 7 generate
+        MUX14A: mux2to1DF
+	port MAP(i_D0      => s_MUX13OUT(i+24),         
+       	         i_D1      => s_sign,    
+                 i_S 	   => i_SHAMT(3),     
+                 o_O       => s_MUX14OUT(i+24));
+  end generate MUX14A_32;
+
+  --MUXES FOR SRA (16)
+  MUX15_32: for i in 0 to 15 generate
+        MUX15: mux2to1DF
+	port MAP(i_D0      => s_MUX14OUT(i),         
+       	         i_D1      => s_MUX14OUT(i+16),    
+                 i_S 	   => i_SHAMT(4),     
+                 o_O       => s_MUX15OUT(i));
+  end generate MUX15_32;
+
+  MUX15A_32: for i in 0 to 15 generate
+        MUX15A: mux2to1DF
+	port MAP(i_D0      => s_MUX14OUT(i+16),         
+       	         i_D1      => s_sign,    
+                 i_S 	   => i_SHAMT(4),     
+                 o_O       => s_MUX15OUT(i+16));
+  end generate MUX15A_32;
+
+  --MUX for between choosing between the different shift operations
+  MUX16_32: for i in 0 to 31 generate
+    	MUX16: mux4to1DF port map(
+	      i_D3      => s_MUX15OUT(i),    
+              i_D2      => s_MUX15OUT(i),	
+              i_D1      => s_MUX10OUT(i),    
+              i_D0      => s_MUX5OUT(i),         
+              i_S0      => i_left,
+              i_S1      => i_signed, 
+	      o_O       => o_numShifted(i));  
+  end generate MUX16_32;  
 
 end structural;
