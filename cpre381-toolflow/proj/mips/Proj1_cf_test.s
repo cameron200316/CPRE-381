@@ -3,7 +3,6 @@ prompt1: .asciiz "Enter the sequence index\n"
 
 .text
 main:
-    addi $t0, $zero 4           # loop counter
 
 loop:
     lui $t1, 1          
@@ -11,18 +10,22 @@ loop:
     nor $t1, $t1, $zero 
     xor $t1, $t1, $zero
     or $t1, $t1, $zero 
-    sll $t1, $t1, 1     
-    sra $t1, $t1, 1    
     lb $t2, 0($t1)      
     lh $t3, 0($t1)    
     lbu $t4, 0($t1)    
     lhu $t5, 0($t1)     
-    sllv $t6, $t1, $t0  
-    srlv $t7, $t1, $t0  
-    srav $t8, $t1, $t0  
     addi $t0, $t0, -1   # Decrement loop counter
     bne $t0, $zero past      # Branch if loop counter is not zero
-    j loop              # Jump to past label
+	addi $t0, $zero, 0
+	j loop              # Jump to past label
+
+pass:
+    sll $t1, $t1, 1     
+    sra $t1, $t1, 1    
+	sllv $t6, $t1, $t0  
+    srlv $t7, $t1, $t0  
+    srav $t8, $t1, $t0  
+
 
 past:
    	# Printing out the text

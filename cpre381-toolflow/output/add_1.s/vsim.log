@@ -3,7 +3,7 @@ Reading pref.tcl
 # 2023.2_2
 
 # vsim -postsimdataflow -debugdb -c -voptargs=""+acc"" tb -do "modelsim_framework.do" -gOUTPUT_TRACE=ms.trace 
-# Start time: 17:42:48 on Mar 24,2024
+# Start time: 21:38:15 on Mar 27,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vsim-8611) Generating debug db.
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
@@ -61,7 +61,6 @@ Reading pref.tcl
 # Loading work.structual_full_adder(structure)#1
 # Loading work.nbit_xorg2(structural)#1
 # Loading work.barrelshifter(structural)#1
-# Loading work.barreldecoder5_32(structural)#1
 # Loading work.mux4to1df(dataflow)#1
 # Loading work.negativechecker(behavioral)#1
 # Loading work.zerochecker(structural)#1
@@ -71,22 +70,20 @@ Reading pref.tcl
 # ** Note: (vsim-8900) Creating design debug database vsim.dbg.
 # do modelsim_framework.do
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/A/Shifter
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/DMem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/IMem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 5  Instance: /tb/MyMips/A/Shifter
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 7  Instance: /tb/MyMips/DMem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 13  Instance: /tb/MyMips/DMem
-# ** Note: Data structure takes 81764536 bytes of memory
-#          Process time 0.43 seconds
+#    Time: 0 ns  Iteration: 14  Instance: /tb/MyMips/DMem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 15  Instance: /tb/MyMips/DMem
+# ** Note: Data structure takes 69235128 bytes of memory
+#          Process time 0.07 seconds
 #          stop
 #    Time: 660 ns  Iteration: 1  Instance: /tb
-# Break in Process P_DUMP_STATE at /home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/internal/testpy/tb.vhd line 150
-# Stopped at /home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/internal/testpy/tb.vhd line 150
-# End time: 17:42:54 on Mar 24,2024, Elapsed time: 0:00:06
-# Errors: 0, Warnings: 7
+# Break in Process P_DUMP_STATE at /home/mkotlarz/cpre381/proj1/cpre381-toolflow/internal/testpy/tb.vhd line 150
+# Stopped at /home/mkotlarz/cpre381/proj1/cpre381-toolflow/internal/testpy/tb.vhd line 150
+# End time: 21:38:19 on Mar 27,2024, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 6
