@@ -1,2 +1,5 @@
 # CPRE-381
-finished and turned in code
+Henry Duwe
+Spring 2024 
+
+finished and submitted projs
