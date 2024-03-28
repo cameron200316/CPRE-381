@@ -1,0 +1,839 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel
+Eadder
+Z1 w1710350211
+Z2 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z3 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 0
+R0
+Z4 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Adder.vhd
+Z5 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Adder.vhd
+l0
+L26 1
+VFg0MQz=@m`?F1Pai<BR4J3
+!s100 g4HWK06]`i@gB@=<F`:m00
+Z6 OL;C;2023.2_2;77
+33
+Z7 !s110 1711037073
+!i10b 1
+Z8 !s108 1711037073.000000
+Z9 !s90 -reportprogress|300|-work|work|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/ALU.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/AddSub.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Adder.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/BarrelDecoder5_32.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/BarrelShifter.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Complementor.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/ControlLogic.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Dataflow_Mux2_1.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/FetchLogic.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/LeftShifter16.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_8t1Mux.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_AddSub.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_andg2.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_full_adder.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_org2.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_xorg2.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/NegativeChecker.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/RegFile.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Structual_full_adder.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/ZeroChecker.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/andg2.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/dffg.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/extender16_32.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/invg.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/mem.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/mux2to1DF.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/mux32_1.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/mux4to1DF.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/org2.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd|
+Z10 !s107 /home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/org2.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/mux4to1DF.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/mux32_1.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/mux2to1DF.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/mem.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/invg.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/extender16_32.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/dffg.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/andg2.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/ZeroChecker.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Structual_full_adder.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/RegFile.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/NegativeChecker.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_xorg2.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_org2.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_full_adder.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_andg2.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_AddSub.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_8t1Mux.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/LeftShifter16.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/FetchLogic.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Dataflow_Mux2_1.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/ControlLogic.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Complementor.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/BarrelShifter.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/BarrelDecoder5_32.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Adder.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/AddSub.vhd|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/ALU.vhd|
+!i113 0
+Z11 o-work work
+Z12 tExplicit 1 NoCoverage 1 CvgOpt 0
+Astructure
+R2
+R3
+DEx4 work 5 adder 0 22 Fg0MQz=@m`?F1Pai<BR4J3
+!i122 0
+l71
+L36 103
+VXKLk?e6?YlPj<4V[=>bn13
+!s100 MdJhV;gcAbeP7doVg1`K]2
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Eaddsub
+R1
+R2
+R3
+!i122 0
+R0
+Z13 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/AddSub.vhd
+Z14 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/AddSub.vhd
+l0
+Z15 L21 1
+VQoRJG^nV1>^Kh77@Z]J4_1
+!s100 fJ:?KQCORN6UBKP=nUYYn1
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 6 addsub 0 22 QoRJG^nV1>^Kh77@Z]J4_1
+!i122 0
+l60
+L34 81
+Vi5b4PAoG:l^]9H]<@Jzck2
+!s100 ffk9GK8zNVz`=E?Uo_n[T1
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Ealu
+Z16 w1711033945
+R2
+R3
+!i122 0
+R0
+Z17 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/ALU.vhd
+Z18 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/ALU.vhd
+l0
+L7 1
+VQ:>WD^MViZ:H_Q;;=NcEE2
+!s100 dCb5Qkm=7SFjFL]YfWaOV2
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 3 alu 0 22 Q:>WD^MViZ:H_Q;;=NcEE2
+!i122 0
+l174
+L34 260
+VfIE[UL33fOjoco2K8<TIZ0
+!s100 @HQJASlIG>YXAH2o9L?RV0
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Ebarreldecoder5_32
+R1
+R2
+R3
+!i122 0
+R0
+Z19 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/BarrelDecoder5_32.vhd
+Z20 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/BarrelDecoder5_32.vhd
+l0
+R15
+Vi5o__ZKZ`k?iHQA:VaiB11
+!s100 ;RABej4g<Ro88=BJTa:Z?0
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 17 barreldecoder5_32 0 22 i5o__ZKZ`k?iHQA:VaiB11
+!i122 0
+l30
+L29 37
+V?z?]YVk5FfQ08m9FHFI2O3
+!s100 a69]:l7@Z5jAh5K:EHdYD3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Ebarrelshifter
+R1
+Z21 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+R2
+R3
+!i122 0
+R0
+Z22 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/BarrelShifter.vhd
+Z23 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/BarrelShifter.vhd
+l0
+Z24 L22 1
+V98aK9z7[5Ek2Sf;k_P^753
+!s100 5H>=MjJm4j>P_H;2QVen:1
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Astructural
+R21
+R2
+R3
+DEx4 work 13 barrelshifter 0 22 98aK9z7[5Ek2Sf;k_P^753
+!i122 0
+l78
+L32 140
+VC8oFFV?f05aQclTIA[YeD3
+!s100 k8NH8ZzZi<Km2D@a^iL8M2
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Ecomplementor
+R1
+R2
+R3
+!i122 0
+R0
+Z25 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Complementor.vhd
+Z26 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Complementor.vhd
+l0
+Z27 L23 1
+V^C1OYhOooDF?@G`l[keB40
+!s100 C5=I[GV0>@963]odDj;Cn3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 12 complementor 0 22 ^C1OYhOooDF?@G`l[keB40
+!i122 0
+l37
+L30 17
+VDz[YATDQ0ccj]SPkXkRlG3
+!s100 VeJQ0o9;TXY`h1J:SUR;>3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Econtrollogic
+R16
+R21
+R2
+R3
+!i122 0
+R0
+Z28 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/ControlLogic.vhd
+Z29 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/ControlLogic.vhd
+l0
+L13 1
+VY_O8az6Um4=GV:QE>1i<;0
+!s100 <7]F7T>UVO7lDe2G[cDo:2
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Astructural
+R21
+R2
+R3
+DEx4 work 12 controllogic 0 22 Y_O8az6Um4=GV:QE>1i<;0
+!i122 0
+l55
+L50 786
+Va?>9@fzT3dk6jJP=:=0NC2
+!s100 Zke<Ff;mDW6dkOQ:3Qdmz2
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Edataflow_mux2_1
+R1
+R2
+R3
+!i122 0
+R0
+Z30 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Dataflow_Mux2_1.vhd
+Z31 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Dataflow_Mux2_1.vhd
+l0
+R27
+VN0Jm_4Si8cH`z:^X]JK?;0
+!s100 H<3Re2?gIfD:3dQAbC5zf3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 15 dataflow_mux2_1 0 22 N0Jm_4Si8cH`z:^X]JK?;0
+!i122 0
+l33
+L32 6
+V82`;R9]Ef=>Q^jK`Z9NiS0
+!s100 I?cIV`I_Izm2N`CJlB93D0
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Efetchlogic
+Z32 w1711034390
+R21
+R2
+R3
+!i122 0
+R0
+Z33 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/FetchLogic.vhd
+Z34 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/FetchLogic.vhd
+l0
+R24
+VWl8o>6DgZDD_io3kkP9L=0
+!s100 kBEJd<F=D^=IEG_eeIF4z1
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Astructural
+R21
+R2
+R3
+DEx4 work 10 fetchlogic 0 22 Wl8o>6DgZDD_io3kkP9L=0
+!i122 0
+l105
+L38 160
+VGaXBSPPz:R@]:b9oS[I`I1
+!s100 c^Ii8K_7D^lUbohnlVLYW3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Eleftshifter16
+R1
+R3
+R2
+R21
+!i122 0
+R0
+Z35 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/LeftShifter16.vhd
+Z36 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/LeftShifter16.vhd
+l0
+L7 1
+VCQ[7XTM2VWMC6<cf8]AQS2
+!s100 KXN1<[>3<GBC=V_h2HiWO2
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Abehavioral
+R3
+R2
+R21
+DEx4 work 13 leftshifter16 0 22 CQ[7XTM2VWMC6<cf8]AQS2
+!i122 0
+l17
+L15 5
+VEFL;:7A421P4@ThLSOgNA3
+!s100 ;jR<Hg8^OV`Vz6]Yz3;952
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Emips_processor
+Z37 w1711036603
+R2
+R3
+!i122 0
+R0
+Z38 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
+Z39 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
+l0
+R27
+Vd2^A@UnJ<<`aoA_cYNTVc1
+!s100 jZ>b[KoD47L7kJ>XVS<6Q3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 14 mips_processor 0 22 d2^A@UnJ<<`aoA_cYNTVc1
+!i122 0
+l236
+L35 409
+Vn6Cc]@QmmFVLPVISP:<`00
+!s100 73i[ezYc39M?Y]JSQgDU^3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Enbit_8t1mux
+R1
+R2
+R3
+!i122 0
+R0
+Z40 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_8t1Mux.vhd
+Z41 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_8t1Mux.vhd
+l0
+L6 1
+VDbO:jRd;X1lmE:5UR>cH52
+!s100 l4N8jEd^oe8IU`O[M@E:g3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 11 nbit_8t1mux 0 22 DbO:jRd;X1lmE:5UR>cH52
+!i122 0
+l41
+L24 80
+VQ@MenBjeVQQDi5G?GFZB60
+!s100 m_N2920_3OARFCF2?ZViK2
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Enbit_addsub
+R1
+R2
+R3
+!i122 0
+R0
+Z42 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_AddSub.vhd
+Z43 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_AddSub.vhd
+l0
+R15
+VHM=E_hz_KBGQL<l@33RG;1
+!s100 H6L6gFljnc5S=GF5>NGQb0
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 11 nbit_addsub 0 22 HM=E_hz_KBGQL<l@33RG;1
+!i122 0
+l58
+L31 57
+VL=dfS:JkWFYZP@9<<KN_o3
+!s100 hh[EQ14[i[zn^fC>C_Ukh2
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Enbit_andg2
+R1
+R2
+R3
+!i122 0
+R0
+Z44 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_andg2.vhd
+Z45 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_andg2.vhd
+l0
+R27
+VL3zS41Xc_LITO>efal^4F1
+!s100 9JWQ;`N5f6hM3Yk?@41Si0
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 10 nbit_andg2 0 22 L3zS41Xc_LITO>efal^4F1
+!i122 0
+l39
+Z46 L31 19
+V5mmBDJoNgSJ<IWJ`2ZQE[2
+!s100 TCVb72l9YG4_klQCCkg852
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Enbit_full_adder
+R1
+R2
+R3
+!i122 0
+R0
+Z47 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_full_adder.vhd
+Z48 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_full_adder.vhd
+l0
+R15
+V61LhQ>im5_]`i9JG?mgIB1
+!s100 ljH_oM5cR:boeKamEQMB31
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 15 nbit_full_adder 0 22 61LhQ>im5_]`i9JG?mgIB1
+!i122 0
+l45
+L32 43
+VfI5jMXoJF4JIQacI[PHVI2
+!s100 hi5WK4O>YB356=<P^72AM0
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Enbit_org2
+R1
+R2
+R3
+!i122 0
+R0
+Z49 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_org2.vhd
+Z50 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_org2.vhd
+l0
+R27
+V?EmohbzEY=B=LcJcgDXL40
+!s100 8TV]M7?Ih::87n^K;Aj]U1
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 9 nbit_org2 0 22 ?EmohbzEY=B=LcJcgDXL40
+!i122 0
+l39
+R46
+V9E6]BM4Bc@I5ehQlo<4Vg1
+!s100 hgS^`44g<XzPC6EOCd7@f1
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Enbit_xorg2
+R1
+R2
+R3
+!i122 0
+R0
+Z51 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_xorg2.vhd
+Z52 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Nbit_xorg2.vhd
+l0
+R27
+VJQ31Y6gk8j9oBEBW7m55T0
+!s100 ;Ml?IVWfZHU_V9Rz?PX@H3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 10 nbit_xorg2 0 22 JQ31Y6gk8j9oBEBW7m55T0
+!i122 0
+l39
+R46
+VfO57R6GC299_TUlcZQ22n3
+!s100 UW_ZC^Al6lM4S]KoUFS>93
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Enegativechecker
+R1
+R2
+R3
+!i122 0
+R0
+Z53 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/NegativeChecker.vhd
+Z54 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/NegativeChecker.vhd
+l0
+L6 1
+Vl0e;EFXGUF67gXR2Rf67i0
+!s100 iECBSNH4nQi2SCN60=WeO3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 15 negativechecker 0 22 l0e;EFXGUF67gXR2Rf67i0
+!i122 0
+l17
+L15 17
+V9_C81m_7iaLFLlR^LCR?Z0
+!s100 NOAnI_>JnPChBW:P8QMNZ2
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Epc
+Z55 w1711053751
+R2
+R3
+!i122 8
+R0
+Z56 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/PC.vhd
+Z57 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/PC.vhd
+l0
+R15
+VJI=Ub4G;NI^k6cgWg@VVX1
+!s100 beXfE6cG[RTYneFmUgj@n0
+R6
+33
+Z58 !s110 1711053754
+!i10b 1
+Z59 !s108 1711053754.000000
+Z60 !s90 -reportprogress|300|-work|work|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/PC.vhd|
+Z61 !s107 /home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/PC.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+Z62 DEx4 work 2 pc 0 22 JI=Ub4G;NI^k6cgWg@VVX1
+!i122 8
+l50
+L32 47
+VZch4LjSGFAUz1bT41c38X0
+!s100 :mX]i7j<RC=ORGd@dE]e20
+R6
+33
+R58
+!i10b 1
+R59
+R60
+R61
+!i113 0
+R11
+R12
+Ereg32file
+Z63 w1711037192
+R2
+R3
+!i122 1
+R0
+Z64 8/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd
+Z65 F/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd
+l0
+R15
+VB>c93j[cJSZ5YUI3UgaLc0
+!s100 XUjVMcXVGYX082URQ5>Gg2
+R6
+33
+Z66 !s110 1711037205
+!i10b 1
+Z67 !s108 1711037205.000000
+Z68 !s90 -reportprogress|300|-work|work|/home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd|
+Z69 !s107 /home/cam2022/CPRE-381/ProjectP1/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 9 reg32file 0 22 B>c93j[cJSZ5YUI3UgaLc0
+!i122 1
+l101
+L35 168
+VBMeXbPhTA=0X>Eg2TdUFj3
+!s100 f0?Z>QLal=iC:0IRTT6IW3
+R6
+33
+R66
+!i10b 1
+R67
+R68
+R69
+!i113 0
+R11
+R12
