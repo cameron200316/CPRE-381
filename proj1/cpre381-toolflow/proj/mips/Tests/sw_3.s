@@ -1,26 +1,18 @@
-# 
-#  In this test case, we are testing to verify that store word will populate all 32 bits 
-#  This test was approved directly by Professor Duwe
-#
-#
 .data
 .text
-lui $t1, 0x1000		# Setting register to 0x1000_0000
+.globl main
+main:
+      # Start Test - Boundary Test
+      # Explanation - I want to test the edge case of where values can be stored to, on MIPS there is a designated .data section so for this test it stores values from the beinning and end of the section
+addi $t0, $0, 10
+lui $s0, 0x1001
+sw $t0, 0($s0)     # Stores 10 at beginning of .data memory location
+addi $t0, $0, 20
+lui $s0, 0x1003
+ori $s0, $s0, 0xFFC # Largest word index = 0b1111_1111_1100
+sw $t0, 0($s0)     # Stores 20 at the end of .data memory location
 
-lui $t0, 0xABCD		# Setting upper value of $t0 to 0xABCD
-ori $t0, 0xEFAA		# Setting lower value of $t0 to 0xEFAA
-sw $t0, 0($t1)		# store word $t0 into $t1 + 0
+# End Test
 
-lui $t0, 0x1234		# Setting upper value of $t0 to 0x1234
-ori $t0, 0x5678		# Setting lower value of $t0 to 0x5678
-sw $t0, 4($t1)		# store word $t0 into $t1 + 4
-
-lui $t0, 0xABCD		# Setting upper value of $t0 to 0xABCD
-ori $t0, 0xEFAA		# Setting lower value of $t0 to 0xEFAA
-sw $t0, 8($t1)		# store word $t0 into $t1 + 8
-
-lui $t0, 0x1234		# Setting upper value of $t0 to 0x1234
-ori $t0, 0x5678		# Setting lower value of $t0 to 0x5678
-sw $t0, 12($t1)		# store word $t0 into $t1 + 12
-
-halt
+    # Exit program
+    halt

@@ -1,22 +1,13 @@
-#andi stress test anding with 0 to see that all registers clear and that the alu preforms as expected
-.data
-.text
-.globl main
-main:
+  addi $1, $0, 500
+  addi $2, $0, 500
+  addi $3, $0, 500
+  addi $4, $0, 500
 
-addi $8, $0, 20
-addi $9, $0, 500
-addi $10, $0, -20
-addi $11, $0, -200
-
-andi $12, $8, 0
-andi $13, $9, 0
-andi $14, $10, 0
-andi $15, $11, 0
-
-andi $8, $8, 0
-andi $9, $9, 0
-andi $10, $10, 0
-andi $11, $11, 0
+  ## andi of 500 and 0 to check if clearing registers works
+ 
+  andi $1, $0, 0	## clearing register 1
+  andi $2, $0, 0	## clearing register 2
+  andi $3, $0, 0	## clearing register 3
+  andi $4, $0, 0	## clearing register 4
 
 halt

@@ -1,4 +1,18 @@
-addi $t0, $zero, -5 #initiate register 
-addi $t1, $zero, -10 #initiate register 
-or $t2, $t0, $t2 #verify that or can be used with two negaive values
-halt
+.data
+.text
+.globl main
+main:
+    # Start Test
+    # OR with 0 
+    # $t0 = 0x340F
+    # $t1 = 0x0000
+    # Expected $t2 = 0x340F
+
+    addi $t0, $t0, 0x340F
+    addi $t1, $t1, 0x0000
+
+    or $t2, $t0, $t1
+    # End Test
+
+    # Exit program
+    halt

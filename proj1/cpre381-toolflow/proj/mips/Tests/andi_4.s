@@ -1,40 +1,17 @@
-.data
-.text
-.globl main
-main:
+# Tests basic cases
 
-	#Start Test Reset: Set all to 0 (same as addi). This is good to make sure to make sure you are placing x and y into $z and not placing z into $z
-	#Justification: This is just a good base case, because if this fails then I screwed up heavily in the base design.
-	andi $1, $0, 0
-	andi $2, $0, 0
-	andi $3, $0, 0
-	andi $4, $0, 0
-	andi $5, $0, 0
-	andi $6, $0, 0
-	andi $7, $0, 0
-	andi $8, $0, 0
-	andi $9, $0, 0
-	andi $10, $0, 0
-	andi $11, $0, 0
-	andi $12, $0, 0
-	andi $13, $0, 0
-	andi $14, $0, 0
-	andi $15, $0, 0
-	andi $16, $0, 0
-	andi $17, $0, 0
-	andi $18, $0, 0
-	andi $19, $0, 0
-	andi $20, $0, 0
-	andi $21, $0, 0
-	andi $22, $0, 0
-	andi $23, $0, 0
-	andi $24, $0, 0
-	andi $25, $0, 0
-	andi $26, $0, 0
-	andi $27, $0, 0
-	andi $28, $0, 0
-	andi $29, $0, 0
-	andi $30, $0, 0
-	andi $31, $0, 0
+addi $a0, $0, 15
+addi $t0, $0, 10
+
+andi $s0, $a0, 15	# 1111 & 1111 = 1111			
+andi $s1, $t0, 15	# 1010 & 1111 = 1010
+andi $s2, $t0, 5 	# 1010 & 0101 = 0000
+andi $s3, $a0, 0	# 1111 & 0000 = 0000	
+
+# Expected results:
+# $s0 = 0x0000000f
+# $s1 = 0x0000000a
+# $s2 = 0x00000000
+# $s3 = 0x00000000
+
 halt
-	

@@ -1,22 +1,19 @@
-#test calling jal multiple times
+.data
+.text
+.globl main
+main:
+    # Start Test
+    #Ensure the jump portion of jal works as intended
+    
+    jal Label
+    addiu $t0, $0, 0 #Set to 0 if failed case
+    j Exit #Fail case if jal doesn't jump correctly
 
-#addi pc, $0, x1000000 TAEDIT
-
-jal second
-
-second:
-#store the first value of $ra
-add $t0, $ra, $0
-jal exit
-
-exit:
-#store the second value of $ra
-add $t1, $ra, $0
-halt
-
-#why am I including this test
-# I am including this test to ensure that calling multiple jals in a row, will overwrite the $ra from the first jal with
-# the pc + 4 of the second jal
-#why does the text have value
-#this test has value, becasue it ensures that you can use recursive statements, and that each time you call jal you
-#overwrite $ra
+    Label: 
+    addiu $t0, $0, 1 #Set $t0 to 1 if the jump part of jal worked correctly
+    
+    Exit:
+    
+    # End Test
+    # Exit program
+    halt

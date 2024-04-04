@@ -1,16 +1,21 @@
-#check that the jump part of jal works
-#0s out $t0
-add $t0, $0, $0
-jal exit
+.data
+.text
+.globl main
+main:
+    # Start Test
+    #Make sure $ra can be overwritten
+    
+    addiu $t1, $ra, 0 #Store original $ra
+    jal Label	#Overwrite original $ra with new $ra
 
-#if we fail to jump $t0 will get set to 5, if we suceed it should be 0
-addi $t0, $0, 5
+    Label: bne $t1, $ra, CORRECT #If the new $ra = the old $ra, the test has failed.
+    addiu $t0, $0, 0 #Set $t0 to 0 if failed case
+    j Exit
 
-exit:
-halt
+    CORRECT: 
+    addiu $t0, $0, 1	#Set $t0 to 1 when $ra is able to be overwritten
 
-#why am I including this test
-#I am including this test to ensure that the jump part of the jal works
-#why does the test have value
-#this test is important, becasue it makes sure that we acstually jump to our desination. If we can't jump then
-# we dont need to somewhere to go back since we neve left
+    Exit:
+    # End Test
+    # Exit program
+    halt

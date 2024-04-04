@@ -1,18 +1,15 @@
-# testing normal range and overflow of 16 bit immediate
-.data
-.text
-.globl main
-main:
-
-addi $8, $0, -85
-addi $9, $0, 5000
-addi $10, $0, 20000
-addi $11, $0, -1
-
-andi $11, $8, 32767
-andi $12, $9, -85
-andi $13, $10, -32767
-andi $14, $11, 32768
-andi $14, $10, -32768
+  addi $1, $0, 1920
+  addi $2, $0, 8100
+  addi $3, $0, 4
+  addi $4, $0, 500
+  addi $5, $0, 1000
+  
+  ## andi of random values with 1000 to verify correct outputs
+ 
+  andi $1, $1, 1000	## outputs 0x00000380
+  andi $2, $2, 1000	## outputs 0x000003a0
+  andi $3, $3, 1000	## outputs 0x00000000
+  andi $4, $4, 1000	## outputs 0x000001e0
+  andi $5, $5, 1000	## outputs 0x000003e8
 
 halt

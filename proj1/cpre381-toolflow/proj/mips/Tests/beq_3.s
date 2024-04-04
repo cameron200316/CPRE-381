@@ -1,20 +1,11 @@
-.data
-.text
-.globl main
-main:
-   #this is simply testing a common case to see if two registers contain the same value.
-    # Start Test
-    addi $1, $0, 7     #adding the value 7 to register 1
-    addi $2, $0, 7     #adding the value 7 to register 2
-    addi $2, $0, 8     #adding the value 8 to register 2
-    beq $2, $1,  exit #checking to see if both registers contain some value, if so exit.
-    addi $2, $2, 7    #adding the value 15 to register 2
-    beq $2, $1,  exit #checking to see if both registers contain some value, if so exit.
-    addi $1, $1, 8   #adding the value 15 to register 1 
-    beq $2, $1,  exit #checking to see if both registers contain some value, if so exit.
-    addi $1, $0, 400   #adding the value 15 to register 1, should never hit this
-    addi $2, $0, 500   #adding the value 15 to register 1, should never hit this
-    # End Test
-exit:
-    # Exit program
-    halt
+# simple common case
+# a loop is created where $t0 and $t1 are equal to each other.  because they are equal, beq runs the loop again, iterating $t0, breaking the equality.  the final register values should be $t0 = 2 and $t1 = 1.
+
+addi $t0, $zero, 0
+addi $t1, $zero, 1
+Loop:
+addi $t0, $t0, 1
+beq $t0, $t1, Loop
+halt
+
+

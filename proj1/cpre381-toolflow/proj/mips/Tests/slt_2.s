@@ -1,25 +1,46 @@
 .data
 .text
 .globl main
+
+# after this test, registers 3-31 should be set to 0
+
 main:
-	#tests set less than with a negative number too, as well as using two registers instead of just using $zero
-	#can add the u for unisgned if you want I guess, but that's not specified in the doc so I wont include it
 
-	addi $t0, $zero, -10
-	addi $t1, $zero, -5
-	
-	slt $s0, $t0, $t1 #expected true
+#init
+addi $1, $0, 2		# store 1 in register 1 (Rs)
+addi $2, $0, 1		# store 2 in register 2  (Rt)
 
-	#included syscalls, remove the comments if you want to use them. IDK if they're necessary
-	#add $v0, $s0, $zero
-	#syscall
-	
-	#check opposite too
-	slt $s0, $t1, $t0 #expected false
-	
-	#add $v0, $s0, $zero
-	#syscall
 
+    # Start Test    
+    slt $3, $1, $2     # verify that slt can set a register to 0 when rs > rt 
+    slt $4, $1, $2      
+    slt $5, $1, $2      
+    slt $6, $1, $2      
+    slt $7, $1, $2      
+    slt $8, $1, $2      
+    slt $9, $1, $2      
+    slt $10, $1, $2      
+    slt $11, $1, $2      
+    slt $12, $1, $2      
+    slt $13, $1, $2      
+    slt $14, $1, $2      
+    slt $15, $1, $2      
+    slt $16, $1, $2      
+    slt $17, $1, $2      
+    slt $18, $1, $2      
+    slt $19, $1, $2      
+    slt $20, $1, $2      
+    slt $21, $1, $2      
+    slt $22, $1, $2      
+    slt $23, $1, $2      
+    slt $24, $1, $2      
+    slt $25, $1, $2      
+    slt $26, $1, $2      
+    slt $27, $1, $2      
+    slt $28, $1, $2      
+    slt $29, $1, $2      
+    slt $30, $1, $2      
+    slt $31, $1, $2      
     # End Test
 
     # Exit program

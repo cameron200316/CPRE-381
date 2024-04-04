@@ -180,7 +180,7 @@ begin
                 i_S 	  => i_SHAMT(0),     
                 o_O       => s_MUX6OUT(0));
 
-  MUX6_32: for i in 1 to 30 generate
+  MUX6_32: for i in 1 to 31 generate
         MUX6: mux2to1DF
 	port MAP(i_D0      => i_WD(i),         
        	         i_D1      => i_WD(i-1),    

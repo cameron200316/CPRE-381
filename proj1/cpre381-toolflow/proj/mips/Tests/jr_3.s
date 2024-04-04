@@ -1,23 +1,22 @@
+# Test Case 4: Loop Control with jr
+
 .data
+    counter: .word 10       # Initialize counter with 10
+
 .text
 .globl main
 main:
-# This test is common case to see if jr will jump with relation to the $ra register
-# Output should have $v0 as 6
-# testing $ra because most common register used with jr
+    la $t0, counter       # Load address of counter
+    lw $t1, 0($t0)        # Load counter value into $t1
 
+loop_start:
+    beq $t1, $zero, end_loop  # If counter is 0, exit loop
+    sub $t1, $t1, 1       # Decrement counter
+    sw $t1, 0($t0)        # Store updated counter value
 
-#start Test
-addi $a0,$0,5
-jal foo
+    la $ra, loop_start    # Load address of loop_start into $ra
+    jr $ra                # Jump back to loop_start
 
-  #v0 should be 6
-      # Exit program
-  halt
-
-
-#Jal
-foo:
-addiu $v0, $a0,1
-jr $ra #Important peice
-    
+end_loop:
+    # Loop completed. Continue with the rest of the program.
+    halt

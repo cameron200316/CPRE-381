@@ -1,26 +1,19 @@
 .data
 .text
 .globl main
-
 main:
-addi $t1, $0, 0x00000000
-addi $t2, $0, 0x00000000
+addi $0, $0, 0xAAAAAAAA # makesure register zero is still zero when and
+addi $s1, $s1, 0x55555555
+and $t0, $0, $s1
 
-and $a0, $t1, $t2 # should load 0x00000000 into $a0
-and $t1, $0, $0 #should load 0x00000000 into $t1
-and $t2, $0, $0 #should load 0x00000000 into $t0
-
-addi $t1, $0, 0x21345120
-addi $t2, $0, 0x10141000
-
-and $a0, $t1, $t2 #should load 0x00141000 into $a0
-and $a0, $t1, $0 #should set all bit sin a0 to 0
-
-addi $t1, $0, 0xAFEDCBDE
-addi $t2, $0, 0x88888888
-
-and $a0, $t1, $t2 #should load 0x88888888 into $a0
-and $a0, $t1, $0 #should set all bit sin a0 to 0
+addi $s2, $s2, 0xAAAAAAAA # basic test for anding 1 and 0  for and out put should be 0x000000000
+addi $s3, $s3, 0x55555555
+and $s0, $s2,$s3
 
 
-halt
+addi $s4, $s4, 0xAAAAAAAA # basic test for andin  1 and 1 out put should be 0xaaaaaaaa
+addi $s5, $s5, 0xAAAAAAAA
+and $s0, $s4,$s5
+
+ #end program
+   halt

@@ -2,40 +2,75 @@
 .text
 .globl main
 main:
-	# This file is designed to test edge cases of the value of the register
-	# Start Test
-	# Test 1: put 0xFFFFFFFF in register and shift it 31 bits, expecting 0xFFFFFFFF
-	lui $t0, 0xFFFF
-	addi $t0, $t0, 0xFFFF
-	sra $t0, $t0, 31
-	
-	# Test 2: put 0x00000000 in register and shift it 31 bits, expecting 0x00000000
-	lui $t0, 0x0000
-	sra $t0, $t0, 31
-	
-	# Test 3: put 0x7FFFFFFF in register and shift it 31 bits, expecting 0x00000000
-	lui $t0, 0x7FFF
-	addi $t0, $t0, 0xFFFF
-	sra $t0, $t0, 31
-	
-	# Test 4: put 0x8FFFFFFF in register and shift it 11 bits, expecting 0xFFF1FFFF
-	lui $t0, 0x8FFF
-	addi $t0, $t0, 0xFFFF
-	sra $t0, $t0, 11
-	
-	# Test 5: put 0x00000000 in register and shift it 0 bits, expecting 0x00000000
-	lui $t0, 0x0000
-	sra $t0, $t0, 0
-	
-	# Test 6: put 0x00000000 in register and shift it 15 bits, expecting 0x00000000
-	lui $t0, 0x0000
-	sra $t0, $t0, 15
-	
-	# Test 7: put 0x7FFFFFFF in register and shift it 15 bits, expecting 0x0000FFFF
-	lui $t0, 0x7FFF
-	addi $t0, $t0, 0xFFFF
-	sra $t0, $t0, 15
-	
-	# End Test
-	#Exit Program
-	halt
+   addi $1, $0, 0xFEDCBA98 
+   addi $2, $0, 0xFEDCBA98 
+   addi $3, $0, 0xFEDCBA98 
+   addi $4, $0, 0xFEDCBA98 
+   addi $5, $0, 0xFEDCBA98 
+   addi $6, $0, 0xFEDCBA98 
+   addi $7, $0, 0xFEDCBA98 
+   addi $8, $0, 0xFEDCBA98 
+   addi $9, $0, 0xFEDCBA98 
+   addi $10, $0, 0xFEDCBA98 
+   addi $11, $0, 0xFEDCBA98 
+   addi $12, $0, 0xFEDCBA98 
+   addi $13, $0, 0xFEDCBA98 
+   addi $14, $0, 0xFEDCBA98 
+   addi $15, $0, 0xFEDCBA98 
+   addi $16, $0, 0xFEDCBA98 
+   addi $17, $0, 0xFEDCBA98 
+   addi $18, $0, 0xFEDCBA98 
+   addi $19, $0, 0xFEDCBA98 
+   addi $20, $0, 0xFEDCBA98 
+   addi $21, $0, 0xFEDCBA98 
+   addi $22, $0, 0xFEDCBA98 
+   addi $23, $0, 0xFEDCBA98 
+   addi $24, $0, 0xFEDCBA98 
+   addi $25, $0, 0xFEDCBA98 
+   addi $26, $0, 0xFEDCBA98 
+   addi $27, $0, 0xFEDCBA98 
+   addi $28, $0, 0xFEDCBA98 
+   addi $29, $0, 0xFEDCBA98 
+   addi $30, $0, 0xFEDCBA98 
+   addi $0, $0, 0xFEDCBA98
+   # register 1 is initialized last as addi uses register 1 as a temporary register
+   addi $1, $0, 0xFEDCBA98
+   
+   #Start test
+   # each register will be right sifted 0 bits 
+   # confrim that each register is 0x00000000
+   sra $1, $1, 0
+   sra $2, $2, 0
+   sra $3, $3, 0
+   sra $4, $4, 0
+   sra $5, $5, 0
+   sra $6, $6, 0
+   sra $7, $7, 0
+   sra $8, $8, 0
+   sra $9, $9, 0
+   sra $10, $10, 0
+   sra $11, $11, 0
+   sra $12, $12, 0
+   sra $13, $13, 0
+   sra $14, $14, 0
+   sra $15, $15, 0
+   sra $16, $16, 0
+   sra $17, $17, 0
+   sra $18, $18, 0
+   sra $19, $19, 0
+   sra $20, $20, 0
+   sra $21, $21, 0
+   sra $22, $22, 0
+   sra $23, $23, 0
+   sra $24, $24, 0
+   sra $25, $25, 0
+   sra $26, $26, 0
+   sra $27, $27, 0
+   sra $28, $28, 0
+   sra $29, $29, 0
+   sra $30, $30, 0
+   sra $0, $0, 0
+   #End test
+
+   # Exit program
+   halt

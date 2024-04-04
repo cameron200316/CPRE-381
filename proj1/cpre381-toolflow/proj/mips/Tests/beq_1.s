@@ -1,14 +1,20 @@
 .data
+newline:       .asciiz "\n"
+equal_msg:     .asciiz "Test Case: Values are Equal\n"
+not_equal_msg: .asciiz "Test Case: Values are Not Equal\n"
+
 .text
-.globl main
 main:
-   #this is simply testing a common case to see if two registers contain the same value.
-    # Start Test
-    addi $1, $0, 7     #adding the value 7 to register 1
-    addi $2, $0, 7     #adding the value 7 to register 2
-    beq $2, $1,  exit #checking to see if both registers contain some value, if so exit.
-   
-    # End Test
-exit:
-    # Exit program
+    # Test Case: Equality Check
+    addi $t0, $zero, 10      # $t0 = 10
+    addi $t1, $zero, 10      # $t1 = 10
+    beq $t0, $t1, equal_case # Branch to equal_case if $t0 == $t1
+
+    # Code to execute if not equal
+    addi $t2, $zero, 10      # should not arrive
+    halt
+
+equal_case:
+    # Exit the program
+    addi $t3, $zero, 10      # should arrive
     halt

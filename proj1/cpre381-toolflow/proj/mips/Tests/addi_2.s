@@ -1,10 +1,24 @@
-.data 
+# The objective of this test is to check that the overflow detection when the resulted positive number 
+# exceeds the maximum positive number that can be represnted 32-bit 2's complement number.
+
+.data
 .text
 .globl main
+
 main:
-    #Test positive addition - This test will test the positive addition of a number to a register
-    addi $t0, $zero, 1   #Verify that simple addition works with the $zero register
-    addi $t1, $zero, 3   #Verify that simple addition works with the $zero register
-    addi $zero, $zero, 52   #Verify that the $zero register can't be overwritten
+
+    # Start Test
     
+    # Starting value of $1 = 0x7FFF0000
+    lui $1, 0x7FFF 
+    # value of $1 = 0x7FFF7FFF	
+    addi $1, $1, 0x7FFF
+    # Starting value of $1 = 0x7FFFFFFE 
+    addi $1, $1, 0x7FFF
+    # Starting value of $1 = 0x7FFFFFFF (The largest postive number that can be represented in 32-bit 2's complement number)     
+    addi $1, $1, 1     	  
+    # Adding 1 should cause an arithmetic overflow
+    addi $1, $1, 1        
+
+    # Exit program
     halt

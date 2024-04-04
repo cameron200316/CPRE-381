@@ -1,26 +1,22 @@
-# 
-#  In this test case, we are testing to verify that store word will populate all 32 bits 
-#  This test was approved directly by Professor Duwe
-#
-#
 .data
 .text
-lui $t1, 0x1000		# Setting register to 0x1000_0000
+.globl main
+main:
+      # Start Test - Coping over value at same memory location
+      # Explanation - Common case test that checks to make sure that values being stored at the same memory location gets overridden
+addi $t0, $0, 10   
+lui $s0, 0x1001
+sw $t0, 0($s0)     # Stores 10
+addi $t1, $0, 20
+sw $t1, 0($s0)     # Stores 20
+addi $t2, $0, 30
+sw $t2, 0($s0)     # Stores 30
+addi $t3, $0, 40
+sw $t3, 0($s0)     # Stores 40
+addi $t4, $0, 500
+sw $t4, 0($s0)     # Stores 500
 
-lui $t0, 0xABCD		# Setting upper value of $t0 to 0xABCD
-ori $t0, 0xEFAA		# Setting lower value of $t0 to 0xEFAA
-sw $t0, 0($t1)		# store word $t0 into $t1 + 0
+# End Test
 
-lui $t0, 0x1234		# Setting upper value of $t0 to 0x1234
-ori $t0, 0x5678		# Setting lower value of $t0 to 0x5678
-sw $t0, 4($t1)		# store word $t0 into $t1 + 4
-
-lui $t0, 0xABCD		# Setting upper value of $t0 to 0xABCD
-ori $t0, 0xEFAA		# Setting lower value of $t0 to 0xEFAA
-sw $t0, 8($t1)		# store word $t0 into $t1 + 8
-
-lui $t0, 0x1234		# Setting upper value of $t0 to 0x1234
-ori $t0, 0x5678		# Setting lower value of $t0 to 0x5678
-sw $t0, 12($t1)		# store word $t0 into $t1 + 12
-
-halt
+    # Exit program
+    halt

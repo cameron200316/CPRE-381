@@ -1,14 +1,25 @@
-#pc counter starts at 0x00400000
-jal exit
+.data
+.text
+.globl main
+main:
+    # Start Test
+    #Make sure jal updates $ra correctly
+    
+    jal Label #$ra should now point to the instruction below this
+    addiu $0, $0, 0 #No-op / spacer
 
-exit:
-#$ra should hold the value 0x00400004 which is pc + 4, store it in $t0
-addi $t0, $ra, 0
+    Label:     addiu $t1, $ra, 0 #Store the $ra set by jal into $t1
+    jal Label2 #$ra should now point to the instruction below this
 
-halt
+    Label2:    addiu $t2, $ra, 0 #Store the new $ra set by jal into $t2
+    addiu $t1, $t1, 12	#The second stored $ra is 3 words away from the original
+    beq $t1, $t2, CORRECT
+    j Exit
 
-#why am I including this test
-#I am including this test to make sure the that the ra is gettin the value from the pc + 4
-#why does the text have value
-# this test has value becasue it ensures that the $ra gets the value from the pc + 4 (the next instruction) and as
-#such you are able to return when you need to
+    CORRECT: addiu $t0, $0, 1 #Set $t0 to 1 when $ra is stored correctly by jal
+    
+    Exit:
+    # End Test
+    # Exit program
+    halt
+    

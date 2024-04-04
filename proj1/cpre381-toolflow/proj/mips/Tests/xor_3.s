@@ -1,15 +1,19 @@
-.data
-.text
-.globl main
-main:
-   # Goal: This test ensures that the basic, common xor operation works with 0 xor 1 = 1 for all bits in the inputs
-	
-    # Start Test
-    addi $t0, $0, 0 	      # initialize to 0     
-    lui $t1, 0xFFFF	      # initialize to 0xFFFFFFFF   
-    addi $t1, $t1, 0xFFFF
-    xor $t2, $t0, $t1         # verify that 0 xor 0xFFFFFFFF = 0xFFFFFFFF
-    # End Test
+    .data
+a: .word 0xFFFFFFFF
+result: .word 0
 
-    # Exit program
-    halt
+    .text
+    .globl main
+main:
+    # This test case tests in the event that we are doing the max value
+    # The reason for this is because we dont want it to cause any overflows
+    # or errors with the xor function that cause unexpected values
+
+    # Load maximum value into register
+    addi $t0, $zero, -1 # $t0 = 0xFFFFFFFF
+    
+    # Perform XOR with maximum value
+    xor $t1, $t0, $t0   # $t1 = $t0 XOR $t0
+    # $t1 = 0
+
+halt

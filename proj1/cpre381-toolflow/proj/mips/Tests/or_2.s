@@ -1,4 +1,11 @@
-addi $t0, $zero, 0 #initiate register 
-addi $t1, $zero, 0 #initiate register 
-or $t2, $t0, $t2 #verify that or can be used zero and zero
+.data
+.text
+.globl main
+main:
+or $8, $0, 100 #$0 | immediate
+#expected result should be an error because
+#normally on mars this would work becasue the
+#compiler just uses ori instead and treats or as a pseudo instruction
+#but our processor will not do this so we need to make sure our
+#or instruction can not take an immediate.
 halt

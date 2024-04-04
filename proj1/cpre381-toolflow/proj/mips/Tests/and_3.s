@@ -1,30 +1,18 @@
 .data
 .text
 .globl main
-
 main:
-addi $t1, $0, 0x87654321
-addi $t2, $0, 0x12345678
 
-and $a0, $t1, $t2 # should load 0x02244220 into $a0
-and $t1, $0, $0 #should load 0x00000000 into $t1
-and $t2, $0, $0 #should load 0x00000000 into $t0
+addi $t0, $t0,0x7fffffff #check for overflow output should be 0x00000000
+addi $t1,$t1, 0x80000000 
+and $t9, $t0, $t1
 
-addi $t1, $0, 0x44444444
-addi $t2, $0, 0x55555555
+addi $t3, $t3,0x12345678 #check for differnt  patterns. the output should be 0x02044678
+addi $t2,$t2, 0xABCDEFFF
+and $t9, $t3, $t2
 
-and $a0, $t1, $t2 #should load 0x44444444 into $a0
-and $a0, $t1, $0 #should set all bit sin a0 to 0
+addi $t4 , $t4, 0xffffffff # ceck for negative and the output should be 0x80000000
+addi $t5, $t5 , 0x80000000
+and $t7, $t4, $t5
 
-addi $t1, $0, 0x0000FFFF
-addi $t2, $0, 0x11110000
-
-and $a0, $t1, $t2 #should load 0x00000000 into $a0
-and $a0, $t1, $0 #should set all bit sin a0 to 0
-
-addi $t1, $0, 0x18008118
-addi $t2, $0, 0x18181818
-
-and $a0, $t1, $t2 #should load 0x18000018 into $a0
-and $a0, $t1, $0 #should set all bit sin a0 to 0
 halt

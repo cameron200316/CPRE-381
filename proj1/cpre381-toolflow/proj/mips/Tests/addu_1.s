@@ -1,13 +1,15 @@
+# addu is add unsigned, meaning add two registers without overflow and place the result in another register.
+# I can use addi, lui, and addiu.
+# This test: add two negative numbers. It should be -4. Unsigned addition of the 2's complements stored in the registers
+# is the same thing an adder does when it adds immediate values.
 .data
 .text
 .globl main
 main:
-   #test adds 4 and 6 together and prints out the result
-   #good easy unit test to see if basic concept of instruction works rwally just a common case 
-   addu $t1, $zero, 4 
-   addu $t2, $zero, 6
-   addu $t3, $t2, $t1
-   li $v0, 1
-   move $a0, $t3
-   syscall
-   halt
+
+# first, load two negative values into registers
+addi $t0, $zero, -1
+addi $t1, $zero, -3
+addu $t2, $t0, $t1 # expect -4
+
+halt

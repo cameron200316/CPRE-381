@@ -1,24 +1,46 @@
 .data
 .text
 .globl main
+
+# after this test, registers 3-31 should be set to 0
+
 main:
-	#tests edge case when both inputs are equal. 
-	#result should be false, SLT does not include equals
 
-	slt $s0, $zero, $zero #all should be false
-	
-	addi $t0, $zero, 0xFFFF #check for overflow or other weirdness in the ALU
-	
-	slt $s0, $t0, $t0
+#init
+addi $1, $0, 1		# store 1 in register 1 (Rs)
+addi $2, $0, 1		# store 1 in register 2  (Rt)
 
-	addi $t0, $zero, 0x7FFF
 
-	slt $s0, $t0, $t0
-
-	#included syscalls, remove the comments if you want to use them. IDK if they're necessary
-	#add $v0, $s0, $zero
-	#syscall
-
+    # Start Test    
+    slt $3, $1, $2     # verify that slt can set a register to 0 when rs = rt 
+    slt $4, $1, $2      
+    slt $5, $1, $2      
+    slt $6, $1, $2      
+    slt $7, $1, $2      
+    slt $8, $1, $2      
+    slt $9, $1, $2      
+    slt $10, $1, $2      
+    slt $11, $1, $2      
+    slt $12, $1, $2      
+    slt $13, $1, $2      
+    slt $14, $1, $2      
+    slt $15, $1, $2      
+    slt $16, $1, $2      
+    slt $17, $1, $2      
+    slt $18, $1, $2      
+    slt $19, $1, $2      
+    slt $20, $1, $2      
+    slt $21, $1, $2      
+    slt $22, $1, $2      
+    slt $23, $1, $2      
+    slt $24, $1, $2      
+    slt $25, $1, $2      
+    slt $26, $1, $2      
+    slt $27, $1, $2      
+    slt $28, $1, $2      
+    slt $29, $1, $2      
+    slt $30, $1, $2      
+    slt $31, $1, $2      
     # End Test
 
     # Exit program

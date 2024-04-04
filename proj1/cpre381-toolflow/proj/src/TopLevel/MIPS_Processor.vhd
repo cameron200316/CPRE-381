@@ -107,6 +107,8 @@ architecture structure of MIPS_Processor is
   signal s_MUX3OUT         : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
   signal s_MUX4OUT         : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
   signal s_MUX6OUT         : std_logic_vector(4 downto 0)  := "00000";
+  signal s_MUX11OUT        : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+  signal s_MUX12OUT        : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
   --Sign Extender Outputs for LH, LB
   signal s_unsignedByte         : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
@@ -114,7 +116,17 @@ architecture structure of MIPS_Processor is
   signal s_signedByte         	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
   signal s_signedHalfword     	: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
-  --16 bits instructiosn
+  --Signals for Byte Offset
+  signal s_byte0	        : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+  signal s_byte1	        : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";  
+  signal s_byte2	        : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+  signal s_byte3	        : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+
+  --Signals for Half Offset
+  signal s_half0	        : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+  signal s_half1	        : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+
+  --16 bits instructions
   signal s_instruction16        : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
   --32 bit verison of the SHAMT
@@ -393,24 +405,27 @@ begin
 
   --Unsigned extender for the byte
   UB: for i in 0 to 7 generate
-	s_unsignedByte(i) 	<= s_MUX2OUT(i);	
+	s_unsignedByte(i) 	<= s_MUX11OUT(i);	
   end generate UB;
 
   --Unsigned extender for the halfword
   UH: for i in 0 to 15 generate
-	s_unsignedHalfword(i) 	<= s_MUX2OUT(i);	
+	s_unsignedHalfword(i) 	<= s_MUX12OUT(i);	
   end generate UH;
 
   --Signed extender for the byte
-  SB: for i in 16 to 31 generate
-	s_signedByte(i) 	<= s_unsignedByte(15);
-	s_signedByte(i-16) 	<= s_MUX2OUT(i-16);		
+  SB: for i in 8 to 31 generate
+	s_signedByte(i) 	<= s_unsignedByte(7);	
   end generate SB;
+
+  SBS: for i in 0 to 7 generate
+	s_signedByte(i) 	<= s_MUX11OUT(i);	
+  end generate SBS;
 
   --Signed extender for the halfword
   SH: for i in 16 to 31 generate
 	s_signedHalfword(i) 	<= s_unsignedHalfword(15);
-	s_signedHalfword(i-16) 	<= s_MUX2OUT(i-16);	
+	s_signedHalfword(i-16) 	<= s_MUX12OUT(i-16);	
   end generate SH;
 
   --MUX for the lh, lhu, lb, lbu
@@ -479,6 +494,36 @@ begin
                  i_S 	   => s_SHAMT,     
                  o_O       => s_A(i));
   end generate MUX10_32;
+
+  --MUX for the lb offsets
+  MUX11_32: for i in 0 to 31 generate
+  	MUX11: mux4to1DF 
+	port MAP(
+	      i_D3      => s_byte3(i),    
+              i_D2      => s_byte2(i),	
+              i_D1      => s_byte1(i),    
+              i_D0      => s_byte0(i),         
+              i_S0      => s_final(0),
+              i_S1      => s_final(1), 
+	      o_O       => s_MUX11OUT(i)); 
+  end generate MUX11_32;
+
+  --MUX for the lh offsets 
+  MUX12_32: for i in 0 to 31 generate
+        MUX12: mux2to1DF
+	port MAP(i_D0      => s_half0(i),         
+       	         i_D1      => s_half1(i),    
+                 i_S 	   => s_final(1),     
+                 o_O       => s_MUX12OUT(i));
+  end generate MUX12_32;
+
+  s_byte0(7 downto 0) <= s_MUX2OUT(7 downto 0); 
+  s_byte1(7 downto 0) <= s_MUX2OUT(15 downto 8); 
+  s_byte2(7 downto 0) <= s_MUX2OUT(23 downto 16); 
+  s_byte3(7 downto 0) <= s_MUX2OUT(31 downto 24); 
+
+  s_half0(15 downto 0)  <= s_MUX2OUT(15 downto 0); 
+  s_half1(15 downto 0)  <= s_MUX2OUT(31 downto 16); 
 
   s_SHAMT32(4 downto 0) <= s_Inst(10 downto 6); 
 

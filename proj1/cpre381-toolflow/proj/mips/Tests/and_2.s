@@ -1,32 +1,20 @@
 .data
 .text
 .globl main
-
 main:
-#begin test
-addi $t1, $0, 0xFFFFFFFF
-addi $t2, $0, 0xFFFFFFFF
 
-and $a0, $t1, $t2 # should load 0xFFFFFFFF into $a0
-and $t1, $0, $0 #should load 0x00000000 into $t1
-and $t2, $0, $0 #should load 0x00000000 into $t0
 
-addi $t1, $0, 0x01010101
-addi $t2, $0, 0x11111111
+addiu $t0, $t0, 0x00000000 # check if it still works for unsinged numbers the out put should be 0x00000000
+addiu $t1, $t1, 0xffffffff 
+and $t2, $t0,$t1 
 
-and $a0, $t1, $t2 #should load 0x01010101 into $a0
-and $a0, $t1, $0 #should set all bit sin a0 to 0
+addiu $t3, $t3, 0x11111111 # check if it still works for unsiged numbers the out put should be 0x11111111
+addiu $t4, $t4, 0xffffffff 
+and $t5, $t3,$t4 
 
-addi $t1, $0, 0xFFFFFFFF
-addi $t2, $0, 0x11111111
+lui $zero, 0xffff
+lui $t7, 0x0000 #check if lui the upper half words in $zero with and. the output should be 0x00000000
+and $t6, $zero, $t5 
 
-and $a0, $t1, $t2 #should load 0x11111111 into $a0
-and $a0, $t1, $0 #should set all bit sin a0 to 0
-
-addi $t1, $0, 0x01010101
-addi $t2, $0, 0x01250481
-
-and $a0, $t1, $t2 #should load 0x01010101 into $a0
-and $a0, $t1, $0 #should set all bit sin a0 to 0
-
-halt
+ #end program
+   halt

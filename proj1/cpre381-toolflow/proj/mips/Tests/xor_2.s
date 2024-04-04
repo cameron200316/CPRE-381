@@ -1,16 +1,18 @@
-.data
-.text
-.globl main
+    .data
+a: .word 0x1234
+b: .word 0x5678
+result: .word 0
+
+    .text
+    .globl main
 main:
-    # Goal: These tests ensure that the common, basic case of 1 xor 1 = 0
+    # This test just test the generic ability for XOR to work correctly
 
-    # Start Test
-    lui $t0, 0xFFFF
-    addi $t0, $t0, 0xFFFF     # initialize to 0xFFFFFFFF   
-    lui $t1, 0xFFFF
-    addi $t1, $t1, 0xFFFF     # initialize to 0xFFFFFFFF
-    xor $t2, $t0, $t1         # verify that 0xFFFFFFFF xor 0xFFFFFFFF = 0    
-    # End Test
+    # Load values
+    lw $t0, a
+    lw $t1, b
+    
+    # Testing XOR - Generic
+    xor $t2, $t0, $t1 # $t2 = $t0 XOR $t1
 
-    # Exit program
-    halt
+halt

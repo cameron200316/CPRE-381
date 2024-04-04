@@ -1,42 +1,13 @@
 .data
-
-.text 
-
+.text
 .globl main
-
-			#Tests basic functionality of sra
-
 main:
+    # Start Test (shift a negative signed data value)
+    lui $t0, 0xABCD  #initial $t0 value
+    ori $t0, $t0, 0xEF01  #initial $t0 value
+    sra $t1, $t0, 2     # verify that one can shift a register value with '1' in signed value. shift by 2.
+    sra $t1, $t0, 4     # verify that one can shift a register value with '1' in signed value. shift by 4. 
+    # End Test
 
-			#Start Test
-			
-	#Check to make sure can sra and put back into same register
-	
-	sra $1, $1, 2		# verify that one can shift reg 1 2 bits right
-	
-	sra $4, $4, 2		# verify that one can shift reg 4 2 bits right
-	
-	sra $7, $7, 2		# verify that one can shift reg 7 2 bits right
-	
-	sra $10, $10, 2		# verify that one can shift reg 10 2 bits right
-	
-	sra $14, $14, 2	# verify that one can shift reg 14 2 bits right
-	
-	#Check to make sure can sra and put back into different register
-	
-	sra $12, $11, 2		# reg 11 Shift Right 2bits ->12
-
-	sra $13, $15, 2		# reg 15 Shift Right 2bits->13
-
-	sra $25, $24, 2		# reg 24 Shift Right 2bits->25
-	
-	sra $20, $23, 2		# reg 23 Shift Right 2bits->20
-	
-	
-			#End Test
-			
-	# Exit Program
-	
-halt
-	
-		
+    # Exit program
+    halt

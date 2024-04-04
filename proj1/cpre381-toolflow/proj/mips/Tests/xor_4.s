@@ -1,18 +1,20 @@
 .data
+value1: .word 0x12345678
+value2: .word 0x12345679
+
 .text
 .globl main
 main:
-    # Goal: This test stress tests the xor instruction to ensure that with a string having randomly flipped
-    # bits will still give the correct output. We know that all 0's and all 1's inputs work, but this test proves taht 
-    # random inputs will work.
+    # This test the case in which two values are very similar, which may
+    # result in unexpected logic in the event part of the XOR function
+    # is not implemented correctly.
+    # The reason for this is to ensure that XOR works on all values, not
+    # just drastically different values
 
-    # Start Test
-    lui $t0, 0xAAAA
-    addi $t0, $t0, 0xAAAA      # initialize to binary 1010_1010_1010_1010_1010_1010_1010_1010   
-    lui $t1, 0x5555	      
-    addi $t1, $t1, 0x5555      # initialize to binary 0101_0101_0101_0101_0101_0101_0101_0101
-    xor $t2, $t0, $t1         # verify that 0xAAAAAAAA xor 0x55555555 = 0xFFFFFFFF
-    # End Test
+    lw $t0, value1 # Load value1 into $t0
+    lw $t1, value2 # Load value2 into $t1
+    
+    # Test XOR with similar values
+    xor $t2, $t0, $t1 # XOR $t0 and $t1, store in $t2
 
-    # Exit program
-    halt
+halt
