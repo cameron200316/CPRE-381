@@ -1,0 +1,1661 @@
+m255
+K4
+z2
+!s11e vcom 2023.2_2 2023.06, Jun  9 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel
+Eadder
+Z1 w1711640712
+Z2 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z3 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 0
+R0
+Z4 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Adder.vhd
+Z5 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Adder.vhd
+l0
+L26 1
+VFg0MQz=@m`?F1Pai<BR4J3
+!s100 g4HWK06]`i@gB@=<F`:m00
+Z6 OL;C;2023.2_2;77
+33
+Z7 !s110 1712898787
+!i10b 1
+Z8 !s108 1712898787.000000
+Z9 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Adder.vhd|
+Z10 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Adder.vhd|
+!i113 0
+Z11 o-work work
+Z12 tExplicit 1 NoCoverage 1 CvgOpt 0
+Astructure
+R2
+R3
+DEx4 work 5 adder 0 22 Fg0MQz=@m`?F1Pai<BR4J3
+!i122 0
+l71
+L36 103
+VXKLk?e6?YlPj<4V[=>bn13
+!s100 MdJhV;gcAbeP7doVg1`K]2
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Eaddsub
+R1
+R2
+R3
+!i122 1
+R0
+Z13 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/AddSub.vhd
+Z14 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/AddSub.vhd
+l0
+Z15 L21 1
+VQoRJG^nV1>^Kh77@Z]J4_1
+!s100 fJ:?KQCORN6UBKP=nUYYn1
+R6
+33
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/AddSub.vhd|
+Z17 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/AddSub.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 6 addsub 0 22 QoRJG^nV1>^Kh77@Z]J4_1
+!i122 1
+l61
+L34 83
+VkNWW]7oF>33Pk@maVCJ5U1
+!s100 0X6ei`1mQ_VVN:R?e5;DN3
+R6
+33
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 0
+R11
+R12
+Ealu
+R1
+R2
+R3
+!i122 2
+R0
+Z18 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ALU.vhd
+Z19 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ALU.vhd
+l0
+L7 1
+VQ:>WD^MViZ:H_Q;;=NcEE2
+!s100 dCb5Qkm=7SFjFL]YfWaOV2
+R6
+33
+R7
+!i10b 1
+R8
+Z20 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ALU.vhd|
+Z21 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ALU.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 3 alu 0 22 Q:>WD^MViZ:H_Q;;=NcEE2
+!i122 2
+l174
+L34 260
+V@E8[;;1jFDhH5?UIQ5ZP11
+!s100 F0V2G?b>=Me9b5W>ZoIiA1
+R6
+33
+R7
+!i10b 1
+R8
+R20
+R21
+!i113 0
+R11
+R12
+Eandg2
+R1
+R2
+R3
+!i122 3
+R0
+Z22 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/andg2.vhd
+Z23 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/andg2.vhd
+l0
+Z24 L23 1
+V149zVf=U;@U9aml[M`D`W0
+!s100 9ii`nH;cO]FVEQ::>kJND1
+R6
+33
+R7
+!i10b 1
+R8
+Z25 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/andg2.vhd|
+Z26 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/andg2.vhd|
+!i113 0
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 5 andg2 0 22 149zVf=U;@U9aml[M`D`W0
+!i122 3
+l32
+Z27 L31 6
+VlZ@IECN>nz^BY:F@hzN=K1
+!s100 V:aKTS?fM0F=7]_?SXW2^3
+R6
+33
+R7
+!i10b 1
+R8
+R25
+R26
+!i113 0
+R11
+R12
+Ebarreldecoder5_32
+R1
+R2
+R3
+!i122 4
+R0
+Z28 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelDecoder5_32.vhd
+Z29 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelDecoder5_32.vhd
+l0
+R15
+Vi5o__ZKZ`k?iHQA:VaiB11
+!s100 ;RABej4g<Ro88=BJTa:Z?0
+R6
+33
+R7
+!i10b 1
+R8
+Z30 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelDecoder5_32.vhd|
+Z31 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelDecoder5_32.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 17 barreldecoder5_32 0 22 i5o__ZKZ`k?iHQA:VaiB11
+!i122 4
+l30
+L29 37
+V?z?]YVk5FfQ08m9FHFI2O3
+!s100 a69]:l7@Z5jAh5K:EHdYD3
+R6
+33
+R7
+!i10b 1
+R8
+R30
+R31
+!i113 0
+R11
+R12
+Ebarrelshifter
+Z32 w1712247218
+Z33 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+R2
+R3
+!i122 5
+R0
+Z34 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelShifter.vhd
+Z35 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelShifter.vhd
+l0
+Z36 L22 1
+V98aK9z7[5Ek2Sf;k_P^753
+!s100 5H>=MjJm4j>P_H;2QVen:1
+R6
+33
+R7
+!i10b 1
+R8
+Z37 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelShifter.vhd|
+Z38 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelShifter.vhd|
+!i113 0
+R11
+R12
+Astructural
+R33
+R2
+R3
+DEx4 work 13 barrelshifter 0 22 98aK9z7[5Ek2Sf;k_P^753
+!i122 5
+l87
+L32 331
+V<Q=J1i<:cFmAggDo^]U][3
+!s100 eGDhVe]Z>4:HBD4[j0R=Q2
+R6
+33
+R7
+!i10b 1
+R8
+R37
+R38
+!i113 0
+R11
+R12
+Ecomplementor
+R1
+R2
+R3
+!i122 6
+R0
+Z39 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Complementor.vhd
+Z40 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Complementor.vhd
+l0
+R24
+V^C1OYhOooDF?@G`l[keB40
+!s100 C5=I[GV0>@963]odDj;Cn3
+R6
+33
+R7
+!i10b 1
+R8
+Z41 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Complementor.vhd|
+Z42 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Complementor.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 12 complementor 0 22 ^C1OYhOooDF?@G`l[keB40
+!i122 6
+l37
+L30 17
+VDz[YATDQ0ccj]SPkXkRlG3
+!s100 VeJQ0o9;TXY`h1J:SUR;>3
+R6
+33
+R7
+!i10b 1
+R8
+R41
+R42
+!i113 0
+R11
+R12
+Econtrollogic
+R1
+R33
+R2
+R3
+!i122 7
+R0
+Z43 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ControlLogic.vhd
+Z44 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ControlLogic.vhd
+l0
+Z45 L13 1
+V3zBA`PGlCaNhM6<=2kmh=0
+!s100 k80QK;gTZFeU6QIljhEB<3
+R6
+33
+R7
+!i10b 1
+R8
+Z46 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ControlLogic.vhd|
+Z47 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ControlLogic.vhd|
+!i113 0
+R11
+R12
+Astructural
+R33
+R2
+R3
+DEx4 work 12 controllogic 0 22 3zBA`PGlCaNhM6<=2kmh=0
+!i122 7
+l59
+L54 877
+V4JmLHZF9Az2NJ@10OdVFj3
+!s100 bn<l06C>OLFI1zo?Y2Z]03
+R6
+33
+R7
+!i10b 1
+R8
+R46
+R47
+!i113 0
+R11
+R12
+Edataflow_mux2_1
+R1
+R2
+R3
+!i122 8
+R0
+Z48 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Dataflow_Mux2_1.vhd
+Z49 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Dataflow_Mux2_1.vhd
+l0
+R24
+VN0Jm_4Si8cH`z:^X]JK?;0
+!s100 H<3Re2?gIfD:3dQAbC5zf3
+R6
+33
+Z50 !s110 1712898788
+!i10b 1
+Z51 !s108 1712898788.000000
+Z52 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Dataflow_Mux2_1.vhd|
+Z53 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Dataflow_Mux2_1.vhd|
+!i113 0
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 15 dataflow_mux2_1 0 22 N0Jm_4Si8cH`z:^X]JK?;0
+!i122 8
+l33
+L32 6
+V82`;R9]Ef=>Q^jK`Z9NiS0
+!s100 I?cIV`I_Izm2N`CJlB93D0
+R6
+33
+R50
+!i10b 1
+R51
+R52
+R53
+!i113 0
+R11
+R12
+Edecoder5_32
+R1
+R2
+R3
+!i122 9
+R0
+Z54 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Decoder5_32.vhd
+Z55 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Decoder5_32.vhd
+l0
+R15
+V>CN?A3=>WUY@7_8dmGeRC3
+!s100 3KY:3_6e`b[j`B0BG<o;Y1
+R6
+33
+R50
+!i10b 1
+R51
+Z56 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Decoder5_32.vhd|
+Z57 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Decoder5_32.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 11 decoder5_32 0 22 >CN?A3=>WUY@7_8dmGeRC3
+!i122 9
+l30
+L29 38
+VF?`2:DW2W<7X@Bhg1jGH?3
+!s100 D9^0LE?=8RI=TV]dJ:>TZ1
+R6
+33
+R50
+!i10b 1
+R51
+R56
+R57
+!i113 0
+R11
+R12
+Edffg
+Z58 w1712796869
+R2
+R3
+!i122 10
+R0
+Z59 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg.vhd
+Z60 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg.vhd
+l0
+R24
+V<4[1c^JVlXT1d_XTIVZ261
+!s100 FJQDe;FGDG0KnNV;j4DaY2
+R6
+33
+R50
+!i10b 1
+R51
+Z61 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg.vhd|
+Z62 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg.vhd|
+!i113 0
+R11
+R12
+Amixed
+R2
+R3
+DEx4 work 4 dffg 0 22 <4[1c^JVlXT1d_XTIVZ261
+!i122 10
+l37
+Z63 L33 29
+VTEdG>g0`Ff3kSOBZ1j4FM2
+!s100 GR5ff]ZD1Yiz`>ZFVE>Hg1
+R6
+33
+R50
+!i10b 1
+R51
+R61
+R62
+!i113 0
+R11
+R12
+Edffg1
+R1
+R2
+R3
+!i122 11
+R0
+Z64 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg1.vhd
+Z65 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg1.vhd
+l0
+R24
+V<a9hCo3lNV<^jHPla5m0[0
+!s100 [celI7QgJ<mEW4ce_UD0@2
+R6
+33
+R50
+!i10b 1
+R51
+Z66 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg1.vhd|
+Z67 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg1.vhd|
+!i113 0
+R11
+R12
+Amixed
+R2
+R3
+DEx4 work 5 dffg1 0 22 <a9hCo3lNV<^jHPla5m0[0
+!i122 11
+l37
+R63
+VPV0FcCzddY<flFUHTjNam1
+!s100 `n=CCac?J^3mFHbN[l;A[2
+R6
+33
+R50
+!i10b 1
+R51
+R66
+R67
+!i113 0
+R11
+R12
+Eex_mem
+R58
+R2
+R3
+!i122 12
+R0
+Z68 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/EX_MEM.vhd
+Z69 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/EX_MEM.vhd
+l0
+R15
+VZXm?9=hlnF7L66Af@N3N42
+!s100 @YJUmVNI2Z]I1@X0ifHb]3
+R6
+33
+R50
+!i10b 1
+R51
+Z70 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/EX_MEM.vhd|
+Z71 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/EX_MEM.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 6 ex_mem 0 22 ZXm?9=hlnF7L66Af@N3N42
+!i122 12
+l65
+L46 97
+VoE=h;l=GShXVk:C?R^:LG1
+!s100 Zg6>jhI?CKIQIdm9OKHLg0
+R6
+33
+R50
+!i10b 1
+R51
+R70
+R71
+!i113 0
+R11
+R12
+Eextender16_32
+R1
+R2
+R3
+!i122 13
+R0
+Z72 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/extender16_32.vhd
+Z73 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/extender16_32.vhd
+l0
+R15
+VGoiklQ9HTKE<n_C1cl[F62
+!s100 6Ph<^:4HS_In<lUDKOgI;2
+R6
+33
+R50
+!i10b 1
+R51
+Z74 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/extender16_32.vhd|
+Z75 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/extender16_32.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 13 extender16_32 0 22 GoiklQ9HTKE<n_C1cl[F62
+!i122 13
+l56
+L29 60
+VMe4Uo?G=iW1]>AmJgfFmY3
+!s100 Tze=O`ee<OYeGPoTS:D<72
+R6
+33
+R50
+!i10b 1
+R51
+R74
+R75
+!i113 0
+R11
+R12
+Efetchlogic
+Z76 w1712898840
+R33
+R2
+R3
+!i122 40
+R0
+Z77 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/FetchLogic.vhd
+Z78 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/FetchLogic.vhd
+l0
+R36
+VofKPSfdK>TSjVm?hZeVnE1
+!s100 OEHm_GjPj]j@ONz5hlz`c1
+R6
+33
+Z79 !s110 1712898846
+!i10b 1
+Z80 !s108 1712898846.000000
+Z81 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/FetchLogic.vhd|
+Z82 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/FetchLogic.vhd|
+!i113 0
+R11
+R12
+Astructural
+R33
+R2
+R3
+DEx4 work 10 fetchlogic 0 22 ofKPSfdK>TSjVm?hZeVnE1
+!i122 40
+l106
+L40 153
+VnQlf;7cMD3MXf[:?bR=[>1
+!s100 S^ze]M[cELYoMWBLKJke_0
+R6
+33
+R79
+!i10b 1
+R80
+R81
+R82
+!i113 0
+R11
+R12
+Eid_ex
+R58
+R2
+R3
+!i122 15
+R0
+Z83 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ID_EX.vhd
+Z84 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ID_EX.vhd
+l0
+R15
+V@82nNOmL0oZg>7]UiWQD?1
+!s100 fg>IPdiCXHB23NLNKd5Xl0
+R6
+33
+R50
+!i10b 1
+R51
+Z85 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ID_EX.vhd|
+Z86 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ID_EX.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 5 id_ex 0 22 @82nNOmL0oZg>7]UiWQD?1
+!i122 15
+l89
+L70 187
+V67FL]?z[7o;Q:YZKZ8GS40
+!s100 YY4neCX]mBCb7CDCaS5Fb3
+R6
+33
+R50
+!i10b 1
+R51
+R85
+R86
+!i113 0
+R11
+R12
+Eif_id
+Z87 w1712854725
+R2
+R3
+!i122 16
+R0
+Z88 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/IF_ID.vhd
+Z89 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/IF_ID.vhd
+l0
+R15
+VBb1zn8;a[5b>Lc=Ca`_e12
+!s100 808H^LDGM<j8kgQFOZK2<2
+R6
+33
+R50
+!i10b 1
+R51
+Z90 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/IF_ID.vhd|
+Z91 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/IF_ID.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 5 if_id 0 22 Bb1zn8;a[5b>Lc=Ca`_e12
+!i122 16
+l42
+L32 27
+V9?e=8b]AgGBEIRl_BoG:N0
+!s100 jfPdEA6EMT]ANC4]@H`=b2
+R6
+33
+R50
+!i10b 1
+R51
+R90
+R91
+!i113 0
+R11
+R12
+Einvg
+R1
+R2
+R3
+!i122 17
+R0
+Z92 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/invg.vhd
+Z93 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/invg.vhd
+l0
+R24
+V^IQhB0M:TibmTX48^HJa:0
+!s100 5^0jfQ^dVk:bl_Za_KajG0
+R6
+33
+R50
+!i10b 1
+R51
+Z94 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/invg.vhd|
+Z95 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/invg.vhd|
+!i113 0
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 4 invg 0 22 ^IQhB0M:TibmTX48^HJa:0
+!i122 17
+l31
+L30 6
+VGnAN1IHi;Y?=mi4968o873
+!s100 Q?`9^ToWC]zk1[=<LdPdE3
+R6
+33
+R50
+!i10b 1
+R51
+R94
+R95
+!i113 0
+R11
+R12
+Eleftshifter16
+R1
+R3
+R2
+R33
+!i122 18
+R0
+Z96 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/LeftShifter16.vhd
+Z97 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/LeftShifter16.vhd
+l0
+L7 1
+VCQ[7XTM2VWMC6<cf8]AQS2
+!s100 KXN1<[>3<GBC=V_h2HiWO2
+R6
+33
+R50
+!i10b 1
+R51
+Z98 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/LeftShifter16.vhd|
+Z99 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/LeftShifter16.vhd|
+!i113 0
+R11
+R12
+Abehavioral
+R3
+R2
+R33
+DEx4 work 13 leftshifter16 0 22 CQ[7XTM2VWMC6<cf8]AQS2
+!i122 18
+l17
+L15 5
+VEFL;:7A421P4@ThLSOgNA3
+!s100 ;jR<Hg8^OV`Vz6]Yz3;952
+R6
+33
+R50
+!i10b 1
+R51
+R98
+R99
+!i113 0
+R11
+R12
+Emem
+R1
+R33
+R2
+R3
+!i122 19
+R0
+Z100 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mem.vhd
+Z101 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mem.vhd
+l0
+L8 1
+Vof;k8UOTO]0z0:Ag6`VnF3
+!s100 GF_U?1mjKdlzTC==@Eoi@2
+R6
+33
+R50
+!i10b 1
+R51
+Z102 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mem.vhd|
+Z103 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mem.vhd|
+!i113 0
+R11
+R12
+Artl
+R33
+R2
+R3
+DEx4 work 3 mem 0 22 of;k8UOTO]0z0:Ag6`VnF3
+!i122 19
+l37
+L27 24
+V_XQBD327<9Q`ORP@466N51
+!s100 h2oZ:n@5VDnM^B7>cA]W22
+R6
+33
+R50
+!i10b 1
+R51
+R102
+R103
+!i113 0
+R11
+R12
+Emem_wb
+R58
+R2
+R3
+!i122 20
+R0
+Z104 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MEM_WB.vhd
+Z105 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MEM_WB.vhd
+l0
+R15
+V4JVh1n^beMlP37Dc>9Q^C2
+!s100 ?FIVf7zd7cbLzl@I`aTIP1
+R6
+33
+R50
+!i10b 1
+R51
+Z106 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MEM_WB.vhd|
+Z107 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MEM_WB.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 6 mem_wb 0 22 4JVh1n^beMlP37Dc>9Q^C2
+!i122 20
+l53
+L34 48
+V7SFBA4T:DAdVR0ESLPdee1
+!s100 n_5lIWzP<n39^UW:5P=bX0
+R6
+33
+R50
+!i10b 1
+R51
+R106
+R107
+!i113 0
+R11
+R12
+Emips_processor
+Z108 w1712899516
+R2
+R3
+!i122 51
+R0
+Z109 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
+Z110 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
+l0
+R24
+Vd2^A@UnJ<<`aoA_cYNTVc1
+!s100 jZ>b[KoD47L7kJ>XVS<6Q3
+R6
+33
+Z111 !s110 1712899517
+!i10b 1
+Z112 !s108 1712899517.000000
+Z113 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd|
+!s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd|
+!i113 0
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 14 mips_processor 0 22 d2^A@UnJ<<`aoA_cYNTVc1
+!i122 51
+l456
+L35 823
+Vi5ed?6_LlI0E6]7O30HL20
+!s100 LA?lWezf]m`44_=<bahJ11
+R6
+33
+R111
+!i10b 1
+R112
+R113
+Z114 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd|
+!i113 0
+R11
+R12
+Emux2t1_n
+R1
+R2
+R3
+!i122 22
+R0
+Z115 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd
+Z116 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd
+l0
+R15
+VQAf8Q9Ej2QBN0lQXa4H@13
+!s100 Y80E^d;5=hf2cNC6Yk_Di1
+R6
+33
+R50
+!i10b 1
+R51
+Z117 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd|
+Z118 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 8 mux2t1_n 0 22 QAf8Q9Ej2QBN0lQXa4H@13
+!i122 22
+l39
+L30 21
+VVEcAo4CEmMV0Of=ZDB>JX2
+!s100 ?3^4eJNB=AaXSCf8mcLda3
+R6
+33
+R50
+!i10b 1
+R51
+R117
+R118
+!i113 0
+R11
+R12
+Emux2to1df
+R1
+R2
+R3
+!i122 23
+R0
+Z119 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2to1DF.vhd
+Z120 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2to1DF.vhd
+l0
+R24
+VJ:JhPOh^=D?Z91AEj8mk33
+!s100 09=hmcbY3ooFh>zmW0M0c0
+R6
+33
+R50
+!i10b 1
+R51
+Z121 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2to1DF.vhd|
+Z122 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2to1DF.vhd|
+!i113 0
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 9 mux2to1df 0 22 J:JhPOh^=D?Z91AEj8mk33
+!i122 23
+l38
+L32 14
+VIzci>[hV7Vc`BJQL4hk4Q3
+!s100 F:E;NfHD3XlQF2SCRdN222
+R6
+33
+R50
+!i10b 1
+R51
+R121
+R122
+!i113 0
+R11
+R12
+Emux32_1
+R1
+R2
+R3
+!i122 25
+R0
+Z123 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux32_1.vhd
+Z124 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux32_1.vhd
+l0
+R15
+V2<>M_8Z3neB2S@8MOHhYC0
+!s100 5;]cK7mUOW9iNlT46djVV2
+R6
+33
+R50
+!i10b 1
+R51
+Z125 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux32_1.vhd|
+Z126 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux32_1.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 7 mux32_1 0 22 2<>M_8Z3neB2S@8MOHhYC0
+!i122 25
+l63
+L61 40
+VTPo3_M0Ez?[AJoRV;zE`Q2
+!s100 ?fK4D;>eCTdM@OQRz3B:V0
+R6
+33
+R50
+!i10b 1
+R51
+R125
+R126
+!i113 0
+R11
+R12
+Emux4to1df
+R1
+R2
+R3
+!i122 24
+R0
+Z127 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux4to1DF.vhd
+Z128 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux4to1DF.vhd
+l0
+R24
+V2OD05R;YemnjPITlOogSl3
+!s100 ]M8GKNS58GiYCn;1XiT`31
+R6
+33
+R50
+!i10b 1
+R51
+Z129 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux4to1DF.vhd|
+Z130 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux4to1DF.vhd|
+!i113 0
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 9 mux4to1df 0 22 2OD05R;YemnjPITlOogSl3
+!i122 24
+l44
+L35 20
+VF]KPGl<UoSMB_[jZmQ?231
+!s100 aaBAUE80jU=J?Hh@@o48S2
+R6
+33
+R50
+!i10b 1
+R51
+R129
+R130
+!i113 0
+R11
+R12
+Enbit_8t1mux
+R1
+R2
+R3
+!i122 26
+R0
+Z131 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_8t1Mux.vhd
+Z132 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_8t1Mux.vhd
+l0
+L6 1
+VDbO:jRd;X1lmE:5UR>cH52
+!s100 l4N8jEd^oe8IU`O[M@E:g3
+R6
+33
+R50
+!i10b 1
+R51
+Z133 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_8t1Mux.vhd|
+Z134 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_8t1Mux.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 11 nbit_8t1mux 0 22 DbO:jRd;X1lmE:5UR>cH52
+!i122 26
+l41
+L24 80
+VQ@MenBjeVQQDi5G?GFZB60
+!s100 m_N2920_3OARFCF2?ZViK2
+R6
+33
+R50
+!i10b 1
+R51
+R133
+R134
+!i113 0
+R11
+R12
+Enbit_addsub
+R1
+R2
+R3
+!i122 27
+R0
+Z135 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_AddSub.vhd
+Z136 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_AddSub.vhd
+l0
+R15
+VHM=E_hz_KBGQL<l@33RG;1
+!s100 H6L6gFljnc5S=GF5>NGQb0
+R6
+33
+R50
+!i10b 1
+R51
+Z137 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_AddSub.vhd|
+Z138 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_AddSub.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 11 nbit_addsub 0 22 HM=E_hz_KBGQL<l@33RG;1
+!i122 27
+l58
+L31 57
+VL=dfS:JkWFYZP@9<<KN_o3
+!s100 hh[EQ14[i[zn^fC>C_Ukh2
+R6
+33
+R50
+!i10b 1
+R51
+R137
+R138
+!i113 0
+R11
+R12
+Enbit_andg2
+R1
+R2
+R3
+!i122 28
+R0
+Z139 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_andg2.vhd
+Z140 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_andg2.vhd
+l0
+R24
+VL3zS41Xc_LITO>efal^4F1
+!s100 9JWQ;`N5f6hM3Yk?@41Si0
+R6
+33
+Z141 !s110 1712898789
+!i10b 1
+R51
+Z142 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_andg2.vhd|
+Z143 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_andg2.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 10 nbit_andg2 0 22 L3zS41Xc_LITO>efal^4F1
+!i122 28
+l39
+Z144 L31 19
+VzVeWC_Sh8]1:R?SdN4bde0
+!s100 _^[b^Xj_DGbkne4c79?lN1
+R6
+33
+R141
+!i10b 1
+R51
+R142
+R143
+!i113 0
+R11
+R12
+Enbit_full_adder
+R1
+R2
+R3
+!i122 29
+R0
+Z145 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_full_adder.vhd
+Z146 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_full_adder.vhd
+l0
+R15
+V61LhQ>im5_]`i9JG?mgIB1
+!s100 ljH_oM5cR:boeKamEQMB31
+R6
+33
+R141
+!i10b 1
+Z147 !s108 1712898789.000000
+Z148 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_full_adder.vhd|
+Z149 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_full_adder.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 15 nbit_full_adder 0 22 61LhQ>im5_]`i9JG?mgIB1
+!i122 29
+l45
+L32 43
+VfI5jMXoJF4JIQacI[PHVI2
+!s100 hi5WK4O>YB356=<P^72AM0
+R6
+33
+R141
+!i10b 1
+R147
+R148
+R149
+!i113 0
+R11
+R12
+Enbit_org2
+R1
+R2
+R3
+!i122 30
+R0
+Z150 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_org2.vhd
+Z151 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_org2.vhd
+l0
+R24
+V?EmohbzEY=B=LcJcgDXL40
+!s100 8TV]M7?Ih::87n^K;Aj]U1
+R6
+33
+R141
+!i10b 1
+R147
+Z152 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_org2.vhd|
+Z153 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_org2.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 9 nbit_org2 0 22 ?EmohbzEY=B=LcJcgDXL40
+!i122 30
+l39
+R144
+VJi22^nI78dIXT`Kz59IVM1
+!s100 `AXeJ62=_5od_Fl:TO6e]1
+R6
+33
+R141
+!i10b 1
+R147
+R152
+R153
+!i113 0
+R11
+R12
+Enbit_xorg2
+R1
+R2
+R3
+!i122 31
+R0
+Z154 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_xorg2.vhd
+Z155 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_xorg2.vhd
+l0
+R24
+VJQ31Y6gk8j9oBEBW7m55T0
+!s100 ;Ml?IVWfZHU_V9Rz?PX@H3
+R6
+33
+R141
+!i10b 1
+R147
+Z156 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_xorg2.vhd|
+Z157 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_xorg2.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 10 nbit_xorg2 0 22 JQ31Y6gk8j9oBEBW7m55T0
+!i122 31
+l39
+R144
+VM>6;cjQ@aG83_WU?fB:Co3
+!s100 fmcSg3Z>f][a2>DbF6CSi0
+R6
+33
+R141
+!i10b 1
+R147
+R156
+R157
+!i113 0
+R11
+R12
+Enegativechecker
+R1
+R2
+R3
+!i122 32
+R0
+Z158 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/NegativeChecker.vhd
+Z159 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/NegativeChecker.vhd
+l0
+L6 1
+Vl0e;EFXGUF67gXR2Rf67i0
+!s100 iECBSNH4nQi2SCN60=WeO3
+R6
+33
+R141
+!i10b 1
+R147
+Z160 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/NegativeChecker.vhd|
+Z161 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/NegativeChecker.vhd|
+!i113 0
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 15 negativechecker 0 22 l0e;EFXGUF67gXR2Rf67i0
+!i122 32
+l17
+L15 17
+V9_C81m_7iaLFLlR^LCR?Z0
+!s100 NOAnI_>JnPChBW:P8QMNZ2
+R6
+33
+R141
+!i10b 1
+R147
+R160
+R161
+!i113 0
+R11
+R12
+Eorg2
+R1
+R2
+R3
+!i122 33
+R0
+Z162 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/org2.vhd
+Z163 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/org2.vhd
+l0
+R24
+VPWYm;15C:UGVRd:Ze>RX33
+!s100 ikMHcZBAmUXc6FLoXEkzT3
+R6
+33
+R141
+!i10b 1
+R147
+Z164 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/org2.vhd|
+Z165 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/org2.vhd|
+!i113 0
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 4 org2 0 22 PWYm;15C:UGVRd:Ze>RX33
+!i122 33
+l32
+R27
+VicLoKRjQ?UhI60eXIKK@T1
+!s100 @GZz>BiL1ab<;jlR0CJN>1
+R6
+33
+R141
+!i10b 1
+R147
+R164
+R165
+!i113 0
+R11
+R12
+Epc
+R1
+R2
+R3
+!i122 34
+R0
+Z166 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/PC.vhd
+Z167 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/PC.vhd
+l0
+R15
+VJI=Ub4G;NI^k6cgWg@VVX1
+!s100 beXfE6cG[RTYneFmUgj@n0
+R6
+33
+R141
+!i10b 1
+R147
+Z168 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/PC.vhd|
+Z169 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/PC.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 2 pc 0 22 JI=Ub4G;NI^k6cgWg@VVX1
+!i122 34
+l50
+L32 47
+VGPR89M:P6OE@FV1DPAJk=3
+!s100 UjClEdZ5?QB5f0D5:0ji?1
+R6
+33
+R141
+!i10b 1
+R147
+R168
+R169
+!i113 0
+R11
+R12
+Ereg32file
+R1
+R2
+R3
+!i122 35
+R0
+Z170 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd
+Z171 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd
+l0
+R15
+VB>c93j[cJSZ5YUI3UgaLc0
+!s100 XUjVMcXVGYX082URQ5>Gg2
+R6
+33
+R141
+!i10b 1
+R147
+Z172 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd|
+Z173 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 9 reg32file 0 22 B>c93j[cJSZ5YUI3UgaLc0
+!i122 35
+l101
+L35 168
+VBMeXbPhTA=0X>Eg2TdUFj3
+!s100 f0?Z>QLal=iC:0IRTT6IW3
+R6
+33
+R141
+!i10b 1
+R147
+R172
+R173
+!i113 0
+R11
+R12
+Eregfile
+R58
+R2
+R3
+!i122 36
+R0
+Z174 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/RegFile.vhd
+Z175 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/RegFile.vhd
+l0
+R15
+VocOL00JDjLi20=BzcXEIa2
+!s100 OVSbJzVV9WYFXiYf<CTiz3
+R6
+33
+R141
+!i10b 1
+R147
+Z176 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/RegFile.vhd|
+Z177 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/RegFile.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 7 regfile 0 22 ocOL00JDjLi20=BzcXEIa2
+!i122 36
+l42
+L32 23
+VA^H?_9d@cEohkCQHRI9TQ1
+!s100 4RnnEmT<hNJ9d1151T00Z0
+R6
+33
+R141
+!i10b 1
+R147
+R176
+R177
+!i113 0
+R11
+R12
+Estructual_full_adder
+R1
+R2
+R3
+!i122 37
+R0
+Z178 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Structual_full_adder.vhd
+Z179 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Structual_full_adder.vhd
+l0
+R24
+VI^_34B=RBDF;?2[F;gI`f2
+!s100 4eOD1O6eQGl`0iKfQzmgN3
+R6
+33
+R141
+!i10b 1
+R147
+Z180 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Structual_full_adder.vhd|
+Z181 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Structual_full_adder.vhd|
+!i113 0
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 20 structual_full_adder 0 22 I^_34B=RBDF;?2[F;gI`f2
+!i122 37
+l61
+L33 60
+V[<dV[kj5nJ=WUClMjU6DU0
+!s100 U9XNX`ASN6=e7J[3aUhH90
+R6
+33
+R141
+!i10b 1
+R147
+R180
+R181
+!i113 0
+R11
+R12
+Exorg2
+R1
+R2
+R3
+!i122 38
+R0
+Z182 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd
+Z183 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd
+l0
+R24
+V1PMLcjh^21MH<21UV9f@h1
+!s100 :XR]4aE:DC4Oh6C[WWe?o2
+R6
+33
+R141
+!i10b 1
+R147
+Z184 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd|
+Z185 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd|
+!i113 0
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 5 xorg2 0 22 1PMLcjh^21MH<21UV9f@h1
+!i122 38
+l32
+R27
+VA2Zdg4k[K[95o]ag]d4g33
+!s100 Z;<A[i8Vnf6O_Fae6S:]Z2
+R6
+33
+R141
+!i10b 1
+R147
+R184
+R185
+!i113 0
+R11
+R12
+Ezerochecker
+R1
+R2
+R3
+!i122 39
+R0
+Z186 8/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ZeroChecker.vhd
+Z187 F/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ZeroChecker.vhd
+l0
+R45
+V6b2GE0SGcLNWF1dLJn;RE3
+!s100 bjWR@ck;hm`d7SHR]d2k73
+R6
+33
+R141
+!i10b 1
+R147
+Z188 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ZeroChecker.vhd|
+Z189 !s107 /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ZeroChecker.vhd|
+!i113 0
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 11 zerochecker 0 22 6b2GE0SGcLNWF1dLJn;RE3
+!i122 39
+l25
+L21 10
+VhY8>:@g_ULR4MifabO=mZ2
+!s100 :gA<bPF0oOo^XR:Z:<P=:3
+R6
+33
+R141
+!i10b 1
+R147
+R188
+R189
+!i113 0
+R11
+R12
