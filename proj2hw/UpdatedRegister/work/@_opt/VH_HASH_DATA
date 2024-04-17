@@ -1,0 +1,69 @@
+[N
+8
+6
+12 tb_reg32file
+1
+61 /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/work
+4
+1 N
+7
+5 mixed
+2
+7 regfile
+3
+10 structural
+8
+9 gCLK_HPER
+5
+9 reg32file
+]
+[G
+1
+5
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+6
+7
+1
+8
+0
+0
+0
+0
+8 8
+-128
+-106
+-104
+0
+0
+0
+0
+0
+0
+0
+]

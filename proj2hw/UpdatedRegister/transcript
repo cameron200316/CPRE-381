@@ -1,0 +1,422 @@
+# //  Questa Sim-64
+# //  Version 2023.2_2 linux_x86_64 Jun  9 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vlib work
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:02:55 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2_5bit
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd(31): near "signal": syntax error
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd(31): VHDL Compiler exiting
+# End time: 23:02:55 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:03:43 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2_5bit
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd(31): near "signal": syntax error
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd(31): VHDL Compiler exiting
+# End time: 23:03:43 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Modified modelsim.ini
+# Modified modelsim.ini
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:03:49 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2_5bit
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd(31): near "signal": syntax error
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd(31): VHDL Compiler exiting
+# End time: 23:03:49 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:03:57 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2_5bit
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd(31): near "signal": syntax error
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd(31): VHDL Compiler exiting
+# End time: 23:03:57 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:04:28 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2_5bit
+# -- Compiling architecture dataflow of andg2_5bit
+# End time: 23:04:28 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:04:37 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 23:04:37 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/dffg.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:04:37 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# End time: 23:04:37 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/invg.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:04:37 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 23:04:37 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/xorg2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:04:37 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 23:04:37 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/mux2to1DF.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:04:37 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/mux2to1DF.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2to1DF
+# -- Compiling architecture dataflow of mux2to1DF
+# End time: 23:04:37 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/RegFile.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:04:42 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/RegFile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegFile
+# -- Compiling architecture structural of RegFile
+# End time: 23:04:42 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:04:44 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg32File
+# -- Compiling architecture structural of Reg32File
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(104): near "mux2to1DF": (vcom-1576) expecting COMPONENT.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(109): near "invg": (vcom-1576) expecting COMPONENT.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(173): (vcom-1484) Unknown formal identifier "i_A".
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(174): (vcom-1484) Unknown formal identifier "o_F".
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(187): near "port": syntax error
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(194): near "port": syntax error
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(275): VHDL Compiler exiting
+# End time: 23:04:44 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:05:16 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg32File
+# -- Compiling architecture structural of Reg32File
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(187): near "port": syntax error
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(194): near "port": syntax error
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(275): VHDL Compiler exiting
+# End time: 23:05:16 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:05:46 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg32File
+# -- Compiling architecture structural of Reg32File
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(187): near "port": syntax error
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(194): near "port": syntax error
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(275): VHDL Compiler exiting
+# End time: 23:05:46 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:05:50 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg32File
+# -- Compiling architecture structural of Reg32File
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(187): near "port": syntax error
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(194): near "port": syntax error
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(275): VHDL Compiler exiting
+# End time: 23:05:50 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:07:43 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg32File
+# -- Compiling architecture structural of Reg32File
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(188): (vcom-1136) Unknown identifier "s_WD".
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(188): Indexed name is type (error); expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(195): (vcom-1136) Unknown identifier "s_WD".
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(195): Indexed name is type (error); expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(275): VHDL Compiler exiting
+# End time: 23:07:43 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:08:04 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg32File
+# -- Compiling architecture structural of Reg32File
+# End time: 23:08:04 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/RegFile.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:08:09 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/RegFile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegFile
+# -- Compiling architecture structural of RegFile
+# End time: 23:08:10 on Apr 16,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/*.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:10:49 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/RegFile.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/dffg.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/invg.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/mux2to1DF.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/tb_Reg32File.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg32File
+# -- Compiling architecture structural of Reg32File
+# -- Compiling entity RegFile
+# -- Compiling architecture structural of RegFile
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# -- Compiling entity andg2_5bit
+# -- Compiling architecture dataflow of andg2_5bit
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# -- Compiling entity mux2to1DF
+# -- Compiling architecture dataflow of mux2to1DF
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_Reg32File
+# -- Compiling architecture mixed of tb_Reg32File
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 23:10:49 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/tb_Reg32File.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:10:51 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/tb_Reg32File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_Reg32File
+# -- Compiling architecture mixed of tb_Reg32File
+# End time: 23:10:51 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_reg32file
+# vsim work.tb_reg32file 
+# Start time: 23:11:00 on Apr 16,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(131): (vopt-3473) Component instance "decode5_32 : Decoder5_32" is not bound.
+#         Region: /tb_Reg32File/DUT0
+# ** Warning: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(202): (vopt-3473) Component instance "mux32_1_0 : mux32_1" is not bound.
+#         Region: /tb_Reg32File/DUT0
+# ** Warning: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(238): (vopt-3473) Component instance "mux32_1_1 : mux32_1" is not bound.
+#         Region: /tb_Reg32File/DUT0
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_reg32file(mixed)#1
+# Loading work.reg32file(structural)#1
+# ** Warning: (vsim-3473) Component instance "decode5_32 : Decoder5_32" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_reg32file/DUT0 File: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+# Loading work.regfile(structural)#1
+# ** Warning: (vsim-3473) Component instance "mux32_1_0 : mux32_1" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_reg32file/DUT0 File: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+# ** Warning: (vsim-3473) Component instance "mux32_1_1 : mux32_1" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_reg32file/DUT0 File: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+add wave -r sim:/tb_reg32file/*
+run 800
+quit -sim
+# End time: 23:12:28 on Apr 16,2024, Elapsed time: 0:01:28
+# Errors: 0, Warnings: 6
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:12:35 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg32File
+# -- Compiling architecture structural of Reg32File
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(188): (vcom-1136) Unknown identifier "s_WD".
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(188): Indexed name is type (error); expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(195): (vcom-1136) Unknown identifier "s_WD".
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(195): Indexed name is type (error); expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(275): VHDL Compiler exiting
+# End time: 23:12:35 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:13:01 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg32File
+# -- Compiling architecture structural of Reg32File
+# End time: 23:13:01 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_reg32file
+# vsim work.tb_reg32file 
+# Start time: 23:13:11 on Apr 16,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_reg32file(mixed)#1
+# Loading work.reg32file(structural)#1
+# ** Warning: (vsim-3473) Component instance "decode5_32 : Decoder5_32" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_reg32file/DUT0 File: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+# Loading work.regfile(structural)#1
+# ** Warning: (vsim-3473) Component instance "mux32_1_0 : mux32_1" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_reg32file/DUT0 File: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+# ** Warning: (vsim-3473) Component instance "mux32_1_1 : mux32_1" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_reg32file/DUT0 File: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+add wave -r sim:/tb_reg32file/*
+run 800
+quit -sim
+# End time: 23:13:39 on Apr 16,2024, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 3
+vdel -all -lib work
+vlib work
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/*.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:14:02 on Apr 16,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/RegFile.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/andg2_5bit.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/dffg.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/invg.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/mux2to1DF.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/tb_Reg32File.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg32File
+# -- Compiling architecture structural of Reg32File
+# -- Compiling entity RegFile
+# -- Compiling architecture structural of RegFile
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# -- Compiling entity andg2_5bit
+# -- Compiling architecture dataflow of andg2_5bit
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# -- Compiling entity mux2to1DF
+# -- Compiling architecture dataflow of mux2to1DF
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_Reg32File
+# -- Compiling architecture mixed of tb_Reg32File
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 23:14:02 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_reg32file
+# vsim work.tb_reg32file 
+# Start time: 23:14:10 on Apr 16,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(131): (vopt-3473) Component instance "decode5_32 : Decoder5_32" is not bound.
+#         Region: /tb_Reg32File/DUT0
+# ** Warning: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(202): (vopt-3473) Component instance "mux32_1_0 : mux32_1" is not bound.
+#         Region: /tb_Reg32File/DUT0
+# ** Warning: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd(238): (vopt-3473) Component instance "mux32_1_1 : mux32_1" is not bound.
+#         Region: /tb_Reg32File/DUT0
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_reg32file(mixed)#1
+# Loading work.reg32file(structural)#1
+# ** Warning: (vsim-3473) Component instance "decode5_32 : Decoder5_32" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_reg32file/DUT0 File: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+# Loading work.regfile(structural)#1
+# ** Warning: (vsim-3473) Component instance "mux32_1_0 : mux32_1" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_reg32file/DUT0 File: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+# ** Warning: (vsim-3473) Component instance "mux32_1_1 : mux32_1" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_reg32file/DUT0 File: /home/cam2022/CPRE-381/ProjectP1/proj2hw/UpdatedRegister/Reg32File.vhd
+add wave -r sim:/tb_reg32file/*
+run 800
+# End time: 23:14:49 on Apr 16,2024, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 6
