@@ -1,0 +1,107 @@
+
+#
+# CprE 381 toolflow Timing dump
+#
+
+FMax: 54.44mhz Clk Constraint: 20.00ns Slack: 1.63ns
+
+The path is given below
+
+ ===================================================================
+ From Node    : ID_EX:IDEX|RegFile:REG2|dffg:\G_NBit_REG:0:DFF|s_Q
+ To Node      : PC:PC4|dffg:\G_NBit_REG:16:DFF|s_Q
+ Launch Clock : iCLK
+ Latch Clock  : iCLK
+ Data Arrival Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+      0.000      0.000           launch edge time
+      3.070      3.070  R        clock network delay
+      3.302      0.232     uTco  ID_EX:IDEX|RegFile:REG2|dffg:\G_NBit_REG:0:DFF|s_Q
+      3.302      0.000 FF  CELL  IDEX|REG2|\G_NBit_REG:0:DFF|s_Q|q
+      4.126      0.824 FF    IC  A|adder_subtractor|Nbit_Adder|full_adder_0|g_And1_And2_to_Or|o_C~0|dataa
+      4.480      0.354 FF  CELL  A|adder_subtractor|Nbit_Adder|full_adder_0|g_And1_And2_to_Or|o_C~0|combout
+      4.867      0.387 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:1:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+      4.992      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:1:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+      5.241      0.249 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:2:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+      5.366      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:2:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+      5.623      0.257 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:3:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+      5.904      0.281 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:3:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+      6.206      0.302 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:4:rippleAdder|g_And1_And2_to_Or|o_C~0|dataa
+      6.630      0.424 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:4:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+      6.879      0.249 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:5:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+      7.004      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:5:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+      7.296      0.292 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:6:rippleAdder|g_And1_And2_to_Or|o_C~0|datab
+      7.721      0.425 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:6:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+      7.970      0.249 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:7:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+      8.095      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:7:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+      8.345      0.250 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:8:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+      8.470      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:8:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+      8.720      0.250 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:9:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+      8.845      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:9:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+      9.096      0.251 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:10:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+      9.221      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:10:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+      9.472      0.251 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:11:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+      9.597      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:11:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+      9.849      0.252 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:12:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+      9.974      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:12:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     10.223      0.249 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:13:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+     10.348      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:13:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     10.648      0.300 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:14:rippleAdder|g_And1_And2_to_Or|o_C~0|dataa
+     11.072      0.424 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:14:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     11.323      0.251 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:15:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+     11.448      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:15:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     11.859      0.411 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:16:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+     11.984      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:16:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     12.233      0.249 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:17:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+     12.358      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:17:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     12.608      0.250 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:18:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+     12.733      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:18:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     12.973      0.240 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:19:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+     13.098      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:19:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     13.337      0.239 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:20:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+     13.462      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:20:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     13.700      0.238 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:21:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+     13.825      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:21:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     14.063      0.238 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:22:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+     14.188      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:22:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     14.438      0.250 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:23:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+     14.563      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:23:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     14.809      0.246 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:24:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+     15.090      0.281 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:24:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     15.813      0.723 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:25:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+     15.938      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:25:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     16.175      0.237 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:26:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+     16.300      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:26:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     16.544      0.244 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:27:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+     16.825      0.281 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:27:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     17.064      0.239 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:28:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+     17.189      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:28:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     17.435      0.246 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:29:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+     17.716      0.281 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:29:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+     17.952      0.236 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:30:rippleAdder|g_XOR_Cin_to_XOR|o_C~0|datad
+     18.102      0.150 FR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:30:rippleAdder|g_XOR_Cin_to_XOR|o_C~0|combout
+     18.327      0.225 RR    IC  A|branchchecker|Equal0~9|datac
+     18.594      0.267 RF  CELL  A|branchchecker|Equal0~9|combout
+     18.863      0.269 FF    IC  FETCH|or2a|o_C~0|datab
+     19.252      0.389 FR  CELL  FETCH|or2a|o_C~0|combout
+     19.692      0.440 RR    IC  MUX13|\G_NBit_MUX:22:MUXI|o_O~1|datad
+     19.847      0.155 RR  CELL  MUX13|\G_NBit_MUX:22:MUXI|o_O~1|combout
+     20.629      0.782 RR    IC  MUX13|\G_NBit_MUX:16:MUXI|o_O~6|datac
+     20.916      0.287 RR  CELL  MUX13|\G_NBit_MUX:16:MUXI|o_O~6|combout
+     21.122      0.206 RR    IC  MUX13|\G_NBit_MUX:16:MUXI|o_O~8|datad
+     21.277      0.155 RR  CELL  MUX13|\G_NBit_MUX:16:MUXI|o_O~8|combout
+     21.277      0.000 RR    IC  PC4|\G_NBit_REG:16:DFF|s_Q|d
+     21.364      0.087 RR  CELL  PC:PC4|dffg:\G_NBit_REG:16:DFF|s_Q
+ Data Required Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+     20.000     20.000           latch edge time
+     22.966      2.966  R        clock network delay
+     22.998      0.032           clock pessimism removed
+     22.978     -0.020           clock uncertainty
+     22.996      0.018     uTsu  PC:PC4|dffg:\G_NBit_REG:16:DFF|s_Q
+ Data Arrival Time  :    21.364
+ Data Required Time :    22.996
+ Slack              :     1.632
+ ===================================================================

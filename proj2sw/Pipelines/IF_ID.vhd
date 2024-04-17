@@ -21,7 +21,7 @@ use IEEE.std_logic_1164.all;
 entity IF_ID is
    generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
    port(i_CLKs        : in std_logic;
-	i_R           : in std_logic;
+	      i_R           : in std_logic;
         i_PC4         : in std_logic_vector(N-1 downto 0);
         i_Inst        : in std_logic_vector(N-1 downto 0);
         o_PC4         : out std_logic_vector(N-1 downto 0);

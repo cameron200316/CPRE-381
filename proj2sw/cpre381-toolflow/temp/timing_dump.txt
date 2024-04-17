@@ -1,0 +1,516 @@
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Wed Apr 17 12:25:16 2024
+Info: Command: quartus_sta --sdc=toolflow.sdc toolflow --do_report_timing
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Warning (335093): The Timing Analyzer is analyzing 21 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Info (332104): Reading SDC File: 'toolflow.sdc'
+Warning (332060): Node: mem:IMem|altsyncram:ram_rtl_0|altsyncram_eg81:auto_generated|ram_block1a0~porta_we_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Latch ControlLogic:CL|o_ALUsrc is being clocked by mem:IMem|altsyncram:ram_rtl_0|altsyncram_eg81:auto_generated|ram_block1a0~porta_we_reg
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Info (332146): Worst-case setup slack is 1.632
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.632               0.000 iCLK 
+Info (332146): Worst-case hold slack is 0.263
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.263               0.000 iCLK 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 9.623
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.623               0.000 iCLK 
+Info (332114): Report Metastability: Found 7 synchronizer chains.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 7
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 23.687 ns
+Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 1.632
+    Info (332115): -to_clock [get_clocks {iCLK}]
+    Info (332115): -setup
+    Info (332115): -stdout
+Info (332115): Path #1: Setup slack is 1.632 
+    Info (332115): ===================================================================
+    Info (332115): From Node    : ID_EX:IDEX|RegFile:REG2|dffg:\G_NBit_REG:0:DFF|s_Q
+    Info (332115): To Node      : PC:PC4|dffg:\G_NBit_REG:16:DFF|s_Q
+    Info (332115): Launch Clock : iCLK
+    Info (332115): Latch Clock  : iCLK
+    Info (332115): Data Arrival Path:
+    Info (332115): Total (ns)  Incr (ns)     Type  Element
+    Info (332115): ==========  ========= ==  ====  ===================================
+    Info (332115):      0.000      0.000           launch edge time
+    Info (332115):      3.070      3.070  R        clock network delay
+    Info (332115):      3.302      0.232     uTco  ID_EX:IDEX|RegFile:REG2|dffg:\G_NBit_REG:0:DFF|s_Q
+    Info (332115):      3.302      0.000 FF  CELL  IDEX|REG2|\G_NBit_REG:0:DFF|s_Q|q
+    Info (332115):      4.126      0.824 FF    IC  A|adder_subtractor|Nbit_Adder|full_adder_0|g_And1_And2_to_Or|o_C~0|dataa
+    Info (332115):      4.480      0.354 FF  CELL  A|adder_subtractor|Nbit_Adder|full_adder_0|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      4.867      0.387 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:1:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      4.992      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:1:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      5.241      0.249 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:2:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      5.366      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:2:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      5.623      0.257 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:3:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+    Info (332115):      5.904      0.281 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:3:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      6.206      0.302 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:4:rippleAdder|g_And1_And2_to_Or|o_C~0|dataa
+    Info (332115):      6.630      0.424 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:4:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      6.879      0.249 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:5:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      7.004      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:5:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      7.296      0.292 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:6:rippleAdder|g_And1_And2_to_Or|o_C~0|datab
+    Info (332115):      7.721      0.425 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:6:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      7.970      0.249 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:7:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      8.095      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:7:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      8.345      0.250 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:8:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      8.470      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:8:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      8.720      0.250 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:9:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      8.845      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:9:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      9.096      0.251 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:10:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      9.221      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:10:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      9.472      0.251 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:11:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      9.597      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:11:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      9.849      0.252 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:12:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      9.974      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:12:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     10.223      0.249 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:13:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     10.348      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:13:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     10.648      0.300 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:14:rippleAdder|g_And1_And2_to_Or|o_C~0|dataa
+    Info (332115):     11.072      0.424 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:14:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     11.323      0.251 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:15:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     11.448      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:15:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     11.859      0.411 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:16:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     11.984      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:16:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     12.233      0.249 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:17:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     12.358      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:17:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     12.608      0.250 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:18:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     12.733      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:18:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     12.973      0.240 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:19:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     13.098      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:19:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     13.337      0.239 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:20:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     13.462      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:20:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     13.700      0.238 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:21:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     13.825      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:21:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     14.063      0.238 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:22:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     14.188      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:22:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     14.438      0.250 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:23:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     14.563      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:23:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     14.809      0.246 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:24:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+    Info (332115):     15.090      0.281 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:24:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     15.813      0.723 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:25:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     15.938      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:25:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     16.175      0.237 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:26:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     16.300      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:26:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     16.544      0.244 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:27:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+    Info (332115):     16.825      0.281 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:27:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     17.064      0.239 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:28:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     17.189      0.125 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:28:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     17.435      0.246 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:29:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+    Info (332115):     17.716      0.281 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:29:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     17.952      0.236 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:30:rippleAdder|g_XOR_Cin_to_XOR|o_C~0|datad
+    Info (332115):     18.102      0.150 FR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:30:rippleAdder|g_XOR_Cin_to_XOR|o_C~0|combout
+    Info (332115):     18.327      0.225 RR    IC  A|branchchecker|Equal0~9|datac
+    Info (332115):     18.594      0.267 RF  CELL  A|branchchecker|Equal0~9|combout
+    Info (332115):     18.863      0.269 FF    IC  FETCH|or2a|o_C~0|datab
+    Info (332115):     19.252      0.389 FR  CELL  FETCH|or2a|o_C~0|combout
+    Info (332115):     19.692      0.440 RR    IC  MUX13|\G_NBit_MUX:22:MUXI|o_O~1|datad
+    Info (332115):     19.847      0.155 RR  CELL  MUX13|\G_NBit_MUX:22:MUXI|o_O~1|combout
+    Info (332115):     20.629      0.782 RR    IC  MUX13|\G_NBit_MUX:16:MUXI|o_O~6|datac
+    Info (332115):     20.916      0.287 RR  CELL  MUX13|\G_NBit_MUX:16:MUXI|o_O~6|combout
+    Info (332115):     21.122      0.206 RR    IC  MUX13|\G_NBit_MUX:16:MUXI|o_O~8|datad
+    Info (332115):     21.277      0.155 RR  CELL  MUX13|\G_NBit_MUX:16:MUXI|o_O~8|combout
+    Info (332115):     21.277      0.000 RR    IC  PC4|\G_NBit_REG:16:DFF|s_Q|d
+    Info (332115):     21.364      0.087 RR  CELL  PC:PC4|dffg:\G_NBit_REG:16:DFF|s_Q
+    Info (332115): Data Required Path:
+    Info (332115): Total (ns)  Incr (ns)     Type  Element
+    Info (332115): ==========  ========= ==  ====  ===================================
+    Info (332115):     20.000     20.000           latch edge time
+    Info (332115):     22.966      2.966  R        clock network delay
+    Info (332115):     22.998      0.032           clock pessimism removed
+    Info (332115):     22.978     -0.020           clock uncertainty
+    Info (332115):     22.996      0.018     uTsu  PC:PC4|dffg:\G_NBit_REG:16:DFF|s_Q
+    Info (332115): Data Arrival Time  :    21.364
+    Info (332115): Data Required Time :    22.996
+    Info (332115): Slack              :     1.632 
+    Info (332115): ===================================================================
+Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.263
+    Info (332115): -to_clock [get_clocks {iCLK}]
+    Info (332115): -hold
+    Info (332115): -stdout
+Info (332115): Path #1: Hold slack is 0.263 
+    Info (332115): ===================================================================
+    Info (332115): From Node    : PC:PC4|dffg:\G_NBit_REG:7:DFF|s_Q
+    Info (332115): To Node      : mem:IMem|altsyncram:ram_rtl_0|altsyncram_eg81:auto_generated|ram_block1a26~porta_address_reg0
+    Info (332115): Launch Clock : iCLK
+    Info (332115): Latch Clock  : iCLK
+    Info (332115): Data Arrival Path:
+    Info (332115): Total (ns)  Incr (ns)     Type  Element
+    Info (332115): ==========  ========= ==  ====  ===================================
+    Info (332115):      0.000      0.000           launch edge time
+    Info (332115):      2.973      2.973  R        clock network delay
+    Info (332115):      3.205      0.232     uTco  PC:PC4|dffg:\G_NBit_REG:7:DFF|s_Q
+    Info (332115):      3.205      0.000 RR  CELL  PC4|\G_NBit_REG:7:DFF|s_Q|q
+    Info (332115):      3.651      0.446 RR    IC  s_IMemAddr[7]~5|datac
+    Info (332115):      3.925      0.274 RR  CELL  s_IMemAddr[7]~5|combout
+    Info (332115):      4.842      0.917 RR    IC  IMem|ram_rtl_0|auto_generated|ram_block1a26|portaaddr[5]
+    Info (332115):      4.909      0.067 RR  CELL  mem:IMem|altsyncram:ram_rtl_0|altsyncram_eg81:auto_generated|ram_block1a26~porta_address_reg0
+    Info (332115): Data Required Path:
+    Info (332115): Total (ns)  Incr (ns)     Type  Element
+    Info (332115): ==========  ========= ==  ====  ===================================
+    Info (332115):      0.000      0.000           latch edge time
+    Info (332115):      4.424      4.424  R        clock network delay
+    Info (332115):      4.424      0.000           clock uncertainty
+    Info (332115):      4.646      0.222      uTh  mem:IMem|altsyncram:ram_rtl_0|altsyncram_eg81:auto_generated|ram_block1a26~porta_address_reg0
+    Info (332115): Data Arrival Time  :     4.909
+    Info (332115): Data Required Time :     4.646
+    Info (332115): Slack              :     0.263 
+    Info (332115): ===================================================================
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Warning (332060): Node: mem:IMem|altsyncram:ram_rtl_0|altsyncram_eg81:auto_generated|ram_block1a0~porta_we_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Latch ControlLogic:CL|o_ALUsrc is being clocked by mem:IMem|altsyncram:ram_rtl_0|altsyncram_eg81:auto_generated|ram_block1a0~porta_we_reg
+Info (332146): Worst-case setup slack is 3.186
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     3.186               0.000 iCLK 
+Info (332146): Worst-case hold slack is 0.264
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.264               0.000 iCLK 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 9.606
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.606               0.000 iCLK 
+Info (332114): Report Metastability: Found 7 synchronizer chains.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 7
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 24.888 ns
+Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 3.186
+    Info (332115): -to_clock [get_clocks {iCLK}]
+    Info (332115): -setup
+    Info (332115): -stdout
+Info (332115): Path #1: Setup slack is 3.186 
+    Info (332115): ===================================================================
+    Info (332115): From Node    : ID_EX:IDEX|RegFile:REG2|dffg:\G_NBit_REG:0:DFF|s_Q
+    Info (332115): To Node      : PC:PC4|dffg:\G_NBit_REG:16:DFF|s_Q
+    Info (332115): Launch Clock : iCLK
+    Info (332115): Latch Clock  : iCLK
+    Info (332115): Data Arrival Path:
+    Info (332115): Total (ns)  Incr (ns)     Type  Element
+    Info (332115): ==========  ========= ==  ====  ===================================
+    Info (332115):      0.000      0.000           launch edge time
+    Info (332115):      2.787      2.787  R        clock network delay
+    Info (332115):      3.000      0.213     uTco  ID_EX:IDEX|RegFile:REG2|dffg:\G_NBit_REG:0:DFF|s_Q
+    Info (332115):      3.000      0.000 RR  CELL  IDEX|REG2|\G_NBit_REG:0:DFF|s_Q|q
+    Info (332115):      3.719      0.719 RR    IC  A|adder_subtractor|Nbit_Adder|full_adder_0|g_And1_And2_to_Or|o_C~0|dataa
+    Info (332115):      4.047      0.328 RR  CELL  A|adder_subtractor|Nbit_Adder|full_adder_0|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      4.404      0.357 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:1:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      4.548      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:1:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      4.757      0.209 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:2:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      4.901      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:2:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      5.109      0.208 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:3:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+    Info (332115):      5.374      0.265 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:3:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      5.616      0.242 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:4:rippleAdder|g_And1_And2_to_Or|o_C~0|dataa
+    Info (332115):      5.983      0.367 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:4:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      6.192      0.209 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:5:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      6.336      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:5:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      6.575      0.239 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:6:rippleAdder|g_And1_And2_to_Or|o_C~0|datab
+    Info (332115):      6.944      0.369 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:6:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      7.153      0.209 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:7:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      7.297      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:7:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      7.506      0.209 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:8:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      7.650      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:8:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      7.860      0.210 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:9:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      8.004      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:9:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      8.214      0.210 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:10:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      8.358      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:10:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      8.569      0.211 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:11:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      8.713      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:11:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      8.924      0.211 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:12:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      9.068      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:12:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      9.276      0.208 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:13:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      9.420      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:13:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      9.661      0.241 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:14:rippleAdder|g_And1_And2_to_Or|o_C~0|dataa
+    Info (332115):     10.028      0.367 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:14:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     10.238      0.210 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:15:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     10.382      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:15:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     10.765      0.383 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:16:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     10.909      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:16:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     11.118      0.209 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:17:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     11.262      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:17:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     11.471      0.209 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:18:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     11.615      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:18:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     11.810      0.195 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:19:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     11.954      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:19:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     12.149      0.195 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:20:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     12.293      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:20:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     12.488      0.195 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:21:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     12.632      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:21:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     12.826      0.194 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:22:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     12.970      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:22:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     13.179      0.209 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:23:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     13.323      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:23:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     13.516      0.193 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:24:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+    Info (332115):     13.781      0.265 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:24:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     14.461      0.680 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:25:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     14.605      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:25:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     14.799      0.194 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:26:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     14.943      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:26:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     15.134      0.191 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:27:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+    Info (332115):     15.399      0.265 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:27:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     15.594      0.195 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:28:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     15.738      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:28:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     15.931      0.193 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:29:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+    Info (332115):     16.196      0.265 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:29:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     16.390      0.194 RR    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:30:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):     16.534      0.144 RR  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:30:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):     16.763      0.229 RR    IC  A|branchchecker|Equal0~10|datad
+    Info (332115):     16.907      0.144 RR  CELL  A|branchchecker|Equal0~10|combout
+    Info (332115):     17.095      0.188 RR    IC  A|branchchecker|Equal0~11|datad
+    Info (332115):     17.239      0.144 RR  CELL  A|branchchecker|Equal0~11|combout
+    Info (332115):     17.427      0.188 RR    IC  FETCH|or2a|o_C~0|datad
+    Info (332115):     17.571      0.144 RR  CELL  FETCH|or2a|o_C~0|combout
+    Info (332115):     17.983      0.412 RR    IC  MUX13|\G_NBit_MUX:22:MUXI|o_O~1|datad
+    Info (332115):     18.127      0.144 RR  CELL  MUX13|\G_NBit_MUX:22:MUXI|o_O~1|combout
+    Info (332115):     18.858      0.731 RR    IC  MUX13|\G_NBit_MUX:16:MUXI|o_O~6|datac
+    Info (332115):     19.123      0.265 RR  CELL  MUX13|\G_NBit_MUX:16:MUXI|o_O~6|combout
+    Info (332115):     19.313      0.190 RR    IC  MUX13|\G_NBit_MUX:16:MUXI|o_O~8|datad
+    Info (332115):     19.457      0.144 RR  CELL  MUX13|\G_NBit_MUX:16:MUXI|o_O~8|combout
+    Info (332115):     19.457      0.000 RR    IC  PC4|\G_NBit_REG:16:DFF|s_Q|d
+    Info (332115):     19.537      0.080 RR  CELL  PC:PC4|dffg:\G_NBit_REG:16:DFF|s_Q
+    Info (332115): Data Required Path:
+    Info (332115): Total (ns)  Incr (ns)     Type  Element
+    Info (332115): ==========  ========= ==  ====  ===================================
+    Info (332115):     20.000     20.000           latch edge time
+    Info (332115):     22.696      2.696  R        clock network delay
+    Info (332115):     22.724      0.028           clock pessimism removed
+    Info (332115):     22.704     -0.020           clock uncertainty
+    Info (332115):     22.723      0.019     uTsu  PC:PC4|dffg:\G_NBit_REG:16:DFF|s_Q
+    Info (332115): Data Arrival Time  :    19.537
+    Info (332115): Data Required Time :    22.723
+    Info (332115): Slack              :     3.186 
+    Info (332115): ===================================================================
+Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.264
+    Info (332115): -to_clock [get_clocks {iCLK}]
+    Info (332115): -hold
+    Info (332115): -stdout
+Info (332115): Path #1: Hold slack is 0.264 
+    Info (332115): ===================================================================
+    Info (332115): From Node    : PC:PC4|dffg:\G_NBit_REG:7:DFF|s_Q
+    Info (332115): To Node      : mem:IMem|altsyncram:ram_rtl_0|altsyncram_eg81:auto_generated|ram_block1a26~porta_address_reg0
+    Info (332115): Launch Clock : iCLK
+    Info (332115): Latch Clock  : iCLK
+    Info (332115): Data Arrival Path:
+    Info (332115): Total (ns)  Incr (ns)     Type  Element
+    Info (332115): ==========  ========= ==  ====  ===================================
+    Info (332115):      0.000      0.000           launch edge time
+    Info (332115):      2.703      2.703  R        clock network delay
+    Info (332115):      2.916      0.213     uTco  PC:PC4|dffg:\G_NBit_REG:7:DFF|s_Q
+    Info (332115):      2.916      0.000 FF  CELL  PC4|\G_NBit_REG:7:DFF|s_Q|q
+    Info (332115):      3.376      0.460 FF    IC  s_IMemAddr[7]~5|datac
+    Info (332115):      3.617      0.241 FF  CELL  s_IMemAddr[7]~5|combout
+    Info (332115):      4.423      0.806 FF    IC  IMem|ram_rtl_0|auto_generated|ram_block1a26|portaaddr[5]
+    Info (332115):      4.502      0.079 FF  CELL  mem:IMem|altsyncram:ram_rtl_0|altsyncram_eg81:auto_generated|ram_block1a26~porta_address_reg0
+    Info (332115): Data Required Path:
+    Info (332115): Total (ns)  Incr (ns)     Type  Element
+    Info (332115): ==========  ========= ==  ====  ===================================
+    Info (332115):      0.000      0.000           latch edge time
+    Info (332115):      4.037      4.037  R        clock network delay
+    Info (332115):      4.037      0.000           clock uncertainty
+    Info (332115):      4.238      0.201      uTh  mem:IMem|altsyncram:ram_rtl_0|altsyncram_eg81:auto_generated|ram_block1a26~porta_address_reg0
+    Info (332115): Data Arrival Time  :     4.502
+    Info (332115): Data Required Time :     4.238
+    Info (332115): Slack              :     0.264 
+    Info (332115): ===================================================================
+Info: Analyzing Fast 1200mV 0C Model
+Warning (332060): Node: mem:IMem|altsyncram:ram_rtl_0|altsyncram_eg81:auto_generated|ram_block1a0~porta_we_reg was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Latch ControlLogic:CL|o_ALUsrc is being clocked by mem:IMem|altsyncram:ram_rtl_0|altsyncram_eg81:auto_generated|ram_block1a0~porta_we_reg
+Info (332146): Worst-case setup slack is 10.992
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    10.992               0.000 iCLK 
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case hold slack is -0.027
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.027              -0.027 iCLK 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 9.371
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.371               0.000 iCLK 
+Info (332114): Report Metastability: Found 7 synchronizer chains.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 7
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 31.010 ns
+Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 10.992
+    Info (332115): -to_clock [get_clocks {iCLK}]
+    Info (332115): -setup
+    Info (332115): -stdout
+Info (332115): Path #1: Setup slack is 10.992 
+    Info (332115): ===================================================================
+    Info (332115): From Node    : ID_EX:IDEX|RegFile:REG2|dffg:\G_NBit_REG:0:DFF|s_Q
+    Info (332115): To Node      : PC:PC4|dffg:\G_NBit_REG:16:DFF|s_Q
+    Info (332115): Launch Clock : iCLK
+    Info (332115): Latch Clock  : iCLK
+    Info (332115): Data Arrival Path:
+    Info (332115): Total (ns)  Incr (ns)     Type  Element
+    Info (332115): ==========  ========= ==  ====  ===================================
+    Info (332115):      0.000      0.000           launch edge time
+    Info (332115):      1.637      1.637  R        clock network delay
+    Info (332115):      1.742      0.105     uTco  ID_EX:IDEX|RegFile:REG2|dffg:\G_NBit_REG:0:DFF|s_Q
+    Info (332115):      1.742      0.000 FF  CELL  IDEX|REG2|\G_NBit_REG:0:DFF|s_Q|q
+    Info (332115):      2.172      0.430 FF    IC  A|adder_subtractor|Nbit_Adder|full_adder_0|g_And1_And2_to_Or|o_C~0|dataa
+    Info (332115):      2.345      0.173 FF  CELL  A|adder_subtractor|Nbit_Adder|full_adder_0|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      2.539      0.194 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:1:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      2.602      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:1:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      2.721      0.119 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:2:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      2.784      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:2:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      2.908      0.124 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:3:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+    Info (332115):      3.041      0.133 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:3:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      3.190      0.149 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:4:rippleAdder|g_And1_And2_to_Or|o_C~0|dataa
+    Info (332115):      3.394      0.204 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:4:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      3.515      0.121 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:5:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      3.578      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:5:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      3.722      0.144 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:6:rippleAdder|g_And1_And2_to_Or|o_C~0|datab
+    Info (332115):      3.929      0.207 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:6:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      4.049      0.120 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:7:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      4.112      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:7:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      4.231      0.119 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:8:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      4.294      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:8:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      4.414      0.120 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:9:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      4.477      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:9:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      4.598      0.121 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:10:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      4.661      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:10:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      4.782      0.121 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:11:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      4.845      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:11:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      4.967      0.122 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:12:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      5.030      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:12:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      5.149      0.119 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:13:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      5.212      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:13:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      5.361      0.149 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:14:rippleAdder|g_And1_And2_to_Or|o_C~0|dataa
+    Info (332115):      5.565      0.204 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:14:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      5.686      0.121 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:15:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      5.749      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:15:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      5.955      0.206 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:16:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      6.018      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:16:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      6.137      0.119 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:17:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      6.200      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:17:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      6.319      0.119 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:18:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      6.382      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:18:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      6.497      0.115 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:19:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      6.560      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:19:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      6.674      0.114 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:20:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      6.737      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:20:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      6.850      0.113 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:21:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      6.913      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:21:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      7.025      0.112 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:22:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      7.088      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:22:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      7.207      0.119 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:23:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      7.270      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:23:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      7.388      0.118 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:24:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+    Info (332115):      7.521      0.133 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:24:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      7.904      0.383 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:25:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      7.967      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:25:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      8.079      0.112 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:26:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      8.142      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:26:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      8.258      0.116 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:27:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+    Info (332115):      8.391      0.133 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:27:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      8.506      0.115 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:28:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      8.569      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:28:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      8.687      0.118 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:29:rippleAdder|g_And1_And2_to_Or|o_C~0|datac
+    Info (332115):      8.820      0.133 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:29:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      8.934      0.114 FF    IC  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:30:rippleAdder|g_And1_And2_to_Or|o_C~0|datad
+    Info (332115):      8.997      0.063 FF  CELL  A|adder_subtractor|Nbit_Adder|\G_NBit_full_adder:30:rippleAdder|g_And1_And2_to_Or|o_C~0|combout
+    Info (332115):      9.128      0.131 FF    IC  A|branchchecker|Equal0~10|datad
+    Info (332115):      9.191      0.063 FF  CELL  A|branchchecker|Equal0~10|combout
+    Info (332115):      9.298      0.107 FF    IC  A|branchchecker|Equal0~11|datad
+    Info (332115):      9.361      0.063 FF  CELL  A|branchchecker|Equal0~11|combout
+    Info (332115):      9.470      0.109 FF    IC  FETCH|or2a|o_C~0|datad
+    Info (332115):      9.533      0.063 FF  CELL  FETCH|or2a|o_C~0|combout
+    Info (332115):      9.761      0.228 FF    IC  MUX13|\G_NBit_MUX:22:MUXI|o_O~1|datad
+    Info (332115):      9.824      0.063 FF  CELL  MUX13|\G_NBit_MUX:22:MUXI|o_O~1|combout
+    Info (332115):     10.243      0.419 FF    IC  MUX13|\G_NBit_MUX:16:MUXI|o_O~6|datac
+    Info (332115):     10.376      0.133 FF  CELL  MUX13|\G_NBit_MUX:16:MUXI|o_O~6|combout
+    Info (332115):     10.486      0.110 FF    IC  MUX13|\G_NBit_MUX:16:MUXI|o_O~8|datad
+    Info (332115):     10.549      0.063 FF  CELL  MUX13|\G_NBit_MUX:16:MUXI|o_O~8|combout
+    Info (332115):     10.549      0.000 FF    IC  PC4|\G_NBit_REG:16:DFF|s_Q|d
+    Info (332115):     10.599      0.050 FF  CELL  PC:PC4|dffg:\G_NBit_REG:16:DFF|s_Q
+    Info (332115): Data Required Path:
+    Info (332115): Total (ns)  Incr (ns)     Type  Element
+    Info (332115): ==========  ========= ==  ====  ===================================
+    Info (332115):     20.000     20.000           latch edge time
+    Info (332115):     21.584      1.584  R        clock network delay
+    Info (332115):     21.604      0.020           clock pessimism removed
+    Info (332115):     21.584     -0.020           clock uncertainty
+    Info (332115):     21.591      0.007     uTsu  PC:PC4|dffg:\G_NBit_REG:16:DFF|s_Q
+    Info (332115): Data Arrival Time  :    10.599
+    Info (332115): Data Required Time :    21.591
+    Info (332115): Slack              :    10.992 
+    Info (332115): ===================================================================
+Info (332115): Report Timing: Found 1 hold paths (1 violated).  Worst case slack is -0.027
+    Info (332115): -to_clock [get_clocks {iCLK}]
+    Info (332115): -hold
+    Info (332115): -stdout
+Info (332115): Path #1: Hold slack is -0.027 (VIOLATED)
+    Info (332115): ===================================================================
+    Info (332115): From Node    : PC:PC4|dffg:\G_NBit_REG:7:DFF|s_Q
+    Info (332115): To Node      : mem:IMem|altsyncram:ram_rtl_0|altsyncram_eg81:auto_generated|ram_block1a26~porta_address_reg0
+    Info (332115): Launch Clock : iCLK
+    Info (332115): Latch Clock  : iCLK
+    Info (332115): Data Arrival Path:
+    Info (332115): Total (ns)  Incr (ns)     Type  Element
+    Info (332115): ==========  ========= ==  ====  ===================================
+    Info (332115):      0.000      0.000           launch edge time
+    Info (332115):      1.591      1.591  R        clock network delay
+    Info (332115):      1.696      0.105     uTco  PC:PC4|dffg:\G_NBit_REG:7:DFF|s_Q
+    Info (332115):      1.696      0.000 RR  CELL  PC4|\G_NBit_REG:7:DFF|s_Q|q
+    Info (332115):      1.898      0.202 RR    IC  s_IMemAddr[7]~5|datac
+    Info (332115):      2.023      0.125 RR  CELL  s_IMemAddr[7]~5|combout
+    Info (332115):      2.443      0.420 RR    IC  IMem|ram_rtl_0|auto_generated|ram_block1a26|portaaddr[5]
+    Info (332115):      2.480      0.037 RR  CELL  mem:IMem|altsyncram:ram_rtl_0|altsyncram_eg81:auto_generated|ram_block1a26~porta_address_reg0
+    Info (332115): Data Required Path:
+    Info (332115): Total (ns)  Incr (ns)     Type  Element
+    Info (332115): ==========  ========= ==  ====  ===================================
+    Info (332115):      0.000      0.000           latch edge time
+    Info (332115):      2.403      2.403  R        clock network delay
+    Info (332115):      2.403      0.000           clock uncertainty
+    Info (332115):      2.507      0.104      uTh  mem:IMem|altsyncram:ram_rtl_0|altsyncram_eg81:auto_generated|ram_block1a26~porta_address_reg0
+    Info (332115): Data Arrival Time  :     2.480
+    Info (332115): Data Required Time :     2.507
+    Info (332115): Slack              :    -0.027 (VIOLATED)
+    Info (332115): ===================================================================
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 1444 megabytes
+    Info: Processing ended: Wed Apr 17 12:25:27 2024
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:15

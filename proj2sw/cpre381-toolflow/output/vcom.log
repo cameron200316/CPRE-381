@@ -1,0 +1,75 @@
+QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+Start time: 23:25:46 on Apr 15,2024
+vcom -2008 -work internal/ModelSimContainer/work proj/src/MIPS_types.vhd internal/testpy/tb.vhd proj/src/MIPS_types.vhd proj/src/TopLevel/FetchLogic.vhd proj/src/TopLevel/Reg32File.vhd proj/src/TopLevel/RegFile.vhd proj/src/TopLevel/Nbit_org2.vhd proj/src/TopLevel/Adder.vhd proj/src/TopLevel/dffg1.vhd proj/src/TopLevel/BarrelShifter.vhd proj/src/TopLevel/invg.vhd proj/src/TopLevel/Dataflow_Mux2_1.vhd proj/src/TopLevel/Nbit_8t1Mux.vhd proj/src/TopLevel/MEM_WB.vhd proj/src/TopLevel/mux2t1_N.vhd proj/src/TopLevel/Nbit_andg2.vhd proj/src/TopLevel/PC.vhd proj/src/TopLevel/ZeroChecker.vhd proj/src/TopLevel/andg2.vhd proj/src/TopLevel/BarrelDecoder5_32.vhd proj/src/TopLevel/Structual_full_adder.vhd proj/src/TopLevel/ControlLogic.vhd proj/src/TopLevel/ID_EX.vhd proj/src/TopLevel/IF_ID.vhd proj/src/TopLevel/xorg2.vhd proj/src/TopLevel/AddSub.vhd proj/src/TopLevel/mux2to1DF.vhd proj/src/TopLevel/MIPS_Processor.vhd proj/src/TopLevel/Decoder5_32.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/Nbit_xorg2.vhd proj/src/TopLevel/NegativeChecker.vhd proj/src/TopLevel/Nbit_full_adder.vhd proj/src/TopLevel/ALU.vhd proj/src/TopLevel/Nbit_AddSub.vhd proj/src/TopLevel/Complementor.vhd proj/src/TopLevel/mux4to1DF.vhd proj/src/TopLevel/mux32_1.vhd proj/src/TopLevel/LeftShifter16.vhd proj/src/TopLevel/EX_MEM.vhd proj/src/TopLevel/dffg.vhd proj/src/TopLevel/extender16_32.vhd proj/src/TopLevel/org2.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package MIPS_types
+-- Compiling package body MIPS_types
+-- Loading package MIPS_types
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity tb
+-- Compiling architecture mixed of tb
+** Warning: proj/src/MIPS_types.vhd(15): (vcom-1615) Existing package 'MIPS_types' at line 15 will be overwritten.
+-- Compiling package MIPS_types
+** Warning: proj/src/MIPS_types.vhd(29): (vcom-1615) Existing package body 'MIPS_types(body)' at line 29 will be overwritten.
+-- Compiling package body MIPS_types
+-- Loading package MIPS_types
+-- Loading package NUMERIC_STD
+-- Compiling entity FetchLogic
+-- Compiling architecture structural of FetchLogic
+-- Compiling entity Reg32File
+-- Compiling architecture structural of Reg32File
+-- Compiling entity RegFile
+-- Compiling architecture structural of RegFile
+-- Compiling entity Nbit_org2
+-- Compiling architecture structural of Nbit_org2
+-- Compiling entity Adder
+-- Compiling architecture structure of Adder
+-- Compiling entity dffg1
+-- Compiling architecture mixed of dffg1
+-- Compiling entity BarrelShifter
+-- Compiling architecture structural of BarrelShifter
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+-- Compiling entity Dataflow_Mux2_1
+-- Compiling architecture dataflow of Dataflow_Mux2_1
+-- Compiling entity Nbit_8t1Mux
+-- Compiling architecture Structural of Nbit_8t1Mux
+-- Compiling entity MEM_WB
+-- Compiling architecture structural of MEM_WB
+-- Compiling entity mux2t1_N
+-- Compiling architecture structural of mux2t1_N
+-- Compiling entity Nbit_andg2
+-- Compiling architecture structural of Nbit_andg2
+-- Compiling entity PC
+-- Compiling architecture structural of PC
+-- Compiling entity ZeroChecker
+-- Compiling architecture structural of ZeroChecker
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+-- Compiling entity BarrelDecoder5_32
+-- Compiling architecture structural of BarrelDecoder5_32
+-- Compiling entity Structual_full_adder
+-- Compiling architecture structure of Structual_full_adder
+-- Compiling entity ControlLogic
+-- Compiling architecture structural of ControlLogic
+-- Compiling entity ID_EX
+-- Compiling architecture structural of ID_EX
+-- Compiling entity IF_ID
+-- Compiling architecture structural of IF_ID
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
+-- Compiling entity AddSub
+-- Compiling architecture structural of AddSub
+-- Compiling entity mux2to1DF
+-- Compiling architecture dataflow of mux2to1DF
+-- Compiling entity MIPS_Processor
+-- Compiling architecture structure of MIPS_Processor
+** Error: proj/src/TopLevel/MIPS_Processor.vhd(669): near ";": (vcom-1576) expecting ',' or ')'.
+** Error: proj/src/TopLevel/MIPS_Processor.vhd(706): Statement cannot be labeled.
+** Error: proj/src/TopLevel/MIPS_Processor.vhd(752): near ";": (vcom-1576) expecting ',' or ')'.
+** Note: proj/src/TopLevel/MIPS_Processor.vhd(948): VHDL Compiler exiting
+End time: 23:25:47 on Apr 15,2024, Elapsed time: 0:00:01
+Errors: 3, Warnings: 2

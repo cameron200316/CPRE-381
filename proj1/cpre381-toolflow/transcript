@@ -12,7 +12,7 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-cd /home/mkotlarz/cpre381/proj/proj1/cpre381-toolflow/output/Proj1_bubblesort.s
+cd /home/mkotlarz/cpre381/proj/proj1/cpre381-toolflow/output/Proj1_base_test.s
 ls
 # compare.txt
 # dmem.hex
@@ -26,82 +26,4 @@ ls
 # work
 vsim vsim.wlf
 # OpenFile vsim.wlf
-add wave -position insertpoint  \
-vsim:/tb/reset_done \
-vsim:/tb/reset \
-vsim:/tb/CLK \
-vsim:/tb/alu_out
-add wave -position insertpoint  \
-vsim:/tb/MyMips/s_ALUout \
-vsim:/tb/MyMips/oALUOut
-add wave -position insertpoint  \
-vsim:/tb/MyMips/s_zero \
-vsim:/tb/MyMips/s_WD \
-vsim:/tb/MyMips/s_WA \
-vsim:/tb/MyMips/s_unsignedHalfword \
-vsim:/tb/MyMips/s_unsignedByte \
-vsim:/tb/MyMips/s_Unsigned \
-vsim:/tb/MyMips/s_signedHalfword \
-vsim:/tb/MyMips/s_signedByte \
-vsim:/tb/MyMips/s_sign \
-vsim:/tb/MyMips/s_ShiftLorR \
-vsim:/tb/MyMips/s_ShiftArithemtic \
-vsim:/tb/MyMips/s_SHAMT32 \
-vsim:/tb/MyMips/s_SHAMT \
-vsim:/tb/MyMips/s_RT \
-vsim:/tb/MyMips/s_RS \
-vsim:/tb/MyMips/s_Return \
-vsim:/tb/MyMips/s_RegWrite \
-vsim:/tb/MyMips/s_RegWrData \
-vsim:/tb/MyMips/s_RegWrAddr \
-vsim:/tb/MyMips/s_RegWr \
-vsim:/tb/MyMips/s_RegDst \
-vsim:/tb/MyMips/s_R2 \
-vsim:/tb/MyMips/s_R1 \
-vsim:/tb/MyMips/s_PCNEW \
-vsim:/tb/MyMips/s_PC4 \
-vsim:/tb/MyMips/s_Ovfl \
-vsim:/tb/MyMips/s_NextInstAddr \
-vsim:/tb/MyMips/s_negative \
-vsim:/tb/MyMips/s_MUX12OUT \
-vsim:/tb/MyMips/s_MUX11OUT \
-vsim:/tb/MyMips/s_MUX6OUT \
-vsim:/tb/MyMips/s_MUX4OUT \
-vsim:/tb/MyMips/s_MUX3OUT \
-vsim:/tb/MyMips/s_MUX2OUT \
-vsim:/tb/MyMips/s_MemWrite \
-vsim:/tb/MyMips/s_MemtoReg \
-vsim:/tb/MyMips/s_MemRead \
-vsim:/tb/MyMips/s_lw \
-vsim:/tb/MyMips/s_Lui \
-vsim:/tb/MyMips/s_Link \
-vsim:/tb/MyMips/s_Jump \
-vsim:/tb/MyMips/s_instruction16 \
-vsim:/tb/MyMips/s_Inst \
-vsim:/tb/MyMips/s_immediate \
-vsim:/tb/MyMips/s_IMemAddr \
-vsim:/tb/MyMips/s_HoB \
-vsim:/tb/MyMips/s_Halt \
-vsim:/tb/MyMips/s_half1 \
-vsim:/tb/MyMips/s_half0 \
-vsim:/tb/MyMips/s_final \
-vsim:/tb/MyMips/s_DMemWr \
-vsim:/tb/MyMips/s_DMemOut \
-vsim:/tb/MyMips/s_DMemData \
-vsim:/tb/MyMips/s_DMemAddr \
-vsim:/tb/MyMips/s_carryOut \
-vsim:/tb/MyMips/s_byte3 \
-vsim:/tb/MyMips/s_byte2 \
-vsim:/tb/MyMips/s_byte1 \
-vsim:/tb/MyMips/s_byte0 \
-vsim:/tb/MyMips/s_Branchne \
-vsim:/tb/MyMips/s_Branch \
-vsim:/tb/MyMips/s_B \
-vsim:/tb/MyMips/s_ALUSrc \
-vsim:/tb/MyMips/s_ALUnAddSub \
-vsim:/tb/MyMips/s_A \
-vsim:/tb/MyMips/iRST \
-vsim:/tb/MyMips/iInstLd \
-vsim:/tb/MyMips/iInstExt \
-vsim:/tb/MyMips/iInstAddr \
-vsim:/tb/MyMips/iCLK
+add wave -r vsim:/tb/*

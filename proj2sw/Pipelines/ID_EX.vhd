@@ -38,11 +38,14 @@ entity ID_EX is
 	i_MemWrite           : in std_logic;
 	i_MemtoReg           : in std_logic;
 	i_RegWrite           : in std_logic;
-	i_WA           	     : in std_logic_vector(4 downto 0);
         i_A        	     : in std_logic_vector(N-1 downto 0);
         i_B        	     : in std_logic_vector(N-1 downto 0);
+        i_r2             : in std_logic_vector(N-1 downto 0);
         i_PC4        	     : in std_logic_vector(N-1 downto 0);
         i_Inst       	     : in std_logic_vector(N-1 downto 0);
+        i_WA       	     : in std_logic_vector(4 downto 0);
+        i_Link              : in std_logic;
+        i_Halt               : in std_logic;
 	o_Jump               : out std_logic;
 	o_Branch             : out std_logic;
 	o_BranchNE           : out std_logic;
@@ -59,11 +62,14 @@ entity ID_EX is
 	o_MemWrite           : out std_logic;
 	o_MemtoReg           : out std_logic;
 	o_RegWrite           : out std_logic;
-	o_WA           	     : out std_logic_vector(4 downto 0);
         o_A        	     : out std_logic_vector(N-1 downto 0);
         o_B        	     : out std_logic_vector(N-1 downto 0);
+        o_r2             : out std_logic_vector(N-1 downto 0);
         o_PC4        	     : out std_logic_vector(N-1 downto 0);
-        o_Inst        	     : out std_logic_vector(N-1 downto 0));
+        o_Inst        	     : out std_logic_vector(N-1 downto 0);
+        o_WA       	     : out std_logic_vector(4 downto 0);
+        o_Link              : out std_logic;
+        o_Halt               : out std_logic);
 
 end ID_EX;
 
@@ -87,6 +93,16 @@ architecture structural of ID_EX is
 
 
 begin  
+
+  --DFF for the write address
+  WA: for i in 0 to 4 generate
+    DFF1: dffg port map(
+              i_CLK     => i_CLKs,    
+              i_RST     => i_R,         
+              i_WE      => '1', 
+              i_D       => i_WA(i),  
+	      o_Q       => o_WA(i));  
+  end generate WA; 
   
   --DFF for Jump
   JUMP: dffg port map(
@@ -192,6 +208,14 @@ begin
               i_D       => i_MemtoReg,  
 	      o_Q       => o_MemtoReg);  
 
+  --DFF for Lui
+  Lui: dffg port map(
+    i_CLK     => i_CLKs,    
+    i_RST     => i_R,         
+    i_WE      => '1', 
+    i_D       => i_Lui,  
+o_Q       => o_Lui);  
+
   --DFF for RegWrite
   REGWRITE: dffg port map(
               i_CLK     => i_CLKs,    
@@ -210,16 +234,21 @@ begin
 	      o_Q       => o_ALUout(i));  
   end generate ALUOUT; 
 
-  --DFF for the write address
-  WA: for i in 0 to 4 generate
-    DFF1: dffg port map(
+  --DFF for link
+  LINK: dffg port map(
               i_CLK     => i_CLKs,    
               i_RST     => i_R,         
               i_WE      => '1', 
-              i_D       => i_WA(i),  
-	      o_Q       => o_WA(i));  
-  end generate WA; 
+              i_D       => i_Link,  
+	      o_Q       => o_Link); 
 
+  --Reg for r2
+  R2: RegFile 
+	port map(i_CLKs    => i_CLKs,    
+                 i_R       => i_R,         
+              	 i_WEN     => '1', 
+              	 i_WD      => i_r2,  
+	      	 o_OUT     => o_r2); 
 
   --Reg for PC+4
   REG0: RegFile 
@@ -252,5 +281,13 @@ begin
               	 i_WEN     => '1', 
              	 i_WD      => i_B,  
 	      	 o_OUT     => o_B);
+
+  --DFF for halt
+  halt: dffg port map(
+    i_CLK     => i_CLKs,    
+    i_RST     => i_R,         
+    i_WE      => '1', 
+    i_D       => i_Halt,  
+o_Q       => o_Halt);  
 
 end structural;
