@@ -10,12 +10,12 @@ Z0 !s99 nomlopt
 !i10e 25
 !i10f 100
 cModel Technology
-Z1 d/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines
+Z1 d/home/mkotlarz/cpre381/proj/proj2sw/Pipelines
 T_opt
-!s110 1712517544
-V>;9JLYD1TAEbK9zR5SMK31
+!s110 1713456317
+V8h8<n?38@Fg:RHD>`WGEI0
 04 8 5 work tb_if_id mixed 1
-=1-0050569b8e82-6612f1a8-8cbbd-40e8
+=1-7486e228c7aa-662144bd-b878e-3ce2
 R0
 !s12b OEM100
 !s124 OEM100
@@ -23,26 +23,25 @@ o-quiet -auto_acc_if_foreign -work work
 tCvgOpt 0
 n@_opt
 OL;O;2023.2_2;77
-R1
 Edffg
-Z2 w1712241901
+Z2 w1712796869
 Z3 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
 Z4 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
-!i122 2
+!i122 6
 R1
-Z5 8/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/dffg.vhd
-Z6 F/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/dffg.vhd
+Z5 8/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/dffg.vhd
+Z6 F/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/dffg.vhd
 l0
 L23 1
 V<4[1c^JVlXT1d_XTIVZ261
 !s100 FJQDe;FGDG0KnNV;j4DaY2
 Z7 OL;C;2023.2_2;77
 33
-Z8 !s110 1712517526
+Z8 !s110 1713456310
 !i10b 1
-Z9 !s108 1712517526.000000
-Z10 !s90 -reportprogress|300|-work|work|/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/dffg.vhd|
-Z11 !s107 /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/dffg.vhd|
+Z9 !s108 1713456310.000000
+Z10 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/dffg.vhd|
+Z11 !s107 /home/mkotlarz/cpre381/proj/proj2sw/Pipelines/dffg.vhd|
 !i113 0
 Z12 o-work work
 Z13 tExplicit 1 NoCoverage 1 CvgOpt 0
@@ -50,7 +49,7 @@ Amixed
 R3
 R4
 DEx4 work 4 dffg 0 22 <4[1c^JVlXT1d_XTIVZ261
-!i122 2
+!i122 6
 l37
 L33 29
 VTEdG>g0`Ff3kSOBZ1j4FM2
@@ -66,166 +65,166 @@ R11
 R12
 R13
 Eex_mem
-Z14 w1712519474
+Z14 w1713373592
 R3
 R4
-!i122 9
+!i122 0
 R1
-Z15 8/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/EX_MEM.vhd
-Z16 F/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/EX_MEM.vhd
+Z15 8/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/EX_MEM.vhd
+Z16 F/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/EX_MEM.vhd
 l0
 Z17 L21 1
-VZXm?9=hlnF7L66Af@N3N42
-!s100 @YJUmVNI2Z]I1@X0ifHb]3
+V@>bXHAdGoOO:kGoidD6Il2
+!s100 K3:`BSR<Lho7a^7<YGU;a0
 R7
 33
-Z18 !s110 1712519524
+R8
 !i10b 1
-Z19 !s108 1712519524.000000
-Z20 !s90 -reportprogress|300|-work|work|/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/EX_MEM.vhd|
-Z21 !s107 /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/EX_MEM.vhd|
+R9
+Z18 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/EX_MEM.vhd|
+Z19 !s107 /home/mkotlarz/cpre381/proj/proj2sw/Pipelines/EX_MEM.vhd|
 !i113 0
 R12
 R13
 Astructural
 R3
 R4
-DEx4 work 6 ex_mem 0 22 ZXm?9=hlnF7L66Af@N3N42
-!i122 9
-l65
-L46 97
-VoE=h;l=GShXVk:C?R^:LG1
-!s100 Zg6>jhI?CKIQIdm9OKHLg0
+DEx4 work 6 ex_mem 0 22 @>bXHAdGoOO:kGoidD6Il2
+!i122 0
+l75
+L56 136
+VS8>Q[KRD<A_f;F0CQhQS63
+!s100 LPi_UiR`:Fd79ikUQjiNY1
 R7
 33
-R18
+R8
 !i10b 1
+R9
+R18
 R19
-R20
-R21
 !i113 0
 R12
 R13
 Eid_ex
-Z22 w1712519194
+R14
 R3
 R4
-!i122 8
+!i122 1
 R1
-Z23 8/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd
-Z24 F/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd
+Z20 8/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/ID_EX.vhd
+Z21 F/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/ID_EX.vhd
 l0
 R17
-V@82nNOmL0oZg>7]UiWQD?1
-!s100 fg>IPdiCXHB23NLNKd5Xl0
+V<@fUVJfK1NaTzOKHQGeEK3
+!s100 OU;?ZFYNi<>E_<?N;1W@C1
 R7
 33
-Z25 !s110 1712519198
+R8
 !i10b 1
-Z26 !s108 1712519198.000000
-Z27 !s90 -reportprogress|300|-work|work|/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd|
-Z28 !s107 /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd|
+R9
+Z22 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/ID_EX.vhd|
+Z23 !s107 /home/mkotlarz/cpre381/proj/proj2sw/Pipelines/ID_EX.vhd|
 !i113 0
 R12
 R13
 Astructural
 R3
 R4
-DEx4 work 5 id_ex 0 22 @82nNOmL0oZg>7]UiWQD?1
-!i122 8
-l89
-L70 187
-V67FL]?z[7o;Q:YZKZ8GS40
-!s100 YY4neCX]mBCb7CDCaS5Fb3
+DEx4 work 5 id_ex 0 22 <@fUVJfK1NaTzOKHQGeEK3
+!i122 1
+l95
+L76 218
+Vi^BLh6gz;9TD[0oZ^z9_J2
+!s100 Soe0klgJb`7]CJW70`O@>0
 R7
 33
-R25
+R8
 !i10b 1
-R26
-R27
-R28
+R9
+R22
+R23
 !i113 0
 R12
 R13
 Eif_id
-Z29 w1712517021
+Z24 w1713456288
 R3
 R4
-!i122 3
+!i122 2
 R1
-Z30 8/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/IF_ID.vhd
-Z31 F/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/IF_ID.vhd
+Z25 8/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/IF_ID.vhd
+Z26 F/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/IF_ID.vhd
 l0
 R17
-VdOLb6eBZkF=fG<5EjOV800
-!s100 GE[UUQhDLLEhEHEjiVfek1
+VBb1zn8;a[5b>Lc=Ca`_e12
+!s100 808H^LDGM<j8kgQFOZK2<2
 R7
 33
-Z32 !s110 1712517529
+R8
 !i10b 1
-Z33 !s108 1712517529.000000
-Z34 !s90 -reportprogress|300|-work|work|/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/IF_ID.vhd|
-Z35 !s107 /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/IF_ID.vhd|
+R9
+Z27 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/IF_ID.vhd|
+Z28 !s107 /home/mkotlarz/cpre381/proj/proj2sw/Pipelines/IF_ID.vhd|
 !i113 0
 R12
 R13
 Astructural
 R3
 R4
-DEx4 work 5 if_id 0 22 dOLb6eBZkF=fG<5EjOV800
-!i122 3
+DEx4 work 5 if_id 0 22 Bb1zn8;a[5b>Lc=Ca`_e12
+!i122 2
 l42
 L32 27
 V9?e=8b]AgGBEIRl_BoG:N0
 !s100 jfPdEA6EMT]ANC4]@H`=b2
 R7
 33
-R32
+R8
 !i10b 1
-R33
-R34
-R35
+R9
+R27
+R28
 !i113 0
 R12
 R13
 Emem_wb
-Z36 w1712519892
+R14
 R3
 R4
-!i122 11
+!i122 3
 R1
-Z37 8/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/MEM_WB.vhd
-Z38 F/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/MEM_WB.vhd
+Z29 8/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/MEM_WB.vhd
+Z30 F/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/MEM_WB.vhd
 l0
 R17
-V4JVh1n^beMlP37Dc>9Q^C2
-!s100 ?FIVf7zd7cbLzl@I`aTIP1
+V^zPJGoiI0<XNNkFZDVZM?0
+!s100 ZMlblgOnALLXoWLaSPLM03
 R7
 33
-Z39 !s110 1712519894
+R8
 !i10b 1
-Z40 !s108 1712519894.000000
-Z41 !s90 -reportprogress|300|-work|work|/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/MEM_WB.vhd|
-!s107 /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/MEM_WB.vhd|
+R9
+Z31 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/MEM_WB.vhd|
+Z32 !s107 /home/mkotlarz/cpre381/proj/proj2sw/Pipelines/MEM_WB.vhd|
 !i113 0
 R12
 R13
 Astructural
 R3
 R4
-DEx4 work 6 mem_wb 0 22 4JVh1n^beMlP37Dc>9Q^C2
-!i122 11
-l53
-L34 48
-V7SFBA4T:DAdVR0ESLPdee1
-!s100 n_5lIWzP<n39^UW:5P=bX0
+DEx4 work 6 mem_wb 0 22 ^zPJGoiI0<XNNkFZDVZM?0
+!i122 3
+l61
+L42 80
+Va:aD2n5^Hdl5BKOM1SLA70
+!s100 >`izoaEH^Fc``3Hffc9;n3
 R7
 33
-R39
+R8
 !i10b 1
-R40
-R41
-Z42 !s107 /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/MEM_WB.vhd|
+R9
+R31
+R32
 !i113 0
 R12
 R13
@@ -235,19 +234,19 @@ R3
 R4
 !i122 4
 R1
-Z43 8/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/RegFile.vhd
-Z44 F/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/RegFile.vhd
+Z33 8/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/RegFile.vhd
+Z34 F/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/RegFile.vhd
 l0
 R17
 VocOL00JDjLi20=BzcXEIa2
 !s100 OVSbJzVV9WYFXiYf<CTiz3
 R7
 33
-Z45 !s110 1712517531
+R8
 !i10b 1
-Z46 !s108 1712517531.000000
-Z47 !s90 -reportprogress|300|-work|work|/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/RegFile.vhd|
-Z48 !s107 /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/RegFile.vhd|
+R9
+Z35 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/RegFile.vhd|
+Z36 !s107 /home/mkotlarz/cpre381/proj/proj2sw/Pipelines/RegFile.vhd|
 !i113 0
 R12
 R13
@@ -262,41 +261,41 @@ VA^H?_9d@cEohkCQHRI9TQ1
 !s100 4RnnEmT<hNJ9d1151T00Z0
 R7
 33
-R45
+R8
 !i10b 1
-R46
-R47
-R48
+R9
+R35
+R36
 !i113 0
 R12
 R13
 Etb_if_id
-Z49 w1712517491
-Z50 DPx3 std 3 env 0 22 QPZJVBPkV?55nUWhDzFik0
-Z51 DPx4 ieee 16 std_logic_textio 0 22 C8j>g0lzF^EAA]5<S6PY32
+Z37 w1713456302
+Z38 DPx3 std 3 env 0 22 QPZJVBPkV?55nUWhDzFik0
+Z39 DPx4 ieee 16 std_logic_textio 0 22 C8j>g0lzF^EAA]5<S6PY32
 R3
 R4
 !i122 5
 R1
-Z52 8/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/tb_IF_ID.vhd
-Z53 F/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/tb_IF_ID.vhd
+Z40 8/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/tb_IF_ID.vhd
+Z41 F/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/tb_IF_ID.vhd
 l0
 L22 1
 Vj=[mlDEaNWX4`:zDbBQYm2
 !s100 hc=8f4JU28LagLIgzc0QB1
 R7
 33
-Z54 !s110 1712517533
+R8
 !i10b 1
-Z55 !s108 1712517533.000000
-Z56 !s90 -reportprogress|300|-work|work|/home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/tb_IF_ID.vhd|
-Z57 !s107 /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/tb_IF_ID.vhd|
+R9
+Z42 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2sw/Pipelines/tb_IF_ID.vhd|
+Z43 !s107 /home/mkotlarz/cpre381/proj/proj2sw/Pipelines/tb_IF_ID.vhd|
 !i113 0
 R12
 R13
 Amixed
-R50
-R51
+R38
+R39
 R3
 R4
 DEx4 work 8 tb_if_id 0 22 j=[mlDEaNWX4`:zDbBQYm2
@@ -307,11 +306,11 @@ V7oZCLmb[a1j9Po=fPm6o81
 !s100 6L_I0>^Ia2fR]`Df9O_WZ3
 R7
 33
-R54
+R8
 !i10b 1
-R55
-R56
-R57
+R9
+R42
+R43
 !i113 0
 R12
 R13

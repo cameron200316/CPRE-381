@@ -1,0 +1,237 @@
+# //  Questa Sim-64
+# //  Version 2023.2_2 linux_x86_64 Jun  9 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+cd /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines
+vlib work
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/*.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:18:36 on Apr 07,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/IF_ID.vhd /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/RegFile.vhd /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/dffg.vhd /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/tb_IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IF_ID
+# -- Compiling architecture structural of IF_ID
+# -- Compiling entity RegFile
+# -- Compiling architecture structural of RegFile
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/tb_IF_ID.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_IF_ID
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 14:18:36 on Apr 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Modified modelsim.ini
+# Modified modelsim.ini
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/*.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:18:44 on Apr 07,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/IF_ID.vhd /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/RegFile.vhd /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/dffg.vhd /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/tb_IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IF_ID
+# -- Compiling architecture structural of IF_ID
+# -- Compiling entity RegFile
+# -- Compiling architecture structural of RegFile
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_IF_ID
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 14:18:44 on Apr 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/dffg.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:18:46 on Apr 07,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# End time: 14:18:46 on Apr 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/IF_ID.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:18:49 on Apr 07,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IF_ID
+# -- Compiling architecture structural of IF_ID
+# End time: 14:18:49 on Apr 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/RegFile.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:18:51 on Apr 07,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/RegFile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegFile
+# -- Compiling architecture structural of RegFile
+# End time: 14:18:51 on Apr 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/tb_IF_ID.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:18:53 on Apr 07,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/tb_IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_IF_ID
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 14:18:53 on Apr 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_if_id
+# vsim work.tb_if_id 
+# Start time: 14:19:04 on Apr 07,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_if_id(mixed)#1
+# Loading work.regfile(structural)#1
+add wave -r sim:/tb_if_id/*
+run 400
+quit -sim
+# End time: 14:20:16 on Apr 07,2024, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:43:39 on Apr 07,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ID_EX
+# -- Compiling architecture structural of ID_EX
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(97): Cannot assign to object "o_Jump" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(105): Cannot assign to object "o_Branch" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(108): Symbol "JUMP" has already been declared in this region.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(113): Cannot assign to object "o_BranchNE" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(116): Symbol "JUMP" has already been declared in this region.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(121): Cannot assign to object "o_Return" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(124): Symbol "JUMP" has already been declared in this region.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(129): Cannot assign to object "o_ALUnAddSub" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(132): Symbol "JUMP" has already been declared in this region.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(137): Cannot assign to object "o_ShiftLorR" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(140): Symbol "JUMP" has already been declared in this region.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(145): Cannot assign to object "o_ShiftArithmetic" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(148): Symbol "JUMP" has already been declared in this region.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(153): Cannot assign to object "o_Unsigned" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(156): Symbol "JUMP" has already been declared in this region.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(161): Cannot assign to object "o_Lw" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(164): Symbol "JUMP" has already been declared in this region.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(169): Cannot assign to object "o_HoB" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(172): Symbol "JUMP" has already been declared in this region.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(177): Cannot assign to object "o_Sign" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(180): Symbol "JUMP" has already been declared in this region.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(185): Cannot assign to object "o_MemWrite" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(188): Symbol "JUMP" has already been declared in this region.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(193): Cannot assign to object "o_MemtoReg" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(196): Symbol "JUMP" has already been declared in this region.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(201): Cannot assign to object "o_RegWrite" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(210): Cannot assign to object "o_ALUout" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(220): Cannot assign to object "o_WA" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(246): Cannot assign to object "o_A" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(254): Cannot assign to object "o_B" of mode IN.
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(256): VHDL Compiler exiting
+# End time: 14:43:39 on Apr 07,2024, Elapsed time: 0:00:00
+# Errors: 30, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:45:38 on Apr 07,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ID_EX
+# -- Compiling architecture structural of ID_EX
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(97): Cannot assign to object "o_Jump" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(105): Cannot assign to object "o_Branch" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(113): Cannot assign to object "o_BranchNE" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(121): Cannot assign to object "o_Return" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(129): Cannot assign to object "o_ALUnAddSub" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(137): Cannot assign to object "o_ShiftLorR" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(145): Cannot assign to object "o_ShiftArithmetic" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(153): Cannot assign to object "o_Unsigned" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(161): Cannot assign to object "o_Lw" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(169): Cannot assign to object "o_HoB" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(177): Cannot assign to object "o_Sign" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(185): Cannot assign to object "o_MemWrite" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(193): Cannot assign to object "o_MemtoReg" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(201): Cannot assign to object "o_RegWrite" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(210): Cannot assign to object "o_ALUout" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(220): Cannot assign to object "o_WA" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(246): Cannot assign to object "o_A" of mode IN.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(254): Cannot assign to object "o_B" of mode IN.
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd(256): VHDL Compiler exiting
+# End time: 14:45:38 on Apr 07,2024, Elapsed time: 0:00:00
+# Errors: 18, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:46:38 on Apr 07,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/ID_EX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ID_EX
+# -- Compiling architecture structural of ID_EX
+# End time: 14:46:38 on Apr 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/EX_MEM.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:52:04 on Apr 07,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/EX_MEM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EX_MEM
+# -- Compiling architecture structural of EX_MEM
+# End time: 14:52:04 on Apr 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/MEM_WB.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:58:01 on Apr 07,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/MEM_WB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MEM_WB
+# -- Compiling architecture structural of MEM_WB
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/MEM_WB.vhd(79): (vcom-1136) Unknown identifier "o_WD".
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/MEM_WB.vhd(81): VHDL Compiler exiting
+# End time: 14:58:02 on Apr 07,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/MEM_WB.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:58:14 on Apr 07,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/MEM_WB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MEM_WB
+# -- Compiling architecture structural of MEM_WB
+# End time: 14:58:14 on Apr 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

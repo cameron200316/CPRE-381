@@ -4,10 +4,10 @@
 1 N
 7
 5 mixed
-1
-55 /home/cam2022/CPRE-381/ProjectP1/proj2sw/Pipelines/work
 2
 7 regfile
+1
+50 /home/mkotlarz/cpre381/proj/proj2sw/Pipelines/work
 3
 10 structural
 6
@@ -16,6 +16,20 @@
 5 if_id
 8
 9 gCLK_HPER
+]
+[G
+1
+5
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
 ]
 [G
 1
@@ -42,20 +56,6 @@
 [G
 1
 2
-3
-1
-4
-1
-0
-32
-0
-0 0
-0
-0
-]
-[G
-1
-5
 3
 1
 4

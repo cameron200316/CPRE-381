@@ -1,0 +1,419 @@
+m255
+K4
+z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+Z2 !s12c _opt
+R1
+R2
+R1
+!s11e vcom 2023.2_2 2023.06, Jun  9 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z3 d/home/mkotlarz/cpre381/proj/proj2hw/Pipelines
+T_opt
+!s110 1713459948
+VEoGHUzna9YLaoBDQNl0Ce0
+Z4 04 8 5 work tb_if_id mixed 1
+=1-7486e228c7aa-662152ec-56923-57ed
+R1
+Z5 !s12b OEM100
+Z6 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z7 tCvgOpt 0
+n@_opt
+Z8 OL;O;2023.2_2;77
+R3
+T_opt1
+!s110 1713472081
+VQ0OdX6E7lBV05n?OSeYf13
+R4
+=1-0050569beede-66218251-9fa23-bf5f0
+R1
+R5
+R6
+o-quiet -auto_acc_if_foreign -work work
+R7
+n@_opt1
+R8
+Edffg
+Z9 w1713458029
+Z10 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z11 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 48
+R3
+Z12 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd
+Z13 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd
+l0
+Z14 L23 1
+V<4[1c^JVlXT1d_XTIVZ261
+!s100 FJQDe;FGDG0KnNV;j4DaY2
+Z15 OL;C;2023.2_2;77
+33
+Z16 !s110 1713472074
+!i10b 1
+Z17 !s108 1713472074.000000
+Z18 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd|
+Z19 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd|
+!i113 0
+Z20 o-work work
+Z21 tExplicit 1 NoCoverage 1 CvgOpt 0
+Amixed
+R10
+R11
+DEx4 work 4 dffg 0 22 <4[1c^JVlXT1d_XTIVZ261
+!i122 48
+l37
+L33 29
+VTEdG>g0`Ff3kSOBZ1j4FM2
+!s100 GR5ff]ZD1Yiz`>ZFVE>Hg1
+R15
+33
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Edffgsync
+Z22 w1713470860
+R10
+R11
+!i122 49
+R3
+Z23 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd
+Z24 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd
+l0
+R14
+VIagl01O7O@9=CM=e;L;Ek0
+!s100 X01F^Zh3]^75[G=j[zcLG2
+R15
+33
+R16
+!i10b 1
+R17
+Z25 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd|
+Z26 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd|
+!i113 0
+R20
+R21
+Amixed
+R10
+R11
+DEx4 work 8 dffgsync 0 22 Iagl01O7O@9=CM=e;L;Ek0
+!i122 49
+l39
+L33 36
+VSkbKH98ZE1o1:VTgl:^Me3
+!s100 mIl[<XLXl_^U03HK4JOPZ3
+R15
+33
+R16
+!i10b 1
+R17
+R25
+R26
+!i113 0
+R20
+R21
+Eex_mem
+Z27 w1713472008
+R10
+R11
+!i122 50
+R3
+Z28 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd
+Z29 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd
+l0
+Z30 L21 1
+Vb_h?hjXQ5;9Le]Cz=@[LF1
+!s100 m5oEZV[X^;bJl4:X`l1013
+R15
+33
+R16
+!i10b 1
+R17
+Z31 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd|
+Z32 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd|
+!i113 0
+R20
+R21
+Astructural
+R10
+R11
+DEx4 work 6 ex_mem 0 22 b_h?hjXQ5;9Le]Cz=@[LF1
+!i122 50
+l78
+L58 142
+VkR30^cCTmkzE3HEGcmMGL0
+!s100 HeC7M3=k[JG?kV2FaS<Ue1
+R15
+33
+R16
+!i10b 1
+R17
+R31
+R32
+!i113 0
+R20
+R21
+Eid_ex
+Z33 w1713472027
+R10
+R11
+!i122 51
+R3
+Z34 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd
+Z35 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd
+l0
+R30
+V^SlDmKGX8]Ab>Tzo6nnoN2
+!s100 Hed0g>aHLWZ3Uj=DRONLR1
+R15
+33
+R16
+!i10b 1
+R17
+Z36 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd|
+Z37 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd|
+!i113 0
+R20
+R21
+Astructural
+R10
+R11
+DEx4 work 5 id_ex 0 22 ^SlDmKGX8]Ab>Tzo6nnoN2
+!i122 51
+l100
+L80 221
+VLM7<;AFYIU`b^VBNgfJJ_3
+!s100 Pz1zbL;8WFTc<77dMQQ9T0
+R15
+33
+R16
+!i10b 1
+R17
+R36
+R37
+!i113 0
+R20
+R21
+Eif_id
+Z38 w1713471871
+R10
+R11
+!i122 52
+R3
+Z39 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd
+Z40 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd
+l0
+R30
+VSclJi:bh<`k7=9nUb8cAW0
+!s100 I9eD:U9Ub0oaedmJjlaMC3
+R15
+33
+Z41 !s110 1713472075
+!i10b 1
+Z42 !s108 1713472075.000000
+Z43 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd|
+Z44 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd|
+!i113 0
+R20
+R21
+Astructural
+R10
+R11
+DEx4 work 5 if_id 0 22 SclJi:bh<`k7=9nUb8cAW0
+!i122 52
+l54
+L34 39
+V2BH`nYh4U2o<WiSfJ3i;Q1
+!s100 E5l<lP[7RNiL_n]9QQoX`2
+R15
+33
+R41
+!i10b 1
+R42
+R43
+R44
+!i113 0
+R20
+R21
+Emem_wb
+Z45 w1713472068
+R10
+R11
+!i122 53
+R3
+Z46 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd
+Z47 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd
+l0
+R30
+V47UeCne;NTL@ofY_^@O:E0
+!s100 o36:;2DWbD49F^f^_iN2P2
+R15
+33
+R41
+!i10b 1
+R42
+Z48 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd|
+Z49 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd|
+!i113 0
+R20
+R21
+Astructural
+R10
+R11
+DEx4 work 6 mem_wb 0 22 47UeCne;NTL@ofY_^@O:E0
+!i122 53
+l65
+L45 84
+VXXVk>lT_MiboNizV]j;eV1
+!s100 PEW<SSSZdzdiW=QVTOAoZ0
+R15
+33
+R41
+!i10b 1
+R42
+R48
+R49
+!i113 0
+R20
+R21
+Eregfile
+Z50 w1713455052
+R10
+R11
+!i122 54
+R3
+Z51 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd
+Z52 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd
+l0
+R30
+VocOL00JDjLi20=BzcXEIa2
+!s100 OVSbJzVV9WYFXiYf<CTiz3
+R15
+33
+R41
+!i10b 1
+R42
+Z53 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd|
+Z54 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd|
+!i113 0
+R20
+R21
+Astructural
+R10
+R11
+DEx4 work 7 regfile 0 22 ocOL00JDjLi20=BzcXEIa2
+!i122 54
+l42
+L32 23
+VA^H?_9d@cEohkCQHRI9TQ1
+!s100 4RnnEmT<hNJ9d1151T00Z0
+R15
+33
+R41
+!i10b 1
+R42
+R53
+R54
+!i113 0
+R20
+R21
+Eregfilesync
+Z55 w1713471453
+R10
+R11
+!i122 56
+R3
+Z56 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd
+Z57 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd
+l0
+R30
+V>W4lS[R3ei9W@89UlRTJf1
+!s100 S:b0O>dJb57bPW9KlDKCU0
+R15
+33
+R41
+!i10b 1
+R42
+Z58 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd|
+Z59 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd|
+!i113 0
+R20
+R21
+Amixed
+R10
+R11
+DEx4 work 11 regfilesync 0 22 >W4lS[R3ei9W@89UlRTJf1
+!i122 56
+l42
+L32 24
+VIzR;IGhF6EBjiU5LXV:T[0
+!s100 OAnE<?2^5?RTNY[G[:J[[2
+R15
+33
+R41
+!i10b 1
+R42
+R58
+R59
+!i113 0
+R20
+R21
+Etb_if_id
+Z60 w1713471047
+Z61 DPx3 std 3 env 0 22 QPZJVBPkV?55nUWhDzFik0
+Z62 DPx4 ieee 16 std_logic_textio 0 22 C8j>g0lzF^EAA]5<S6PY32
+R10
+R11
+!i122 55
+R3
+Z63 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd
+Z64 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd
+l0
+L22 1
+Vj=[mlDEaNWX4`:zDbBQYm2
+!s100 hc=8f4JU28LagLIgzc0QB1
+R15
+33
+R41
+!i10b 1
+R42
+Z65 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd|
+Z66 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd|
+!i113 0
+R20
+R21
+Amixed
+R61
+R62
+R10
+R11
+DEx4 work 8 tb_if_id 0 22 j=[mlDEaNWX4`:zDbBQYm2
+!i122 55
+l59
+L26 113
+VA0P[3o1;:Bn@^2WU_W5MF3
+!s100 c3G<c4J:0HmngnTlMSInm2
+R15
+33
+R41
+!i10b 1
+R42
+R65
+R66
+!i113 0
+R20
+R21
