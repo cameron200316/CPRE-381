@@ -28,11 +28,11 @@ entity ForwardingUnit is
         i_MEM_WA         : in std_logic_vector(4 downto 0);  
         i_EX_RS          : in std_logic_vector(4 downto 0);
         i_EX_RT          : in std_logic_vector(4 downto 0);
-	i_WB_OPCODE      : in std_logic_vector(5 downto 0);
+	i_MEM_OPCODE     : in std_logic_vector(5 downto 0);
         o_WB_EX2_RS      : out std_logic;
 	o_WB_EX2_RT      : out std_logic;
         o_MEM_EX1_RS     : out std_logic;
-        o_MEM_EX1_RT     : out std_logic;);
+        o_MEM_EX1_RT     : out std_logic);
 
 end ForwardingUnit;
 
@@ -106,7 +106,7 @@ begin
 	      o_C       => s_MEM_EX1_RT);
 
   LW: andg2_3bit port MAP(
-	      i_A       => i_WB_OPCODE(4 downto 2), 
+	      i_A       => i_MEM_OPCODE(5 downto 3), 
 	      i_B       => "100",
 	      o_C       => s_LW);
 

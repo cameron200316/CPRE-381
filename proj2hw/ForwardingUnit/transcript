@@ -1,0 +1,299 @@
+# //  Questa Sim-64
+# //  Version 2023.2_2 linux_x86_64 Jun  9 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vlib work
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/andg2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:37:32 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 10:37:32 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/andg2_3bit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:37:33 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/andg2_3bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2_3bit
+# -- Compiling architecture dataflow of andg2_3bit
+# End time: 10:37:33 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/andg2_5bit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:37:36 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/andg2_5bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2_5bit
+# -- Compiling architecture dataflow of andg2_5bit
+# End time: 10:37:36 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/andg2_3bit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:37:38 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/andg2_3bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2_3bit
+# -- Compiling architecture dataflow of andg2_3bit
+# End time: 10:37:38 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/andg3.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:37:40 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/andg3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg3
+# -- Compiling architecture dataflow of andg3
+# End time: 10:37:40 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/ForwardingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:37:43 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/ForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ForwardingUnit
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/ForwardingUnit.vhd(35): near ")": (vcom-1576) expecting IDENTIFIER.
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/ForwardingUnit.vhd(35): VHDL Compiler exiting
+# End time: 10:37:43 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/ForwardingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:38:01 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/ForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ForwardingUnit
+# -- Compiling architecture structural of ForwardingUnit
+# End time: 10:38:01 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/invg.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:38:04 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 10:38:04 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:38:06 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_ForwardingUnit
+# -- Compiling architecture mixed of tb_Reg32File
+# ** Error: (vcom-11) Could not find work.tb_reg32file.
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd(26): VHDL Compiler exiting
+# End time: 10:38:06 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:38:28 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_ForwardingUnit
+# -- Compiling architecture mixed of tb_ForwardingUnit
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd(70): near "(": (vcom-1576) expecting MAP.
+# ** Error: /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd(83): Statement cannot be labeled.
+# ** Note: /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd(220): VHDL Compiler exiting
+# End time: 10:38:28 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 1
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:38:44 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_ForwardingUnit
+# -- Compiling architecture mixed of tb_ForwardingUnit
+# End time: 10:38:44 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Modified modelsim.ini
+# Modified modelsim.ini
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:38:52 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_ForwardingUnit
+# -- Compiling architecture mixed of tb_ForwardingUnit
+# End time: 10:38:52 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_forwardingunit
+# vsim work.tb_forwardingunit 
+# Start time: 10:39:02 on Apr 18,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_forwardingunit(mixed)#1
+# Loading work.forwardingunit(structural)#1
+add wave -r sim:/tb_forwardingunit/*
+run 800
+quit -sim
+# End time: 10:41:08 on Apr 18,2024, Elapsed time: 0:02:06
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:41:13 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_ForwardingUnit
+# -- Compiling architecture mixed of tb_ForwardingUnit
+# End time: 10:41:14 on Apr 18,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/ForwardingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:41:15 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/ForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ForwardingUnit
+# -- Compiling architecture structural of ForwardingUnit
+# End time: 10:41:15 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_forwardingunit
+# vsim work.tb_forwardingunit 
+# Start time: 10:41:22 on Apr 18,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_forwardingunit(mixed)#1
+add wave -r sim:/tb_forwardingunit/*
+run 800
+quit -sim
+# End time: 10:46:01 on Apr 18,2024, Elapsed time: 0:04:39
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:46:06 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_ForwardingUnit
+# -- Compiling architecture mixed of tb_ForwardingUnit
+# End time: 10:46:06 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/ForwardingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:46:08 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/ForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ForwardingUnit
+# -- Compiling architecture structural of ForwardingUnit
+# End time: 10:46:08 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_forwardingunit
+# vsim work.tb_forwardingunit 
+# Start time: 10:46:14 on Apr 18,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_forwardingunit(mixed)#1
+add wave -r sim:/tb_forwardingunit/*
+run 400
+quit -sim
+# End time: 10:46:34 on Apr 18,2024, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 0
+vdel -all -lib work
+vlib work
+vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/*.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:46:51 on Apr 18,2024
+# vcom -reportprogress 300 -work work /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/ForwardingUnit.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/andg2.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/andg2_3bit.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/andg2_5bit.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/andg3.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/invg.vhd /home/cam2022/CPRE-381/ProjectP1/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ForwardingUnit
+# -- Compiling architecture structural of ForwardingUnit
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# -- Compiling entity andg2_3bit
+# -- Compiling architecture dataflow of andg2_3bit
+# -- Compiling entity andg2_5bit
+# -- Compiling architecture dataflow of andg2_5bit
+# -- Compiling entity andg3
+# -- Compiling architecture dataflow of andg3
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_ForwardingUnit
+# -- Compiling architecture mixed of tb_ForwardingUnit
+# End time: 10:46:51 on Apr 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_forwardingunit
+# vsim work.tb_forwardingunit 
+# Start time: 10:46:58 on Apr 18,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_forwardingunit(mixed)#1
+add wave -r sim:/tb_forwardingunit/*
+run 400

@@ -23,7 +23,7 @@ entity tb_ForwardingUnit is
   generic(gCLK_HPER   : time := 10 ns);   -- Generic for half of the clock cycle period
 end tb_ForwardingUnit;
 
-architecture mixed of tb_Reg32File is
+architecture mixed of tb_ForwardingUnit is
 
 -- Define the total clock period time
 constant cCLK_PER  : time := gCLK_HPER * 2;
@@ -37,7 +37,7 @@ component ForwardingUnit is
         i_MEM_WA         : in std_logic_vector(4 downto 0);  
         i_EX_RS          : in std_logic_vector(4 downto 0);
         i_EX_RT          : in std_logic_vector(4 downto 0);
-	i_WB_OPCODE      : in std_logic_vector(5 downto 0);
+	i_MEM_OPCODE     : in std_logic_vector(5 downto 0);
         o_WB_EX2_RS      : out std_logic;
 	o_WB_EX2_RT      : out std_logic;
         o_MEM_EX1_RS     : out std_logic;
@@ -54,7 +54,7 @@ signal s_WB_WA 		  : std_logic_vector(4 downto 0)  := "00000";
 signal s_MEM_WA 	  : std_logic_vector(4 downto 0)  := "00000";
 signal s_EX_RS  	  : std_logic_vector(4 downto 0)  := "00000";
 signal s_EX_RT   	  : std_logic_vector(4 downto 0)  := "00000";
-signal s_WB_OPCODE        : std_logic_vector(5 downto 0)  := "000000";
+signal s_MEM_OPCODE       : std_logic_vector(5 downto 0)  := "000000";
 signal s_WB_EX2_RS    	  : std_logic := '0';
 signal s_WB_EX2_RT  	  : std_logic := '0';
 signal s_MEM_EX1_RS   	  : std_logic := '0';
@@ -67,11 +67,11 @@ begin
   -- during simulation. What follows DUT0 is the entity name that will be used to find
   -- the appropriate library component during simulation loading.
   DUT0: ForwardingUnit
-   port(i_WB_WA          => s_WB_WA,
+   port MAP(i_WB_WA          => s_WB_WA,
         i_MEM_WA         => s_MEM_WA,  
         i_EX_RS          => s_EX_RS,
         i_EX_RT          => s_EX_RT,
-	i_WB_OPCODE      => s_WB_OPCODE,
+	i_MEM_OPCODE     => s_MEM_OPCODE,
         o_WB_EX2_RS      => s_WB_EX2_RS,
 	o_WB_EX2_RT      => s_WB_EX2_RT,
         o_MEM_EX1_RS     => s_MEM_EX1_RS,
@@ -95,49 +95,124 @@ begin
     wait for gCLK_HPER/2; -- for waveform clarity, I prefer not to change inputs on clk edges
 
     -- Test case 1: (Testing no forwards needed)
+    s_WB_WA   	   <= "00100";
+    s_MEM_WA       <= "10000";
+    s_EX_RS        <= "00000"; 
+    s_EX_RT        <= "00000";
+    s_MEM_OPCODE   <= "000000"; 
+    wait for gCLK_HPER*2;
+    -- Expect: s_WB_EX2_RS = 0
+    -- Expect: s_WB_EX2_RT = 0
+    -- Expect: s_MEM_EX1_RS = 0
+    -- Expect: s_MEM_EX1_RT = 0
+
+    -- Test case 2: (Testing no forwards needed (zero))
     s_WB_WA   	   <= "00000";
     s_MEM_WA       <= "00000";
     s_EX_RS        <= "00000"; 
     s_EX_RT        <= "00000";
-    s_WB_OPCODE    <= "00000"; 
+    s_MEM_OPCODE   <= "000000"; 
     wait for gCLK_HPER*2;
-    -- Expect: s_OUT1 = 0x00000000
-    -- Expect: s_OUT0 = 0x00000000
+    -- Expect: s_WB_EX2_RS = 0
+    -- Expect: s_WB_EX2_RT = 0
+    -- Expect: s_MEM_EX1_RS = 0
+    -- Expect: s_MEM_EX1_RT = 0
 
-    -- Test case 2: (Loading something into the $0 register)
-    s_WD    <= "00000000000000000000000000001111";
-    s_WA    <= "00000";
-    s_RS    <= "00000";
-    s_RT    <= "00000"; 
-    s_R     <= '0';
-    s_WE    <= '1'; 
+    -- Test case 3: (Testing distance two forward (RS))
+    s_WB_WA   	   <= "10000";
+    s_MEM_WA       <= "00000";
+    s_EX_RS        <= "10000"; 
+    s_EX_RT        <= "00000";
+    s_MEM_OPCODE   <= "000000"; 
     wait for gCLK_HPER*2;
-    -- Expect: s_OUT1 = 0x00000000
-    -- Expect: s_OUT0 = 0x00000000
+    -- Expect: s_WB_EX2_RS = 1
+    -- Expect: s_WB_EX2_RT = 0
+    -- Expect: s_MEM_EX1_RS = 0
+    -- Expect: s_MEM_EX1_RT = 0
 
-    -- Test case 3: (Loading something into the $0 register)
-    s_WD    <= "00000000000000000000000000001111";
-    s_WA    <= "00001";
-    s_RS    <= "00000";
-    s_RT    <= "00000"; 
-    s_R     <= '0';
-    s_WE    <= '1'; 
+    -- Test case 3: (Testing distance two forward (RT))
+    s_WB_WA   	   <= "10000";
+    s_MEM_WA       <= "00000";
+    s_EX_RS        <= "00000"; 
+    s_EX_RT        <= "10000";
+    s_MEM_OPCODE   <= "000000"; 
     wait for gCLK_HPER*2;
-    -- Expect: s_OUT1 = 0x00000000
-    -- Expect: s_OUT0 = 0x00000000
+    -- Expect: s_WB_EX2_RS = 0
+    -- Expect: s_WB_EX2_RT = 1
+    -- Expect: s_MEM_EX1_RS = 0
+    -- Expect: s_MEM_EX1_RT = 0
 
-   -- Test case 4: (Loading something into the $0 register)
-    s_WD    <= "00000000000000000000000011111111";
-    s_WA    <= "00001";
-    s_RS    <= "00001";
-    s_RT    <= "00001"; 
-    s_R     <= '0';
-    s_WE    <= '1'; 
+    -- Test case 4: (Testing distance of one (no LW)(RS))
+    s_WB_WA   	   <= "00000";
+    s_MEM_WA       <= "10000";
+    s_EX_RS        <= "10000"; 
+    s_EX_RT        <= "00000";
+    s_MEM_OPCODE   <= "000000"; 
     wait for gCLK_HPER*2;
-    -- Expect: s_OUT1 = 0x000000FF
-    -- Expect: s_OUT0 = 0x000000FF
+    -- Expect: s_WB_EX2_RS = 0
+    -- Expect: s_WB_EX2_RT = 0
+    -- Expect: s_MEM_EX1_RS = 1
+    -- Expect: s_MEM_EX1_RT = 0
 
+    -- Test case 5: (Testing distance of one (no LW)(RT))
+    s_WB_WA   	   <= "00000";
+    s_MEM_WA       <= "10000";
+    s_EX_RS        <= "00000"; 
+    s_EX_RT        <= "10000";
+    s_MEM_OPCODE   <= "000000"; 
+    wait for gCLK_HPER*2;
+    -- Expect: s_WB_EX2_RS = 0
+    -- Expect: s_WB_EX2_RT = 0
+    -- Expect: s_MEM_EX1_RS = 0
+    -- Expect: s_MEM_EX1_RT = 1
 
+    -- Test case 6: (Testing distance of one (LW)(RS))
+    s_WB_WA   	   <= "00000";
+    s_MEM_WA       <= "10000";
+    s_EX_RS        <= "10000"; 
+    s_EX_RT        <= "00000";
+    s_MEM_OPCODE   <= "100000"; 
+    wait for gCLK_HPER*2;
+    -- Expect: s_WB_EX2_RS = 0
+    -- Expect: s_WB_EX2_RT = 0
+    -- Expect: s_MEM_EX1_RS = 0
+    -- Expect: s_MEM_EX1_RT = 0
+
+    -- Test case 7: (Testing distance of one (LW)(RT))
+    s_WB_WA   	   <= "00000";
+    s_MEM_WA       <= "10000";
+    s_EX_RS        <= "00000"; 
+    s_EX_RT        <= "10000";
+    s_MEM_OPCODE   <= "100000"; 
+    wait for gCLK_HPER*2;
+    -- Expect: s_WB_EX2_RS = 0
+    -- Expect: s_WB_EX2_RT = 0
+    -- Expect: s_MEM_EX1_RS = 0
+    -- Expect: s_MEM_EX1_RT = 0
+
+    -- Test case 8: (Testing distance of one (LW)(RT))
+    s_WB_WA   	   <= "10000";
+    s_MEM_WA       <= "10000";
+    s_EX_RS        <= "10000"; 
+    s_EX_RT        <= "00000";
+    s_MEM_OPCODE   <= "000000"; 
+    wait for gCLK_HPER*2;
+    -- Expect: s_WB_EX2_RS = 0
+    -- Expect: s_WB_EX2_RT = 0
+    -- Expect: s_MEM_EX1_RS = 0
+    -- Expect: s_MEM_EX1_RT = 0
+
+    -- Test case 9: (Testing distance of one (LW)(RT))
+    s_WB_WA   	   <= "10000";
+    s_MEM_WA       <= "10000";
+    s_EX_RS        <= "00000"; 
+    s_EX_RT        <= "10000";
+    s_MEM_OPCODE   <= "000000"; 
+    wait for gCLK_HPER*2;
+    -- Expect: s_WB_EX2_RS = 0
+    -- Expect: s_WB_EX2_RT = 0
+    -- Expect: s_MEM_EX1_RS = 0
+    -- Expect: s_MEM_EX1_RT = 1
 
     wait;
   end process;
