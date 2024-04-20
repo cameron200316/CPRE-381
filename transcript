@@ -12,230 +12,65 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-vlib work
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 15:44:42 on Apr 19,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(56): near "else": (vcom-1576) expecting END.
-# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(56): VHDL Compiler exiting
-# End time: 15:44:42 on Apr 19,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
+cd /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit
 vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 15:55:23 on Apr 19,2024
+# Start time: 13:41:32 on Apr 20,2024
 # vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity andg2
 # -- Compiling architecture dataflow of andg2
-# End time: 15:55:23 on Apr 19,2024, Elapsed time: 0:00:00
+# End time: 13:41:32 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 15:55:23 on Apr 19,2024
+# Start time: 13:41:32 on Apr 20,2024
 # vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity andg2_5bit
 # -- Compiling architecture dataflow of andg2_5bit
-# End time: 15:55:23 on Apr 19,2024, Elapsed time: 0:00:00
+# End time: 13:41:32 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:41:32 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 13:41:32 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 15:55:23 on Apr 19,2024
+# Start time: 13:41:32 on Apr 20,2024
 # vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity org2
 # -- Compiling architecture dataflow of org2
-# End time: 15:55:23 on Apr 19,2024, Elapsed time: 0:00:00
+# End time: 13:41:32 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 15:55:23 on Apr 19,2024
+# Start time: 13:41:32 on Apr 20,2024
 # vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity StallingUnit
 # -- Compiling architecture structural of StallingUnit
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(80): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(80): (vcom-1136) Unknown identifier "bitAndg2_a".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(80): near ":": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(86): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(86): (vcom-1136) Unknown identifier "bitAndg2_b".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(86): near ":": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): (vcom-1136) Unknown identifier "flushFirstInst".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(115): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(115): (vcom-1136) Unknown identifier "flushSecondInst".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(143): (vcom-1136) Unknown identifier "flushFirstInst".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(144): (vcom-1136) Unknown identifier "flushSecondInst".
-# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(146): VHDL Compiler exiting
-# End time: 15:55:24 on Apr 19,2024, Elapsed time: 0:00:01
-# Errors: 10, Warnings: 2
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 15:55:51 on Apr 19,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(80): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(80): (vcom-1136) Unknown identifier "bitAndg2_a".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(80): near ":": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(86): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(86): (vcom-1136) Unknown identifier "bitAndg2_b".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(86): near ":": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): (vcom-1136) Unknown identifier "flushFirstInst".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(115): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(115): (vcom-1136) Unknown identifier "flushSecondInst".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(143): (vcom-1136) Unknown identifier "flushFirstInst".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(144): (vcom-1136) Unknown identifier "flushSecondInst".
-# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(146): VHDL Compiler exiting
-# End time: 15:55:51 on Apr 19,2024, Elapsed time: 0:00:00
-# Errors: 10, Warnings: 2
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 15:57:19 on Apr 19,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): (vcom-1136) Unknown identifier "flushFirstInst".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(115): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(115): (vcom-1136) Unknown identifier "flushSecondInst".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(143): (vcom-1136) Unknown identifier "flushFirstInst".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(144): (vcom-1136) Unknown identifier "flushSecondInst".
-# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(146): VHDL Compiler exiting
-# End time: 15:57:19 on Apr 19,2024, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 15:57:47 on Apr 19,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): near "=>": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(115): near "=>": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(143): (vcom-1136) Unknown identifier "flushFirstInst".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(144): (vcom-1136) Unknown identifier "flushSecondInst".
-# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(146): VHDL Compiler exiting
-# End time: 15:57:47 on Apr 19,2024, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 16:06:14 on Apr 19,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(76): near "begin": (vcom-1576) expecting ':'.
-# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(87): VHDL Compiler exiting
-# End time: 16:06:14 on Apr 19,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 16:06:36 on Apr 19,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(110): (vcom-1136) Unknown identifier "flushFirstInst".
-# ** Error (suppressible): /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): (vcom-1141) Identifier "invg" does not identify a component declaration.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(118): Symbol "branchHazardAndg2_b" has already been declared in this region.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(120): (vcom-1136) Unknown identifier "s_branch_not_taken".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(121): (vcom-1136) Unknown identifier "flushSecondInst".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(147): (vcom-1136) Unknown identifier "flushFirstInst".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(148): (vcom-1136) Unknown identifier "flushSecondInst".
-# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(150): VHDL Compiler exiting
-# End time: 16:06:36 on Apr 19,2024, Elapsed time: 0:00:00
-# Errors: 7, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 16:08:13 on Apr 19,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# ** Error (suppressible): /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(114): (vcom-1141) Identifier "invg" does not identify a component declaration.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(121): (vcom-1136) Unknown identifier "s_branch_not_taken".
-# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(151): VHDL Compiler exiting
-# End time: 16:08:13 on Apr 19,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 16:08:22 on Apr 19,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# ** Error (suppressible): /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(114): (vcom-1141) Identifier "invg" does not identify a component declaration.
-# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(151): VHDL Compiler exiting
-# End time: 16:08:22 on Apr 19,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 16:08:51 on Apr 19,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# End time: 16:08:51 on Apr 19,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 11:55:20 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# End time: 11:55:20 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:00:39 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# End time: 12:00:39 on Apr 20,2024, Elapsed time: 0:00:00
+# End time: 13:41:32 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:00:44 on Apr 20,2024
+# Start time: 13:41:32 on Apr 20,2024
 # vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -245,14 +80,66 @@ vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Stalling
 # ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
 # -- Compiling entity tb_StallingUnit
 # -- Compiling architecture mixed of tb_StallingUnit
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(55): near ")": syntax error
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(60): Statement cannot be labeled.
-# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(80): VHDL Compiler exiting
-# End time: 12:00:44 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 1
+# End time: 13:41:32 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:50:22 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 13:50:22 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:50:22 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2_5bit
+# -- Compiling architecture dataflow of andg2_5bit
+# End time: 13:50:22 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:50:22 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 13:50:22 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:50:22 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# End time: 13:50:22 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:50:23 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# End time: 13:50:23 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:24:09 on Apr 20,2024
+# Start time: 13:50:23 on Apr 20,2024
 # vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -262,184 +149,137 @@ vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Stalling
 # ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
 # -- Compiling entity tb_StallingUnit
 # -- Compiling architecture mixed of tb_StallingUnit
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(39): near ")": (vcom-1576) expecting IDENTIFIER.
-# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(40): VHDL Compiler exiting
-# End time: 12:24:09 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 1
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:24:23 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package ENV
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
-# -- Compiling entity tb_StallingUnit
-# -- Compiling architecture mixed of tb_StallingUnit
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(92): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(92): (vcom-1136) Unknown identifier "s_branch_taken".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(104): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(104): (vcom-1136) Unknown identifier "s_branch_taken".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(111): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(111): (vcom-1136) Unknown identifier "i_EX_Jump".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(112): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(112): (vcom-1136) Unknown identifier "i_EX_Branch".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(113): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(113): (vcom-1136) Unknown identifier "i_branch_taken".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(114): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(114): (vcom-1136) Unknown identifier "i_MEM_MemToReg".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(115): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(115): (vcom-1136) Unknown identifier "i_MEM_WA".
 # ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(116): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(116): (vcom-1136) Unknown identifier "s_branch_taken".
-# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(128): VHDL Compiler exiting
-# End time: 12:24:23 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 1
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:25:32 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package ENV
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
-# -- Compiling entity tb_StallingUnit
-# -- Compiling architecture mixed of tb_StallingUnit
-# End time: 12:25:32 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vsim work.tb_stallingunit
-# vsim work.tb_stallingunit 
-# Start time: 12:25:40 on Apr 20,2024
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error (suppressible): /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(61): (vopt-1270) Bad default binding for component instance "DUT0: StallingUnit".
-#  (Component port "o_flush" is not on the entity.)
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
-# Error loading design
-# End time: 12:25:40 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(116): (vcom-1136) Unknown identifier "i_EX_RS".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(117): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(117): (vcom-1136) Unknown identifier "i_EX_RT".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(121): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(121): (vcom-1136) Unknown identifier "i_EX_Jump".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(122): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(122): (vcom-1136) Unknown identifier "i_EX_Branch".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(123): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(123): (vcom-1136) Unknown identifier "i_branch_taken".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(124): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(124): (vcom-1136) Unknown identifier "i_MEM_MemToReg".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(125): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(125): (vcom-1136) Unknown identifier "i_MEM_WA".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(126): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(126): (vcom-1136) Unknown identifier "i_EX_RS".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(127): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(127): (vcom-1136) Unknown identifier "i_EX_RT".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(131): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(131): (vcom-1136) Unknown identifier "i_EX_Jump".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(132): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(132): (vcom-1136) Unknown identifier "i_EX_Branch".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(133): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(133): (vcom-1136) Unknown identifier "i_branch_taken".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(134): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(134): (vcom-1136) Unknown identifier "i_MEM_MemToReg".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(135): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(135): (vcom-1136) Unknown identifier "i_MEM_WA".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(136): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(136): (vcom-1136) Unknown identifier "i_EX_RS".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(137): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(137): (vcom-1136) Unknown identifier "i_EX_RT".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(141): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(141): (vcom-1136) Unknown identifier "i_EX_Jump".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(142): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(142): (vcom-1136) Unknown identifier "i_EX_Branch".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(143): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(143): (vcom-1136) Unknown identifier "i_branch_taken".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(144): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(144): (vcom-1136) Unknown identifier "i_MEM_MemToReg".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(145): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(145): (vcom-1136) Unknown identifier "i_MEM_WA".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(146): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(146): (vcom-1136) Unknown identifier "i_EX_RS".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(147): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(147): (vcom-1136) Unknown identifier "i_EX_RT".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(151): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(151): (vcom-1136) Unknown identifier "i_EX_Jump".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(152): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(152): (vcom-1136) Unknown identifier "i_EX_Branch".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(153): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(153): (vcom-1136) Unknown identifier "i_branch_taken".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(154): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(154): (vcom-1136) Unknown identifier "i_MEM_MemToReg".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(155): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(155): (vcom-1136) Unknown identifier "i_MEM_WA".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(156): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(156): (vcom-1136) Unknown identifier "i_EX_RS".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(157): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(157): (vcom-1136) Unknown identifier "i_EX_RT".
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(164): VHDL Compiler exiting
+# End time: 13:50:23 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 70, Warnings: 1
 vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:25:53 on Apr 20,2024
+# Start time: 13:51:39 on Apr 20,2024
 # vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity andg2
 # -- Compiling architecture dataflow of andg2
-# End time: 12:25:53 on Apr 20,2024, Elapsed time: 0:00:00
+# End time: 13:51:39 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:25:53 on Apr 20,2024
+# Start time: 13:51:39 on Apr 20,2024
 # vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity andg2_5bit
 # -- Compiling architecture dataflow of andg2_5bit
-# End time: 12:25:53 on Apr 20,2024, Elapsed time: 0:00:00
+# End time: 13:51:39 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:25:53 on Apr 20,2024
+# Start time: 13:51:39 on Apr 20,2024
 # vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity invg
 # -- Compiling architecture dataflow of invg
-# End time: 12:25:53 on Apr 20,2024, Elapsed time: 0:00:00
+# End time: 13:51:39 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:25:53 on Apr 20,2024
+# Start time: 13:51:39 on Apr 20,2024
 # vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity org2
 # -- Compiling architecture dataflow of org2
-# End time: 12:25:53 on Apr 20,2024, Elapsed time: 0:00:00
+# End time: 13:51:40 on Apr 20,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:25:53 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(36): near ")": (vcom-1576) expecting IDENTIFIER.
-# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(36): VHDL Compiler exiting
-# End time: 12:25:53 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:25:53 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package ENV
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
-# -- Compiling entity tb_StallingUnit
-# -- Compiling architecture mixed of tb_StallingUnit
-# End time: 12:25:53 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:26:08 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity andg2
-# -- Compiling architecture dataflow of andg2
-# End time: 12:26:08 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:26:08 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity andg2_5bit
-# -- Compiling architecture dataflow of andg2_5bit
-# End time: 12:26:08 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:26:08 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity invg
-# -- Compiling architecture dataflow of invg
-# End time: 12:26:08 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:26:09 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity org2
-# -- Compiling architecture dataflow of org2
-# End time: 12:26:09 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:26:09 on Apr 20,2024
+# Start time: 13:51:40 on Apr 20,2024
 # vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity StallingUnit
 # -- Compiling architecture structural of StallingUnit
-# End time: 12:26:09 on Apr 20,2024, Elapsed time: 0:00:00
+# End time: 13:51:40 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 12:26:09 on Apr 20,2024
+# Start time: 13:51:40 on Apr 20,2024
 # vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -449,11 +289,11 @@ vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Stalling
 # ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
 # -- Compiling entity tb_StallingUnit
 # -- Compiling architecture mixed of tb_StallingUnit
-# End time: 12:26:09 on Apr 20,2024, Elapsed time: 0:00:00
+# End time: 13:51:40 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 vsim work.tb_stallingunit
 # vsim work.tb_stallingunit 
-# Start time: 12:26:16 on Apr 20,2024
+# Start time: 13:51:46 on Apr 20,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading std.textio(body)
@@ -462,23 +302,289 @@ vsim work.tb_stallingunit
 # Loading std.env(body)
 # Loading work.tb_stallingunit(mixed)#1
 add wave -r sim:/tb_stallingunit/*
-add wave -r sim:/tb_stallingunit/*
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/tb_stallingunit/*'.
 quit -sim
-# End time: 12:31:45 on Apr 20,2024, Elapsed time: 0:05:29
+# End time: 13:52:03 on Apr 20,2024, Elapsed time: 0:00:17
 # Errors: 0, Warnings: 0
+cd /home/mkotlarz/cpre381/proj/proj2hw
+vlib work
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:52:16 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 13:52:16 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2_3bit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:52:16 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2_3bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2_3bit
+# -- Compiling architecture dataflow of andg2_3bit
+# End time: 13:52:16 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2_5bit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:52:16 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2_5bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2_5bit
+# -- Compiling architecture dataflow of andg2_5bit
+# End time: 13:52:16 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg3.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:52:16 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg3
+# -- Compiling architecture dataflow of andg3
+# End time: 13:52:16 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/ForwardingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:52:16 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/ForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ForwardingUnit
+# -- Compiling architecture structural of ForwardingUnit
+# End time: 13:52:16 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/invg.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:52:16 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 13:52:16 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:52:16 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_ForwardingUnit
+# -- Compiling architecture mixed of tb_ForwardingUnit
+# End time: 13:52:17 on Apr 20,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+vsim work.tb_forwardingunit
+# vsim work.tb_forwardingunit 
+# Start time: 13:52:24 on Apr 20,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_forwardingunit(mixed)#1
+quit -sim
+# End time: 13:52:33 on Apr 20,2024, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:52:43 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd(23): (vcom-1615) Existing entity 'andg2_5bit' at /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2_5bit.vhd(23) will be overwritten.
+# -- Compiling entity andg2_5bit
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd(31): (vcom-1615) Existing architecture 'andg2_5bit(dataflow)' at /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2_5bit.vhd(31) will be overwritten.
+# -- Compiling architecture dataflow of andg2_5bit
+# End time: 13:52:43 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:52:43 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd(23): (vcom-1615) Existing entity 'invg' at /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/invg.vhd(23) will be overwritten.
+# -- Compiling entity invg
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd(30): (vcom-1615) Existing architecture 'invg(dataflow)' at /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/invg.vhd(30) will be overwritten.
+# -- Compiling architecture dataflow of invg
+# End time: 13:52:43 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:52:43 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# End time: 13:52:43 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:52:43 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# End time: 13:52:43 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:52:43 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_StallingUnit
+# -- Compiling architecture mixed of tb_StallingUnit
+# End time: 13:52:43 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:52:43 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd(23): (vcom-1615) Existing entity 'andg2' at /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2.vhd(23) will be overwritten.
+# -- Compiling entity andg2
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd(31): (vcom-1615) Existing architecture 'andg2(dataflow)' at /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2.vhd(31) will be overwritten.
+# -- Compiling architecture dataflow of andg2
+# End time: 13:52:44 on Apr 20,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
 vsim work.tb_stallingunit
 # vsim work.tb_stallingunit 
-# Start time: 12:31:50 on Apr 20,2024
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 13:53:01 on Apr 20,2024
+# ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_textio(body)
 # Loading std.env(body)
 # Loading work.tb_stallingunit(mixed)#1
-add wave -r sim:/tb_stallingunit/DUT0/*
-# Can't move the Now cursor.
-# Break key hit
 quit -sim
-# End time: 13:11:55 on Apr 20,2024, Elapsed time: 0:40:05
+# End time: 14:04:31 on Apr 20,2024, Elapsed time: 0:11:30
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:04:35 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 14:04:36 on Apr 20,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:04:36 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2_5bit
+# -- Compiling architecture dataflow of andg2_5bit
+# End time: 14:04:36 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:04:36 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 14:04:36 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:04:36 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# End time: 14:04:36 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:04:36 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# End time: 14:04:36 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:04:36 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_StallingUnit
+# -- Compiling architecture mixed of tb_StallingUnit
+# End time: 14:04:36 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.tb_stallingunit
+# vsim work.tb_stallingunit 
+# Start time: 14:04:43 on Apr 20,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_stallingunit(mixed)#1
+add wave -position insertpoint  \
+sim:/tb_stallingunit/s_stall_IF_ID \
+sim:/tb_stallingunit/s_stall_ID_EX \
+sim:/tb_stallingunit/s_stall_EX_MEM \
+sim:/tb_stallingunit/s_MEM_WA \
+sim:/tb_stallingunit/s_MEM_MemToReg \
+sim:/tb_stallingunit/s_flush_IF_ID \
+sim:/tb_stallingunit/s_flush_ID_EX \
+sim:/tb_stallingunit/s_flush_EX_MEM \
+sim:/tb_stallingunit/s_EX_RT \
+sim:/tb_stallingunit/s_EX_RS \
+sim:/tb_stallingunit/s_EX_Jump \
+sim:/tb_stallingunit/s_EX_Branch \
+sim:/tb_stallingunit/s_branch_taken \
+sim:/tb_stallingunit/gCLK_HPER
+run 100
+run 100
+run 100
+# End time: 14:06:03 on Apr 20,2024, Elapsed time: 0:01:20
 # Errors: 0, Warnings: 0

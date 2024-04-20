@@ -26,33 +26,48 @@ constant cCLK_PER  : time := gCLK_HPER * 2;
 component StallingUnit is
   generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
   port(
-       i_EX_Jump           : in std_logic;
-       i_EX_Branch         : in std_logic;
-       i_EX_MemToReg       : in std_logic;
-       i_EX_RT             : in std_logic_vector(4 downto 0);
-       i_ID_RS             : in std_logic_vector(4 downto 0);
-       i_ID_RT             : in std_logic_vector(4 downto 0);
+        --input signals for control hazards
+        i_EX_Jump           : in std_logic;
+        i_EX_Branch         : in std_logic;
+        i_branch_taken      : in std_logic;
 
+        --input signals for data hazard
+        i_MEM_MemToReg      : in std_logic;
+        i_MEM_WA            : in std_logic_vector(4 downto 0);
+        i_EX_RS             : in std_logic_vector(4 downto 0);
+        i_EX_RT             : in std_logic_vector(4 downto 0);
 
-       o_stall             : out std_logic;
-       o_flush             : out std_logic
+        --output signals for control hazards
+        o_flush_IF_ID       : out std_logic;
+        o_flush_ID_EX       : out std_logic;
+
+        --output signals for data hazard
+        o_stall_IF_ID       : out std_logic;
+        o_stall_ID_EX       : out std_logic;
+        o_stall_EX_MEM      : out std_logic;
+        o_flush_EX_MEM      : out std_logic
    );
 end component;
 
 
 -- Create signals for all of the inputs and outputs of the file that you are testing
--- := '0' or := (others => '0') just make all the signals start at an initial value of zero
+-- := '0' or := "00000" just make all the signals start at an initial value of zero
 signal CLK : std_logic := '0';
 
 
-signal s_EX_Jump : std_logic;
-signal s_EX_Branch : std_logic;
-signal s_EX_MemToReg : std_logic;
-signal s_EX_RT : std_logic_vector(4 downto 0);
-signal s_ID_RS : std_logic_vector(4 downto 0);
-signal s_ID_RT : std_logic_vector(4 downto 0);
-signal s_stall : std_logic;
-signal s_flush : std_logic;
+signal s_EX_Jump       : std_logic := '0';
+signal s_EX_Branch     : std_logic := '0';
+signal s_branch_taken  : std_logic := '0';
+signal s_MEM_MemToReg  : std_logic := '0';
+signal s_MEM_WA        : std_logic_vector(4 downto 0)  := "00000";
+signal s_EX_RS         : std_logic_vector(4 downto 0)  := "00000";
+signal s_EX_RT         : std_logic_vector(4 downto 0)  := "00000";
+signal s_flush_IF_ID   : std_logic := '0';
+signal s_flush_ID_EX   : std_logic := '0';
+signal s_stall_IF_ID   : std_logic := '0';
+signal s_stall_ID_EX   : std_logic := '0';
+signal s_stall_EX_MEM  : std_logic := '0';
+signal s_flush_EX_MEM  : std_logic := '0';
 
 begin
 
@@ -62,14 +77,19 @@ begin
  -- the appropriate library component during simulation loading.
  DUT0: StallingUnit
   port MAP(
-    i_EX_Jump => s_EX_Jump,
-    i_EX_Branch => s_EX_Branch,
-    i_EX_MemToReg => s_EX_MemToReg,
-    i_EX_RT => s_EX_RT,
-    i_ID_RS => s_ID_RS,
-    i_ID_RT => s_ID_RT,
-    o_stall => s_stall,
-    o_flush => s_flush
+        i_EX_Jump       => s_EX_Jump,
+        i_EX_Branch     => s_EX_Branch,
+        i_branch_taken  => s_branch_taken,
+        i_MEM_MemToReg  => s_MEM_MemToReg,
+        i_MEM_WA        => s_MEM_WA,
+        i_EX_RS         => s_EX_RS,
+        i_EX_RT         => s_EX_RT,
+        o_flush_IF_ID   => s_flush_IF_ID,
+        o_flush_ID_EX   => s_flush_ID_EX,
+        o_stall_IF_ID   => s_stall_IF_ID,
+        o_stall_ID_EX   => s_stall_ID_EX,
+        o_stall_EX_MEM  => s_stall_EX_MEM,
+        o_flush_EX_MEM  => s_flush_EX_MEM
   );
 
 
@@ -87,38 +107,55 @@ begin
  begin
    wait for gCLK_HPER/2; -- for waveform clarity, I prefer not to change inputs on clk edges
 
-    -- Load word instruction detected in the execution stage
-    s_EX_Jump <= '0';
-    s_EX_Branch <= '0';
-    s_EX_MemToReg <= '1';     -- Set to 1 to indicate a load word instruction
-    s_EX_RT <= "00001";      -- Assuming the load word instruction writes to register 1
-    s_ID_RS <= "00100";      
-    s_ID_RT <= "00000";      
+        -- Test case 1: No hazards
+        s_EX_Jump       <= '0';
+        s_EX_Branch     <= '0';
+        s_branch_taken  <= '0';
+        s_MEM_MemToReg  <= '0';
+        s_MEM_WA        <= "00000";
+        s_EX_RS         <= "00000";
+        s_EX_RT         <= "00000";
+        wait for gCLK_HPER;
 
-    -- Wait for a clock cycle to observe outputs
-    wait for gCLK_HPER;
+        -- Test case 2: Control Hazard (Flush IF_ID and Flush ID_EX)
+        s_EX_Jump       <= '1';
+        s_EX_Branch     <= '0';
+        s_branch_taken  <= '0';
+        s_MEM_MemToReg  <= '0';
+        s_MEM_WA        <= "00000";
+        s_EX_RS         <= "00000";
+        s_EX_RT         <= "00000";
+        wait for gCLK_HPER;
 
-    -- Branch instruction detected 
-    s_EX_Jump <= '0';
-    s_EX_Branch <= '1';    -- Set to 1 to indicate a branch instruction
-    s_EX_MemToReg <= '0';
-    s_EX_RT <= (others => '0');
-    s_ID_RS <= (others => '0');
-    s_ID_RT <= (others => '0');
+        -- Test case 3: Control Hazard (Flush IF_ID)
+        s_EX_Jump       <= '0';
+        s_EX_Branch     <= '1';
+        s_branch_taken  <= '0';
+        s_MEM_MemToReg  <= '0';
+        s_MEM_WA        <= "00000";
+        s_EX_RS         <= "00000";
+        s_EX_RT         <= "00000";
+        wait for gCLK_HPER;
 
-    -- Wait for a clock cycle to observe outputs
-    wait for gCLK_HPER;
+        -- Test case 4: Control Hazard (Flush ID_EX)
+        s_EX_Jump       <= '0';
+        s_EX_Branch     <= '1';
+        s_branch_taken  <= '1';
+        s_MEM_MemToReg  <= '0';
+        s_MEM_WA        <= "00000";
+        s_EX_RS         <= "00000";
+        s_EX_RT         <= "00000";
+        wait for gCLK_HPER;
 
-    -- Jump instruction detected 
-    s_EX_Jump <= '1';    -- Set to 1 to indicate a jump instruction
-    s_EX_Branch <= '0';
-    s_EX_MemToReg <= '0';
-    s_EX_RT <= (others => '0');
-    s_ID_RS <= (others => '0');
-    s_ID_RT <= (others => '0');
-
-    -- Wait for a clock cycle to observe outputs
-    wait for gCLK_HPER;
+        -- Test case 5: Data Hazard (Stall IF_ID and ID_EX)
+        s_EX_Jump       <= '0';
+        s_EX_Branch     <= '0';
+        s_branch_taken  <= '0';
+        s_MEM_MemToReg  <= '1';
+        s_MEM_WA        <= "01010";
+        s_EX_RS         <= "01010";
+        s_EX_RT         <= "01010";
+        wait for gCLK_HPER;
 
    wait;
  end process;

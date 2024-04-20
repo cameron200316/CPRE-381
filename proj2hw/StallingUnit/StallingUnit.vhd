@@ -15,9 +15,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity StallingUnit is
-    generic(
-        N : integer := 32
-    ); -- Generic of type integer for input/output data width. Default value is 32.
+    generic( N : integer := 32 ); -- Generic of type integer for input/output data width. Default value is 32.
     port(
         --input signals for control hazards
         i_EX_Jump           : in std_logic;
@@ -25,10 +23,10 @@ entity StallingUnit is
         i_branch_taken      : in std_logic;
     
         --input signals for data hazard
-        i_EX_MemToReg       : in std_logic;
-        i_MEM_WA            : in std_logic;
-        i_EX_RS         : in std_logic_vector();
-        i_EX_RT         : in std_logic_vector();
+        i_MEM_MemToReg      : in std_logic;
+        i_MEM_WA            : in std_logic_vector(4 downto 0);
+        i_EX_RS             : in std_logic_vector(4 downto 0);
+        i_EX_RT             : in std_logic_vector(4 downto 0);
 
         --output signals for control hazards
         o_flush_IF_ID       : out std_logic;
@@ -75,25 +73,21 @@ architecture structural of StallingUnit is
         );
     end component;
 
-    signal dataHazard: std_logic;
+    -- Signals for Control Hazard
     signal flushFirstInst: std_logic;
     signal flushSecondInst: std_logic;
-    signal jumpHazard: std_logic;
-    signal stallTwoCycles: std_logic;
-
-    signal s_Andg2_a : std_logic;
-    signal s_Andg2_b : std_logic;
-    signal s_dataHazardorg2 : std_logic;
     signal s_branch_not_taken : std_logic;
+
+    -- Signals for Data Hazard
+    signal dataHazard: std_logic;
+    signal s_Andg2_a: std_logic;
+    signal s_Andg2_b: std_logic;
+    signal s_Org2: std_logic;
 
 begin
 
-    -- Data Hazard Detection
-
-
     -- Determine which inst needs to be flushed
-    -- Flush signal assignment based on branch taken
-
+    -- Flush signal assignment based on branch taken or jump ++
     branchHazardAndg2_a : andg2 port map(
         i_A      => i_EX_Branch,
         i_B      => i_branch_taken,
@@ -111,18 +105,49 @@ begin
         o_C      => flushSecondInst
     ); 
 
-    control_hazard_org2 : org2 port map(
+    control_hazard_org2_a : org2 port map(
         i_A      => flushSecondInst,
         i_B      => i_EX_Jump,
         o_C      => o_flush_IF_ID
     ); 
 
-    control_hazard_org2 : org2 port map(
-        i_A      => flushSecondInst,
+    control_hazard_org2_b : org2 port map(
+        i_A      => flushFirstInst,
         i_B      => i_EX_Jump,
-        o_C      => o_flush_IF_ID
+        o_C      => o_flush_ID_EX
     ); 
 
+
+
+    -- Data Hazard Detection
+    data_hazard_andg2_a : andg2_5bit port map(
+        i_A      => i_MEM_WA,
+        i_B      => i_EX_RT,
+        o_C      => s_Andg2_a
+    ); 
+
+    data_hazard_andg2_b : andg2_5bit port map(
+        i_A      => i_MEM_WA,
+        i_B      => i_EX_RS,
+        o_C      => s_Andg2_b
+    ); 
+
+    data_hazard_org2 : org2 port map(
+        i_A      => s_Andg2_a,
+        i_B      => s_Andg2_b,
+        o_C      => s_Org2
+    );
+
+    data_hazard : andg2 port map(
+        i_A      => i_MEM_MemToReg,
+        i_B      => s_Org2,
+        o_C      => dataHazard
+    ); 
      
+    --this will essentially cause a NOP to be inserted 
+    o_stall_IF_ID <= dataHazard;
+    o_stall_ID_EX <= dataHazard;
+    o_stall_EX_MEM <= dataHazard;
+    o_flush_EX_MEM <= dataHazard;
 
 end structural;
