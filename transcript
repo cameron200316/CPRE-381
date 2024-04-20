@@ -12,949 +12,473 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-cd /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel
-# reading modelsim.ini
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_org2.vhd
+vlib work
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:39 on Apr 12,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_org2.vhd 
+# Start time: 15:44:42 on Apr 19,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity Nbit_org2
-# -- Compiling architecture structural of Nbit_org2
-# End time: 00:42:39 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Adder.vhd
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(56): near "else": (vcom-1576) expecting END.
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(56): VHDL Compiler exiting
+# End time: 15:44:42 on Apr 19,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:41 on Apr 12,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Adder.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Adder
-# -- Compiling architecture structure of Adder
-# End time: 00:42:41 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/AddSub.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:41 on Apr 12,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/AddSub.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity AddSub
-# -- Compiling architecture structural of AddSub
-# End time: 00:42:41 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ALU.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:41 on Apr 12,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity ALU
-# -- Compiling architecture structural of ALU
-# End time: 00:42:41 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/andg2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:41 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/andg2.vhd 
+# Start time: 15:55:23 on Apr 19,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity andg2
 # -- Compiling architecture dataflow of andg2
-# End time: 00:42:41 on Apr 12,2024, Elapsed time: 0:00:00
+# End time: 15:55:23 on Apr 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelDecoder5_32.vhd
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:41 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelDecoder5_32.vhd 
+# Start time: 15:55:23 on Apr 19,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity BarrelDecoder5_32
-# -- Compiling architecture structural of BarrelDecoder5_32
-# End time: 00:42:41 on Apr 12,2024, Elapsed time: 0:00:00
+# -- Compiling entity andg2_5bit
+# -- Compiling architecture dataflow of andg2_5bit
+# End time: 15:55:23 on Apr 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelShifter.vhd
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:41 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelShifter.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity BarrelShifter
-# -- Compiling architecture structural of BarrelShifter
-# End time: 00:42:41 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Complementor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:41 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Complementor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Complementor
-# -- Compiling architecture structural of Complementor
-# End time: 00:42:41 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ControlLogic.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:41 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ControlLogic.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ControlLogic
-# -- Compiling architecture structural of ControlLogic
-# End time: 00:42:41 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Dataflow_Mux2_1.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:41 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Dataflow_Mux2_1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Dataflow_Mux2_1
-# -- Compiling architecture dataflow of Dataflow_Mux2_1
-# End time: 00:42:41 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Decoder5_32.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:41 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Decoder5_32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Decoder5_32
-# -- Compiling architecture structural of Decoder5_32
-# End time: 00:42:41 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:41 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity dffg
-# -- Compiling architecture mixed of dffg
-# End time: 00:42:41 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg1.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:41 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity dffg1
-# -- Compiling architecture mixed of dffg1
-# End time: 00:42:41 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/EX_MEM.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:41 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/EX_MEM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity EX_MEM
-# -- Compiling architecture structural of EX_MEM
-# End time: 00:42:41 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/extender16_32.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:41 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/extender16_32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity extender16_32
-# -- Compiling architecture structural of extender16_32
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/FetchLogic.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/FetchLogic.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity FetchLogic
-# -- Compiling architecture structural of FetchLogic
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ID_EX.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ID_EX.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity ID_EX
-# -- Compiling architecture structural of ID_EX
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/IF_ID.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/IF_ID.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity IF_ID
-# -- Compiling architecture structural of IF_ID
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/invg.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/invg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity invg
-# -- Compiling architecture dataflow of invg
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/LeftShifter16.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/LeftShifter16.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity LeftShifter16
-# -- Compiling architecture Behavioral of LeftShifter16
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mem.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mem.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity mem
-# -- Compiling architecture rtl of mem
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MEM_WB.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MEM_WB.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MEM_WB
-# -- Compiling architecture structural of MEM_WB
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(500): (vcom-1136) Unknown identifier "s_ID_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(632): (vcom-1136) Unknown identifier "s_ID_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(654): (vcom-1136) Unknown identifier "s_EX_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(632): (vcom-1484) Unknown formal identifier "i_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(654): (vcom-1484) Unknown formal identifier "o_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(670): (vcom-1136) Unknown identifier "s_EX_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(680): (vcom-1136) Unknown identifier "s_MEM_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(670): (vcom-1484) Unknown formal identifier "i_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(680): (vcom-1484) Unknown formal identifier "o_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(694): near "o_Halt": (vcom-1576) expecting ',' or ')'.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(697): (vcom-1136) Unknown identifier "s_WB_Halt".
-# ** Note: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(864): VHDL Compiler exiting
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 11, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux2t1_N
-# -- Compiling architecture structural of mux2t1_N
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2to1DF.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2to1DF.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux2to1DF
-# -- Compiling architecture dataflow of mux2to1DF
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux4to1DF.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux4to1DF.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux4to1DF
-# -- Compiling architecture dataflow of mux4to1DF
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux32_1.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux32_1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux32_1
-# -- Compiling architecture structural of mux32_1
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_8t1Mux.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_8t1Mux.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Nbit_8t1Mux
-# -- Compiling architecture Structural of Nbit_8t1Mux
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_AddSub.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_AddSub.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Nbit_AddSub
-# -- Compiling architecture structural of Nbit_AddSub
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_andg2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_andg2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Nbit_andg2
-# -- Compiling architecture structural of Nbit_andg2
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_full_adder.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_full_adder.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Nbit_full_adder
-# -- Compiling architecture structural of Nbit_full_adder
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_org2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:42 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_org2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Nbit_org2
-# -- Compiling architecture structural of Nbit_org2
-# End time: 00:42:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Adder.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:53 on Apr 12,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Adder.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Adder
-# -- Compiling architecture structure of Adder
-# End time: 00:42:53 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/AddSub.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:53 on Apr 12,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/AddSub.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity AddSub
-# -- Compiling architecture structural of AddSub
-# End time: 00:42:53 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ALU.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:53 on Apr 12,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity ALU
-# -- Compiling architecture structural of ALU
-# End time: 00:42:53 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/andg2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:53 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/andg2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity andg2
-# -- Compiling architecture dataflow of andg2
-# End time: 00:42:53 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelDecoder5_32.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:53 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelDecoder5_32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity BarrelDecoder5_32
-# -- Compiling architecture structural of BarrelDecoder5_32
-# End time: 00:42:53 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelShifter.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:53 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/BarrelShifter.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity BarrelShifter
-# -- Compiling architecture structural of BarrelShifter
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Complementor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Complementor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Complementor
-# -- Compiling architecture structural of Complementor
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ControlLogic.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ControlLogic.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ControlLogic
-# -- Compiling architecture structural of ControlLogic
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Dataflow_Mux2_1.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Dataflow_Mux2_1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Dataflow_Mux2_1
-# -- Compiling architecture dataflow of Dataflow_Mux2_1
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Decoder5_32.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Decoder5_32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Decoder5_32
-# -- Compiling architecture structural of Decoder5_32
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity dffg
-# -- Compiling architecture mixed of dffg
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg1.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/dffg1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity dffg1
-# -- Compiling architecture mixed of dffg1
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/EX_MEM.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/EX_MEM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity EX_MEM
-# -- Compiling architecture structural of EX_MEM
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/extender16_32.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/extender16_32.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity extender16_32
-# -- Compiling architecture structural of extender16_32
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/FetchLogic.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/FetchLogic.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity FetchLogic
-# -- Compiling architecture structural of FetchLogic
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ID_EX.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ID_EX.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity ID_EX
-# -- Compiling architecture structural of ID_EX
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/IF_ID.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/IF_ID.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity IF_ID
-# -- Compiling architecture structural of IF_ID
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/invg.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/invg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity invg
-# -- Compiling architecture dataflow of invg
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/LeftShifter16.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/LeftShifter16.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity LeftShifter16
-# -- Compiling architecture Behavioral of LeftShifter16
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mem.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mem.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity mem
-# -- Compiling architecture rtl of mem
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MEM_WB.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MEM_WB.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MEM_WB
-# -- Compiling architecture structural of MEM_WB
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(500): (vcom-1136) Unknown identifier "s_ID_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(632): (vcom-1136) Unknown identifier "s_ID_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(654): (vcom-1136) Unknown identifier "s_EX_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(632): (vcom-1484) Unknown formal identifier "i_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(654): (vcom-1484) Unknown formal identifier "o_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(670): (vcom-1136) Unknown identifier "s_EX_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(680): (vcom-1136) Unknown identifier "s_MEM_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(670): (vcom-1484) Unknown formal identifier "i_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(680): (vcom-1484) Unknown formal identifier "o_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(694): near "o_Halt": (vcom-1576) expecting ',' or ')'.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(697): (vcom-1136) Unknown identifier "s_WB_Halt".
-# ** Note: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(864): VHDL Compiler exiting
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 11, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux2t1_N
-# -- Compiling architecture structural of mux2t1_N
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2to1DF.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux2to1DF.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux2to1DF
-# -- Compiling architecture dataflow of mux2to1DF
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux4to1DF.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux4to1DF.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux4to1DF
-# -- Compiling architecture dataflow of mux4to1DF
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux32_1.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/mux32_1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux32_1
-# -- Compiling architecture structural of mux32_1
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_8t1Mux.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_8t1Mux.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Nbit_8t1Mux
-# -- Compiling architecture Structural of Nbit_8t1Mux
-# End time: 00:42:54 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_AddSub.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:54 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_AddSub.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Nbit_AddSub
-# -- Compiling architecture structural of Nbit_AddSub
-# End time: 00:42:55 on Apr 12,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_andg2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:55 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_andg2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Nbit_andg2
-# -- Compiling architecture structural of Nbit_andg2
-# End time: 00:42:55 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_full_adder.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:55 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_full_adder.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Nbit_full_adder
-# -- Compiling architecture structural of Nbit_full_adder
-# End time: 00:42:55 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_org2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:55 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_org2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Nbit_org2
-# -- Compiling architecture structural of Nbit_org2
-# End time: 00:42:55 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_xorg2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:55 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Nbit_xorg2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Nbit_xorg2
-# -- Compiling architecture structural of Nbit_xorg2
-# End time: 00:42:55 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/NegativeChecker.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:55 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/NegativeChecker.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity NegativeChecker
-# -- Compiling architecture Behavioral of NegativeChecker
-# End time: 00:42:55 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/org2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:55 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/org2.vhd 
+# Start time: 15:55:23 on Apr 19,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity org2
 # -- Compiling architecture dataflow of org2
-# End time: 00:42:55 on Apr 12,2024, Elapsed time: 0:00:00
+# End time: 15:55:23 on Apr 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/PC.vhd
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:55 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/PC.vhd 
+# Start time: 15:55:23 on Apr 19,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity PC
-# -- Compiling architecture structural of PC
-# End time: 00:42:55 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(80): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(80): (vcom-1136) Unknown identifier "bitAndg2_a".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(80): near ":": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(86): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(86): (vcom-1136) Unknown identifier "bitAndg2_b".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(86): near ":": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): (vcom-1136) Unknown identifier "flushFirstInst".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(115): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(115): (vcom-1136) Unknown identifier "flushSecondInst".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(143): (vcom-1136) Unknown identifier "flushFirstInst".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(144): (vcom-1136) Unknown identifier "flushSecondInst".
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(146): VHDL Compiler exiting
+# End time: 15:55:24 on Apr 19,2024, Elapsed time: 0:00:01
+# Errors: 10, Warnings: 2
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:55 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd 
+# Start time: 15:55:51 on Apr 19,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity Reg32File
-# -- Compiling architecture structural of Reg32File
-# End time: 00:42:55 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/RegFile.vhd
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(80): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(80): (vcom-1136) Unknown identifier "bitAndg2_a".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(80): near ":": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(86): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(86): (vcom-1136) Unknown identifier "bitAndg2_b".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(86): near ":": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): (vcom-1136) Unknown identifier "flushFirstInst".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(115): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(115): (vcom-1136) Unknown identifier "flushSecondInst".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(143): (vcom-1136) Unknown identifier "flushFirstInst".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(144): (vcom-1136) Unknown identifier "flushSecondInst".
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(146): VHDL Compiler exiting
+# End time: 15:55:51 on Apr 19,2024, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 2
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:55 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/RegFile.vhd 
+# Start time: 15:57:19 on Apr 19,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity RegFile
-# -- Compiling architecture structural of RegFile
-# End time: 00:42:55 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Structual_full_adder.vhd
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): (vcom-1136) Unknown identifier "flushFirstInst".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(115): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(115): (vcom-1136) Unknown identifier "flushSecondInst".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(143): (vcom-1136) Unknown identifier "flushFirstInst".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(144): (vcom-1136) Unknown identifier "flushSecondInst".
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(146): VHDL Compiler exiting
+# End time: 15:57:19 on Apr 19,2024, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:55 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/Structual_full_adder.vhd 
+# Start time: 15:57:47 on Apr 19,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity Structual_full_adder
-# -- Compiling architecture structure of Structual_full_adder
-# End time: 00:42:55 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): near "=>": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(115): near "=>": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(143): (vcom-1136) Unknown identifier "flushFirstInst".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(144): (vcom-1136) Unknown identifier "flushSecondInst".
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(146): VHDL Compiler exiting
+# End time: 15:57:47 on Apr 19,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:55 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd 
+# Start time: 16:06:14 on Apr 19,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity xorg2
-# -- Compiling architecture dataflow of xorg2
-# End time: 00:42:55 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ZeroChecker.vhd
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(76): near "begin": (vcom-1576) expecting ':'.
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(87): VHDL Compiler exiting
+# End time: 16:06:14 on Apr 19,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:42:55 on Apr 12,2024
-# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/ZeroChecker.vhd 
+# Start time: 16:06:36 on Apr 19,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity ZeroChecker
-# -- Compiling architecture structural of ZeroChecker
-# End time: 00:42:55 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/EX_MEM.vhd
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(110): (vcom-1136) Unknown identifier "flushFirstInst".
+# ** Error (suppressible): /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(113): (vcom-1141) Identifier "invg" does not identify a component declaration.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(118): Symbol "branchHazardAndg2_b" has already been declared in this region.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(120): (vcom-1136) Unknown identifier "s_branch_not_taken".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(121): (vcom-1136) Unknown identifier "flushSecondInst".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(147): (vcom-1136) Unknown identifier "flushFirstInst".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(148): (vcom-1136) Unknown identifier "flushSecondInst".
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(150): VHDL Compiler exiting
+# End time: 16:06:36 on Apr 19,2024, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:43:08 on Apr 12,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/EX_MEM.vhd 
+# Start time: 16:08:13 on Apr 19,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity EX_MEM
-# -- Compiling architecture structural of EX_MEM
-# End time: 00:43:08 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:43:22 on Apr 12,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(500): (vcom-1136) Unknown identifier "s_ID_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(632): (vcom-1136) Unknown identifier "s_ID_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(654): (vcom-1136) Unknown identifier "s_EX_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(632): (vcom-1484) Unknown formal identifier "i_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(654): (vcom-1484) Unknown formal identifier "o_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(670): (vcom-1136) Unknown identifier "s_EX_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(680): (vcom-1136) Unknown identifier "s_MEM_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(670): (vcom-1484) Unknown formal identifier "i_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(680): (vcom-1484) Unknown formal identifier "o_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(694): near "o_Halt": (vcom-1576) expecting ',' or ')'.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(697): (vcom-1136) Unknown identifier "s_WB_Halt".
-# ** Note: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(864): VHDL Compiler exiting
-# End time: 00:43:22 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 11, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:44:17 on Apr 12,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(636): (vcom-1484) Unknown formal identifier "i_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(658): (vcom-1484) Unknown formal identifier "o_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(674): (vcom-1484) Unknown formal identifier "i_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(684): (vcom-1484) Unknown formal identifier "o_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(698): near "o_Halt": (vcom-1576) expecting ',' or ')'.
-# ** Note: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(868): VHDL Compiler exiting
-# End time: 00:44:17 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:45:32 on Apr 12,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(246): (vcom-1136) Unknown identifier "o_Halt".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(246): Bad resolution function (STD_LOGIC_VECTOR) for type (error).
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(246): near ":": (vcom-1576) expecting ';' or ')'.
-# ** Note: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(249): VHDL Compiler exiting
-# End time: 00:45:32 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:45:42 on Apr 12,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(707): near "o_Halt": (vcom-1576) expecting ',' or ')'.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(618): (vcom-1035) Formal port "i_Halt" has OPEN or no actual associated with it.
-# ** Note: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(877): VHDL Compiler exiting
-# End time: 00:45:42 on Apr 12,2024, Elapsed time: 0:00:00
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# ** Error (suppressible): /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(114): (vcom-1141) Identifier "invg" does not identify a component declaration.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(121): (vcom-1136) Unknown identifier "s_branch_not_taken".
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(151): VHDL Compiler exiting
+# End time: 16:08:13 on Apr 19,2024, Elapsed time: 0:00:00
 # Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:46:06 on Apr 12,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd 
+# Start time: 16:08:22 on Apr 19,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(618): (vcom-1035) Formal port "i_Halt" has OPEN or no actual associated with it.
-# ** Note: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(877): VHDL Compiler exiting
-# End time: 00:46:07 on Apr 12,2024, Elapsed time: 0:00:01
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# ** Error (suppressible): /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(114): (vcom-1141) Identifier "invg" does not identify a component declaration.
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(151): VHDL Compiler exiting
+# End time: 16:08:22 on Apr 19,2024, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:46:42 on Apr 12,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd 
+# Start time: 16:08:51 on Apr 19,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(246): near ")": (vcom-1576) expecting IDENTIFIER.
-# ** Note: /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd(247): VHDL Compiler exiting
-# End time: 00:46:42 on Apr 12,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 00:46:52 on Apr 12,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# End time: 00:46:52 on Apr 12,2024, Elapsed time: 0:00:00
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# End time: 16:08:51 on Apr 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 11:55:20 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# End time: 11:55:20 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:00:39 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# End time: 12:00:39 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:00:44 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_StallingUnit
+# -- Compiling architecture mixed of tb_StallingUnit
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(55): near ")": syntax error
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(60): Statement cannot be labeled.
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(80): VHDL Compiler exiting
+# End time: 12:00:44 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:24:09 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_StallingUnit
+# -- Compiling architecture mixed of tb_StallingUnit
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(39): near ")": (vcom-1576) expecting IDENTIFIER.
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(40): VHDL Compiler exiting
+# End time: 12:24:09 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:24:23 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_StallingUnit
+# -- Compiling architecture mixed of tb_StallingUnit
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(92): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(92): (vcom-1136) Unknown identifier "s_branch_taken".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(104): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(104): (vcom-1136) Unknown identifier "s_branch_taken".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(116): Illegal target for signal assignment.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(116): (vcom-1136) Unknown identifier "s_branch_taken".
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(128): VHDL Compiler exiting
+# End time: 12:24:23 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:25:32 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_StallingUnit
+# -- Compiling architecture mixed of tb_StallingUnit
+# End time: 12:25:32 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.tb_stallingunit
+# vsim work.tb_stallingunit 
+# Start time: 12:25:40 on Apr 20,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(61): (vopt-1270) Bad default binding for component instance "DUT0: StallingUnit".
+#  (Component port "o_flush" is not on the entity.)
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 12:25:40 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:25:53 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 12:25:53 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:25:53 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2_5bit
+# -- Compiling architecture dataflow of andg2_5bit
+# End time: 12:25:53 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:25:53 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 12:25:53 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:25:53 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# End time: 12:25:53 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:25:53 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity StallingUnit
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(36): near ")": (vcom-1576) expecting IDENTIFIER.
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd(36): VHDL Compiler exiting
+# End time: 12:25:53 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:25:53 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_StallingUnit
+# -- Compiling architecture mixed of tb_StallingUnit
+# End time: 12:25:53 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:26:08 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 12:26:08 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:26:08 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2_5bit
+# -- Compiling architecture dataflow of andg2_5bit
+# End time: 12:26:08 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:26:08 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 12:26:08 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:26:09 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# End time: 12:26:09 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:26:09 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity StallingUnit
+# -- Compiling architecture structural of StallingUnit
+# End time: 12:26:09 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:26:09 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_StallingUnit
+# -- Compiling architecture mixed of tb_StallingUnit
+# End time: 12:26:09 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.tb_stallingunit
+# vsim work.tb_stallingunit 
+# Start time: 12:26:16 on Apr 20,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_stallingunit(mixed)#1
+add wave -r sim:/tb_stallingunit/*
+add wave -r sim:/tb_stallingunit/*
+quit -sim
+# End time: 12:31:45 on Apr 20,2024, Elapsed time: 0:05:29
+# Errors: 0, Warnings: 0
+vsim work.tb_stallingunit
+# vsim work.tb_stallingunit 
+# Start time: 12:31:50 on Apr 20,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_stallingunit(mixed)#1
+add wave -r sim:/tb_stallingunit/DUT0/*
+# Can't move the Now cursor.
 # Break key hit
+quit -sim
+# End time: 13:11:55 on Apr 20,2024, Elapsed time: 0:40:05
+# Errors: 0, Warnings: 0
