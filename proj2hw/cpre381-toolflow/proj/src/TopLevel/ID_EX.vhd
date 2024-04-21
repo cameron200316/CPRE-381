@@ -54,7 +54,7 @@ entity ID_EX is
         o_Jump               : out std_logic;
         o_Branch             : out std_logic;
         o_BranchNE           : out std_logic;
-        o_BranchAddr         : in std_logic_vector(N-1 downto 0);
+        o_BranchAddr         : out std_logic_vector(N-1 downto 0);
         o_Return             : out std_logic;
         o_ALUnAddSub         : out std_logic;
         o_ALUout             : out std_logic_vector(2 downto 0);
@@ -70,7 +70,7 @@ entity ID_EX is
         o_RegWrite           : out std_logic;
         o_A        	     : out std_logic_vector(N-1 downto 0);
         o_B        	     : out std_logic_vector(N-1 downto 0);
-        o_r2             : out std_logic_vector(N-1 downto 0);
+        o_r2                 : out std_logic_vector(N-1 downto 0);
         o_PC4        	     : out std_logic_vector(N-1 downto 0);
         o_Inst        	     : out std_logic_vector(N-1 downto 0);
         o_WA       	     : out std_logic_vector(4 downto 0);

@@ -335,7 +335,7 @@ architecture structure of MIPS_Processor is
         o_Jump               : out std_logic;
         o_Branch             : out std_logic;
         o_BranchNE           : out std_logic;
-        o_BranchAddr         : in std_logic_vector(N-1 downto 0);
+        o_BranchAddr         : out std_logic_vector(N-1 downto 0);
         o_Return             : out std_logic;
         o_ALUnAddSub         : out std_logic;
         o_ALUout             : out std_logic_vector(2 downto 0);
@@ -375,6 +375,7 @@ architecture structure of MIPS_Processor is
         i_r2            : in std_logic_vector(N-1 downto 0);
         i_Final        	     : in std_logic_vector(N-1 downto 0);
         i_PC4        	     : in std_logic_vector(N-1 downto 0);
+        i_Inst       	     : in std_logic_vector(N-1 downto 0);
         i_WA       	     : in std_logic_vector(4 downto 0);
         i_Link              : in std_logic;
         i_Halt        : in std_logic;
@@ -388,6 +389,7 @@ architecture structure of MIPS_Processor is
         o_r2            : out std_logic_vector(N-1 downto 0);
         o_Final        	     : out std_logic_vector(N-1 downto 0);
         o_PC4        	     : out std_logic_vector(N-1 downto 0);
+        o_Inst       	     : out std_logic_vector(N-1 downto 0);
         o_WA       	     : out std_logic_vector(4 downto 0);
         o_Link              : out std_logic;
         o_Halt        : out std_logic);
@@ -396,17 +398,19 @@ architecture structure of MIPS_Processor is
       component MEM_WB is
         generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
         port(i_CLKs               : in std_logic;
-             i_Flush       : in std_logic; --this is the flush value
-             i_Stall       : in std_logic; --this is the stall value
-            i_RegWrite           : in std_logic;
+             i_Flush      	  : in std_logic; --this is the flush value
+             i_Stall       	  : in std_logic; --this is the stall value
+             i_RegWrite           : in std_logic;
              i_WD        	     : in std_logic_vector(N-1 downto 0);
              i_PC4        	     : in std_logic_vector(N-1 downto 0);
+             i_Inst       	     : in std_logic_vector(N-1 downto 0);
              i_WA       	     : in std_logic_vector(4 downto 0);
              i_Link              : in std_logic;
              i_Halt        : in std_logic;
-            o_RegWrite           : out std_logic;
+             o_RegWrite           : out std_logic;
              o_WD        	     : out std_logic_vector(N-1 downto 0);
              o_PC4        	     : out std_logic_vector(N-1 downto 0);
+	     o_Inst        	     : out std_logic_vector(N-1 downto 0);
              o_WA       	     : out std_logic_vector(4 downto 0);
              o_Link              : out std_logic;
              o_Halt        : out std_logic);
@@ -674,17 +678,17 @@ begin
   port MAP(i_D0      => s_PC(i),         
       i_D1      => iInstAddr(i),    
       i_S 	   => iInstLd,     
-      o_O       => s_NextInstAddr(i));
+      o_O       => s_IF_PCINSTRUCTION(i));
   end generate MUX9_32;
 
   --MUX for choosing branch into the instruction memory
- -- BranchMUX_32: for i in 0 to 31 generate
- --- BranchMUX: mux2to1DF
- -- port MAP(i_D0      => s_IF_PCINSTRUCTION(i),         
-  --    i_D1      => s_ID_BranchAddr(i),    
- --     i_S 	=> s_ID_BranchEither,     
- --     o_O       => s_NextInstAddr(i));
-  --end generate BranchMUX_32;
+  BranchMUX_32: for i in 0 to 31 generate
+  BranchMUX: mux2to1DF
+  port MAP(i_D0      => s_IF_PCINSTRUCTION(i),         
+      i_D1      => s_ID_BranchAddr(i),    
+      i_S 	=> s_ID_BranchEither,     
+      o_O       => s_NextInstAddr(i));
+  end generate BranchMUX_32;
 
   IMem: mem
     port map(clk  => iCLK,
@@ -729,7 +733,7 @@ begin
   IFID: IF_ID
   port MAP(
         i_CLKs            => iCLK,
-	i_Flush       	  => iRST,
+	i_Flush       	  => s_IF_FLUSH,
         i_Stall           => s_stall_IF_ID,
         i_PC4             => s_IF_PC4,
         i_Inst            => s_IF_INSTRUCTION,
@@ -861,7 +865,7 @@ begin
   IDEX: ID_EX
   port MAP(
         i_CLKs            => iCLK,
-	i_Flush       	  => iRST,
+	i_Flush       	  => s_ID_FLUSH,
         i_Stall           => s_stall_ID_EX,
         i_Jump            => s_ID_Jump,
         i_Branch          => s_ID_Branch,
@@ -968,8 +972,8 @@ begin
 
   A: ALU
 	port MAP(
-        i_A                 => s_EX_A, 
-        i_B                 => s_EX_B, 
+        i_A                 => s_EX_RSA, 
+        i_B                 => s_EX_RTB, 
         i_ALUout            => s_EX_ALUout, 
         i_nAdd_Sub          => s_EX_ALUnAddSub,
         i_ShiftArithemtic   => s_EX_ShiftArithemtic, 
@@ -985,7 +989,7 @@ begin
   EXMEM: EX_MEM
   port MAP(
         i_CLKs            => iCLK,
-	i_Flush       	  => iRST,
+	i_Flush       	  => s_EX_FLUSH,
         i_Stall           => s_stall_EX_MEM,
         i_Lw              => s_EX_lw,
         i_HoB             => s_EX_HoB,
@@ -997,6 +1001,7 @@ begin
         i_r2              => s_EX_r2,
         i_Final           => s_EX_Final,
         i_PC4             => s_EX_PC4,
+        i_Inst            => s_EX_INSTRUCTION,
         i_WA              => s_EX_WA,
         i_Link            => s_EX_Link,
         i_Halt            => s_EX_Halt,
@@ -1010,6 +1015,7 @@ begin
         o_r2              => s_MEM_r2,
         o_Final           => s_MEM_Final,
         o_PC4             => s_MEM_PC4,
+        o_Inst            => s_MEM_INSTRUCTION,
         o_WA              => s_MEM_WA,
         o_Link            => s_MEM_Link,
         o_Halt            => s_MEM_Halt
@@ -1049,12 +1055,14 @@ begin
         i_RegWrite        => s_MEM_RegWrite, 
         i_WD              => s_MEM_WD, 
         i_PC4             => s_MEM_PC4,
+        i_Inst            => s_MEM_INSTRUCTION,
         i_WA              => s_MEM_WA,
         i_Link            => s_MEM_Link,
         i_Halt            => s_MEM_Halt,
         o_RegWrite        => s_WB_RegWrite,
         o_WD              => s_WB_WD,
         o_PC4             => s_WB_PC4,
+        o_Inst            => s_WB_INSTRUCTION,
         o_WA              => s_WB_WA,
         o_Link            => s_WB_Link,
         o_Halt            => s_WB_Halt

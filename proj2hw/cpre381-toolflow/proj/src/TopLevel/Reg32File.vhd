@@ -90,13 +90,41 @@ architecture structural of Reg32File is
              o_C          : out std_logic);
     end component; 
 
+    component andg2_5bit is 
+  	port(i_A          : in std_logic_vector(4 downto 0);
+       	     i_B          : in std_logic_vector(4 downto 0);
+             o_C          : out std_logic);
+    end component; 
+
+    component mux2to1DF is
+        port(i_D0 		            : in std_logic;
+       	     i_D1		            : in std_logic;
+             i_S 		            : in std_logic;
+             o_O                            : out std_logic);
+    end component;
+
+    component invg is
+	port(i_A          : in std_logic;
+       	     o_F          : out std_logic);
+    end component;
+
+
 type out32bit is array (0 to 31) of std_logic_vector(31 downto 0);
 
-signal s_WA32 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal s_WA32  : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 signal s_WEN32 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 signal s_ZERO  : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 signal s_ONE   : std_logic := '1';
 signal s_OUT   : out32bit;
+signal s_WARS  : std_logic := '0';
+signal s_WART  : std_logic := '0';
+signal s_Z     : std_logic := '0';
+signal s_notZ  : std_logic := '0';
+signal s_WARSZ  : std_logic := '0';
+signal s_WARTZ  : std_logic := '0';
+
+signal s_R1  : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal s_R2  : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
 begin  
 
@@ -125,6 +153,51 @@ begin
               i_WD      => i_WD,  
 	      o_OUT     => s_OUT(i+1));  
   end generate G_NBit_REG;
+
+  WARS: andg2_5bit port MAP(
+	      i_A       => i_WA, 
+	      i_B       => i_RS,
+	      o_C       => s_WARS);
+
+  WART: andg2_5bit port MAP(
+	      i_A       => i_WA, 
+	      i_B       => i_RT,
+	      o_C       => s_WART);
+
+  ZERO: andg2_5bit port MAP(
+	      i_A       => i_WA, 
+	      i_B       => "00000",
+	      o_C       => s_Z);
+
+  NOTZERO: invg port MAP(
+	     i_A          => s_Z, 
+       	     o_F          => s_notZ);
+
+  WARSZ: andg2 port MAP(
+	      i_A       => s_notZ, 
+	      i_B       => s_WARS,
+	      o_C       => s_WARSZ);
+
+  WARTZ: andg2 port MAP(
+	      i_A       => s_notZ, 
+	      i_B       => s_WART,
+	      o_C       => s_WARTZ);
+
+  MUX1_32: for i in 0 to 31 generate
+   	MUX1: mux2to1DF port MAP(i_D0 		            => s_R1(i),
+       	     			 i_D1		            => i_WD(i),
+            			 i_S 		            => s_WARSZ,
+            			 o_O                        => o_OUT1(i)); 
+  end generate MUX1_32;
+
+  MUX2_32: for i in 0 to 31 generate
+   	MUX2: mux2to1DF port MAP(i_D0 		            => s_R2(i),
+       	     			 i_D1		            => i_WD(i),
+            			 i_S 		            => s_WARTZ,
+             			 o_O                        => o_OUT0(i)); 
+  end generate MUX2_32;
+
+
 
   mux32_1_0: mux32_1
    port MAP(i_MUX31         =>	s_OUT(31),
@@ -160,7 +233,7 @@ begin
             i_MUX1          =>	s_OUT(1),
             i_MUX0          =>	s_OUT(0),
             i_WA            =>	i_RS,
-            o_OUT           =>  o_OUT1);
+            o_OUT           =>  s_R1);
 
   mux32_1_1: mux32_1
    port MAP(i_MUX31         =>	s_OUT(31),
@@ -196,7 +269,7 @@ begin
             i_MUX1          =>	s_OUT(1),
             i_MUX0          =>	s_OUT(0),
             i_WA            =>	i_RT,
-            o_OUT           =>  o_OUT0);
+            o_OUT           =>  s_R2);
   
 
 end structural;
