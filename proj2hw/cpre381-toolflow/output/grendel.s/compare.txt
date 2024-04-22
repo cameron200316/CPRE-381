@@ -1,22 +1,22 @@
 Oh no...
 
-Cycle: 22
-MARS instruction number: 14	Instruction: slti $2,$2,4
-Expected:	Register Write to Reg: 0x02 Val: 0x00000001
-Got     :	Register Write to Reg: 0x02 Val: 0x00000000
-Incorrect write
-
-Cycle: 28
+Cycle: 26
 MARS instruction number: 17	Instruction: lw $4,24($30)
 Expected:	Register Write to Reg: 0x04 Val: 0x00000000
 Got     :	Register Write to Reg: 0x02 Val: 0x00000000
 Incorrect write
 
-Cycle: 30
+Cycle: 28
 MARS instruction number: 18	Instruction: lui $1,64
 Expected:	Register Write to Reg: 0x01 Val: 0x00400000
-Got     :	Register Write to Reg: 0x02 Val: 0x00000000
+Got     :	Register Write to Reg: 0x02 Val: 0x00000001
 Incorrect write
+
+Cycle: 28
+MARS instruction number: 19	Instruction: ori $31,$1,68
+Expected:	Register Write to Reg: 0x1F Val: 0x00400044
+Got     :	Memory Write to Addr: 0x10010FF4 Val: 0x00000000
+Wrote to incorrect structure
 
 You have reached the maximum mismatches (3)
 

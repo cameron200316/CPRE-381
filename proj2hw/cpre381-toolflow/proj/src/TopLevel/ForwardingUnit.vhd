@@ -28,6 +28,7 @@ entity ForwardingUnit is
         i_MEM_WA         : in std_logic_vector(4 downto 0);  
         i_EX_RS          : in std_logic_vector(4 downto 0);
         i_EX_RT          : in std_logic_vector(4 downto 0);
+	i_EX_OPCODE      : in std_logic_vector(5 downto 0);
 	i_MEM_OPCODE     : in std_logic_vector(5 downto 0);
         o_WB_EX2_RS      : out std_logic;
 	o_WB_EX2_RT      : out std_logic;
@@ -45,6 +46,19 @@ architecture structural of ForwardingUnit is
              o_C          : out std_logic);
     end component; 
 
+    component andg4 is 
+  	port(i_A          : in std_logic;
+       	     i_B          : in std_logic;
+       	     i_C          : in std_logic;
+       	     i_D          : in std_logic;
+             o_C          : out std_logic);
+    end component; 
+
+    component andg2_6bit is 
+  	port(i_A          : in std_logic_vector(5 downto 0);
+       	     i_B          : in std_logic_vector(5 downto 0);
+             o_C          : out std_logic);
+    end component; 
 
     component andg2_5bit is 
   	port(i_A          : in std_logic_vector(4 downto 0);
@@ -61,6 +75,12 @@ architecture structural of ForwardingUnit is
     component invg is
 	port(i_A          : in std_logic;
        	     o_F          : out std_logic);
+    end component;
+
+    component org2 is
+	port(i_A          : in std_logic;
+             i_B          : in std_logic;
+             o_C          : out std_logic);
     end component;
 
 signal s_MEM_EX1_RS  : std_logic := '0';
@@ -80,6 +100,11 @@ signal s_RTNOTZERO     : std_logic := '0';
 
 signal s_LW     : std_logic := '0';
 signal s_NOTLW  : std_logic := '0';
+
+signal s_RType     : std_logic := '0';
+signal s_BRANCH    : std_logic := '0';
+
+signal s_BRANCHorRTYPE    : std_logic := '0';
 
 begin  
 
@@ -120,10 +145,11 @@ begin
 	      i_C       => s_RSNOTZERO,
 	      o_C       => o_MEM_EX1_RS);
 
-  and1: andg3 port MAP(
+  and1: andg4 port MAP(
 	      i_A       => s_MEM_EX1_RT, 
 	      i_B       => s_NOTLW,
 	      i_C       => s_RTNOTZERO,
+	      i_D       => s_RType,
 	      o_C       => o_MEM_EX1_RT);
 
 
@@ -142,10 +168,11 @@ begin
 	      i_C       => s_RSNOTZERO,
 	      o_C       => o_WB_EX2_RS);
 
-  and3: andg3 port MAP(
+  and3: andg4 port MAP(
 	      i_A       => s_WB_EX2_RT, 
 	      i_B       => s_NOTMEM_EX1_RT,
 	      i_C       => s_RTNOTZERO,
+	      i_D       => s_BRANCHorRTYPE,
 	      o_C       => o_WB_EX2_RT);
 
 --Makes sure theres no forwarding if the RS or RT is zero
@@ -167,5 +194,22 @@ begin
 	     i_A          => s_RTZERO, 
        	     o_F          => s_RTNOTZERO);
 
+--Checks if EX is an itype instruction
+  EX_RType: andg2_6bit port MAP(
+	      i_A       => i_EX_OPCODE, 
+	      i_B       => "000000",
+	      o_C       => s_RType);
+
+  BRANCH: andg2_5bit port MAP(
+	      i_A       => i_EX_OPCODE(5 downto 1), 
+	      i_B       => "00010",
+	      o_C       => s_BRANCH);
+
+  BRANCHorRTYPE: org2
+  port MAP(
+            i_A       => s_RType,
+            i_B       => s_BRANCH,
+            o_C       => s_BRANCHorRTYPE
+          );
 
 end structural;

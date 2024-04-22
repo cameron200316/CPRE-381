@@ -532,6 +532,7 @@ architecture structure of MIPS_Processor is
        		i_MEM_WA         : in std_logic_vector(4 downto 0);  
        		i_EX_RS          : in std_logic_vector(4 downto 0);
         	i_EX_RT          : in std_logic_vector(4 downto 0);
+		i_EX_OPCODE     : in std_logic_vector(5 downto 0);
 		i_MEM_OPCODE     : in std_logic_vector(5 downto 0);
         	o_WB_EX2_RS      : out std_logic;
 		o_WB_EX2_RT      : out std_logic;
@@ -590,6 +591,7 @@ begin
        		i_MEM_WA         => s_MEM_WA, 
        		i_EX_RS          => s_EX_INSTRUCTION(25 downto 21),
         	i_EX_RT          => s_EX_INSTRUCTION(20 downto 16),
+		i_EX_OPCODE      => s_EX_INSTRUCTION(31 downto 26),
 		i_MEM_OPCODE     => s_MEM_INSTRUCTION(31 downto 26),
         	o_WB_EX2_RS      => s_WB_EX2_RS,
 		o_WB_EX2_RT      => s_WB_EX2_RT,
@@ -841,10 +843,10 @@ begin
         i_data       => s_ID_INSTRUCTION(15 downto 0), 
         i_sign       => s_ID_sign,
         o_OUT        => s_immediate);
-  
 
  
-  s_ID_INSTRUCTION16(15 downto 0)  <= s_ID_INSTRUCTION(15 downto 0);  
+  s_ID_INSTRUCTION16(15 downto 0)  <= s_ID_INSTRUCTION(15 downto 0); 
+  s_ID_INSTRUCTION16(31 downto 16) <= "0000000000000000";
 
 
   --Shifting the branch address left by two
@@ -852,11 +854,14 @@ begin
         s_ID_BranchVal(i+2)     <= s_ID_INSTRUCTION16(i);  
   end generate SHIFTLEFT2_2;
 
+  s_ID_BranchVal(0) <= '0';
+  s_ID_BranchVal(1) <= '0';
+
   ALU2: AddSub
 	port MAP(i_Cin        => '0',
        	         i_AddSub     => '0',
                  i_ALUSrc     => '0', 
-                 i_D1         => s_PC4,
+                 i_D1         => s_ID_PC4,
                  i_D0         => s_ID_BranchVal,
                  i_regWrite   => "00000000000000000000000000000000",
                  o_C          => s_null,

@@ -135,6 +135,16 @@ begin
               i_D       => i_BranchNE,  
 	      o_Q       => o_BranchNE); 
 
+  --DFF for the Branch Address
+  BRANCHADDR: for i in 0 to 31 generate
+    DFF: dffgSync port map(
+      i_CLK     => i_CLKs,    
+      i_FSH     => i_Flush,         
+      i_STL     => i_Stall, 
+              i_D       => i_BranchAddr(i),  
+	      o_Q       => o_BranchAddr(i));  
+  end generate BRANCHADDR; 
+
   --DFF for Return
   RETURN1: dffgSync port map(
     i_CLK     => i_CLKs,    
