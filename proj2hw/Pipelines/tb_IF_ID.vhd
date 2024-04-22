@@ -87,6 +87,14 @@ begin
   P_TEST_CASES: process
   begin
     wait for gCLK_HPER/2; -- for waveform clarity, I prefer not to change inputs on clk edges
+    
+    s_Stall  <= '1';
+    s_Flush  <= '1';
+    wait for gCLK_HPER*2;
+
+    s_Stall  <= '0';
+    s_Flush  <= '0';
+    wait for gCLK_HPER*2;
 
     -- Test case 1: (Loading something into the pipeline)
     s_Stall  <= '0';

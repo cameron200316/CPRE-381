@@ -12,579 +12,2288 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-cd /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:41:32 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd 
+# Start time: 17:46:23 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity andg2
-# -- Compiling architecture dataflow of andg2
-# End time: 13:41:32 on Apr 20,2024, Elapsed time: 0:00:00
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# End time: 17:46:23 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:41:32 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd 
+# Start time: 17:46:23 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity andg2_5bit
-# -- Compiling architecture dataflow of andg2_5bit
-# End time: 13:41:32 on Apr 20,2024, Elapsed time: 0:00:00
+# -- Compiling entity dffgSync
+# -- Compiling architecture mixed of dffgSync
+# End time: 17:46:23 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:41:32 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity invg
-# -- Compiling architecture dataflow of invg
-# End time: 13:41:32 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:41:32 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity org2
-# -- Compiling architecture dataflow of org2
-# End time: 13:41:32 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:41:32 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# End time: 13:41:32 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:41:32 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
+# Start time: 17:46:23 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_textio
 # -- Loading package ENV
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
-# -- Compiling entity tb_StallingUnit
-# -- Compiling architecture mixed of tb_StallingUnit
-# End time: 13:41:32 on Apr 20,2024, Elapsed time: 0:00:00
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_IF_ID
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 17:46:23 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:50:22 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity andg2
-# -- Compiling architecture dataflow of andg2
-# End time: 13:50:22 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:50:22 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity andg2_5bit
-# -- Compiling architecture dataflow of andg2_5bit
-# End time: 13:50:22 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:50:22 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity invg
-# -- Compiling architecture dataflow of invg
-# End time: 13:50:22 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:50:22 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity org2
-# -- Compiling architecture dataflow of org2
-# End time: 13:50:22 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:50:23 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# End time: 13:50:23 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:50:23 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
+# Start time: 17:46:23 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_textio
 # -- Loading package ENV
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
-# -- Compiling entity tb_StallingUnit
-# -- Compiling architecture mixed of tb_StallingUnit
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(111): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(111): (vcom-1136) Unknown identifier "i_EX_Jump".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(112): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(112): (vcom-1136) Unknown identifier "i_EX_Branch".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(113): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(113): (vcom-1136) Unknown identifier "i_branch_taken".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(114): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(114): (vcom-1136) Unknown identifier "i_MEM_MemToReg".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(115): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(115): (vcom-1136) Unknown identifier "i_MEM_WA".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(116): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(116): (vcom-1136) Unknown identifier "i_EX_RS".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(117): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(117): (vcom-1136) Unknown identifier "i_EX_RT".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(121): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(121): (vcom-1136) Unknown identifier "i_EX_Jump".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(122): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(122): (vcom-1136) Unknown identifier "i_EX_Branch".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(123): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(123): (vcom-1136) Unknown identifier "i_branch_taken".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(124): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(124): (vcom-1136) Unknown identifier "i_MEM_MemToReg".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(125): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(125): (vcom-1136) Unknown identifier "i_MEM_WA".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(126): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(126): (vcom-1136) Unknown identifier "i_EX_RS".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(127): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(127): (vcom-1136) Unknown identifier "i_EX_RT".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(131): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(131): (vcom-1136) Unknown identifier "i_EX_Jump".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(132): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(132): (vcom-1136) Unknown identifier "i_EX_Branch".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(133): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(133): (vcom-1136) Unknown identifier "i_branch_taken".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(134): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(134): (vcom-1136) Unknown identifier "i_MEM_MemToReg".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(135): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(135): (vcom-1136) Unknown identifier "i_MEM_WA".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(136): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(136): (vcom-1136) Unknown identifier "i_EX_RS".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(137): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(137): (vcom-1136) Unknown identifier "i_EX_RT".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(141): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(141): (vcom-1136) Unknown identifier "i_EX_Jump".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(142): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(142): (vcom-1136) Unknown identifier "i_EX_Branch".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(143): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(143): (vcom-1136) Unknown identifier "i_branch_taken".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(144): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(144): (vcom-1136) Unknown identifier "i_MEM_MemToReg".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(145): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(145): (vcom-1136) Unknown identifier "i_MEM_WA".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(146): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(146): (vcom-1136) Unknown identifier "i_EX_RS".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(147): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(147): (vcom-1136) Unknown identifier "i_EX_RT".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(151): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(151): (vcom-1136) Unknown identifier "i_EX_Jump".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(152): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(152): (vcom-1136) Unknown identifier "i_EX_Branch".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(153): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(153): (vcom-1136) Unknown identifier "i_branch_taken".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(154): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(154): (vcom-1136) Unknown identifier "i_MEM_MemToReg".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(155): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(155): (vcom-1136) Unknown identifier "i_MEM_WA".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(156): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(156): (vcom-1136) Unknown identifier "i_EX_RS".
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(157): Illegal target for signal assignment.
-# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(157): (vcom-1136) Unknown identifier "i_EX_RT".
-# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(164): VHDL Compiler exiting
-# End time: 13:50:23 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 70, Warnings: 1
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(10): (vcom-1615) Existing entity 'tb_IF_ID' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(22) will be overwritten.
+# -- Compiling entity tb_IF_ID
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(14): (vcom-1615) Existing architecture 'tb_IF_ID(mixed)' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(26) will be overwritten.
+# -- Compiling architecture mixed of tb_IF_ID
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(285): (vcom-1136) Unknown identifier "s_ID_ShiftArithmetic".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(310): (vcom-1136) Unknown identifier "s_EX_ShiftArithmetic".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(322): (vcom-1484) Unknown formal identifier "o_Final".
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(417): (vcom-1136) Unknown identifier "to_unsigned".
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(428): VHDL Compiler exiting
+# End time: 17:46:23 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 3
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:51:39 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd 
+# Start time: 17:46:23 on Apr 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity andg2
-# -- Compiling architecture dataflow of andg2
-# End time: 13:51:39 on Apr 20,2024, Elapsed time: 0:00:00
+# -- Compiling entity EX_MEM
+# -- Compiling architecture structural of EX_MEM
+# End time: 17:46:23 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:51:39 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd 
+# Start time: 17:46:23 on Apr 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity andg2_5bit
-# -- Compiling architecture dataflow of andg2_5bit
-# End time: 13:51:39 on Apr 20,2024, Elapsed time: 0:00:00
+# -- Compiling entity ID_EX
+# -- Compiling architecture structural of ID_EX
+# End time: 17:46:23 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:51:39 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd 
+# Start time: 17:46:23 on Apr 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity invg
-# -- Compiling architecture dataflow of invg
-# End time: 13:51:39 on Apr 20,2024, Elapsed time: 0:00:00
+# -- Compiling entity RegFileSync
+# -- Compiling architecture mixed of RegFileSync
+# End time: 17:46:24 on Apr 20,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:51:39 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd 
+# Start time: 17:46:24 on Apr 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity org2
-# -- Compiling architecture dataflow of org2
-# End time: 13:51:40 on Apr 20,2024, Elapsed time: 0:00:01
+# -- Compiling entity IF_ID
+# -- Compiling architecture structural of IF_ID
+# End time: 17:46:24 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:51:40 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
+# Start time: 17:46:24 on Apr 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# End time: 13:51:40 on Apr 20,2024, Elapsed time: 0:00:00
+# -- Compiling entity MEM_WB
+# -- Compiling architecture structural of MEM_WB
+# End time: 17:46:24 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:51:40 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
+# Start time: 17:46:24 on Apr 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegFile
+# -- Compiling architecture structural of RegFile
+# End time: 17:46:24 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 17:48:29 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_textio
 # -- Loading package ENV
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
-# -- Compiling entity tb_StallingUnit
-# -- Compiling architecture mixed of tb_StallingUnit
-# End time: 13:51:40 on Apr 20,2024, Elapsed time: 0:00:00
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_IF_ID
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(14): (vcom-1615) Existing architecture 'tb_IF_ID(mixed)' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(26) will be overwritten.
+# -- Compiling architecture mixed of tb_IF_ID
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(415): (vcom-1136) Unknown identifier "to_unsigned".
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(426): VHDL Compiler exiting
+# End time: 17:48:29 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 20:28:58 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_IF_ID
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(14): (vcom-1615) Existing architecture 'tb_IF_ID(mixed)' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(26) will be overwritten.
+# -- Compiling architecture mixed of tb_IF_ID
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(415): (vcom-1136) Unknown identifier "to_unsigned".
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(426): VHDL Compiler exiting
+# End time: 20:28:58 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 22:58:33 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_IF_ID
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(14): (vcom-1615) Existing architecture 'tb_IF_ID(mixed)' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(26) will be overwritten.
+# -- Compiling architecture mixed of tb_IF_ID
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(415): (vcom-1136) Unknown identifier "unsigned".
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(426): VHDL Compiler exiting
+# End time: 22:58:33 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 22:58:57 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_IF_ID
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(16): (vcom-1615) Existing architecture 'tb_IF_ID(mixed)' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(26) will be overwritten.
+# -- Compiling architecture mixed of tb_IF_ID
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(417): (vcom-1394) Type conversion operand must be a single expression that is not a range.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(417): (vcom-1583) Illegal type conversion from 'std.STANDARD.INTEGER' to 'ieee.NUMERIC_STD.UNSIGNED' (numeric to array).
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(428): VHDL Compiler exiting
+# End time: 22:58:57 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 2
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:03:05 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_IF_ID
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(16): (vcom-1615) Existing architecture 'tb_IF_ID(mixed)' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(26) will be overwritten.
+# -- Compiling architecture mixed of tb_IF_ID
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(417): (vcom-1394) Type conversion operand must be a single expression that is not a range.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(417): (vcom-1136) Unknown identifier "to_interger".
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(428): VHDL Compiler exiting
+# End time: 23:03:05 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 2
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:03:26 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_IF_ID
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(16): (vcom-1615) Existing architecture 'tb_IF_ID(mixed)' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(26) will be overwritten.
+# -- Compiling architecture mixed of tb_IF_ID
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(417): (vcom-1583) Illegal type conversion from 'std.STANDARD.INTEGER' to 'ieee.std_logic_1164.STD_LOGIC_VECTOR' (numeric to array).
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(428): VHDL Compiler exiting
+# End time: 23:03:26 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:04:39 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_IF_ID
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(16): (vcom-1615) Existing architecture 'tb_IF_ID(mixed)' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(26) will be overwritten.
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 23:04:39 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# Load canceled
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:05:46 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# End time: 23:05:46 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:05:46 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffgSync
+# -- Compiling architecture mixed of dffgSync
+# End time: 23:05:46 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:05:46 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EX_MEM
+# -- Compiling architecture structural of EX_MEM
+# End time: 23:05:46 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:05:46 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ID_EX
+# -- Compiling architecture structural of ID_EX
+# End time: 23:05:46 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:05:46 on Apr 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IF_ID
+# -- Compiling architecture structural of IF_ID
+# End time: 23:05:46 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:05:46 on Apr 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MEM_WB
+# -- Compiling architecture structural of MEM_WB
+# End time: 23:05:46 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:05:46 on Apr 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegFile
+# -- Compiling architecture structural of RegFile
+# End time: 23:05:47 on Apr 20,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:05:49 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegFileSync
+# -- Compiling architecture mixed of RegFileSync
+# End time: 23:05:49 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:05:49 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(22): (vcom-1615) Existing entity 'tb_IF_ID' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(12) will be overwritten.
+# -- Compiling entity tb_IF_ID
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(26): (vcom-1615) Existing architecture 'tb_IF_ID(mixed)' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(16) will be overwritten.
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 23:05:49 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:05:49 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(12): (vcom-1615) Existing entity 'tb_IF_ID' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(22) will be overwritten.
+# -- Compiling entity tb_IF_ID
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(16): (vcom-1615) Existing architecture 'tb_IF_ID(mixed)' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(26) will be overwritten.
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 23:05:49 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# Load canceled
+cd /home/mkotlarz/cpre381/proj
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:06:19 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_IF_ID
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 23:06:19 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-vsim work.tb_stallingunit
-# vsim work.tb_stallingunit 
-# Start time: 13:51:46 on Apr 20,2024
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_textio(body)
-# Loading std.env(body)
-# Loading work.tb_stallingunit(mixed)#1
-add wave -r sim:/tb_stallingunit/*
-# ** UI-Msg (Warning): (vish-4014) No objects found matching '/tb_stallingunit/*'.
-quit -sim
-# End time: 13:52:03 on Apr 20,2024, Elapsed time: 0:00:17
-# Errors: 0, Warnings: 0
-cd /home/mkotlarz/cpre381/proj/proj2hw
+# Load canceled
+cd /home/mkotlarz/cpre381/proj
 vlib work
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2.vhd
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:52:16 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2.vhd 
+# Start time: 23:08:16 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity andg2
-# -- Compiling architecture dataflow of andg2
-# End time: 13:52:16 on Apr 20,2024, Elapsed time: 0:00:00
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# End time: 23:08:16 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2_3bit.vhd
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:52:16 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2_3bit.vhd 
+# Start time: 23:08:16 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity andg2_3bit
-# -- Compiling architecture dataflow of andg2_3bit
-# End time: 13:52:16 on Apr 20,2024, Elapsed time: 0:00:00
+# -- Compiling entity dffgSync
+# -- Compiling architecture mixed of dffgSync
+# End time: 23:08:16 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2_5bit.vhd
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:52:16 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2_5bit.vhd 
+# Start time: 23:08:16 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity andg2_5bit
-# -- Compiling architecture dataflow of andg2_5bit
-# End time: 13:52:16 on Apr 20,2024, Elapsed time: 0:00:00
+# -- Compiling entity EX_MEM
+# -- Compiling architecture structural of EX_MEM
+# End time: 23:08:16 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg3.vhd
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:52:16 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg3.vhd 
+# Start time: 23:08:16 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity andg3
-# -- Compiling architecture dataflow of andg3
-# End time: 13:52:16 on Apr 20,2024, Elapsed time: 0:00:00
+# -- Compiling entity ID_EX
+# -- Compiling architecture structural of ID_EX
+# End time: 23:08:16 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/ForwardingUnit.vhd
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:52:16 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/ForwardingUnit.vhd 
+# Start time: 23:08:16 on Apr 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity ForwardingUnit
-# -- Compiling architecture structural of ForwardingUnit
-# End time: 13:52:16 on Apr 20,2024, Elapsed time: 0:00:00
+# -- Compiling entity IF_ID
+# -- Compiling architecture structural of IF_ID
+# End time: 23:08:16 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/invg.vhd
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:52:16 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/invg.vhd 
+# Start time: 23:08:16 on Apr 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity invg
-# -- Compiling architecture dataflow of invg
-# End time: 13:52:16 on Apr 20,2024, Elapsed time: 0:00:00
+# -- Compiling entity MEM_WB
+# -- Compiling architecture structural of MEM_WB
+# End time: 23:08:17 on Apr 20,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:52:16 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd 
+# Start time: 23:08:17 on Apr 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegFile
+# -- Compiling architecture structural of RegFile
+# End time: 23:08:17 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:08:17 on Apr 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegFileSync
+# -- Compiling architecture mixed of RegFileSync
+# End time: 23:08:17 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:08:17 on Apr 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_textio
 # -- Loading package ENV
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/tb_ForwardingUnit.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
-# -- Compiling entity tb_ForwardingUnit
-# -- Compiling architecture mixed of tb_ForwardingUnit
-# End time: 13:52:17 on Apr 20,2024, Elapsed time: 0:00:01
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_IF_ID
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 23:08:17 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-vsim work.tb_forwardingunit
-# vsim work.tb_forwardingunit 
-# Start time: 13:52:24 on Apr 20,2024
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:08:17 on Apr 20,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(22): (vcom-1615) Existing entity 'tb_IF_ID' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(12) will be overwritten.
+# -- Compiling entity tb_IF_ID
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(26): (vcom-1615) Existing architecture 'tb_IF_ID(mixed)' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(16) will be overwritten.
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 23:08:17 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# Load canceled
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:08:58 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(12): (vcom-1615) Existing entity 'tb_IF_ID' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(22) will be overwritten.
+# -- Compiling entity tb_IF_ID
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(16): (vcom-1615) Existing architecture 'tb_IF_ID(mixed)' at /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(26) will be overwritten.
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 23:08:58 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:09:37 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 23:09:37 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.tb_pipelines
+# vsim work.tb_pipelines 
+# Start time: 23:09:47 on Apr 20,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_textio(body)
 # Loading std.env(body)
-# Loading work.tb_forwardingunit(mixed)#1
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.regfilesync(mixed)#1
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_WB_WD \
+sim:/tb_pipelines/s_WB_PC4 \
+sim:/tb_pipelines/s_WB_INSTRUCTION \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_WA \
+sim:/tb_pipelines/s_MEM_RegWrite \
+sim:/tb_pipelines/s_MEM_r2 \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_MEM_Link \
+sim:/tb_pipelines/s_MEM_INSTRUCTION \
+sim:/tb_pipelines/s_MEM_Halt \
+sim:/tb_pipelines/s_MEM_Final \
+sim:/tb_pipelines/s_MEM_B \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_IF_INSTRUCTION \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_ID_WA \
+sim:/tb_pipelines/s_ID_unsigned \
+sim:/tb_pipelines/s_ID_sign \
+sim:/tb_pipelines/s_ID_ShiftLorR \
+sim:/tb_pipelines/s_ID_ShiftArithmetic \
+sim:/tb_pipelines/s_ID_return \
+sim:/tb_pipelines/s_ID_RegWrite \
+sim:/tb_pipelines/s_ID_r2 \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_ID_MemWrite \
+sim:/tb_pipelines/s_ID_MemtoReg \
+sim:/tb_pipelines/s_ID_Lw \
+sim:/tb_pipelines/s_ID_Lui \
+sim:/tb_pipelines/s_ID_Link \
+sim:/tb_pipelines/s_ID_Jump \
+sim:/tb_pipelines/s_ID_INSTRUCTION \
+sim:/tb_pipelines/s_ID_HoB \
+sim:/tb_pipelines/s_ID_Halt \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_ID_BranchNE \
+sim:/tb_pipelines/s_ID_branch \
+sim:/tb_pipelines/s_ID_B \
+sim:/tb_pipelines/s_ID_ALUout \
+sim:/tb_pipelines/s_ID_ALUnAddSub \
+sim:/tb_pipelines/s_ID_A \
+sim:/tb_pipelines/s_EX_WA \
+sim:/tb_pipelines/s_EX_sign \
+sim:/tb_pipelines/s_EX_RegWrite \
+sim:/tb_pipelines/s_EX_r2 \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_EX_MemWrite \
+sim:/tb_pipelines/s_EX_MemtoReg \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_MEM_Flush \
+sim:/tb_pipelines/s_EX_Lw \
+sim:/tb_pipelines/s_EX_Link \
+sim:/tb_pipelines/s_EX_INSTRUCTION \
+sim:/tb_pipelines/s_EX_HoB \
+sim:/tb_pipelines/s_EX_Halt \
+sim:/tb_pipelines/s_EX_Final \
+sim:/tb_pipelines/s_EX_B \
+sim:/tb_pipelines/s_EX_A \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/CLK
+run 100
+run 100
+run 100
+run 100
+run 100
 quit -sim
-# End time: 13:52:33 on Apr 20,2024, Elapsed time: 0:00:09
+# End time: 23:12:48 on Apr 20,2024, Elapsed time: 0:03:01
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:52:43 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd(23): (vcom-1615) Existing entity 'andg2_5bit' at /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2_5bit.vhd(23) will be overwritten.
-# -- Compiling entity andg2_5bit
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd(31): (vcom-1615) Existing architecture 'andg2_5bit(dataflow)' at /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2_5bit.vhd(31) will be overwritten.
-# -- Compiling architecture dataflow of andg2_5bit
-# End time: 13:52:43 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:52:43 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd(23): (vcom-1615) Existing entity 'invg' at /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/invg.vhd(23) will be overwritten.
-# -- Compiling entity invg
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd(30): (vcom-1615) Existing architecture 'invg(dataflow)' at /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/invg.vhd(30) will be overwritten.
-# -- Compiling architecture dataflow of invg
-# End time: 13:52:43 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:52:43 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity org2
-# -- Compiling architecture dataflow of org2
-# End time: 13:52:43 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:52:43 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# End time: 13:52:43 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:52:43 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
+# Start time: 23:12:56 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_textio
 # -- Loading package ENV
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
-# -- Compiling entity tb_StallingUnit
-# -- Compiling architecture mixed of tb_StallingUnit
-# End time: 13:52:43 on Apr 20,2024, Elapsed time: 0:00:00
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 23:12:56 on Apr 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:52:43 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd(23): (vcom-1615) Existing entity 'andg2' at /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2.vhd(23) will be overwritten.
-# -- Compiling entity andg2
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd(31): (vcom-1615) Existing architecture 'andg2(dataflow)' at /home/mkotlarz/cpre381/proj/proj2hw/ForwardingUnit/andg2.vhd(31) will be overwritten.
-# -- Compiling architecture dataflow of andg2
-# End time: 13:52:44 on Apr 20,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 2
-vsim work.tb_stallingunit
-# vsim work.tb_stallingunit 
-# Start time: 13:53:01 on Apr 20,2024
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_textio(body)
-# Loading std.env(body)
-# Loading work.tb_stallingunit(mixed)#1
-quit -sim
-# End time: 14:04:31 on Apr 20,2024, Elapsed time: 0:11:30
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 14:04:35 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity andg2
-# -- Compiling architecture dataflow of andg2
-# End time: 14:04:36 on Apr 20,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 14:04:36 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/andg2_5bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity andg2_5bit
-# -- Compiling architecture dataflow of andg2_5bit
-# End time: 14:04:36 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 14:04:36 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/invg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity invg
-# -- Compiling architecture dataflow of invg
-# End time: 14:04:36 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 14:04:36 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/org2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity org2
-# -- Compiling architecture dataflow of org2
-# End time: 14:04:36 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 14:04:36 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity StallingUnit
-# -- Compiling architecture structural of StallingUnit
-# End time: 14:04:36 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 14:04:36 on Apr 20,2024
-# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package ENV
-# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/StallingUnit/tb_StallingUnit.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
-# -- Compiling entity tb_StallingUnit
-# -- Compiling architecture mixed of tb_StallingUnit
-# End time: 14:04:36 on Apr 20,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vsim work.tb_stallingunit
-# vsim work.tb_stallingunit 
-# Start time: 14:04:43 on Apr 20,2024
+vsim work.tb_pipelines
+# vsim work.tb_pipelines 
+# Start time: 23:13:06 on Apr 20,2024
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_textio(body)
 # Loading std.env(body)
-# Loading work.tb_stallingunit(mixed)#1
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.regfilesync(mixed)#1
 add wave -position insertpoint  \
-sim:/tb_stallingunit/s_stall_IF_ID \
-sim:/tb_stallingunit/s_stall_ID_EX \
-sim:/tb_stallingunit/s_stall_EX_MEM \
-sim:/tb_stallingunit/s_MEM_WA \
-sim:/tb_stallingunit/s_MEM_MemToReg \
-sim:/tb_stallingunit/s_flush_IF_ID \
-sim:/tb_stallingunit/s_flush_ID_EX \
-sim:/tb_stallingunit/s_flush_EX_MEM \
-sim:/tb_stallingunit/s_EX_RT \
-sim:/tb_stallingunit/s_EX_RS \
-sim:/tb_stallingunit/s_EX_Jump \
-sim:/tb_stallingunit/s_EX_Branch \
-sim:/tb_stallingunit/s_branch_taken \
-sim:/tb_stallingunit/gCLK_HPER
+sim:/tb_pipelines/s_WB_WD \
+sim:/tb_pipelines/s_WB_PC4 \
+sim:/tb_pipelines/s_WB_INSTRUCTION \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_WA \
+sim:/tb_pipelines/s_MEM_RegWrite \
+sim:/tb_pipelines/s_MEM_r2 \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_MEM_Link \
+sim:/tb_pipelines/s_MEM_INSTRUCTION \
+sim:/tb_pipelines/s_MEM_Halt \
+sim:/tb_pipelines/s_MEM_Final \
+sim:/tb_pipelines/s_MEM_B \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_IF_INSTRUCTION \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_ID_WA \
+sim:/tb_pipelines/s_ID_unsigned \
+sim:/tb_pipelines/s_ID_sign \
+sim:/tb_pipelines/s_ID_ShiftLorR \
+sim:/tb_pipelines/s_ID_ShiftArithmetic \
+sim:/tb_pipelines/s_ID_return \
+sim:/tb_pipelines/s_ID_RegWrite \
+sim:/tb_pipelines/s_ID_r2 \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_ID_MemWrite \
+sim:/tb_pipelines/s_ID_MemtoReg \
+sim:/tb_pipelines/s_ID_Lw \
+sim:/tb_pipelines/s_ID_Lui \
+sim:/tb_pipelines/s_ID_Link \
+sim:/tb_pipelines/s_ID_Jump \
+sim:/tb_pipelines/s_ID_INSTRUCTION \
+sim:/tb_pipelines/s_ID_HoB \
+sim:/tb_pipelines/s_ID_Halt \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_ID_BranchNE \
+sim:/tb_pipelines/s_ID_branch \
+sim:/tb_pipelines/s_ID_B \
+sim:/tb_pipelines/s_ID_ALUout \
+sim:/tb_pipelines/s_ID_ALUnAddSub \
+sim:/tb_pipelines/s_ID_A \
+sim:/tb_pipelines/s_EX_WA \
+sim:/tb_pipelines/s_EX_sign \
+sim:/tb_pipelines/s_EX_RegWrite \
+sim:/tb_pipelines/s_EX_r2 \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_EX_MemWrite \
+sim:/tb_pipelines/s_EX_MemtoReg \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_MEM_Flush \
+sim:/tb_pipelines/s_EX_Lw \
+sim:/tb_pipelines/s_EX_Link \
+sim:/tb_pipelines/s_EX_INSTRUCTION \
+sim:/tb_pipelines/s_EX_HoB \
+sim:/tb_pipelines/s_EX_Halt \
+sim:/tb_pipelines/s_EX_Final \
+sim:/tb_pipelines/s_EX_B \
+sim:/tb_pipelines/s_EX_A \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/CLK
 run 100
 run 100
 run 100
-# End time: 14:06:03 on Apr 20,2024, Elapsed time: 0:01:20
+run 100
+quit -sim
+# End time: 23:21:42 on Apr 20,2024, Elapsed time: 0:08:36
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:21:49 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 23:21:50 on Apr 20,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+vsim work.tb_pipelines
+# vsim work.tb_pipelines 
+# Start time: 23:21:58 on Apr 20,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.regfilesync(mixed)#1
+add wave -position insertpoint  \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/CLK
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_IF_PC4
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_IF_ID_Stall
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_IF_ID_Flush
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_ID_PC4
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_EX_Flush
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_EX_PC4
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_MEM_Flush
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_MEM_WB_Flush
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_MEM_PC4
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_WB_PC4 \
+sim:/tb_pipelines/s_MEM_PC4
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+quit -sim
+# End time: 23:24:36 on Apr 20,2024, Elapsed time: 0:02:38
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:24:46 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 23:24:46 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.tb_pipelines
+# vsim work.tb_pipelines 
+# Start time: 23:24:53 on Apr 20,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.regfilesync(mixed)#1
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_WB_WD \
+sim:/tb_pipelines/s_WB_PC4 \
+sim:/tb_pipelines/s_WB_INSTRUCTION \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_WA \
+sim:/tb_pipelines/s_MEM_RegWrite \
+sim:/tb_pipelines/s_MEM_r2 \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_MEM_Link \
+sim:/tb_pipelines/s_MEM_INSTRUCTION \
+sim:/tb_pipelines/s_MEM_Halt \
+sim:/tb_pipelines/s_MEM_Final \
+sim:/tb_pipelines/s_MEM_B \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_IF_INSTRUCTION \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_ID_WA \
+sim:/tb_pipelines/s_ID_unsigned \
+sim:/tb_pipelines/s_ID_sign \
+sim:/tb_pipelines/s_ID_ShiftLorR \
+sim:/tb_pipelines/s_ID_ShiftArithmetic \
+sim:/tb_pipelines/s_ID_return \
+sim:/tb_pipelines/s_ID_RegWrite \
+sim:/tb_pipelines/s_ID_r2 \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_ID_MemWrite \
+sim:/tb_pipelines/s_ID_MemtoReg \
+sim:/tb_pipelines/s_ID_Lw \
+sim:/tb_pipelines/s_ID_Lui \
+sim:/tb_pipelines/s_ID_Link \
+sim:/tb_pipelines/s_ID_Jump \
+sim:/tb_pipelines/s_ID_INSTRUCTION \
+sim:/tb_pipelines/s_ID_HoB \
+sim:/tb_pipelines/s_ID_Halt \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_ID_BranchNE \
+sim:/tb_pipelines/s_ID_branch \
+sim:/tb_pipelines/s_ID_B \
+sim:/tb_pipelines/s_ID_ALUout \
+sim:/tb_pipelines/s_ID_ALUnAddSub \
+sim:/tb_pipelines/s_ID_A \
+sim:/tb_pipelines/s_EX_WA \
+sim:/tb_pipelines/s_EX_sign \
+sim:/tb_pipelines/s_EX_RegWrite \
+sim:/tb_pipelines/s_EX_r2 \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_EX_MemWrite \
+sim:/tb_pipelines/s_EX_MemtoReg \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_MEM_Flush \
+sim:/tb_pipelines/s_EX_Lw \
+sim:/tb_pipelines/s_EX_Link \
+sim:/tb_pipelines/s_EX_INSTRUCTION \
+sim:/tb_pipelines/s_EX_HoB \
+sim:/tb_pipelines/s_EX_Halt \
+sim:/tb_pipelines/s_EX_Final \
+sim:/tb_pipelines/s_EX_B \
+sim:/tb_pipelines/s_EX_A \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/CLK
+run 100
+run 100
+run 100
+run 100
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_WB_WD \
+sim:/tb_pipelines/s_WB_PC4 \
+sim:/tb_pipelines/s_WB_INSTRUCTION \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_WA \
+sim:/tb_pipelines/s_MEM_RegWrite \
+sim:/tb_pipelines/s_MEM_r2 \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_MEM_Link \
+sim:/tb_pipelines/s_MEM_INSTRUCTION \
+sim:/tb_pipelines/s_MEM_Halt \
+sim:/tb_pipelines/s_MEM_Final \
+sim:/tb_pipelines/s_MEM_B \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_IF_INSTRUCTION \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_ID_WA \
+sim:/tb_pipelines/s_ID_unsigned \
+sim:/tb_pipelines/s_ID_sign \
+sim:/tb_pipelines/s_ID_ShiftLorR \
+sim:/tb_pipelines/s_ID_ShiftArithmetic \
+sim:/tb_pipelines/s_ID_return \
+sim:/tb_pipelines/s_ID_RegWrite \
+sim:/tb_pipelines/s_ID_r2 \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_ID_MemWrite \
+sim:/tb_pipelines/s_ID_MemtoReg \
+sim:/tb_pipelines/s_ID_Lw \
+sim:/tb_pipelines/s_ID_Lui \
+sim:/tb_pipelines/s_ID_Link \
+sim:/tb_pipelines/s_ID_Jump \
+sim:/tb_pipelines/s_ID_INSTRUCTION \
+sim:/tb_pipelines/s_ID_HoB \
+sim:/tb_pipelines/s_ID_Halt \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_ID_BranchNE \
+sim:/tb_pipelines/s_ID_branch \
+sim:/tb_pipelines/s_ID_B \
+sim:/tb_pipelines/s_ID_ALUout \
+sim:/tb_pipelines/s_ID_ALUnAddSub \
+sim:/tb_pipelines/s_ID_A \
+sim:/tb_pipelines/s_EX_WA \
+sim:/tb_pipelines/s_EX_sign \
+sim:/tb_pipelines/s_EX_RegWrite \
+sim:/tb_pipelines/s_EX_r2 \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_EX_MemWrite \
+sim:/tb_pipelines/s_EX_MemtoReg \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_MEM_Flush \
+sim:/tb_pipelines/s_EX_Lw \
+sim:/tb_pipelines/s_EX_Link \
+sim:/tb_pipelines/s_EX_INSTRUCTION \
+sim:/tb_pipelines/s_EX_HoB \
+sim:/tb_pipelines/s_EX_Halt \
+sim:/tb_pipelines/s_EX_Final \
+sim:/tb_pipelines/s_EX_B \
+sim:/tb_pipelines/s_EX_A \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/CLK
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_WB_WD \
+sim:/tb_pipelines/s_WB_PC4 \
+sim:/tb_pipelines/s_WB_INSTRUCTION \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_WA \
+sim:/tb_pipelines/s_MEM_RegWrite \
+sim:/tb_pipelines/s_MEM_r2 \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_MEM_Link \
+sim:/tb_pipelines/s_MEM_INSTRUCTION \
+sim:/tb_pipelines/s_MEM_Halt \
+sim:/tb_pipelines/s_MEM_Final \
+sim:/tb_pipelines/s_MEM_B \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_IF_INSTRUCTION \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_ID_WA \
+sim:/tb_pipelines/s_ID_unsigned \
+sim:/tb_pipelines/s_ID_sign \
+sim:/tb_pipelines/s_ID_ShiftLorR \
+sim:/tb_pipelines/s_ID_ShiftArithmetic \
+sim:/tb_pipelines/s_ID_return \
+sim:/tb_pipelines/s_ID_RegWrite \
+sim:/tb_pipelines/s_ID_r2 \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_ID_MemWrite \
+sim:/tb_pipelines/s_ID_MemtoReg \
+sim:/tb_pipelines/s_ID_Lw \
+sim:/tb_pipelines/s_ID_Lui \
+sim:/tb_pipelines/s_ID_Link \
+sim:/tb_pipelines/s_ID_Jump \
+sim:/tb_pipelines/s_ID_INSTRUCTION \
+sim:/tb_pipelines/s_ID_HoB \
+sim:/tb_pipelines/s_ID_Halt \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_ID_BranchNE \
+sim:/tb_pipelines/s_ID_branch \
+sim:/tb_pipelines/s_ID_B \
+sim:/tb_pipelines/s_ID_ALUout \
+sim:/tb_pipelines/s_ID_ALUnAddSub \
+sim:/tb_pipelines/s_ID_A \
+sim:/tb_pipelines/s_EX_WA \
+sim:/tb_pipelines/s_EX_sign \
+sim:/tb_pipelines/s_EX_RegWrite \
+sim:/tb_pipelines/s_EX_r2 \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_EX_MemWrite \
+sim:/tb_pipelines/s_EX_MemtoReg \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_MEM_Flush \
+sim:/tb_pipelines/s_EX_Lw \
+sim:/tb_pipelines/s_EX_Link \
+sim:/tb_pipelines/s_EX_INSTRUCTION \
+sim:/tb_pipelines/s_EX_HoB \
+sim:/tb_pipelines/s_EX_Halt \
+sim:/tb_pipelines/s_EX_Final \
+sim:/tb_pipelines/s_EX_B \
+sim:/tb_pipelines/s_EX_A \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/CLK
+run 100
+run 100
+run 100
+
+run 100
+quit -sim
+# End time: 23:29:16 on Apr 20,2024, Elapsed time: 0:04:23
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:29:21 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(437): near "s_MEM_WB_Stall": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(469): VHDL Compiler exiting
+# End time: 23:29:21 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:29:37 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 23:29:37 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.tb_pipelines
+# vsim work.tb_pipelines 
+# Start time: 23:29:45 on Apr 20,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.regfilesync(mixed)#1
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_WB_WD \
+sim:/tb_pipelines/s_WB_PC4 \
+sim:/tb_pipelines/s_WB_INSTRUCTION \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_WA \
+sim:/tb_pipelines/s_MEM_RegWrite \
+sim:/tb_pipelines/s_MEM_r2 \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_MEM_Link \
+sim:/tb_pipelines/s_MEM_INSTRUCTION \
+sim:/tb_pipelines/s_MEM_Halt \
+sim:/tb_pipelines/s_MEM_Final \
+sim:/tb_pipelines/s_MEM_B \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_IF_INSTRUCTION \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_ID_WA \
+sim:/tb_pipelines/s_ID_unsigned \
+sim:/tb_pipelines/s_ID_sign \
+sim:/tb_pipelines/s_ID_ShiftLorR \
+sim:/tb_pipelines/s_ID_ShiftArithmetic \
+sim:/tb_pipelines/s_ID_return \
+sim:/tb_pipelines/s_ID_RegWrite \
+sim:/tb_pipelines/s_ID_r2 \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_ID_MemWrite \
+sim:/tb_pipelines/s_ID_MemtoReg \
+sim:/tb_pipelines/s_ID_Lw \
+sim:/tb_pipelines/s_ID_Lui \
+sim:/tb_pipelines/s_ID_Link \
+sim:/tb_pipelines/s_ID_Jump \
+sim:/tb_pipelines/s_ID_INSTRUCTION \
+sim:/tb_pipelines/s_ID_HoB \
+sim:/tb_pipelines/s_ID_Halt \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_ID_BranchNE \
+sim:/tb_pipelines/s_ID_branch \
+sim:/tb_pipelines/s_ID_B \
+sim:/tb_pipelines/s_ID_ALUout \
+sim:/tb_pipelines/s_ID_ALUnAddSub \
+sim:/tb_pipelines/s_ID_A \
+sim:/tb_pipelines/s_EX_WA \
+sim:/tb_pipelines/s_EX_sign \
+sim:/tb_pipelines/s_EX_RegWrite \
+sim:/tb_pipelines/s_EX_r2 \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_EX_MemWrite \
+sim:/tb_pipelines/s_EX_MemtoReg \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_MEM_Flush \
+sim:/tb_pipelines/s_EX_Lw \
+sim:/tb_pipelines/s_EX_Link \
+sim:/tb_pipelines/s_EX_INSTRUCTION \
+sim:/tb_pipelines/s_EX_HoB \
+sim:/tb_pipelines/s_EX_Halt \
+sim:/tb_pipelines/s_EX_Final \
+sim:/tb_pipelines/s_EX_B \
+sim:/tb_pipelines/s_EX_A \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/CLK
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+# Can't move the Now cursor.
+quit -sim
+# End time: 23:34:27 on Apr 20,2024, Elapsed time: 0:04:42
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 23:34:30 on Apr 20,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 23:34:30 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.tb_pipelines
+# vsim work.tb_pipelines 
+# Start time: 23:34:37 on Apr 20,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.regfilesync(mixed)#1
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_WB_WD \
+sim:/tb_pipelines/s_WB_PC4 \
+sim:/tb_pipelines/s_WB_INSTRUCTION \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_WA \
+sim:/tb_pipelines/s_MEM_RegWrite \
+sim:/tb_pipelines/s_MEM_r2 \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_MEM_Link \
+sim:/tb_pipelines/s_MEM_INSTRUCTION \
+sim:/tb_pipelines/s_MEM_Halt \
+sim:/tb_pipelines/s_MEM_Final \
+sim:/tb_pipelines/s_MEM_B \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_IF_INSTRUCTION \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_ID_WA \
+sim:/tb_pipelines/s_ID_unsigned \
+sim:/tb_pipelines/s_ID_sign \
+sim:/tb_pipelines/s_ID_ShiftLorR \
+sim:/tb_pipelines/s_ID_ShiftArithmetic \
+sim:/tb_pipelines/s_ID_return \
+sim:/tb_pipelines/s_ID_RegWrite \
+sim:/tb_pipelines/s_ID_r2 \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_ID_MemWrite \
+sim:/tb_pipelines/s_ID_MemtoReg \
+sim:/tb_pipelines/s_ID_Lw \
+sim:/tb_pipelines/s_ID_Lui \
+sim:/tb_pipelines/s_ID_Link \
+sim:/tb_pipelines/s_ID_Jump \
+sim:/tb_pipelines/s_ID_INSTRUCTION \
+sim:/tb_pipelines/s_ID_HoB \
+sim:/tb_pipelines/s_ID_Halt \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_ID_BranchNE \
+sim:/tb_pipelines/s_ID_branch \
+sim:/tb_pipelines/s_ID_B \
+sim:/tb_pipelines/s_ID_ALUout \
+sim:/tb_pipelines/s_ID_ALUnAddSub \
+sim:/tb_pipelines/s_ID_A \
+sim:/tb_pipelines/s_EX_WA \
+sim:/tb_pipelines/s_EX_sign \
+sim:/tb_pipelines/s_EX_RegWrite \
+sim:/tb_pipelines/s_EX_r2 \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_EX_MemWrite \
+sim:/tb_pipelines/s_EX_MemtoReg \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_MEM_Flush \
+sim:/tb_pipelines/s_EX_Lw \
+sim:/tb_pipelines/s_EX_Link \
+sim:/tb_pipelines/s_EX_INSTRUCTION \
+sim:/tb_pipelines/s_EX_HoB \
+sim:/tb_pipelines/s_EX_Halt \
+sim:/tb_pipelines/s_EX_Final \
+sim:/tb_pipelines/s_EX_B \
+sim:/tb_pipelines/s_EX_A \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/CLK
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+quit -sim
+# End time: 13:15:34 on Apr 21,2024, Elapsed time: 13:40:57
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:15:43 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# End time: 13:15:43 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:15:43 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffgSync
+# -- Compiling architecture mixed of dffgSync
+# End time: 13:15:43 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:15:43 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EX_MEM
+# -- Compiling architecture structural of EX_MEM
+# End time: 13:15:43 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:15:43 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ID_EX
+# -- Compiling architecture structural of ID_EX
+# End time: 13:15:44 on Apr 21,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:15:44 on Apr 21,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IF_ID
+# -- Compiling architecture structural of IF_ID
+# End time: 13:15:44 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:15:44 on Apr 21,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MEM_WB
+# -- Compiling architecture structural of MEM_WB
+# End time: 13:15:44 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:15:44 on Apr 21,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegFile
+# -- Compiling architecture structural of RegFile
+# End time: 13:15:44 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:15:44 on Apr 21,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegFileSync
+# -- Compiling architecture mixed of RegFileSync
+# End time: 13:15:44 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:15:44 on Apr 21,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_IF_ID
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 13:15:44 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:15:46 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 13:15:46 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.tb_pipelines -voptargs=+acc
+# vsim work.tb_pipelines -voptargs="+acc" 
+# Start time: 13:15:58 on Apr 21,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.if_id(structural)#1
+# Loading work.regfilesync(mixed)#1
+# Loading work.dffgsync(mixed)#1
+# Loading work.id_ex(structural)#1
+# Loading work.ex_mem(structural)#1
+# Loading work.mem_wb(structural)#1
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_WB_WD \
+sim:/tb_pipelines/s_WB_WA \
+sim:/tb_pipelines/s_WB_RegWrite \
+sim:/tb_pipelines/s_WB_PC4 \
+sim:/tb_pipelines/s_WB_Link \
+sim:/tb_pipelines/s_WB_INSTRUCTION \
+sim:/tb_pipelines/s_WB_Halt \
+sim:/tb_pipelines/s_MEM_WD \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_WA \
+sim:/tb_pipelines/s_MEM_sign \
+sim:/tb_pipelines/s_MEM_RegWrite \
+sim:/tb_pipelines/s_MEM_r2 \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_MEM_MemWrite \
+sim:/tb_pipelines/s_MEM_MemtoReg \
+sim:/tb_pipelines/s_MEM_Lw \
+sim:/tb_pipelines/s_MEM_Link \
+sim:/tb_pipelines/s_MEM_INSTRUCTION \
+sim:/tb_pipelines/s_MEM_HoB \
+sim:/tb_pipelines/s_MEM_Halt \
+sim:/tb_pipelines/s_MEM_Final \
+sim:/tb_pipelines/s_MEM_B \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_IF_INSTRUCTION \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_ID_WA \
+sim:/tb_pipelines/s_ID_unsigned \
+sim:/tb_pipelines/s_ID_sign \
+sim:/tb_pipelines/s_ID_ShiftLorR \
+sim:/tb_pipelines/s_ID_ShiftArithmetic \
+sim:/tb_pipelines/s_ID_return \
+sim:/tb_pipelines/s_ID_RegWrite \
+sim:/tb_pipelines/s_ID_r2 \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_ID_MemWrite \
+sim:/tb_pipelines/s_ID_MemtoReg \
+sim:/tb_pipelines/s_ID_Lw \
+sim:/tb_pipelines/s_ID_Lui \
+sim:/tb_pipelines/s_ID_Link \
+sim:/tb_pipelines/s_ID_Jump \
+sim:/tb_pipelines/s_ID_INSTRUCTION \
+sim:/tb_pipelines/s_ID_HoB \
+sim:/tb_pipelines/s_ID_Halt \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_ID_BranchNE \
+sim:/tb_pipelines/s_ID_branch \
+sim:/tb_pipelines/s_ID_B \
+sim:/tb_pipelines/s_ID_ALUout \
+sim:/tb_pipelines/s_ID_ALUnAddSub \
+sim:/tb_pipelines/s_ID_A \
+sim:/tb_pipelines/s_EX_WA \
+sim:/tb_pipelines/s_EX_unsigned \
+sim:/tb_pipelines/s_EX_sign \
+sim:/tb_pipelines/s_EX_ShiftLorR \
+sim:/tb_pipelines/s_EX_ShiftArithmetic \
+sim:/tb_pipelines/s_EX_return \
+sim:/tb_pipelines/s_EX_RegWrite \
+sim:/tb_pipelines/s_EX_r2 \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_EX_MemWrite \
+sim:/tb_pipelines/s_EX_MemtoReg \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_MEM_Flush \
+sim:/tb_pipelines/s_EX_Lw \
+sim:/tb_pipelines/s_EX_Lui \
+sim:/tb_pipelines/s_EX_Link \
+sim:/tb_pipelines/s_EX_Jump \
+sim:/tb_pipelines/s_EX_INSTRUCTION \
+sim:/tb_pipelines/s_EX_HoB \
+sim:/tb_pipelines/s_EX_Halt \
+sim:/tb_pipelines/s_EX_Final \
+sim:/tb_pipelines/s_EX_BranchNE \
+sim:/tb_pipelines/s_EX_branch \
+sim:/tb_pipelines/s_EX_B \
+sim:/tb_pipelines/s_EX_ALUout
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+# Causality operation skipped due to absence of debug database file
+quit -sim
+# End time: 13:23:22 on Apr 21,2024, Elapsed time: 0:07:24
+# Errors: 0, Warnings: 1
+# Load canceled
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:23:35 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# End time: 13:23:35 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:23:35 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffgSync
+# -- Compiling architecture mixed of dffgSync
+# End time: 13:23:35 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:23:35 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EX_MEM
+# -- Compiling architecture structural of EX_MEM
+# End time: 13:23:35 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:23:35 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ID_EX
+# -- Compiling architecture structural of ID_EX
+# End time: 13:23:36 on Apr 21,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:23:36 on Apr 21,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IF_ID
+# -- Compiling architecture structural of IF_ID
+# End time: 13:23:36 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:23:36 on Apr 21,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MEM_WB
+# -- Compiling architecture structural of MEM_WB
+# End time: 13:23:36 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:23:36 on Apr 21,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegFile
+# -- Compiling architecture structural of RegFile
+# End time: 13:23:36 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:23:36 on Apr 21,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegFileSync
+# -- Compiling architecture mixed of RegFileSync
+# End time: 13:23:36 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:23:36 on Apr 21,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_IF_ID
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 13:23:36 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:23:36 on Apr 21,2024
+# vcom -reportprogress 30 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 13:23:36 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_pipelines
+# vsim -voptargs="+acc" work.tb_pipelines 
+# Start time: 13:23:50 on Apr 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.if_id(structural)#1
+# Loading work.regfilesync(mixed)#1
+# Loading work.dffgsync(mixed)#1
+# Loading work.id_ex(structural)#1
+# Loading work.ex_mem(structural)#1
+# Loading work.mem_wb(structural)#1
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_WB_PC4 \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_MEM_Flush \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/CLK \
+sim:/tb_pipelines/cCLK_PER
+# Can't move the Now cursor.
+run 1000
+add wave -r sim:/tb_pipelines/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+run 1000
+quit -sim
+# End time: 13:53:11 on Apr 21,2024, Elapsed time: 0:29:21
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:53:14 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_IF_ID
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 13:53:15 on Apr 21,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_if_id
+# vsim -voptargs="+acc" work.tb_if_id 
+# Start time: 13:53:23 on Apr 21,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_if_id(mixed)#1
+# Loading work.if_id(structural)#1
+# Loading work.regfilesync(mixed)#1
+# Loading work.dffgsync(mixed)#1
+add wave -position insertpoint  \
+sim:/tb_if_id/s_Stall \
+sim:/tb_if_id/s_PC4 \
+sim:/tb_if_id/s_o_PC4 \
+sim:/tb_if_id/s_o_Inst \
+sim:/tb_if_id/s_Inst \
+sim:/tb_if_id/s_Flush \
+sim:/tb_if_id/gCLK_HPER \
+sim:/tb_if_id/CLK \
+sim:/tb_if_id/cCLK_PER
+run 1000
+quit -sim
+# End time: 13:57:56 on Apr 21,2024, Elapsed time: 0:04:33
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 13:58:01 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_IF_ID
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 13:58:01 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_pipelines
+# vsim -voptargs="+acc" work.tb_pipelines 
+# Start time: 13:58:09 on Apr 21,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.if_id(structural)#1
+# Loading work.regfilesync(mixed)#1
+# Loading work.dffgsync(mixed)#1
+# Loading work.id_ex(structural)#1
+# Loading work.ex_mem(structural)#1
+# Loading work.mem_wb(structural)#1
+quit -sim
+# End time: 13:58:18 on Apr 21,2024, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_if_id
+# vsim -voptargs="+acc" work.tb_if_id 
+# Start time: 13:58:24 on Apr 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_if_id(mixed)#1
+# Loading work.if_id(structural)#1
+# Loading work.regfilesync(mixed)#1
+# Loading work.dffgsync(mixed)#1
+add wave -position insertpoint  \
+sim:/tb_if_id/s_Stall \
+sim:/tb_if_id/s_PC4 \
+sim:/tb_if_id/s_o_PC4 \
+sim:/tb_if_id/s_o_Inst \
+sim:/tb_if_id/s_Inst \
+sim:/tb_if_id/s_Flush \
+sim:/tb_if_id/gCLK_HPER \
+sim:/tb_if_id/CLK \
+sim:/tb_if_id/cCLK_PER
+run 1000
+quit -sim
+# End time: 14:00:30 on Apr 21,2024, Elapsed time: 0:02:06
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:06:26 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_ID_EX
+# -- Compiling architecture mixed of tb_ID_EX
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(124): (vcom-1035) Formal port "i_Jump" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(125): (vcom-1035) Formal port "i_Branch" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(126): (vcom-1035) Formal port "i_BranchNE" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(127): (vcom-1035) Formal port "i_Return" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(128): (vcom-1035) Formal port "i_ALUnAddSub" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(129): (vcom-1035) Formal port "i_ALUout" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(130): (vcom-1035) Formal port "i_ShiftLorR" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(131): (vcom-1035) Formal port "i_ShiftArithmetic" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(132): (vcom-1035) Formal port "i_Unsigned" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(133): (vcom-1035) Formal port "i_Lui" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(134): (vcom-1035) Formal port "i_Lw" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(135): (vcom-1035) Formal port "i_HoB" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(136): (vcom-1035) Formal port "i_Sign" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(137): (vcom-1035) Formal port "i_MemWrite" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(138): (vcom-1035) Formal port "i_MemtoReg" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(139): (vcom-1035) Formal port "i_RegWrite" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(140): (vcom-1035) Formal port "i_A" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(141): (vcom-1035) Formal port "i_B" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(142): (vcom-1035) Formal port "i_r2" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(144): (vcom-1035) Formal port "i_WA" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(145): (vcom-1035) Formal port "i_Link" has OPEN or no actual associated with it.
+# ** Error: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(146): (vcom-1035) Formal port "i_Halt" has OPEN or no actual associated with it.
+# ** Note: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(245): VHDL Compiler exiting
+# End time: 14:06:26 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 22, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:08:22 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_ID_EX
+# -- Compiling architecture mixed of tb_ID_EX
+# End time: 14:08:22 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_id_ex
+# vsim -voptargs="+acc" work.tb_id_ex 
+# Start time: 14:08:33 on Apr 21,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_id_ex(mixed)#1
+# Loading work.id_ex(structural)#1
+# Loading work.dffgsync(mixed)#1
+# Loading work.regfilesync(mixed)#1
+add wave -position insertpoint  \
+sim:/tb_id_ex/s_Stall \
+sim:/tb_id_ex/s_PC4 \
+sim:/tb_id_ex/s_o_PC4 \
+sim:/tb_id_ex/s_o_Inst \
+sim:/tb_id_ex/s_Inst \
+sim:/tb_id_ex/s_Flush \
+sim:/tb_id_ex/gCLK_HPER \
+sim:/tb_id_ex/CLK \
+sim:/tb_id_ex/cCLK_PER
+run 1000
+quit -sim
+# End time: 14:11:12 on Apr 21,2024, Elapsed time: 0:02:39
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:11:21 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_IF_ID
+# -- Compiling architecture mixed of tb_IF_ID
+# End time: 14:11:21 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:11:23 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_ID_EX
+# -- Compiling architecture mixed of tb_ID_EX
+# End time: 14:11:23 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_if_id
+# vsim -voptargs="+acc" work.tb_if_id 
+# Start time: 14:11:32 on Apr 21,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_if_id(mixed)#1
+# Loading work.if_id(structural)#1
+# Loading work.regfilesync(mixed)#1
+# Loading work.dffgsync(mixed)#1
+add wave -position insertpoint  \
+sim:/tb_if_id/s_Stall \
+sim:/tb_if_id/s_PC4 \
+sim:/tb_if_id/s_o_PC4 \
+sim:/tb_if_id/s_o_Inst \
+sim:/tb_if_id/s_Inst \
+sim:/tb_if_id/s_Flush \
+sim:/tb_if_id/gCLK_HPER \
+sim:/tb_if_id/CLK \
+sim:/tb_if_id/cCLK_PER
+run 1000
+quit -sim
+# End time: 14:18:00 on Apr 21,2024, Elapsed time: 0:06:28
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:21:42 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 14:21:42 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_pipelines
+# vsim -voptargs="+acc" work.tb_pipelines 
+# Start time: 14:21:49 on Apr 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.if_id(structural)#1
+# Loading work.regfilesync(mixed)#1
+# Loading work.dffgsync(mixed)#1
+# Loading work.id_ex(structural)#1
+# Loading work.ex_mem(structural)#1
+# Loading work.mem_wb(structural)#1
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_WB_PC4 \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_MEM_Flush
+add wave -position insertpoint  \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/CLK \
+sim:/tb_pipelines/cCLK_PER
+run 1000
+quit -sim
+# End time: 14:24:40 on Apr 21,2024, Elapsed time: 0:02:51
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:25:22 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 14:25:22 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_pipelines
+# vsim -voptargs="+acc" work.tb_pipelines 
+# Start time: 14:25:30 on Apr 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.if_id(structural)#1
+# Loading work.regfilesync(mixed)#1
+# Loading work.dffgsync(mixed)#1
+# Loading work.id_ex(structural)#1
+# Loading work.ex_mem(structural)#1
+# Loading work.mem_wb(structural)#1
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_WB_PC4 \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_MEM_Flush \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/CLK \
+sim:/tb_pipelines/cCLK_PER
+run 500
+quit -sim
+# End time: 14:27:41 on Apr 21,2024, Elapsed time: 0:02:11
+# Errors: 0, Warnings: 1
+# Optimization canceled
+vsim -voptargs=+acc work.tb_pipelines
+# vsim -voptargs="+acc" work.tb_pipelines 
+# Start time: 14:27:56 on Apr 21,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.if_id(structural)#1
+# Loading work.regfilesync(mixed)#1
+# Loading work.dffgsync(mixed)#1
+# Loading work.id_ex(structural)#1
+# Loading work.ex_mem(structural)#1
+# Loading work.mem_wb(structural)#1
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_WB_PC4 \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_MEM_Flush \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/CLK \
+sim:/tb_pipelines/cCLK_PER
+run 500
+run 500
+# Break key hit
+quit -sim
+# End time: 14:36:15 on Apr 21,2024, Elapsed time: 0:08:19
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:36:20 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 14:36:21 on Apr 21,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_pipelines
+# vsim -voptargs="+acc" work.tb_pipelines 
+# Start time: 14:36:36 on Apr 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.if_id(structural)#1
+# Loading work.regfilesync(mixed)#1
+# Loading work.dffgsync(mixed)#1
+# Loading work.id_ex(structural)#1
+# Loading work.ex_mem(structural)#1
+# Loading work.mem_wb(structural)#1
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_WB_PC4 \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_MEM_Flush \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/CLK \
+sim:/tb_pipelines/cCLK_PER
+run 1000
+# Can't move the Now cursor.
+quit -sim
+# End time: 14:40:43 on Apr 21,2024, Elapsed time: 0:04:07
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:40:48 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 14:40:48 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_pipelines
+# vsim -voptargs="+acc" work.tb_pipelines 
+# Start time: 14:40:58 on Apr 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.if_id(structural)#1
+# Loading work.regfilesync(mixed)#1
+# Loading work.dffgsync(mixed)#1
+# Loading work.id_ex(structural)#1
+# Loading work.ex_mem(structural)#1
+# Loading work.mem_wb(structural)#1
+add wave -position insertpoint  \
+sim:/tb_pipelines/s_WB_PC4 \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_MEM_Flush \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/CLK \
+sim:/tb_pipelines/cCLK_PER
+run 10000
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:43:24 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 14:43:24 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Load canceled
+quit -sim
+# End time: 14:43:37 on Apr 21,2024, Elapsed time: 0:02:39
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:43:51 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 14:43:51 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:43:54 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 14:43:54 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_pipelines
+# vsim -voptargs="+acc" work.tb_pipelines 
+# Start time: 14:44:01 on Apr 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.if_id(structural)#1
+# Loading work.regfilesync(mixed)#1
+# Loading work.dffgsync(mixed)#1
+# Loading work.id_ex(structural)#1
+# Loading work.ex_mem(structural)#1
+# Loading work.mem_wb(structural)#1
+add wave -position insertpoint  \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/cCLK_PER \
+sim:/tb_pipelines/CLK \
+sim:/tb_pipelines/s_EX_MEM_Flush \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_WB_PC4
+run 1000
+quit -sim
+# End time: 14:45:38 on Apr 21,2024, Elapsed time: 0:01:37
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:45:42 on Apr 21,2024
+# vcom -reportprogress 300 -work work /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_pipelines
+# -- Compiling architecture mixed of tb_pipelines
+# End time: 14:45:43 on Apr 21,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_pipelines
+# vsim -voptargs="+acc" work.tb_pipelines 
+# Start time: 14:45:51 on Apr 21,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_pipelines(mixed)#1
+# Loading work.if_id(structural)#1
+# Loading work.regfilesync(mixed)#1
+# Loading work.dffgsync(mixed)#1
+# Loading work.id_ex(structural)#1
+# Loading work.ex_mem(structural)#1
+# Loading work.mem_wb(structural)#1
+add wave -position insertpoint  \
+sim:/tb_pipelines/gCLK_HPER \
+sim:/tb_pipelines/cCLK_PER \
+sim:/tb_pipelines/CLK \
+sim:/tb_pipelines/s_EX_MEM_Flush \
+sim:/tb_pipelines/s_EX_MEM_Stall \
+sim:/tb_pipelines/s_EX_PC4 \
+sim:/tb_pipelines/s_ID_EX_Flush \
+sim:/tb_pipelines/s_ID_EX_Stall \
+sim:/tb_pipelines/s_ID_PC4 \
+sim:/tb_pipelines/s_IF_ID_Flush \
+sim:/tb_pipelines/s_IF_ID_Stall \
+sim:/tb_pipelines/s_IF_PC4 \
+sim:/tb_pipelines/s_MEM_PC4 \
+sim:/tb_pipelines/s_MEM_WB_Flush \
+sim:/tb_pipelines/s_MEM_WB_Stall \
+sim:/tb_pipelines/s_WB_PC4
+run 1000
+# End time: 15:04:29 on Apr 22,2024, Elapsed time: 24:18:38
 # Errors: 0, Warnings: 0
