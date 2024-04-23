@@ -38,6 +38,7 @@ entity EX_MEM is
         i_WA       	     : in std_logic_vector(4 downto 0);
         i_Link              : in std_logic;
         i_Halt               : in std_logic;
+        i_Ovfl               : in std_logic;
 	o_Lw                 : out std_logic;
 	o_HoB                : out std_logic;
 	o_Sign               : out std_logic;
@@ -51,7 +52,8 @@ entity EX_MEM is
         o_Inst        	     : out std_logic_vector(N-1 downto 0);
         o_WA       	     : out std_logic_vector(4 downto 0);
         o_Link              : out std_logic;
-        o_Halt               : out std_logic);
+        o_Halt               : out std_logic;
+        o_Ovfl               : out std_logic);
 
 end EX_MEM;
 
@@ -195,5 +197,13 @@ begin
     i_STL     => i_Stall, 
     i_D       => i_Halt,  
 o_Q       => o_Halt);  
+
+  --DFF for Overflow
+  ovfl: dffgSync port map(
+    i_CLK     => i_CLKs,    
+    i_FSH     => i_Flush,         
+    i_STL     => i_Stall, 
+        i_D       => i_Ovfl,  
+    o_Q       => o_Ovfl);  
 
 end structural;

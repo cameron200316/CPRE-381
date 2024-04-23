@@ -90,7 +90,7 @@ begin
     -- Flush signal assignment based on branch taken or jump ++
     branchHazardAndg2_a : andg2 port map(
         i_A      => i_EX_Branch,
-        i_B      => i_branch_taken,
+        i_B      => s_branch_not_taken,
         o_C      => flushFirstInst
     ); 
 
@@ -101,7 +101,7 @@ begin
 
     branchHazardAndg2_b : andg2 port map(
         i_A      => i_EX_Branch,
-        i_B      => s_branch_not_taken,
+        i_B      => i_branch_taken,
         o_C      => flushSecondInst
     ); 
 

@@ -118,6 +118,7 @@ architecture structure of MIPS_Processor is
   signal s_r_WB_RegWrite : std_logic;
   signal s_r_WB_WA : std_logic_vector(4 downto 0);
   signal s_r_WB_WD : std_logic_vector(31 downto 0);
+  signal s_PCJUMPJRJAL : std_logic_vector(31 downto 0);
 
 
 
@@ -127,6 +128,9 @@ architecture structure of MIPS_Processor is
   signal s_IF_INSTRUCTION         : std_logic_vector(31 downto 0);
   signal s_IF_PCINSTRUCTION         : std_logic_vector(31 downto 0);
   signal s_IF_Flush     : std_logic; 
+  signal s_IF_PCWRITE     : std_logic;
+  signal s_IF_NotStall    : std_logic;
+  signal s_IF_BranchAddr4         : std_logic_vector(31 downto 0);
 
   --ID stage
   signal s_ID_Jump      : std_logic;
@@ -190,6 +194,8 @@ architecture structure of MIPS_Processor is
   signal s_EX_RSA     : std_logic_vector(31 downto 0);
   signal s_EX_RTB     : std_logic_vector(31 downto 0);
   signal s_EX_Flush     : std_logic;
+  signal s_EX_R2A     : std_logic_vector(31 downto 0);
+  signal s_EX_Ovfl    : std_logic;
 
   --MEM stage
   signal s_MEM_B         : std_logic_vector(31 downto 0);
@@ -207,6 +213,7 @@ architecture structure of MIPS_Processor is
   signal s_MEM_INSTRUCTION         : std_logic_vector(31 downto 0);
   signal s_MEM_Link  : std_logic;
   signal s_MEM_Halt         : std_logic;
+  signal s_MEM_Ovfl    : std_logic;
 
   --WB stage
   signal s_WB_RegWrite         : std_logic;
@@ -216,12 +223,16 @@ architecture structure of MIPS_Processor is
   signal s_WB_INSTRUCTION         : std_logic_vector(31 downto 0);
   signal s_WB_Link  : std_logic;
   signal s_WB_Halt         : std_logic;
+  signal s_WB_Ovfl    : std_logic;
 
   --Forwarding Signals
   signal s_WB_EX2_RS         : std_logic;
   signal s_WB_EX2_RT         : std_logic;
+  signal s_WB_EX2_R2         : std_logic;
   signal s_MEM_EX1_RS         : std_logic;
   signal s_MEM_EX1_RT         : std_logic;
+  signal s_MEM_EX1_R2         : std_logic;
+
 
   --Stalling Signals 
   signal s_branch              : std_logic;  
@@ -379,6 +390,7 @@ architecture structure of MIPS_Processor is
         i_WA       	     : in std_logic_vector(4 downto 0);
         i_Link              : in std_logic;
         i_Halt        : in std_logic;
+        i_Ovfl               : in std_logic;
         o_Lw                 : out std_logic;
         o_HoB                : out std_logic;
         o_Sign               : out std_logic;
@@ -392,7 +404,8 @@ architecture structure of MIPS_Processor is
         o_Inst       	     : out std_logic_vector(N-1 downto 0);
         o_WA       	     : out std_logic_vector(4 downto 0);
         o_Link              : out std_logic;
-        o_Halt        : out std_logic);
+        o_Halt        : out std_logic;
+        o_Ovfl               : out std_logic);
       end component;
 
       component MEM_WB is
@@ -407,13 +420,15 @@ architecture structure of MIPS_Processor is
              i_WA       	     : in std_logic_vector(4 downto 0);
              i_Link              : in std_logic;
              i_Halt        : in std_logic;
+             i_Ovfl               : in std_logic;
              o_RegWrite           : out std_logic;
              o_WD        	     : out std_logic_vector(N-1 downto 0);
              o_PC4        	     : out std_logic_vector(N-1 downto 0);
 	     o_Inst        	     : out std_logic_vector(N-1 downto 0);
              o_WA       	     : out std_logic_vector(4 downto 0);
              o_Link              : out std_logic;
-             o_Halt        : out std_logic);
+             o_Halt        : out std_logic;
+             o_Ovfl               : out std_logic);
      end component;
 
    component Reg32File is
@@ -532,12 +547,17 @@ architecture structure of MIPS_Processor is
        		i_MEM_WA         : in std_logic_vector(4 downto 0);  
        		i_EX_RS          : in std_logic_vector(4 downto 0);
         	i_EX_RT          : in std_logic_vector(4 downto 0);
-		i_EX_OPCODE     : in std_logic_vector(5 downto 0);
+		i_EX_ALUOUT      : in std_logic_vector(2 downto 0);
+		i_EX_OPCODE      : in std_logic_vector(5 downto 0);
 		i_MEM_OPCODE     : in std_logic_vector(5 downto 0);
+      		i_MEM_RegWrite   : in std_logic; 	
+		i_WB_RegWrite    : in std_logic; 
         	o_WB_EX2_RS      : out std_logic;
 		o_WB_EX2_RT      : out std_logic;
+		o_WB_EX2_R2      : out std_logic;
         	o_MEM_EX1_RS     : out std_logic;
-        	o_MEM_EX1_RT     : out std_logic);
+        	o_MEM_EX1_RT     : out std_logic;
+ 	        o_MEM_EX1_R2     : out std_logic);
     end component;
 
     component StallingUnit is
@@ -576,7 +596,11 @@ architecture structure of MIPS_Processor is
              o_F          : out std_logic);
     end component;
 
-
+    component andg2 is
+	port(i_A          : in std_logic;
+             i_B          : in std_logic;
+             o_C          : out std_logic);
+    end component;
 
 begin
 
@@ -592,11 +616,16 @@ begin
        		i_EX_RS          => s_EX_INSTRUCTION(25 downto 21),
         	i_EX_RT          => s_EX_INSTRUCTION(20 downto 16),
 		i_EX_OPCODE      => s_EX_INSTRUCTION(31 downto 26),
+		i_EX_ALUOUT      => s_EX_ALUout(2 downto 0),
 		i_MEM_OPCODE     => s_MEM_INSTRUCTION(31 downto 26),
+		i_MEM_RegWrite   => s_MEM_RegWrite,
+		i_WB_RegWrite    => s_WB_RegWrite,
         	o_WB_EX2_RS      => s_WB_EX2_RS,
 		o_WB_EX2_RT      => s_WB_EX2_RT,
+		o_WB_EX2_R2      => s_WB_EX2_R2,
         	o_MEM_EX1_RS     => s_MEM_EX1_RS,
-        	o_MEM_EX1_RT     => s_MEM_EX1_RT);
+        	o_MEM_EX1_RT     => s_MEM_EX1_RT,
+        	o_MEM_EX1_R2     => s_MEM_EX1_R2);
 
   orBranchEX: org2
   port MAP(
@@ -690,7 +719,7 @@ begin
       i_D1      => s_ID_BranchAddr(i),    
       i_S 	=> s_ID_BranchEither,     
       o_O       => s_NextInstAddr(i));
-  end generate BranchMUX_32;
+  end generate BranchMUX_32; 
 
   IMem: mem
     port map(clk  => iCLK,
@@ -711,6 +740,28 @@ begin
             o_S          => s_PC4
     );
 
+  branchadd4: AddSub
+  port MAP(
+            i_Cin        => '0',
+            i_AddSub     => '0',
+            i_ALUSrc     => '0', 
+            i_D1         => s_EX_BranchAddr,
+            i_D0         => "00000000000000000000000000000100",
+            i_regWrite   => "00000000000000000000000000000000",
+            o_C          => s_null,
+            o_S          => s_IF_BranchAddr4
+    );
+
+
+  -- 2t1Mux
+  MUX14 : mux2t1_N 
+  port map (
+      i_S             => s_branchChoice,
+      i_D0            => s_PCJUMPJRJAL,
+      i_D1            => s_IF_BranchAddr4,
+      o_O             => s_NEWPC
+  );
+
   -- 2t1Mux
   MUX13 : mux2t1_N 
   port map (
@@ -723,11 +774,24 @@ begin
   PC4 : PC  
   port MAP(
             i_WD         => s_MUX13OUT,
-            i_WEN        => '1',
+            i_WEN        => s_IF_PCWRITE,
             i_CLKs       => iCLK,
             i_R          => iRST,
             o_OUT        => s_PC
   );
+
+  notStallIF: invg
+	port MAP(
+            i_A                  => s_stall_IF_ID,
+            o_F                  => s_IF_NotStall
+          );
+
+  StallPC: andg2
+  port MAP(
+            i_A       => s_ID_BranchNeither,
+            i_B       => s_IF_NotStall,
+            o_C       => s_IF_PCWRITE
+          );
 
   s_IF_PC4 <= s_PC4;
   s_IF_INSTRUCTION <= s_Inst;
@@ -947,7 +1011,7 @@ begin
         i_PC4               => s_EX_PC4,
         o_branchChoice      => s_branchChoice,
         o_JorBorJr          => s_JorBorJr,
-        o_NEWPC             => s_NEWPC);
+        o_NEWPC             => s_PCJUMPJRJAL);
 
   --MUX for choosing the s_EX_RSA value for the mux
   RSA_32: for i in 0 to 31 generate
@@ -975,6 +1039,19 @@ begin
 	o_O       => s_EX_RTB(i)); 
   end generate RTB_32;
 
+  --MUX for choosing the s_R2 value for ex
+  R2A_32: for i in 0 to 31 generate
+  R2A: mux4to1DF 
+	port MAP(
+	i_D3      => s_MEM_Final(i),    
+        i_D2      => s_WB_WD(i),	
+        i_D1      => s_MEM_Final(i),    
+        i_D0      => s_EX_r2(i),         
+        i_S0      => s_MEM_EX1_R2,
+        i_S1      => s_WB_EX2_R2, 
+	o_O       => s_EX_R2A(i)); 
+  end generate R2A_32;
+
   A: ALU
 	port MAP(
         i_A                 => s_EX_RSA, 
@@ -989,7 +1066,7 @@ begin
         o_Carry_Out         => s_carryOut,
         o_Zero              => s_zero,
         o_Negative          => s_negative, 
-        o_Overflow          => s_Ovfl); 
+        o_Overflow          => s_EX_Ovfl); 
 
   EXMEM: EX_MEM
   port MAP(
@@ -1002,14 +1079,15 @@ begin
         i_MemWrite        => s_EX_MemWrite,
         i_MemtoReg        => s_EX_MemtoReg,
         i_RegWrite        => s_EX_RegWrite,
-        i_B               => s_EX_B,
-        i_r2              => s_EX_r2,
+        i_B               => s_EX_RTB,
+        i_r2              => s_EX_R2A,
         i_Final           => s_EX_Final,
         i_PC4             => s_EX_PC4,
         i_Inst            => s_EX_INSTRUCTION,
         i_WA              => s_EX_WA,
         i_Link            => s_EX_Link,
         i_Halt            => s_EX_Halt,
+        i_Ovfl            => s_EX_Ovfl,
         o_Lw              => s_MEM_lw,
         o_HoB             => s_MEM_HoB,
         o_Sign            => s_MEM_Sign,
@@ -1023,7 +1101,8 @@ begin
         o_Inst            => s_MEM_INSTRUCTION,
         o_WA              => s_MEM_WA,
         o_Link            => s_MEM_Link,
-        o_Halt            => s_MEM_Halt
+        o_Halt            => s_MEM_Halt,
+	o_Ovfl            => s_MEM_Ovfl
   );
 
       -- /*---------------------------------------------------------------------------------------------------*/
@@ -1064,13 +1143,15 @@ begin
         i_WA              => s_MEM_WA,
         i_Link            => s_MEM_Link,
         i_Halt            => s_MEM_Halt,
+	i_Ovfl            => s_MEM_Ovfl, 
         o_RegWrite        => s_WB_RegWrite,
         o_WD              => s_WB_WD,
         o_PC4             => s_WB_PC4,
         o_Inst            => s_WB_INSTRUCTION,
         o_WA              => s_WB_WA,
         o_Link            => s_WB_Link,
-        o_Halt            => s_WB_Halt
+        o_Halt            => s_WB_Halt,
+	o_Ovfl            => s_WB_Ovfl
   );
 
       -- /*--------------------------------------------------------------------------------------------------*/
@@ -1181,6 +1262,8 @@ begin
 
 
   s_Halt <= s_WB_Halt;
+
+  s_Ovfl <= s_WB_Ovfl; 
 
   OUTPUT: for i in 0 to 31 generate
 	oALUOut(i) 	<= s_EX_final(i);
