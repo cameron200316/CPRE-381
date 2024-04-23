@@ -129,6 +129,8 @@ architecture structure of MIPS_Processor is
   signal s_IF_PCINSTRUCTION         : std_logic_vector(31 downto 0);
   signal s_IF_Flush     : std_logic; 
   signal s_IF_PCWRITE     : std_logic;
+  signal s_IF_JorBorJrWRITE     : std_logic;
+  signal s_IF_WRITE     : std_logic;
   signal s_IF_NotStall    : std_logic;
   signal s_IF_BranchAddr4         : std_logic_vector(31 downto 0);
 
@@ -604,6 +606,10 @@ architecture structure of MIPS_Processor is
 
 begin
 
+	--Last Edge case with grendel involves an instruction that uses two registers
+	-- one is written by lw in mem 
+	-- one is written by ori in wb
+	
 
   -- /*--------------------------------------------------------------------------------------------------*/
   -- /*-------------------------------------------  HAZARDS  --------------------------------------------*/
@@ -790,6 +796,20 @@ begin
   port MAP(
             i_A       => s_ID_BranchNeither,
             i_B       => s_IF_NotStall,
+            o_C       => s_IF_WRITE
+          );
+
+  JorBorJrWRITE: andg2
+  port MAP(
+            i_A       => s_IF_NotStall,
+            i_B       => s_JorBorJr,
+            o_C       => s_IF_JorBorJrWRITE
+          );
+
+  PCWRITE: org2
+  port MAP(
+            i_A       => s_IF_WRITE,
+            i_B       => s_IF_JorBorJrWRITE,
             o_C       => s_IF_PCWRITE
           );
 
@@ -1006,7 +1026,7 @@ begin
         i_branchAddr        => s_EX_BranchAddr,
         i_return            => s_EX_Return,
         i_zero              => s_zero,
-        i_ra                => s_EX_A,
+        i_ra                => s_EX_RSA,
         i_instruction25     => s_EX_INSTRUCTION(25 downto 0),
         i_PC4               => s_EX_PC4,
         o_branchChoice      => s_branchChoice,

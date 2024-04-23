@@ -228,17 +228,19 @@ begin
 	     i_A          => s_MEM_EX1_RSFINAL, 
        	     o_F          => s_NOTMEM_EX1_RS);
 
-  NOTMEM_EX1_RSSHIFT: org2
+  NOTMEM_EX1_RSSHIFT: org3
   port MAP(
             i_A       => s_NOTMEM_EX1_RS,
             i_B       => s_shift,
+	    i_C       => s_STORE,
             o_C       => s_NOTMEM_EX1_RSSHIFT
           );
 
-  NOTMEM_EX1_RTSHIFT: org2
+  NOTMEM_EX1_RTSHIFT: org3
   port MAP(
-            i_A       => s_NOTMEM_EX1_RTSHIFT,
+            i_A       => s_NOTMEM_EX1_RT,
             i_B       => s_shift,
+	    i_C       => s_STORE, 
             o_C       => s_NOTMEM_EX1_RTSHIFT
           );
 
