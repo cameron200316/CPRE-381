@@ -228,12 +228,21 @@ architecture structure of MIPS_Processor is
   signal s_WB_Ovfl    : std_logic;
 
   --Forwarding Signals
+  signal s_WB_EX3_RS         : std_logic;
+  signal s_WB_EX3_RT         : std_logic;
   signal s_WB_EX2_RS         : std_logic;
   signal s_WB_EX2_RT         : std_logic;
   signal s_WB_EX2_R2         : std_logic;
   signal s_MEM_EX1_RS         : std_logic;
   signal s_MEM_EX1_RT         : std_logic;
   signal s_MEM_EX1_R2         : std_logic;
+  signal s_EX_WBWD            : std_logic_vector(31 downto 0);
+  signal s_EX_WBWDRS            : std_logic_vector(31 downto 0);
+  signal s_EX_WBWDRT            : std_logic_vector(31 downto 0);
+  signal s_EX_WBWDR2            : std_logic_vector(31 downto 0);
+  signal s_WB_EX2or3_RS         : std_logic;
+  signal s_WB_EX2or3_RT         : std_logic;
+  signal s_WB_EX2or3_R2         : std_logic;
 
 
   --Stalling Signals 
@@ -544,7 +553,8 @@ architecture structure of MIPS_Processor is
     end component;
 
     component ForwardingUnit is
-   	port(
+   	port(   i_CLKs           : in std_logic;
+		i_R              : in std_logic;
 		i_WB_WA          : in std_logic_vector(4 downto 0);
        		i_MEM_WA         : in std_logic_vector(4 downto 0);  
        		i_EX_RS          : in std_logic_vector(4 downto 0);
@@ -553,13 +563,17 @@ architecture structure of MIPS_Processor is
 		i_EX_OPCODE      : in std_logic_vector(5 downto 0);
 		i_MEM_OPCODE     : in std_logic_vector(5 downto 0);
       		i_MEM_RegWrite   : in std_logic; 	
-		i_WB_RegWrite    : in std_logic; 
+		i_WB_RegWrite    : in std_logic;
+		i_WB_WD          : in std_logic_vector(31 downto 0); 
+		o_WB_EX3_RT      : out std_logic; 
+		o_WB_EX3_RS      : out std_logic; 
         	o_WB_EX2_RS      : out std_logic;
 		o_WB_EX2_RT      : out std_logic;
 		o_WB_EX2_R2      : out std_logic;
         	o_MEM_EX1_RS     : out std_logic;
         	o_MEM_EX1_RT     : out std_logic;
- 	        o_MEM_EX1_R2     : out std_logic);
+ 	        o_MEM_EX1_R2     : out std_logic;
+		o_WB_WD          : out std_logic_vector(31 downto 0));
     end component;
 
     component StallingUnit is
@@ -606,9 +620,6 @@ architecture structure of MIPS_Processor is
 
 begin
 
-	--Last Edge case with grendel involves an instruction that uses two registers
-	-- one is written by lw in mem 
-	-- one is written by ori in wb
 	
 
   -- /*--------------------------------------------------------------------------------------------------*/
@@ -617,6 +628,8 @@ begin
 
    FORWARD: ForwardingUnit
    port MAP(
+                i_CLKs           => iCLK,
+		i_R              => iRST,
 		i_WB_WA          => s_WB_WA,
        		i_MEM_WA         => s_MEM_WA, 
        		i_EX_RS          => s_EX_INSTRUCTION(25 downto 21),
@@ -626,12 +639,16 @@ begin
 		i_MEM_OPCODE     => s_MEM_INSTRUCTION(31 downto 26),
 		i_MEM_RegWrite   => s_MEM_RegWrite,
 		i_WB_RegWrite    => s_WB_RegWrite,
+                i_WB_WD          => s_WB_WD, 
+        	o_WB_EX3_RS      => s_WB_EX3_RS,
+		o_WB_EX3_RT      => s_WB_EX3_RT,
         	o_WB_EX2_RS      => s_WB_EX2_RS,
 		o_WB_EX2_RT      => s_WB_EX2_RT,
 		o_WB_EX2_R2      => s_WB_EX2_R2,
         	o_MEM_EX1_RS     => s_MEM_EX1_RS,
         	o_MEM_EX1_RT     => s_MEM_EX1_RT,
-        	o_MEM_EX1_R2     => s_MEM_EX1_R2);
+        	o_MEM_EX1_R2     => s_MEM_EX1_R2,
+		o_WB_WD          => s_EX_WBWD);
 
   orBranchEX: org2
   port MAP(
@@ -1038,11 +1055,11 @@ begin
   RSA: mux4to1DF 
 	port MAP(
 	i_D3      => s_MEM_Final(i),    
-        i_D2      => s_WB_WD(i),	
+        i_D2      => s_EX_WBWDRS(i),	
         i_D1      => s_MEM_Final(i),    
         i_D0      => s_EX_A(i),         
         i_S0      => s_MEM_EX1_RS,
-        i_S1      => s_WB_EX2_RS, 
+        i_S1      => s_WB_EX2or3_RS, 
 	o_O       => s_EX_RSA(i)); 
   end generate RSA_32;
 
@@ -1051,11 +1068,11 @@ begin
   RTB: mux4to1DF 
 	port MAP(
 	i_D3      => s_MEM_Final(i),    
-        i_D2      => s_WB_WD(i),	
+        i_D2      => s_EX_WBWDRT(i),	
         i_D1      => s_MEM_Final(i),    
         i_D0      => s_EX_B(i),         
         i_S0      => s_MEM_EX1_RT,
-        i_S1      => s_WB_EX2_RT, 
+        i_S1      => s_WB_EX2or3_RT, 
 	o_O       => s_EX_RTB(i)); 
   end generate RTB_32;
 
@@ -1064,13 +1081,59 @@ begin
   R2A: mux4to1DF 
 	port MAP(
 	i_D3      => s_MEM_Final(i),    
-        i_D2      => s_WB_WD(i),	
+        i_D2      => s_EX_WBWDR2(i),	
         i_D1      => s_MEM_Final(i),    
         i_D0      => s_EX_r2(i),         
         i_S0      => s_MEM_EX1_R2,
-        i_S1      => s_WB_EX2_R2, 
+        i_S1      => s_WB_EX2or3_R2, 
 	o_O       => s_EX_R2A(i)); 
   end generate R2A_32;
+
+  WBWDRS: for i in 0 to 31 generate
+  MUXWBRS: mux2to1DF
+  port MAP(i_D0      => s_WB_WD(i),         
+        i_D1      => s_EX_WBWD(i),    
+        i_S 	   => s_WB_EX3_RS,     
+        o_O       => s_EX_WBWDRS(i));
+  end generate WBWDRS;
+
+  WBWDRT: for i in 0 to 31 generate
+  MUXWBRT: mux2to1DF
+  port MAP(i_D0      => s_WB_WD(i),         
+        i_D1      => s_EX_WBWD(i),    
+        i_S 	   => s_WB_EX3_RT,     
+        o_O       => s_EX_WBWDRT(i));
+  end generate WBWDRT;
+
+
+  WBWDR2: for i in 0 to 31 generate
+  MUXWBRT: mux2to1DF
+  port MAP(i_D0      => s_WB_WD(i),         
+        i_D1      => s_EX_WBWD(i),    
+        i_S 	   => s_WB_EX3_RT,     
+        o_O       => s_EX_WBWDR2(i));
+  end generate WBWDR2;
+
+  WB_EX2or3_RS: org2
+  port MAP(
+            i_A       => s_WB_EX3_RS,
+            i_B       => s_WB_EX2_RS,
+            o_C       => s_WB_EX2or3_RS
+          );
+
+  WB_EX2or3_RT: org2
+  port MAP(
+            i_A       => s_WB_EX3_RT,
+            i_B       => s_WB_EX2_RT,
+            o_C       => s_WB_EX2or3_RT
+          );
+
+  WB_EX2or3_R2: org2
+  port MAP(
+            i_A       => s_WB_EX3_RT,
+            i_B       => s_WB_EX2_R2,
+            o_C       => s_WB_EX2or3_R2
+          );
 
   A: ALU
 	port MAP(
@@ -1216,13 +1279,13 @@ begin
   MUX3_32: for i in 0 to 31 generate
   	MUX3: mux4to1DF 
 	port MAP(
-	      i_D3      => s_signedHalfword(i),    
+	i_D3      => s_signedHalfword(i),    
         i_D2      => s_signedByte(i),	
         i_D1      => s_unsignedHalfword(i),    
         i_D0      => s_unsignedByte(i),         
         i_S0      => s_MEM_HoB,
         i_S1      => s_MEM_Sign, 
-	      o_O       => s_MUX3OUT(i)); 
+	o_O       => s_MUX3OUT(i)); 
   end generate MUX3_32;
 
   --MUX for lw vs lhu, lh, lb, lbu (lw when s_MEM_lw = 0)

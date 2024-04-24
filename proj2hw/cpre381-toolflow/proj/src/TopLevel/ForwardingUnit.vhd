@@ -24,7 +24,9 @@ use IEEE.std_logic_1164.all;
 
 entity ForwardingUnit is
    generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
-   port(i_WB_WA          : in std_logic_vector(4 downto 0);
+   port(i_CLKs           : in std_logic;
+	i_R              : in std_logic;
+        i_WB_WA          : in std_logic_vector(4 downto 0);
         i_MEM_WA         : in std_logic_vector(4 downto 0);  
         i_EX_RS          : in std_logic_vector(4 downto 0);
         i_EX_RT          : in std_logic_vector(4 downto 0);
@@ -32,13 +34,17 @@ entity ForwardingUnit is
 	i_EX_ALUOUT      : in std_logic_vector(2 downto 0);
 	i_MEM_OPCODE     : in std_logic_vector(5 downto 0);
         i_MEM_RegWrite   : in std_logic; 	
-	i_WB_RegWrite    : in std_logic; 
+	i_WB_RegWrite    : in std_logic;
+	i_WB_WD          : in std_logic_vector(31 downto 0); 
+        o_WB_EX3_RT      : out std_logic; 
+        o_WB_EX3_RS      : out std_logic; 
         o_WB_EX2_RS      : out std_logic;
 	o_WB_EX2_RT      : out std_logic;
 	o_WB_EX2_R2      : out std_logic;
         o_MEM_EX1_RS     : out std_logic;
         o_MEM_EX1_RT     : out std_logic;
-        o_MEM_EX1_R2     : out std_logic);
+        o_MEM_EX1_R2     : out std_logic;
+	o_WB_WD          : out std_logic_vector(31 downto 0));
 
 end ForwardingUnit;
 
@@ -101,6 +107,25 @@ architecture structural of ForwardingUnit is
              o_C          : out std_logic);
     end component;
 
+    component RegFile is
+    	generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
+   	port(
+       		i_WD         : in std_logic_vector(N-1 downto 0);
+       		i_WEN        : in std_logic; 
+       		i_CLKs       : in std_logic;
+       		i_R          : in std_logic;
+       		o_OUT        : out std_logic_vector(N-1 downto 0));
+    end component;
+
+    component dffg is
+	port(i_CLK        : in std_logic;     -- Clock input
+       	     i_RST        : in std_logic;     -- Reset input
+             i_WE         : in std_logic;     -- Write enable input
+             i_D          : in std_logic;     -- Data value input
+             o_Q          : out std_logic);   -- Data value output
+    end component;
+
+
 signal s_MEM_EX1_RS  : std_logic := '0';
 signal s_MEM_EX1_RT  : std_logic := '0';
 
@@ -112,6 +137,9 @@ signal s_NOTMEM_EX1_RTSHIFT  : std_logic := '0';
 
 signal s_WB_EX2_RS  : std_logic := '0';
 signal s_WB_EX2_RT  : std_logic := '0';
+
+signal s_WB_EX3_RS  : std_logic := '0';
+signal s_WB_EX3_RT  : std_logic := '0';
 
 signal s_RSZERO     : std_logic := '0';
 signal s_RTZERO     : std_logic := '0';
@@ -136,6 +164,8 @@ signal s_WB_EX2_RTO  : std_logic := '0';
 
 signal s_MEM_EX1_RSFINAL  : std_logic := '0';
 signal s_MEM_EX1_RTFINAL  : std_logic := '0';
+signal s_WB_EX2_RSFINAL  : std_logic := '0';
+signal s_WB_EX2_RTFINAL  : std_logic := '0';
 
 signal s_shift            : std_logic := '0';
 signal s_notshift            : std_logic := '0';
@@ -157,6 +187,10 @@ signal s_MEM_EX1_RTNOTSHIFT  : std_logic := '0';
 
 signal s_WB_EX2_RSNOTSHIFT  : std_logic := '0';
 signal s_WB_EX2_RTNOTSHIFT  : std_logic := '0';
+
+signal s_LW_RegWrite  : std_logic := '0';
+signal s_WB_EX2_RTorRS  : std_logic := '0';
+signal s_MEM_EX1_RTorRS  : std_logic := '0';
 
 
 
@@ -222,6 +256,9 @@ begin
 
   o_MEM_EX1_RS <= s_MEM_EX1_RSFINAL;
   o_MEM_EX1_RT <= s_MEM_EX1_RTFINAL;
+  o_WB_EX2_RS  <= s_WB_EX2_RSFINAL;
+  o_WB_EX2_RT  <= s_WB_EX2_RTFINAL;
+
 
 --Makes sure that distance 1 data hazards are priortized over distance 2 data hazards
   NOTMEM_EX1_RS: invg port MAP(
@@ -402,14 +439,14 @@ begin
   port MAP(
             i_A       => s_WB_EX2_RSSHIFT,
             i_B       => s_WB_EX2_RSNOTSHIFT,
-            o_C       => o_WB_EX2_RS
+            o_C       => s_WB_EX2_RSFINAL
           );
 
   WB_EX2_RTFINAL: org2
   port MAP(
             i_A       => s_WB_EX2_RTSHIFT,
             i_B       => s_WB_EX2_RTNOTSHIFT,
-            o_C       => o_WB_EX2_RT
+            o_C       => s_WB_EX2_RTFINAL
           );
 
   MEM_EX1_RSFINAL: org2
@@ -426,8 +463,60 @@ begin
             o_C       => s_MEM_EX1_RTFINAL
           );
 
+  MEM_EX1_RTorRS: org2
+  port MAP(
+            i_A       => s_MEM_EX1_RSFINAL,
+            i_B       => s_MEM_EX1_RTFINAL,
+            o_C       => s_MEM_EX1_RTorRS
+          );
 
+  WB_EX2_RTorRS: org2
+  port MAP(
+            i_A       => s_WB_EX2_RSFINAL,
+            i_B       => s_WB_EX2_RTFINAL,
+            o_C       => s_WB_EX2_RTorRS
+          );
 
+  LW_REGWRITE: andg3 port MAP(
+	      i_A       => s_MEM_EX1_RTorRS, 
+	      i_B       => s_WB_EX2_RTorRS,
+	      i_C       => s_LW,
+	      o_C       => s_LW_RegWrite);
+
+  RS: andg2
+  port MAP(
+            i_A       => s_WB_EX2_RSFINAL,
+            i_B       => s_LW_RegWrite,
+            o_C       => s_WB_EX3_RS
+          );
+
+  RT: andg2
+  port MAP(
+            i_A       => s_WB_EX2_RTFINAL,
+            i_B       => s_LW_RegWrite,
+            o_C       => s_WB_EX3_RT
+          );
+
+  REG: RegFile port map(
+              i_CLKs    => i_CLKs,    
+              i_R       => i_R,         
+              i_WEN     => s_LW_RegWrite, 
+              i_WD      => i_WB_WD,  
+	      o_OUT     => o_WB_WD);  
+
+  DFFRS: dffg port map(
+              i_CLK     => i_CLKs,    
+              i_RST     => i_R,         
+              i_WE      => s_LW_RegWrite, 
+              i_D       => s_WB_EX3_RS,  
+	      o_Q       => o_WB_EX3_RS);  
+
+  DFFRT: dffg port map(
+              i_CLK     => i_CLKs,    
+              i_RST     => i_R,         
+              i_WE      => s_LW_RegWrite, 
+              i_D       => s_WB_EX3_RT,  
+	      o_Q       => o_WB_EX3_RT);  
 
 
 end structural;
