@@ -200,6 +200,17 @@ signal s_MEM_EX1_RTorRSorR2  : std_logic := '0';
 signal s_WB_EX2_R2FINAL  : std_logic := '0';
 signal s_NOTMEM_EX1_R2  : std_logic := '0';
 
+signal s_NOTWB_EX3_RS  : std_logic := '0';
+signal s_NOTWB_EX3_RT  : std_logic := '0';
+signal s_NOTWB_EX3_R2  : std_logic := '0';
+
+signal s_RSRST         : std_logic := '0';
+signal s_RTRST         : std_logic := '0';
+signal s_R2RST         : std_logic := '0';
+
+
+
+
 
 
 begin  
@@ -237,28 +248,28 @@ begin
 
   and0: andg3 port MAP(
 	      i_A       => s_MEM_EX1_RS, 
-	      i_B       => s_NOTLW,
+	      i_B       => i_MEM_RegWrite,
 	      i_C       => s_RSNOTZERO,
 	      o_C       => s_MEM_EX1_RSO);
 
-  WBCHECK1: andg2
+  NOTLWRS: andg2
   port MAP(
             i_A       => s_MEM_EX1_RSO,
-            i_B       => i_MEM_RegWrite,
+            i_B       => s_NOTLW,
             o_C       => s_MEM_EX1_RSO2
           );
 
-  and1: andg4 port MAP(
+  and1: andg3 port MAP(
 	      i_A       => s_MEM_EX1_RT, 
-	      i_B       => s_NOTLW,
+	      i_B       => i_MEM_RegWrite,
 	      i_C       => s_RTNOTZERO,
-	      i_D       => s_BRANCHorRTYPE,
 	      o_C       => s_MEM_EX1_RTO);
 
-  WBCHECK2: andg2
+  NOTLWRT: andg3
   port MAP(
             i_A       => s_MEM_EX1_RTO,
-            i_B       => i_MEM_RegWrite,
+            i_B       => s_NOTLW,
+	    i_C       => s_BRANCHorRTYPE,
             o_C       => s_MEM_EX1_RTO2
           );
 
@@ -476,8 +487,8 @@ begin
 
   MEM_EX1_RTorRS: org3
   port MAP(
-            i_A       => s_MEM_EX1_RSFINAL,
-            i_B       => s_MEM_EX1_RTFINAL,
+            i_A       => s_MEM_EX1_RTO,
+            i_B       => s_MEM_EX1_RSO,
             i_C       => s_MEM_EX1_R2,
             o_C       => s_MEM_EX1_RTorRSorR2
           );
@@ -538,24 +549,55 @@ begin
 
   DFFRS: dffg port map(
               i_CLK     => i_CLKs,    
-              i_RST     => i_R,         
+              i_RST     => s_RSRST,         
               i_WE      => s_LW_RegWrite, 
               i_D       => s_WB_EX3_RS,  
 	      o_Q       => o_WB_EX3_RS);  
 
   DFFRT: dffg port map(
               i_CLK     => i_CLKs,    
-              i_RST     => i_R,         
+              i_RST     => s_RTRST,         
               i_WE      => s_LW_RegWrite, 
               i_D       => s_WB_EX3_RT,  
 	      o_Q       => o_WB_EX3_RT);  
 
   DFFR2: dffg port map(
               i_CLK     => i_CLKs,    
-              i_RST     => i_R,         
+              i_RST     => s_R2RST,         
               i_WE      => s_LW_RegWrite, 
               i_D       => s_WB_EX3_R2,  
 	      o_Q       => o_WB_EX3_R2); 
+
+  RSTWB_EX3_RS: org2
+  port MAP(
+            i_A       => s_NOTWB_EX3_RS,
+            i_B       => i_R,
+            o_C       => s_RSRST
+          );
+  RSTWB_EX3_RT: org2
+  port MAP(
+            i_A       => s_NOTWB_EX3_RT,
+            i_B       => i_R,
+            o_C       => s_RTRST
+          );
+  RSTWB_EX3_R2: org2
+  port MAP(
+            i_A       => s_NOTWB_EX3_R2,
+            i_B       => i_R,
+            o_C       => s_R2RST
+          );
+
+  NOTWB_EX3_RS: invg port MAP(
+	     i_A          => s_WB_EX3_RS, 
+       	     o_F          => s_NOTWB_EX3_RS);
+
+  NOTWB_EX3_RT: invg port MAP(
+	     i_A          => s_WB_EX3_RT, 
+       	     o_F          => s_NOTWB_EX3_RT);
+
+  NOTWB_EX3_R2: invg port MAP(
+	     i_A          => s_WB_EX3_R2, 
+       	     o_F          => s_NOTWB_EX3_R2);
 
 
 end structural;
