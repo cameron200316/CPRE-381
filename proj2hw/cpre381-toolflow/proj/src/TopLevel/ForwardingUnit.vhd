@@ -38,6 +38,7 @@ entity ForwardingUnit is
 	i_WB_WD          : in std_logic_vector(31 downto 0); 
         o_WB_EX3_RT      : out std_logic; 
         o_WB_EX3_RS      : out std_logic; 
+        o_WB_EX3_R2      : out std_logic; 
         o_WB_EX2_RS      : out std_logic;
 	o_WB_EX2_RT      : out std_logic;
 	o_WB_EX2_R2      : out std_logic;
@@ -128,6 +129,7 @@ architecture structural of ForwardingUnit is
 
 signal s_MEM_EX1_RS  : std_logic := '0';
 signal s_MEM_EX1_RT  : std_logic := '0';
+signal s_MEM_EX1_R2  : std_logic := '0';
 
 signal s_NOTMEM_EX1_RS  : std_logic := '0';
 signal s_NOTMEM_EX1_RT  : std_logic := '0';
@@ -137,9 +139,12 @@ signal s_NOTMEM_EX1_RTSHIFT  : std_logic := '0';
 
 signal s_WB_EX2_RS  : std_logic := '0';
 signal s_WB_EX2_RT  : std_logic := '0';
+signal s_WB_EX2_R2  : std_logic := '0';
 
 signal s_WB_EX3_RS  : std_logic := '0';
 signal s_WB_EX3_RT  : std_logic := '0';
+signal s_WB_EX3_R2  : std_logic := '0';
+
 
 signal s_RSZERO     : std_logic := '0';
 signal s_RTZERO     : std_logic := '0';
@@ -189,8 +194,11 @@ signal s_WB_EX2_RSNOTSHIFT  : std_logic := '0';
 signal s_WB_EX2_RTNOTSHIFT  : std_logic := '0';
 
 signal s_LW_RegWrite  : std_logic := '0';
-signal s_WB_EX2_RTorRS  : std_logic := '0';
-signal s_MEM_EX1_RTorRS  : std_logic := '0';
+signal s_WB_EX2_RTorRSorR2  : std_logic := '0';
+signal s_MEM_EX1_RTorRSorR2  : std_logic := '0';
+
+signal s_WB_EX2_R2FINAL  : std_logic := '0';
+signal s_NOTMEM_EX1_R2  : std_logic := '0';
 
 
 
@@ -316,14 +324,17 @@ begin
   port MAP(
             i_A       => s_WB_EX2_RT,
             i_B       => s_STORE,
-            o_C       => o_WB_EX2_R2
+            o_C       => s_WB_EX2_R2
           );
+
+  o_WB_EX2_R2 <= s_WB_EX2_R2FINAL;
+  o_MEM_EX1_R2 <= s_MEM_EX1_R2;
 
   R2_1: andg2
   port MAP(
             i_A       => s_MEM_EX1_RT,
             i_B       => s_STORE,
-            o_C       => o_MEM_EX1_R2
+            o_C       => s_MEM_EX1_R2
           );
 
 --Makes sure theres no forwarding if the RS or RT is zero
@@ -463,23 +474,25 @@ begin
             o_C       => s_MEM_EX1_RTFINAL
           );
 
-  MEM_EX1_RTorRS: org2
+  MEM_EX1_RTorRS: org3
   port MAP(
             i_A       => s_MEM_EX1_RSFINAL,
             i_B       => s_MEM_EX1_RTFINAL,
-            o_C       => s_MEM_EX1_RTorRS
+            i_C       => s_MEM_EX1_R2,
+            o_C       => s_MEM_EX1_RTorRSorR2
           );
 
-  WB_EX2_RTorRS: org2
+  WB_EX2_RTorRS: org3
   port MAP(
             i_A       => s_WB_EX2_RSFINAL,
             i_B       => s_WB_EX2_RTFINAL,
-            o_C       => s_WB_EX2_RTorRS
+            i_C       => s_WB_EX2_R2FINAL,
+            o_C       => s_WB_EX2_RTorRSorR2
           );
 
   LW_REGWRITE: andg3 port MAP(
-	      i_A       => s_MEM_EX1_RTorRS, 
-	      i_B       => s_WB_EX2_RTorRS,
+	      i_A       => s_MEM_EX1_RTorRSorR2, 
+	      i_B       => s_WB_EX2_RTorRSorR2,
 	      i_C       => s_LW,
 	      o_C       => s_LW_RegWrite);
 
@@ -495,6 +508,25 @@ begin
             i_A       => s_WB_EX2_RTFINAL,
             i_B       => s_LW_RegWrite,
             o_C       => s_WB_EX3_RT
+          );
+
+  R2: andg2
+  port MAP(
+            i_A       => s_WB_EX2_R2,
+            i_B       => s_LW_RegWrite,
+            o_C       => s_WB_EX3_R2
+          );
+
+  NOTMEM_EX1_R2: invg port MAP(
+	     i_A          => s_MEM_EX1_R2, 
+       	     o_F          => s_NOTMEM_EX1_R2);
+
+
+  WB_EX2_R2FINAL: andg2
+  port MAP(
+            i_A       => s_WB_EX2_R2,
+            i_B       => s_NOTMEM_EX1_R2,
+            o_C       => s_WB_EX2_R2FINAL
           );
 
   REG: RegFile port map(
@@ -517,6 +549,13 @@ begin
               i_WE      => s_LW_RegWrite, 
               i_D       => s_WB_EX3_RT,  
 	      o_Q       => o_WB_EX3_RT);  
+
+  DFFR2: dffg port map(
+              i_CLK     => i_CLKs,    
+              i_RST     => i_R,         
+              i_WE      => s_LW_RegWrite, 
+              i_D       => s_WB_EX3_R2,  
+	      o_Q       => o_WB_EX3_R2); 
 
 
 end structural;

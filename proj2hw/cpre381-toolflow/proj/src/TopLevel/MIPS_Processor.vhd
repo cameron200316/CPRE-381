@@ -230,6 +230,7 @@ architecture structure of MIPS_Processor is
   --Forwarding Signals
   signal s_WB_EX3_RS         : std_logic;
   signal s_WB_EX3_RT         : std_logic;
+  signal s_WB_EX3_R2         : std_logic;
   signal s_WB_EX2_RS         : std_logic;
   signal s_WB_EX2_RT         : std_logic;
   signal s_WB_EX2_R2         : std_logic;
@@ -567,6 +568,7 @@ architecture structure of MIPS_Processor is
 		i_WB_WD          : in std_logic_vector(31 downto 0); 
 		o_WB_EX3_RT      : out std_logic; 
 		o_WB_EX3_RS      : out std_logic; 
+       		o_WB_EX3_R2      : out std_logic;
         	o_WB_EX2_RS      : out std_logic;
 		o_WB_EX2_RT      : out std_logic;
 		o_WB_EX2_R2      : out std_logic;
@@ -642,6 +644,7 @@ begin
                 i_WB_WD          => s_WB_WD, 
         	o_WB_EX3_RS      => s_WB_EX3_RS,
 		o_WB_EX3_RT      => s_WB_EX3_RT,
+                o_WB_EX3_R2      => s_WB_EX3_R2,
         	o_WB_EX2_RS      => s_WB_EX2_RS,
 		o_WB_EX2_RT      => s_WB_EX2_RT,
 		o_WB_EX2_R2      => s_WB_EX2_R2,
@@ -1110,7 +1113,7 @@ begin
   MUXWBRT: mux2to1DF
   port MAP(i_D0      => s_WB_WD(i),         
         i_D1      => s_EX_WBWD(i),    
-        i_S 	   => s_WB_EX3_RT,     
+        i_S 	   => s_WB_EX3_R2,     
         o_O       => s_EX_WBWDR2(i));
   end generate WBWDR2;
 
@@ -1130,7 +1133,7 @@ begin
 
   WB_EX2or3_R2: org2
   port MAP(
-            i_A       => s_WB_EX3_RT,
+            i_A       => s_WB_EX3_R2,
             i_B       => s_WB_EX2_R2,
             o_C       => s_WB_EX2or3_R2
           );
