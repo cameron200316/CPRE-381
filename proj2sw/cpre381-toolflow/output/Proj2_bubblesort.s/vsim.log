@@ -3,16 +3,12 @@ Reading pref.tcl
 # 2023.2_2
 
 # vsim -postsimdataflow -debugdb -c -voptargs=""+acc"" tb -do "modelsim_framework.do" -gOUTPUT_TRACE=ms.trace 
-# Start time: 12:05:54 on Apr 17,2024
+# Start time: 00:13:36 on Apr 25,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vsim-8611) Generating debug db.
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Warning: ../../proj/src/TopLevel/MIPS_Processor.vhd(827): (vopt-1549) At instance MEMWB the actual expression and the port 'i_WA' of component 'work.MIPS_Processor(structure).MEM_WB' have different sizes:  ([5,32]).
-#         Region: /tb/MyMips/MEMWB
-# ** Warning: ../../proj/src/TopLevel/MIPS_Processor.vhd(834): (vopt-1549) At instance MEMWB the actual expression and the port 'o_WA' of component 'work.MIPS_Processor(structure).MEM_WB' have different sizes:  ([5,32]).
-#         Region: /tb/MyMips/MEMWB
 # ** Note: (vopt-4301) Memory core inferred for signal 'ram' width=32, depth=1024, type=RAM at location proj/src/TopLevel/mem.vhd:35
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # //  Questa Sim-64
 # //  Version 2023.2_2 linux_x86_64 Jun  9 2023
 # //
@@ -81,11 +77,11 @@ Reading pref.tcl
 #    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/DMem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/IMem
-# ** Note: Data structure takes 73543360 bytes of memory
-#          Process time 0.15 seconds
+# ** Note: Data structure takes 73278496 bytes of memory
+#          Process time 0.40 seconds
 #          stop
 #    Time: 18620 ns  Iteration: 1  Instance: /tb
 # Break in Process P_DUMP_STATE at /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/internal/testpy/tb.vhd line 150
 # Stopped at /home/mkotlarz/cpre381/proj/proj2sw/cpre381-toolflow/internal/testpy/tb.vhd line 150
-# End time: 12:05:58 on Apr 17,2024, Elapsed time: 0:00:04
-# Errors: 0, Warnings: 5
+# End time: 00:13:41 on Apr 25,2024, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 3

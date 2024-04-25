@@ -1,0 +1,510 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s11e vcom 2023.2_2 2023.06, Jun  9 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/home/mkotlarz/cpre381/proj/proj2hw
+T_opt
+!s110 1714059608
+VOeJAi0]LGL45<XG;z4:8S2
+04 12 5 work tb_pipelines mixed 1
+=1-7486e228c7aa-662a7958-91438-2cfc
+R1
+!s12b OEM100
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2023.2_2;77
+Edffg
+Z3 w1713458029
+Z4 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z5 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 0
+R2
+Z6 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd
+Z7 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd
+l0
+Z8 L23 1
+VaBn<3_7oIgIleFniVim733
+!s100 FJQDe;FGDG0KnNV;j4DaY2
+Z9 OL;C;2023.2_2;77
+32
+Z10 !s110 1714058041
+!i10b 1
+Z11 !s108 1714058041.000000
+Z12 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd|
+Z13 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffg.vhd|
+!i113 0
+Z14 o-work work
+Z15 tExplicit 1 CvgOpt 0
+Amixed
+R4
+R5
+DEx4 work 4 dffg 0 22 aBn<3_7oIgIleFniVim733
+!i122 0
+l37
+L33 29
+VS_P?KDWPHzz@YT_fABo?Z0
+!s100 GR5ff]ZD1Yiz`>ZFVE>Hg1
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Edffgsync
+Z16 w1713470860
+R4
+R5
+!i122 1
+R2
+Z17 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd
+Z18 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd
+l0
+R8
+V<bT5;C;bZUf1X>LZf2i0f3
+!s100 X01F^Zh3]^75[G=j[zcLG2
+R9
+32
+Z19 !s110 1714058042
+!i10b 1
+Z20 !s108 1714058042.000000
+Z21 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd|
+Z22 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/dffgSync.vhd|
+!i113 0
+R14
+R15
+Amixed
+R4
+R5
+DEx4 work 8 dffgsync 0 22 <bT5;C;bZUf1X>LZf2i0f3
+!i122 1
+l39
+L33 36
+VI3dTUdK6k]Y2W>MCVK6m33
+!s100 mIl[<XLXl_^U03HK4JOPZ3
+R9
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 0
+R14
+R15
+Eex_mem
+Z23 w1713472008
+R4
+R5
+!i122 2
+R2
+Z24 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd
+Z25 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd
+l0
+Z26 L21 1
+V;h3;R2j;lZEmLMRY[bjdR3
+!s100 m5oEZV[X^;bJl4:X`l1013
+R9
+32
+R19
+!i10b 1
+R20
+Z27 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd|
+Z28 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/EX_MEM.vhd|
+!i113 0
+R14
+R15
+Astructural
+R4
+R5
+DEx4 work 6 ex_mem 0 22 ;h3;R2j;lZEmLMRY[bjdR3
+!i122 2
+l78
+L58 142
+V`0AMal3Ek;e:SVohZXi4;3
+!s100 HeC7M3=k[JG?kV2FaS<Ue1
+R9
+32
+R19
+!i10b 1
+R20
+R27
+R28
+!i113 0
+R14
+R15
+Eid_ex
+Z29 w1713472027
+R4
+R5
+!i122 3
+R2
+Z30 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd
+Z31 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd
+l0
+R26
+VbR>]6RmhRO2:PD=mn2:k42
+!s100 Hed0g>aHLWZ3Uj=DRONLR1
+R9
+32
+R19
+!i10b 1
+R20
+Z32 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd|
+Z33 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/ID_EX.vhd|
+!i113 0
+R14
+R15
+Astructural
+R4
+R5
+DEx4 work 5 id_ex 0 22 bR>]6RmhRO2:PD=mn2:k42
+!i122 3
+l100
+L80 221
+V<TQ96ZVm9[UK7ZkJBVK@A0
+!s100 Pz1zbL;8WFTc<77dMQQ9T0
+R9
+32
+R19
+!i10b 1
+R20
+R32
+R33
+!i113 0
+R14
+R15
+Eif_id
+Z34 w1713471871
+R4
+R5
+!i122 4
+R2
+Z35 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd
+Z36 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd
+l0
+R26
+VEza`l5]_?i;R[5PgfaTZV3
+!s100 I9eD:U9Ub0oaedmJjlaMC3
+R9
+32
+R19
+!i10b 1
+R20
+Z37 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd|
+Z38 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/IF_ID.vhd|
+!i113 0
+R14
+R15
+Astructural
+R4
+R5
+DEx4 work 5 if_id 0 22 Eza`l5]_?i;R[5PgfaTZV3
+!i122 4
+l54
+L34 39
+VE<bN?V;SmI3`leC4Dc6KV0
+!s100 E5l<lP[7RNiL_n]9QQoX`2
+R9
+32
+R19
+!i10b 1
+R20
+R37
+R38
+!i113 0
+R14
+R15
+Emem_wb
+Z39 w1713472068
+R4
+R5
+!i122 5
+R2
+Z40 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd
+Z41 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd
+l0
+R26
+VkPi?3?gEakn;z?RPlA_7a2
+!s100 o36:;2DWbD49F^f^_iN2P2
+R9
+32
+R19
+!i10b 1
+R20
+Z42 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd|
+Z43 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/MEM_WB.vhd|
+!i113 0
+R14
+R15
+Astructural
+R4
+R5
+DEx4 work 6 mem_wb 0 22 kPi?3?gEakn;z?RPlA_7a2
+!i122 5
+l65
+L45 84
+VAHd:7PX_M3TS;gFljO?jM2
+!s100 PEW<SSSZdzdiW=QVTOAoZ0
+R9
+32
+R19
+!i10b 1
+R20
+R42
+R43
+!i113 0
+R14
+R15
+Eregfile
+Z44 w1713455052
+R4
+R5
+!i122 6
+R2
+Z45 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd
+Z46 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd
+l0
+R26
+V9@N_z5fKWRAO8AQ2?bM;X1
+!s100 OVSbJzVV9WYFXiYf<CTiz3
+R9
+32
+R19
+!i10b 1
+R20
+Z47 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd|
+Z48 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFile.vhd|
+!i113 0
+R14
+R15
+Astructural
+R4
+R5
+DEx4 work 7 regfile 0 22 9@N_z5fKWRAO8AQ2?bM;X1
+!i122 6
+l42
+L32 23
+VhI=CL5QJaC<h:QEKUcHTG0
+!s100 4RnnEmT<hNJ9d1151T00Z0
+R9
+32
+R19
+!i10b 1
+R20
+R47
+R48
+!i113 0
+R14
+R15
+Eregfilesync
+Z49 w1713471453
+R4
+R5
+!i122 7
+R2
+Z50 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd
+Z51 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd
+l0
+R26
+VJ]IYE`W>aF<S2OYI??m@c3
+!s100 S:b0O>dJb57bPW9KlDKCU0
+R9
+32
+R19
+!i10b 1
+R20
+Z52 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd|
+Z53 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/RegFileSync.vhd|
+!i113 0
+R14
+R15
+Amixed
+R4
+R5
+DEx4 work 11 regfilesync 0 22 J]IYE`W>aF<S2OYI??m@c3
+!i122 7
+l42
+L32 24
+VS;`Z:;3RF[W]ZP2<DaE5i3
+!s100 OAnE<?2^5?RTNY[G[:J[[2
+R9
+32
+R19
+!i10b 1
+R20
+R52
+R53
+!i113 0
+R14
+R15
+Etb_id_ex
+Z54 w1713726499
+Z55 DPx3 std 3 env 0 22 QPZJVBPkV?55nUWhDzFik0
+Z56 DPx4 ieee 16 std_logic_textio 0 22 C8j>g0lzF^EAA]5<S6PY32
+R4
+R5
+!i122 9
+R2
+Z57 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd
+Z58 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd
+l0
+Z59 L22 1
+VEnKYdJ^zPT>VB8CV9C;BW2
+!s100 1M6:<<I@I8ig11S07ZD3W3
+R9
+32
+R19
+!i10b 1
+R20
+Z60 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd|
+Z61 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_ID_EX.vhd|
+!i113 0
+R14
+R15
+Amixed
+R55
+R56
+R4
+R5
+DEx4 work 8 tb_id_ex 0 22 EnKYdJ^zPT>VB8CV9C;BW2
+!i122 9
+l107
+L26 220
+V6zVF=SeEkPgNL:E617:e>2
+!s100 K4YN33E@JEje@bP7>44c62
+R9
+32
+R19
+!i10b 1
+R20
+R60
+R61
+!i113 0
+R14
+R15
+Etb_if_id
+Z62 w1713725864
+R55
+R56
+R4
+R5
+!i122 8
+R2
+Z63 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd
+Z64 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd
+l0
+R59
+V_^XTaEn;joc7V16aNFX0@1
+!s100 hc=8f4JU28LagLIgzc0QB1
+R9
+32
+R19
+!i10b 1
+R20
+Z65 !s90 -reportprogress|30|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd|
+Z66 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_IF_ID.vhd|
+!i113 0
+R14
+R15
+Amixed
+R55
+R56
+R4
+R5
+DEx4 work 8 tb_if_id 0 22 _^XTaEn;joc7V16aNFX0@1
+!i122 8
+l59
+L26 121
+VWT06C?Uba<RdL5PWGadLf3
+!s100 =9FPAYel>fRc_>8iaQ=P_2
+R9
+32
+R19
+!i10b 1
+R20
+R65
+R66
+!i113 0
+R14
+R15
+Etb_pipelines
+Z67 w1714059594
+Z68 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+R55
+R56
+R4
+R5
+!i122 23
+R2
+Z69 8/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+Z70 F/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd
+l0
+L12 1
+V4j=im9k>Zn=IOHiBUC<Wd1
+!s100 UkM^<_]7lMo>7JZZS0La:3
+R9
+32
+Z71 !s110 1714059602
+!i10b 1
+Z72 !s108 1714059602.000000
+Z73 !s90 -reportprogress|300|-work|work|/home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd|
+Z74 !s107 /home/mkotlarz/cpre381/proj/proj2hw/Pipelines/tb_pipelines.vhd|
+!i113 0
+R14
+R15
+Amixed
+R68
+R55
+R56
+R4
+R5
+DEx4 work 12 tb_pipelines 0 22 4j=im9k>Zn=IOHiBUC<Wd1
+!i122 23
+l257
+L16 483
+V0Be?_f1fm_1Vg?n9Yi]7S3
+!s100 ZSoNFM:KZFc84h@Zj^LmA1
+R9
+32
+R71
+!i10b 1
+R72
+R73
+R74
+!i113 0
+R14
+R15
