@@ -198,6 +198,9 @@ architecture structure of MIPS_Processor is
   signal s_EX_Flush     : std_logic;
   signal s_EX_R2A     : std_logic_vector(31 downto 0);
   signal s_EX_Ovfl    : std_logic;
+  signal s_EX_RSA32   : std_logic_vector(31 downto 0);
+  signal s_EX_RTB32   : std_logic_vector(31 downto 0);
+  signal s_EX_R2A32   : std_logic_vector(31 downto 0);
 
   --MEM stage
   signal s_MEM_B         : std_logic_vector(31 downto 0);
@@ -237,6 +240,9 @@ architecture structure of MIPS_Processor is
   signal s_MEM_EX1_RS         : std_logic;
   signal s_MEM_EX1_RT         : std_logic;
   signal s_MEM_EX1_R2         : std_logic;
+  signal s_MEM_EX1_RSLW       : std_logic;
+  signal s_MEM_EX1_RTLW       : std_logic;
+  signal s_MEM_EX1_R2LW       : std_logic;
   signal s_EX_WBWD            : std_logic_vector(31 downto 0);
   signal s_EX_WBWDRS            : std_logic_vector(31 downto 0);
   signal s_EX_WBWDRT            : std_logic_vector(31 downto 0);
@@ -255,6 +261,8 @@ architecture structure of MIPS_Processor is
   signal s_stall_IF_ID         : std_logic := '0';
   signal s_stall_ID_EX         : std_logic := '0';
   signal s_stall_EX_MEM        : std_logic := '0';
+
+  --BRANCH AFTER BRANCH ISSUE
 
   component mem is
     generic(ADDR_WIDTH : integer := 10;
@@ -565,17 +573,15 @@ architecture structure of MIPS_Processor is
 		i_MEM_OPCODE     : in std_logic_vector(5 downto 0);
       		i_MEM_RegWrite   : in std_logic; 	
 		i_WB_RegWrite    : in std_logic;
-		i_WB_WD          : in std_logic_vector(31 downto 0); 
-		o_WB_EX3_RT      : out std_logic; 
-		o_WB_EX3_RS      : out std_logic; 
-       		o_WB_EX3_R2      : out std_logic;
         	o_WB_EX2_RS      : out std_logic;
 		o_WB_EX2_RT      : out std_logic;
 		o_WB_EX2_R2      : out std_logic;
         	o_MEM_EX1_RS     : out std_logic;
         	o_MEM_EX1_RT     : out std_logic;
  	        o_MEM_EX1_R2     : out std_logic;
-		o_WB_WD          : out std_logic_vector(31 downto 0));
+        	o_MEM_EX1_RSLW   : out std_logic;
+        	o_MEM_EX1_RTLW   : out std_logic;
+ 	        o_MEM_EX1_R2LW   : out std_logic);
     end component;
 
     component StallingUnit is
@@ -593,13 +599,7 @@ architecture structure of MIPS_Processor is
 
         	--output signals for control hazards
         	o_flush_IF_ID       : out std_logic;
-        	o_flush_ID_EX       : out std_logic;
-
-        	--output signals for data hazard
-        	o_stall_IF_ID       : out std_logic;
-        	o_stall_ID_EX       : out std_logic;
-        	o_stall_EX_MEM      : out std_logic;
-        	o_flush_EX_MEM      : out std_logic
+        	o_flush_ID_EX       : out std_logic
     	);
     end component;
 
@@ -641,17 +641,15 @@ begin
 		i_MEM_OPCODE     => s_MEM_INSTRUCTION(31 downto 26),
 		i_MEM_RegWrite   => s_MEM_RegWrite,
 		i_WB_RegWrite    => s_WB_RegWrite,
-                i_WB_WD          => s_WB_WD, 
-        	o_WB_EX3_RS      => s_WB_EX3_RS,
-		o_WB_EX3_RT      => s_WB_EX3_RT,
-                o_WB_EX3_R2      => s_WB_EX3_R2,
         	o_WB_EX2_RS      => s_WB_EX2_RS,
 		o_WB_EX2_RT      => s_WB_EX2_RT,
 		o_WB_EX2_R2      => s_WB_EX2_R2,
         	o_MEM_EX1_RS     => s_MEM_EX1_RS,
         	o_MEM_EX1_RT     => s_MEM_EX1_RT,
         	o_MEM_EX1_R2     => s_MEM_EX1_R2,
-		o_WB_WD          => s_EX_WBWD);
+        	o_MEM_EX1_RSLW   => s_MEM_EX1_RSLW,
+        	o_MEM_EX1_RTLW   => s_MEM_EX1_RTLW,
+        	o_MEM_EX1_R2LW   => s_MEM_EX1_R2LW);
 
   orBranchEX: org2
   port MAP(
@@ -712,13 +710,7 @@ begin
 
 	--output signals for control hazards
 	o_flush_IF_ID       => s_flush_IF_ID,
-	o_flush_ID_EX       => s_flush_ID_EX,
-
-	--output signals for data hazard
-	o_stall_IF_ID       => s_stall_IF_ID,
-	o_stall_ID_EX       => s_stall_ID_EX,
-	o_stall_EX_MEM      => s_stall_EX_MEM,
-	o_flush_EX_MEM      => s_flush_EX_MEM
+	o_flush_ID_EX       => s_flush_ID_EX
     );
 
   -- /*--------------------------------------------------------------------------------------------------*/
@@ -840,7 +832,7 @@ begin
   port MAP(
         i_CLKs            => iCLK,
 	i_Flush       	  => s_IF_FLUSH,
-        i_Stall           => s_stall_IF_ID,
+        i_Stall           => '0',
         i_PC4             => s_IF_PC4,
         i_Inst            => s_IF_INSTRUCTION,
         o_PC4             => s_ID_PC4,
@@ -975,7 +967,7 @@ begin
   port MAP(
         i_CLKs            => iCLK,
 	i_Flush       	  => s_ID_FLUSH,
-        i_Stall           => s_stall_ID_EX,
+        i_Stall           => '0',
         i_Jump            => s_ID_Jump,
         i_Branch          => s_ID_Branch,
         i_BranchNE        => s_ID_BranchNE,
@@ -1058,12 +1050,12 @@ begin
   RSA: mux4to1DF 
 	port MAP(
 	i_D3      => s_MEM_Final(i),    
-        i_D2      => s_EX_WBWDRS(i),	
+        i_D2      => s_WB_WD(i),	
         i_D1      => s_MEM_Final(i),    
         i_D0      => s_EX_A(i),         
         i_S0      => s_MEM_EX1_RS,
-        i_S1      => s_WB_EX2or3_RS, 
-	o_O       => s_EX_RSA(i)); 
+        i_S1      => s_WB_EX2_RS, 
+	o_O       => s_EX_RSA32(i)); 
   end generate RSA_32;
 
   --MUX for choosing the s_EX_RTB value for the mux
@@ -1071,12 +1063,12 @@ begin
   RTB: mux4to1DF 
 	port MAP(
 	i_D3      => s_MEM_Final(i),    
-        i_D2      => s_EX_WBWDRT(i),	
+        i_D2      => s_WB_WD(i),	
         i_D1      => s_MEM_Final(i),    
         i_D0      => s_EX_B(i),         
         i_S0      => s_MEM_EX1_RT,
-        i_S1      => s_WB_EX2or3_RT, 
-	o_O       => s_EX_RTB(i)); 
+        i_S1      => s_WB_EX2_RT, 
+	o_O       => s_EX_RTB32(i)); 
   end generate RTB_32;
 
   --MUX for choosing the s_R2 value for ex
@@ -1084,59 +1076,37 @@ begin
   R2A: mux4to1DF 
 	port MAP(
 	i_D3      => s_MEM_Final(i),    
-        i_D2      => s_EX_WBWDR2(i),	
+        i_D2      => s_WB_WD(i),	
         i_D1      => s_MEM_Final(i),    
         i_D0      => s_EX_r2(i),         
         i_S0      => s_MEM_EX1_R2,
-        i_S1      => s_WB_EX2or3_R2, 
-	o_O       => s_EX_R2A(i)); 
+        i_S1      => s_WB_EX2_R2, 
+	o_O       => s_EX_R2A32(i)); 
   end generate R2A_32;
 
-  WBWDRS: for i in 0 to 31 generate
+  RSALW: for i in 0 to 31 generate
   MUXWBRS: mux2to1DF
-  port MAP(i_D0      => s_WB_WD(i),         
-        i_D1      => s_EX_WBWD(i),    
-        i_S 	   => s_WB_EX3_RS,     
-        o_O       => s_EX_WBWDRS(i));
-  end generate WBWDRS;
+  port MAP(i_D0      => s_EX_RSA32(i),         
+        i_D1      => s_MEM_WD(i),    
+        i_S 	   => s_MEM_EX1_RSLW,     
+        o_O       => s_EX_RSA(i));
+  end generate RSALW;
 
-  WBWDRT: for i in 0 to 31 generate
+  RTBLW: for i in 0 to 31 generate
   MUXWBRT: mux2to1DF
-  port MAP(i_D0      => s_WB_WD(i),         
-        i_D1      => s_EX_WBWD(i),    
-        i_S 	   => s_WB_EX3_RT,     
-        o_O       => s_EX_WBWDRT(i));
-  end generate WBWDRT;
+  port MAP(i_D0      => s_EX_RTB32(i),         
+        i_D1      => s_MEM_WD(i),    
+        i_S 	   => s_MEM_EX1_RTLW,     
+        o_O       => s_EX_RTB(i));
+  end generate RTBLW;
 
-
-  WBWDR2: for i in 0 to 31 generate
+  R2ALW: for i in 0 to 31 generate
   MUXWBRT: mux2to1DF
-  port MAP(i_D0      => s_WB_WD(i),         
-        i_D1      => s_EX_WBWD(i),    
-        i_S 	   => s_WB_EX3_R2,     
-        o_O       => s_EX_WBWDR2(i));
-  end generate WBWDR2;
-
-  WB_EX2or3_RS: org2
-  port MAP(
-            i_A       => s_WB_EX3_RS,
-            i_B       => s_WB_EX2_RS,
-            o_C       => s_WB_EX2or3_RS
-          );
-
-  WB_EX2or3_RT: org2
-  port MAP(
-            i_A       => s_WB_EX3_RT,
-            i_B       => s_WB_EX2_RT,
-            o_C       => s_WB_EX2or3_RT
-          );
-
-  WB_EX2or3_R2: org2
-  port MAP(
-            i_A       => s_WB_EX3_R2,
-            i_B       => s_WB_EX2_R2,
-            o_C       => s_WB_EX2or3_R2
-          );
+  port MAP(i_D0      => s_EX_R2A32(i),         
+        i_D1      => s_MEM_WD(i),    
+        i_S 	   => s_MEM_EX1_R2LW,     
+        o_O       => s_EX_R2A(i));
+  end generate R2ALW;
 
   A: ALU
 	port MAP(
@@ -1157,8 +1127,8 @@ begin
   EXMEM: EX_MEM
   port MAP(
         i_CLKs            => iCLK,
-	i_Flush       	  => s_EX_FLUSH,
-        i_Stall           => s_stall_EX_MEM,
+	i_Flush       	  => iRST,
+        i_Stall           => '0',
         i_Lw              => s_EX_lw,
         i_HoB             => s_EX_HoB,
         i_Sign            => s_EX_Sign,
