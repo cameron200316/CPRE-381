@@ -1,0 +1,68 @@
+
+#
+# CprE 381 Generated Quartus Settings File
+#
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:07:08  JANUARY 28, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "21.1.1 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name TOP_LEVEL_ENTITY MIPS_Processor
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/MIPS_types.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/ALU.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/AddSub.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/Adder.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/BarrelDecoder5_32.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/BarrelShifter.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/BranchPredictor.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/Complementor.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/ControlLogic.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/Dataflow_Mux2_1.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/Decoder5_32.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/EX_MEM.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/FetchLogic.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/ForwardingUnit.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/ID_EX.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/IF_ID.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/LeftShifter16.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/MEM_WB.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/Nbit_8t1Mux.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/Nbit_AddSub.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/Nbit_andg2.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/Nbit_full_adder.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/Nbit_org2.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/Nbit_xorg2.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/NegativeChecker.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/PC.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/Reg32File.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/RegFile.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/RegFileSync.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/StallingUnit.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/Structual_full_adder.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/ZeroChecker.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/andg2.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/andg2_3bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/andg2_5bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/andg2_6bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/andg3.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/andg4.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/dffg.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/dffg1.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/dffgSync.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/extender16_32.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/invg.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/mem.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/mux2to1DF.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/mux32_1.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/mux4to1DF.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/org2.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/org3.vhd"
+set_global_assignment -name VHDL_FILE "/home/mkotlarz/cpre381/proj/proj2hw predictor/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd"

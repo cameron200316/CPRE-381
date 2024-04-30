@@ -3,7 +3,7 @@ Reading pref.tcl
 # 2023.2_2
 
 # vsim -postsimdataflow -debugdb -c -voptargs=""+acc"" tb -do "modelsim_framework.do" -gOUTPUT_TRACE=ms.trace 
-# Start time: 16:38:50 on Apr 21,2024
+# Start time: 13:37:28 on Apr 30,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vsim-8611) Generating debug db.
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
@@ -35,9 +35,12 @@ Reading pref.tcl
 # Loading work.andg2_3bit(dataflow)#1
 # Loading work.invg(dataflow)#1
 # Loading work.andg3(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.andg4(dataflow)#1
+# Loading work.org3(dataflow)#1
+# Loading work.andg2_6bit(dataflow)#1
 # Loading work.org2(dataflow)#1
 # Loading work.stallingunit(structural)#1
-# Loading work.andg2(dataflow)#1
 # Loading work.mux2to1df(dataflow)#1
 # Loading ieee.numeric_std(body)
 # Loading work.mem(rtl)#1
@@ -79,81 +82,19 @@ Reading pref.tcl
 # Loading work.leftshifter16(behavioral)#1
 # Loading work.ex_mem(structural)#1
 # Loading work.mem_wb(structural)#1
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(31) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(30) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(29) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(28) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(27) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(26) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(25) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(24) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(23) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(22) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(21) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(20) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(19) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(18) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(17) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(16) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(15) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(14) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(13) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(12) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(11) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(10) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(9) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(8) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(7) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(6) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(5) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(4) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(3) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(2) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(1) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb/MyMips/IDEX/o_BranchAddr(0) has no driver.
-# This port will contribute value (U) to the signal network.
 # ** Note: (vsim-8900) Creating design debug database vsim.dbg.
 # do modelsim_framework.do
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/DMem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/IMem
-# ** Note: Data structure takes 76591216 bytes of memory
-#          Process time 0.30 seconds
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 300 ns  Iteration: 4  Instance: /tb/MyMips/DMem
+# ** Note: Data structure takes 79406936 bytes of memory
+#          Process time 0.09 seconds
 #          stop
 #    Time: 320 ns  Iteration: 1  Instance: /tb
-# Break in Process P_DUMP_STATE at /home/cam2022/CPRE-381/ProjectP1/proj2hw/cpre381-toolflow/internal/testpy/tb.vhd line 150
-# Stopped at /home/cam2022/CPRE-381/ProjectP1/proj2hw/cpre381-toolflow/internal/testpy/tb.vhd line 150
-# End time: 16:38:54 on Apr 21,2024, Elapsed time: 0:00:04
-# Errors: 0, Warnings: 35
+# Break in Process P_DUMP_STATE at /home/mkotlarz/cpre381/proj/proj2hw/cpre381-toolflow/internal/testpy/tb.vhd line 150
+# Stopped at /home/mkotlarz/cpre381/proj/proj2hw/cpre381-toolflow/internal/testpy/tb.vhd line 150
+# End time: 13:37:32 on Apr 30,2024, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 4

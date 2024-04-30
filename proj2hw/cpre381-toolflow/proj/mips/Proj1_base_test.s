@@ -46,14 +46,6 @@ Loop:
 
    # Beq instruction
    beq $t0, $zero, Loop 
-   nop
-   nop
-   nop
-   nop
-   nop
-   nop
-   nop
-   nop
 
 
    # Sllv instruction
@@ -89,16 +81,8 @@ Loop2:
 
    # Bne instruction
    bne $t2, $t3, Loop2 
-   nop
-   nop
-   nop
-   nop
    # J instruction
    j exit
-   nop
-   nop
-   nop
-   nop
 
 
 funct:
@@ -116,17 +100,9 @@ funct:
 
    # Jr instruction
    jr $ra
-   nop
-   nop
-   nop
-   nop
 
 
 exit:
    # Jal instruction
    jal  funct
-   nop
-   nop
-   nop
-   nop
    halt

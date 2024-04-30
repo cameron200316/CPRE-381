@@ -125,6 +125,7 @@ architecture structure of MIPS_Processor is
   --SIGNALS FOR PIPELINES
   --IF stage
   signal s_IF_PC4         : std_logic_vector(31 downto 0);
+  signal s_IF_PCNEW          : std_logic;
   signal s_IF_INSTRUCTION         : std_logic_vector(31 downto 0);
   signal s_IF_PCINSTRUCTION         : std_logic_vector(31 downto 0);
   signal s_IF_Flush     : std_logic; 
@@ -254,15 +255,16 @@ architecture structure of MIPS_Processor is
 
   --Stalling Signals 
   signal s_branch              : std_logic;  
+  signal s_PC4_PC              : std_logic; 
   signal s_branchChoice        : std_logic;
+  signal s_notBranchChoice        : std_logic;
+  signal s_PCBRANCH4           : std_logic_vector(31 downto 0); 
   signal s_flush_IF_ID         : std_logic := '0';
   signal s_flush_ID_EX         : std_logic := '0';
   signal s_flush_EX_MEM        : std_logic := '0';
   signal s_stall_IF_ID         : std_logic := '0';
   signal s_stall_ID_EX         : std_logic := '0';
   signal s_stall_EX_MEM        : std_logic := '0';
-
-  --BRANCH AFTER BRANCH ISSUE
 
   component mem is
     generic(ADDR_WIDTH : integer := 10;
@@ -686,13 +688,6 @@ begin
             o_C       => s_ID_Flush
           );
 
-  FLUSH_EX: org2
-  port MAP(
-            i_A       => s_flush_EX_MEM,
-            i_B       => iRST,
-            o_C       => s_EX_Flush
-          );
-
 
 
   STALL: StallingUnit
@@ -751,79 +746,71 @@ begin
             i_Cin        => '0',
             i_AddSub     => '0',
             i_ALUSrc     => '0', 
-            i_D1         => s_PC,
+            i_D1         => s_PCBRANCH4,
             i_D0         => "00000000000000000000000000000100",
             i_regWrite   => "00000000000000000000000000000000",
             o_C          => s_null,
             o_S          => s_PC4
     );
 
-  branchadd4: AddSub
-  port MAP(
-            i_Cin        => '0',
-            i_AddSub     => '0',
-            i_ALUSrc     => '0', 
-            i_D1         => s_EX_BranchAddr,
-            i_D0         => "00000000000000000000000000000100",
-            i_regWrite   => "00000000000000000000000000000000",
-            o_C          => s_null,
-            o_S          => s_IF_BranchAddr4
-    );
 
+  -- 2t1Mux
+  MUX15 : mux2t1_N 
+  port map (
+      i_S             => s_ID_BranchEither,
+      i_D0            => s_PC,
+      i_D1            => s_ID_BranchAddr,
+      o_O             => s_PCBRANCH4
+  );
 
   -- 2t1Mux
   MUX14 : mux2t1_N 
   port map (
       i_S             => s_branchChoice,
       i_D0            => s_PCJUMPJRJAL,
-      i_D1            => s_IF_BranchAddr4,
+      i_D1            => s_ID_BranchAddr,
       o_O             => s_NEWPC
   );
 
   -- 2t1Mux
   MUX13 : mux2t1_N 
   port map (
-      i_S             => s_JorBorJr,
+      i_S             => s_IF_PCNEW,
       i_D0            => s_PC4,
       i_D1            => s_NEWPC,
       o_O             => s_MUX13OUT
   );
 
+
+  notBranchChoice: invg
+	port MAP(
+            i_A                  => s_branchChoice,
+            o_F                  => s_notBranchChoice
+          );
+
+  and2a: andg2
+	port MAP(
+            i_A                  => s_notBranchChoice,
+            i_B                  => s_branch,
+            o_C                  => s_PC4_PC
+          );
+
+  or2a: org2
+	port MAP(
+            i_A                  => s_PC4_PC,
+            i_B                  => s_JorBorJr,
+            o_C                  => s_IF_PCNEW
+          );
+
+
   PC4 : PC  
   port MAP(
             i_WD         => s_MUX13OUT,
-            i_WEN        => s_IF_PCWRITE,
+            i_WEN        => '1',
             i_CLKs       => iCLK,
             i_R          => iRST,
             o_OUT        => s_PC
   );
-
-  notStallIF: invg
-	port MAP(
-            i_A                  => s_stall_IF_ID,
-            o_F                  => s_IF_NotStall
-          );
-
-  StallPC: andg2
-  port MAP(
-            i_A       => s_ID_BranchNeither,
-            i_B       => s_IF_NotStall,
-            o_C       => s_IF_WRITE
-          );
-
-  JorBorJrWRITE: andg2
-  port MAP(
-            i_A       => s_IF_NotStall,
-            i_B       => s_JorBorJr,
-            o_C       => s_IF_JorBorJrWRITE
-          );
-
-  PCWRITE: org2
-  port MAP(
-            i_A       => s_IF_WRITE,
-            i_B       => s_IF_JorBorJrWRITE,
-            o_C       => s_IF_PCWRITE
-          );
 
   s_IF_PC4 <= s_PC4;
   s_IF_INSTRUCTION <= s_Inst;
